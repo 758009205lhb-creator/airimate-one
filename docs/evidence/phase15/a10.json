@@ -1,0 +1,144 @@
+{
+  "steps": [
+    {
+      "op": "open",
+      "r": {
+        "open": true,
+        "anchorX": 135,
+        "anchorY": 334.874,
+        "scale": 0,
+        "visualBox": null,
+        "avatarBox": {
+          "x": 8.59259259259261,
+          "y": 223.1703097571856,
+          "w": 214.81481481481478,
+          "h": 372.34567901234567
+        },
+        "avatarBoxDynamic": {
+          "x": 25.71771137975589,
+          "y": 218.87958184139632,
+          "w": 184.87614236913055,
+          "h": 396.1154584911185
+        }
+      }
+    },
+    {
+      "op": "close",
+      "r": {
+        "open": false,
+        "anchorX": 135,
+        "anchorY": 334.874,
+        "scale": 1,
+        "visualBox": {
+          "x": 26,
+          "y": 225.87401346088927,
+          "w": 218,
+          "h": 218
+        },
+        "avatarBox": {
+          "x": 8.59259259259261,
+          "y": 223.1703097571856,
+          "w": 214.81481481481478,
+          "h": 372.34567901234567
+        },
+        "avatarBoxDynamic": {
+          "x": 50.55890354580203,
+          "y": 223.39406448924515,
+          "w": 159.50906373747145,
+          "h": 392.2828769573804
+        }
+      }
+    },
+    {
+      "op": "open",
+      "r": {
+        "open": true,
+        "anchorX": 135,
+        "anchorY": 334.874,
+        "scale": 0,
+        "visualBox": null,
+        "avatarBox": {
+          "x": 8.59259259259261,
+          "y": 223.1703097571856,
+          "w": 214.81481481481478,
+          "h": 372.34567901234567
+        },
+        "avatarBoxDynamic": {
+          "x": 53.7079418288349,
+          "y": 220.5836765949489,
+          "w": 152.80113501775222,
+          "h": 372.01376905508766
+        }
+      }
+    }
+  ],
+  "opens": [
+    {
+      "anchorX": 135,
+      "anchorY": 334.874,
+      "scale": 0
+    },
+    {
+      "anchorX": 135,
+      "anchorY": 334.874,
+      "scale": 0
+    }
+  ],
+  "errors": [
+    0
+  ],
+  "maxErrPx": 0,
+  "passA10": true,
+  "hitTest": {
+    "hits": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "allHit": true,
+    "anchor": [
+      135,
+      334.874
+    ],
+    "scale": 1,
+    "radiusUsed": 65,
+    "sizeInfo": {
+      "radius": 65,
+      "itemSize": 44
+    }
+  },
+  "settledScale": 1,
+  "passHitRegionMatchesVisual": true,
+  "bounds": {
+    "window": [
+      482,
+      760
+    ],
+    "anchor": [
+      135,
+      334.874
+    ],
+    "scale": 1,
+    "sizeInfo": {
+      "radius": 65,
+      "itemSize": 44
+    },
+    "itemCount": 7,
+    "outOfWindow": [],
+    "passInWindow": true,
+    "minGapPx": 0.1,
+    "visualBox": {
+      "x": 26,
+      "y": 225.87401346088927,
+      "w": 218,
+      "h": 218
+    }
+  },
+  "passWheelInWindow": true,
+  "wheelMinGapPx": 0.1
+}

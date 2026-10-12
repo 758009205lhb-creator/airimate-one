@@ -1,0 +1,397 @@
+{
+  "probe": "menuopen",
+  "technique": "对话菜单走页面内 DOM（menuOpen 探针操作）；桌宠菜单走主进程 Menu.popup + 窗口内 sendInputEvent；两张图由外部脚本按哨兵握手截",
+  "startedAt": "2026-10-08T18:34:09.559Z",
+  "chatProbeReady": true,
+  "petState": {
+    "resident": true,
+    "visible": true,
+    "created": true,
+    "minimized": false,
+    "windowId": 1,
+    "statusText": "桌宠常驻中"
+  },
+  "chatMenus": [
+    {
+      "group": "file",
+      "openResult": {
+        "opened": true,
+        "group": "file",
+        "itemCount": 3
+      },
+      "menuBar": {
+        "groups": [
+          {
+            "id": "file",
+            "label": "文件",
+            "itemCount": 3
+          },
+          {
+            "id": "pet",
+            "label": "桌宠",
+            "itemCount": 4
+          },
+          {
+            "id": "chat",
+            "label": "对话",
+            "itemCount": 3
+          },
+          {
+            "id": "memory",
+            "label": "记忆",
+            "itemCount": 2
+          },
+          {
+            "id": "settings",
+            "label": "设置",
+            "itemCount": 5
+          },
+          {
+            "id": "help",
+            "label": "帮助",
+            "itemCount": 2
+          }
+        ],
+        "itemCount": 19,
+        "openMenu": "file"
+      },
+      "dropdown": {
+        "present": true,
+        "x": 6,
+        "y": 29,
+        "w": 172,
+        "h": 98,
+        "items": 3
+      }
+    },
+    {
+      "group": "pet",
+      "openResult": {
+        "opened": true,
+        "group": "pet",
+        "itemCount": 4
+      },
+      "menuBar": {
+        "groups": [
+          {
+            "id": "file",
+            "label": "文件",
+            "itemCount": 3
+          },
+          {
+            "id": "pet",
+            "label": "桌宠",
+            "itemCount": 4
+          },
+          {
+            "id": "chat",
+            "label": "对话",
+            "itemCount": 3
+          },
+          {
+            "id": "memory",
+            "label": "记忆",
+            "itemCount": 2
+          },
+          {
+            "id": "settings",
+            "label": "设置",
+            "itemCount": 5
+          },
+          {
+            "id": "help",
+            "label": "帮助",
+            "itemCount": 2
+          }
+        ],
+        "itemCount": 19,
+        "openMenu": "pet"
+      },
+      "dropdown": {
+        "present": true,
+        "x": 52,
+        "y": 29,
+        "w": 172,
+        "h": 127,
+        "items": 4
+      }
+    },
+    {
+      "group": "chat",
+      "openResult": {
+        "opened": true,
+        "group": "chat",
+        "itemCount": 3
+      },
+      "menuBar": {
+        "groups": [
+          {
+            "id": "file",
+            "label": "文件",
+            "itemCount": 3
+          },
+          {
+            "id": "pet",
+            "label": "桌宠",
+            "itemCount": 4
+          },
+          {
+            "id": "chat",
+            "label": "对话",
+            "itemCount": 3
+          },
+          {
+            "id": "memory",
+            "label": "记忆",
+            "itemCount": 2
+          },
+          {
+            "id": "settings",
+            "label": "设置",
+            "itemCount": 5
+          },
+          {
+            "id": "help",
+            "label": "帮助",
+            "itemCount": 2
+          }
+        ],
+        "itemCount": 19,
+        "openMenu": "chat"
+      },
+      "dropdown": {
+        "present": true,
+        "x": 98,
+        "y": 29,
+        "w": 172,
+        "h": 98,
+        "items": 3
+      }
+    },
+    {
+      "group": "memory",
+      "openResult": {
+        "opened": true,
+        "group": "memory",
+        "itemCount": 2
+      },
+      "menuBar": {
+        "groups": [
+          {
+            "id": "file",
+            "label": "文件",
+            "itemCount": 3
+          },
+          {
+            "id": "pet",
+            "label": "桌宠",
+            "itemCount": 4
+          },
+          {
+            "id": "chat",
+            "label": "对话",
+            "itemCount": 3
+          },
+          {
+            "id": "memory",
+            "label": "记忆",
+            "itemCount": 2
+          },
+          {
+            "id": "settings",
+            "label": "设置",
+            "itemCount": 5
+          },
+          {
+            "id": "help",
+            "label": "帮助",
+            "itemCount": 2
+          }
+        ],
+        "itemCount": 19,
+        "openMenu": "memory"
+      },
+      "dropdown": {
+        "present": true,
+        "x": 144,
+        "y": 29,
+        "w": 172,
+        "h": 68,
+        "items": 2
+      }
+    },
+    {
+      "group": "settings",
+      "openResult": {
+        "opened": true,
+        "group": "settings",
+        "itemCount": 5
+      },
+      "menuBar": {
+        "groups": [
+          {
+            "id": "file",
+            "label": "文件",
+            "itemCount": 3
+          },
+          {
+            "id": "pet",
+            "label": "桌宠",
+            "itemCount": 4
+          },
+          {
+            "id": "chat",
+            "label": "对话",
+            "itemCount": 3
+          },
+          {
+            "id": "memory",
+            "label": "记忆",
+            "itemCount": 2
+          },
+          {
+            "id": "settings",
+            "label": "设置",
+            "itemCount": 5
+          },
+          {
+            "id": "help",
+            "label": "帮助",
+            "itemCount": 2
+          }
+        ],
+        "itemCount": 19,
+        "openMenu": "settings"
+      },
+      "dropdown": {
+        "present": true,
+        "x": 190,
+        "y": 29,
+        "w": 172,
+        "h": 156,
+        "items": 5
+      }
+    },
+    {
+      "group": "help",
+      "openResult": {
+        "opened": true,
+        "group": "help",
+        "itemCount": 2
+      },
+      "menuBar": {
+        "groups": [
+          {
+            "id": "file",
+            "label": "文件",
+            "itemCount": 3
+          },
+          {
+            "id": "pet",
+            "label": "桌宠",
+            "itemCount": 4
+          },
+          {
+            "id": "chat",
+            "label": "对话",
+            "itemCount": 3
+          },
+          {
+            "id": "memory",
+            "label": "记忆",
+            "itemCount": 2
+          },
+          {
+            "id": "settings",
+            "label": "设置",
+            "itemCount": 5
+          },
+          {
+            "id": "help",
+            "label": "帮助",
+            "itemCount": 2
+          }
+        ],
+        "itemCount": 19,
+        "openMenu": "help"
+      },
+      "dropdown": {
+        "present": true,
+        "x": 236,
+        "y": 29,
+        "w": 172,
+        "h": 68,
+        "items": 2
+      }
+    }
+  ],
+  "petMenu": {
+    "injected": true,
+    "point": {
+      "x": 170,
+      "y": 231
+    },
+    "contentBounds": {
+      "width": 340,
+      "height": 420
+    },
+    "stateBefore": {
+      "resident": true,
+      "visible": true,
+      "created": true,
+      "minimized": false,
+      "windowId": 1,
+      "statusText": "桌宠常驻中"
+    },
+    "stateAfter": {
+      "resident": true,
+      "visible": true,
+      "created": true,
+      "minimized": false,
+      "windowId": 1,
+      "statusText": "桌宠常驻中"
+    },
+    "note": "Electron 无 Menu.isOpen()：注入成功与截图是两条独立证据，不做\"菜单已弹出\"的机器断言"
+  },
+  "finalWindows": [
+    {
+      "id": 2,
+      "title": "和 Lazuli 聊天",
+      "visible": true
+    },
+    {
+      "id": 1,
+      "title": "AiriMate One",
+      "visible": true
+    }
+  ],
+  "screenshots": [
+    {
+      "label": "chat-menu-file",
+      "readyPath": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase17\\screens\\petresident-20261009-023348-chat-menu-file.ready",
+      "waitedMs": 1253,
+      "observed": true,
+      "skipped": false
+    },
+    {
+      "label": "pet-menu-open",
+      "readyPath": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase17\\screens\\petresident-20261009-023348-pet-menu-open.ready",
+      "waitedMs": 1138,
+      "observed": true,
+      "skipped": false
+    }
+  ],
+  "screenshotSummary": {
+    "requested": 2,
+    "observed": 2,
+    "skipped": 0,
+    "labels": [
+      "chat-menu-file",
+      "pet-menu-open"
+    ]
+  },
+  "totalChecks": 6,
+  "passedChecks": 6,
+  "failedChecks": [],
+  "pass": true
+}

@@ -1,0 +1,9 @@
+{
+    "typed":  true,
+    "reason":  "typed",
+    "frontTitleBefore":  "Deepseek Harness Desktop",
+    "frontClassBefore":  "Tauri Window",
+    "frontTitleAfter":  "AiriMate One",
+    "frontIsOurApp":  true,
+    "keys":  "nihao → Space（选词，提交中文）→ shijie → Enter（候选期，不得发送）"
+}

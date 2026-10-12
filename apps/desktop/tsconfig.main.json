@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist/main",
+    "rootDir": "./src/main",
+    "module": "CommonJS",
+    "moduleResolution": "Node10",
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "verbatimModuleSyntax": false
+  },
+  "include": ["src/main/**/*.ts"]
+}

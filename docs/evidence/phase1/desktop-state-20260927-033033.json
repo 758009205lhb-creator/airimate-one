@@ -1,0 +1,190 @@
+{
+    "generatedAt":  "2026-09-27T03:30:34.1102853+08:00",
+    "host":  {
+                 "computer":  "666AMCN",
+                 "user":  "shiqian",
+                 "os":  "10.0.28000",
+                 "psVersion":  "5.1.28000.2952"
+             },
+    "counts":  {
+                   "mineVisibleWindows":  1,
+                   "mineAllWindows":  10,
+                   "legacyKernelVisibleWindows":  0,
+                   "legacyKernelAllWindows":  0,
+                   "legacyPetVisibleWindows":  0,
+                   "totalVisibleTopLevel":  18
+               },
+    "mineWindows":  [
+                        {
+                            "hwnd":  4064774,
+                            "pid":  8264,
+                            "visible":  true,
+                            "cls":  "Chrome_WidgetWin_1",
+                            "title":  "AiriMate One",
+                            "rect":  [
+                                         1298,
+                                         660,
+                                         425,
+                                         525
+                                     ],
+                            "exStyle":  "0x00280028",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" apps\\desktop --dev --mode=pet --no-dialogs"
+                        },
+                        {
+                            "hwnd":  58392948,
+                            "pid":  8264,
+                            "visible":  false,
+                            "cls":  "Chrome_WidgetWin_0",
+                            "title":  "",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000080",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" apps\\desktop --dev --mode=pet --no-dialogs"
+                        },
+                        {
+                            "hwnd":  45809890,
+                            "pid":  7224,
+                            "visible":  false,
+                            "cls":  "Chrome_WidgetWin_0",
+                            "title":  "",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000080",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" --type=gpu-process --user-data-dir=\"C:\\Users\\shiqian\\AppData\\Roaming\\AiriMateOne\" --gpu-preferences=WAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAAEAAAAAIAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --field-trial-handle=2016,i,16720245843392446125,4148770054282401787,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=2024,i,2144601418195469644,3021040835511951733,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=2008 /prefetch:2"
+                        },
+                        {
+                            "hwnd":  44238036,
+                            "pid":  8264,
+                            "visible":  false,
+                            "cls":  "Electron_NotifyIconHostWindow",
+                            "title":  "",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000000",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" apps\\desktop --dev --mode=pet --no-dialogs"
+                        },
+                        {
+                            "hwnd":  57476318,
+                            "pid":  8264,
+                            "visible":  false,
+                            "cls":  "Electron_SystemPreferencesHostWindow",
+                            "title":  "",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000000",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" apps\\desktop --dev --mode=pet --no-dialogs"
+                        },
+                        {
+                            "hwnd":  32571976,
+                            "pid":  8264,
+                            "visible":  false,
+                            "cls":  "Chrome_WidgetWin_0",
+                            "title":  "",
+                            "rect":  [
+                                         32,
+                                         32,
+                                         1344,
+                                         938
+                                     ],
+                            "exStyle":  "0x00000100",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" apps\\desktop --dev --mode=pet --no-dialogs"
+                        },
+                        {
+                            "hwnd":  39519842,
+                            "pid":  8264,
+                            "visible":  false,
+                            "cls":  "Base_PowerMessageWindow",
+                            "title":  "",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x08000000",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" apps\\desktop --dev --mode=pet --no-dialogs"
+                        },
+                        {
+                            "hwnd":  52626848,
+                            "pid":  8264,
+                            "visible":  false,
+                            "cls":  "MSCTFIME UI",
+                            "title":  "MSCTFIME UI",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000008",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" apps\\desktop --dev --mode=pet --no-dialogs"
+                        },
+                        {
+                            "hwnd":  45090410,
+                            "pid":  8264,
+                            "visible":  false,
+                            "cls":  "IME",
+                            "title":  "Default IME",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000008",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" apps\\desktop --dev --mode=pet --no-dialogs"
+                        },
+                        {
+                            "hwnd":  2754010,
+                            "pid":  7224,
+                            "visible":  false,
+                            "cls":  "IME",
+                            "title":  "Default IME",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000000",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" --type=gpu-process --user-data-dir=\"C:\\Users\\shiqian\\AppData\\Roaming\\AiriMateOne\" --gpu-preferences=WAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAAEAAAAAIAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --field-trial-handle=2016,i,16720245843392446125,4148770054282401787,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=2024,i,2144601418195469644,3021040835511951733,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=2008 /prefetch:2"
+                        }
+                    ],
+    "legacyKernelWindows":  [
+
+                            ],
+    "legacyPetWindows":  [
+
+                         ],
+    "methodology":  [
+                        "top-level windows via EnumWindows; ownership by full image path + command line markers (never by name alone)",
+                        "legacy kernel predicate: imagePath ends with MateEngineX.exe OR commandLine contains MateEngineX",
+                        "this-app predicate: imagePath or commandLine contains 新工程 (workspace root of AiriMate One)"
+                    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id":  "conversation-shots",
+    "invariant":  "五张真实桌面截图（pet 开/关、panel 浮层、气泡显示中/消失后）全部落盘且非空",
+    "generatedAt":  "2026-10-08T03:19:46.0893478Z",
+    "commandLine":  "powershell -NoProfile -ExecutionPolicy Bypass -File tools\\qa\\conversation-shots.ps1 -OutDir F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15 -TimeoutSec 420",
+    "prefix":  "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111845",
+    "shots":  [
+                  {
+                      "label":  "pet-dock-closed",
+                      "png":  "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111845-pet-dock-closed-desktop.png",
+                      "bytes":  817133,
+                      "at":  "2026-10-08T11:19:07"
+                  },
+                  {
+                      "label":  "pet-dock-open",
+                      "png":  "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111845-pet-dock-open-desktop.png",
+                      "bytes":  861899,
+                      "at":  "2026-10-08T11:19:22"
+                  },
+                  {
+                      "label":  "ime-live",
+                      "png":  "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111845-ime-live-desktop.png",
+                      "bytes":  864035,
+                      "at":  "2026-10-08T11:19:23"
+                  },
+                  {
+                      "label":  "bubble-visible",
+                      "png":  "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111845-bubble-visible-desktop.png",
+                      "bytes":  866076,
+                      "at":  "2026-10-08T11:19:32"
+                  },
+                  {
+                      "label":  "bubble-gone",
+                      "png":  "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111845-bubble-gone-desktop.png",
+                      "bytes":  859414,
+                      "at":  "2026-10-08T11:19:35"
+                  },
+                  {
+                      "label":  "panel-dock-overlay",
+                      "png":  "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111845-panel-dock-overlay-desktop.png",
+                      "bytes":  842438,
+                      "at":  "2026-10-08T11:19:41"
+                  }
+              ],
+    "shotCount":  6,
+    "requiredLabels":  [
+                           "pet-dock-closed",
+                           "pet-dock-open",
+                           "panel-dock-overlay",
+                           "bubble-visible",
+                           "bubble-gone"
+                       ],
+    "missingLabels":  [
+
+                      ],
+    "requiredNonEmptyCount":  5,
+    "desktopStateRan":  true,
+    "probeJson":  "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\conversation.json",
+    "probeJsonExists":  true,
+    "gateMissingNone":  true,
+    "gateRequiredShotsNonEmpty":  true,
+    "gateProbeJsonExists":  true,
+    "pass":  true
+}

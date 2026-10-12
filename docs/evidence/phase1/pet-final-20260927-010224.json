@@ -1,0 +1,53 @@
+{
+    "generatedAt":  "2026-09-27T01:02:27.8015113+08:00",
+    "rect":  [
+                 1245,
+                 168,
+                 525,
+                 952
+             ],
+    "screenshot":  "docs\\evidence\\phase1\\screens\\pet-final-20260927-010224.png",
+    "sampled":  125188,
+    "opaqueSampled":  125188,
+    "brightSampled":  1869,
+    "brightRatio":  0.0149,
+    "topColorBuckets":  [
+                            {
+                                "bucket":  "2-2-0",
+                                "count":  70946
+                            },
+                            {
+                                "bucket":  "1-1-0",
+                                "count":  30016
+                            },
+                            {
+                                "bucket":  "1-2-0",
+                                "count":  17523
+                            },
+                            {
+                                "bucket":  "3-3-0",
+                                "count":  4122
+                            },
+                            {
+                                "bucket":  "10-11-0",
+                                "count":  999
+                            },
+                            {
+                                "bucket":  "2-3-0",
+                                "count":  614
+                            },
+                            {
+                                "bucket":  "15-15-0",
+                                "count":  433
+                            },
+                            {
+                                "bucket":  "7-7-0",
+                                "count":  207
+                            }
+                        ],
+    "interpretation":  [
+                           "brightSampled 明显大于 0 ⇒ 画面上有亮内容（角色/UI）",
+                           "brightSampled ≈ 0 且 opaqueSampled 高 ⇒ 只有深色面板，角色没画上去",
+                           "opaqueSampled ≈ 0 ⇒ 窗口区域是透明的（可能窗口不可见或被完全遮挡）"
+                       ]
+}

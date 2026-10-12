@@ -1,0 +1,307 @@
+{
+  "criteria": {
+    "clickShort": "不移动窗口 / 不进入拖拽 / 不开轮盘",
+    "dragOverThreshold": "进入拖拽且窗口真的移动",
+    "dragBarely": "2px < 4px 阈值 ⇒ 不进入拖拽",
+    "blankDrag": "空白处不进入拖拽"
+  },
+  "technique": "页面内合成 PointerEvent（走完整 Vue 处理器 → IPC → 主进程 setBounds 链路）",
+  "coordinates": {
+    "windowBounds": {
+      "x": 858,
+      "y": 116,
+      "width": 482,
+      "height": 761
+    },
+    "rendererScreenX": 851,
+    "hitCenterClient": {
+      "clientX": 364.8000030517578,
+      "clientY": 477.2484572007921
+    }
+  },
+  "clickShort": {
+    "renderer": {
+      "n": 1,
+      "at": {
+        "clientX": 364.8000030517578,
+        "clientY": 477.2484572007921
+      },
+      "before": {
+        "wheelOpen": false,
+        "dragging": false
+      },
+      "after": {
+        "wheelOpen": false,
+        "dragging": false
+      },
+      "scaleBefore": 1,
+      "scaleAfter": 1,
+      "cameraUnchanged": true
+    },
+    "windowBefore": {
+      "x": 858,
+      "y": 116,
+      "width": 482,
+      "height": 761
+    },
+    "windowAfter": {
+      "x": 858,
+      "y": 116,
+      "width": 482,
+      "height": 761
+    },
+    "windowMoved": false,
+    "sizeChanged": false
+  },
+  "passClickDoesNotDrag": true,
+  "passClickDoesNotMoveWindow": true,
+  "passClickDoesNotOpenWheel": true,
+  "passClickDoesNotRescale": true,
+  "dragBarely": {
+    "requested": {
+      "dx": 2,
+      "dy": 1
+    },
+    "at": {
+      "clientX": 364.8000030517578,
+      "clientY": 477.2484572007921
+    },
+    "before": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "afterUp": {
+      "wheelOpen": false,
+      "dragging": false
+    }
+  },
+  "passBarelyDoesNotDrag": true,
+  "blankDrag": {
+    "requested": {
+      "dx": 20,
+      "dy": 12
+    },
+    "at": {
+      "clientX": 254.8000030517578,
+      "clientY": 72.4000015258789
+    },
+    "before": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": false,
+      "dragging": false
+    }
+  },
+  "passBlankDoesNotDrag": true,
+  "dragOverThreshold": {
+    "renderer": {
+      "mode": "begin",
+      "requested": {
+        "dx": 20,
+        "dy": 12,
+        "steps": 4
+      },
+      "at": {
+        "clientX": 364.8000030517578,
+        "clientY": 477.2484572007921
+      },
+      "before": {
+        "wheelOpen": false,
+        "dragging": false
+      },
+      "afterDown": {
+        "wheelOpen": false,
+        "dragging": true
+      },
+      "after": {
+        "wheelOpen": false,
+        "dragging": true
+      }
+    },
+    "windowStart": {
+      "x": 858,
+      "y": 116,
+      "width": 482,
+      "height": 761
+    },
+    "windowDuring": {
+      "x": 920,
+      "y": 148,
+      "width": 482,
+      "height": 761
+    },
+    "windowAfterEnd": {
+      "x": 920,
+      "y": 148,
+      "width": 482,
+      "height": 761
+    },
+    "sizeSequence": [
+      {
+        "w": 482,
+        "h": 761,
+        "x": 884,
+        "y": 128
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 892,
+        "y": 132
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 896,
+        "y": 136
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 900,
+        "y": 136
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 904,
+        "y": 140
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 912,
+        "y": 144
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 916,
+        "y": 148
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 920,
+        "y": 148
+      }
+    ],
+    "moved": {
+      "dx": 62,
+      "dy": 32
+    },
+    "end": {
+      "moved": true,
+      "distance": 70,
+      "bounds": {
+        "x": 920,
+        "y": 148,
+        "width": 482,
+        "height": 761
+      },
+      "targetSize": {
+        "width": 482,
+        "height": 761
+      },
+      "actualSize": {
+        "width": 482,
+        "height": 761
+      },
+      "sizeCorrections": 0,
+      "restoredOnEnd": false,
+      "endSizeConvergence": {
+        "tries": 0,
+        "converged": true,
+        "requestedDelta": {
+          "width": -2,
+          "height": -1
+        }
+      },
+      "sizeCalibration": {
+        "target": {
+          "width": 482,
+          "height": 761
+        },
+        "firstActual": {
+          "width": 483,
+          "height": 761
+        },
+        "requestedDelta": {
+          "width": -2,
+          "height": -1
+        },
+        "calibratedActual": {
+          "width": 483,
+          "height": 761
+        },
+        "ok": true,
+        "attempts": 3,
+        "requestSnapped": {
+          "width": 480,
+          "height": 760
+        },
+        "snappedActual": {
+          "width": 482,
+          "height": 761
+        }
+      }
+    }
+  },
+  "passLeftStartsDrag": true,
+  "passDragMovesWindow": true,
+  "duringDragSizeDelta": {
+    "dw": 0,
+    "dh": 0,
+    "max": 0
+  },
+  "strictDuringDragIdentical": true,
+  "passDragSizeStable": true,
+  "passDragSizeStableWithinQuantization": true,
+  "restoreSizeDelta": {
+    "dw": 0,
+    "dh": 0,
+    "max": 0
+  },
+  "strictSizeRestoredExactly": true,
+  "passSizeRestoredOnEnd": true,
+  "passPositionKeptOnEnd": true,
+  "dragSizeReadings": [
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761"
+  ],
+  "dragSizeDistinct": [
+    "482x761"
+  ],
+  "dragSizeDistinctCount": 1,
+  "dragSizeMonotoneWidth": false,
+  "dragSizeMonotoneHeight": false,
+  "passDragSizeReproducible": true,
+  "dragSizeReproducibleNote": "量化残差 = 最多 2 个读数、不单调；累积漂移 = distinct 远大于 2 且单调递增。这条判据专门抓后者。",
+  "rightMenu": {
+    "before": {
+      "wheelOpen": false,
+      "dragging": true
+    },
+    "after": {
+      "wheelOpen": true,
+      "dragging": true
+    }
+  },
+  "passRightOpensWheel": true,
+  "passRightTogglesWheel": true,
+  "passF1OpensWheel": true,
+  "passEscClosesWheel": true,
+  "allPass": true
+}

@@ -1,0 +1,20 @@
+{
+  "//": [
+    "生产构建（主进程）：关闭 sourcemap。",
+    "",
+    "为什么单独一份：`tsconfig.base.json` 里 `sourceMap: true` —— 对开发是对的（栈回溯可读），",
+    "但**分发产物里绝不能带 sourcemap**：`.map` 内含**未压缩的原始源码**，",
+    "等于把实现细节与注释一并发布出去（分发包扫描 A17 第 5 面实测命中 58 个 .map）。",
+    "开发仍走 `tsconfig.main.json`（带 map）；发布走这一份。",
+    "",
+    "用法：`npm run build:main:prod`（见 apps/desktop/package.json）"
+  ],
+  "extends": "./tsconfig.main.json",
+  "compilerOptions": {
+    "sourceMap": false,
+    "declaration": false,
+    "declarationMap": false,
+    "outDir": "./dist/main"
+  }
+}
+

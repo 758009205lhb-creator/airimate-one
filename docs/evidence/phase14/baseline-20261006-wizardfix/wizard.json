@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "wizard.initial-state-readable": true,
+    "wizard.on-provider-step": true,
+    "wizard.save-button-present": true,
+    "wizard.save-button-enabled-on-provider-step": true,
+    "wizard.form-fillable": true,
+    "wizard.save-button-clicked": true,
+    "wizard.provider-persisted-after-click": true,
+    "wizard.provider-criterion-honest-without-key": true,
+    "wizard.cleanup-deleted-probe-provider": true,
+    "wizard.no-residue": true
+  },
+  "initialProviderCount": 0,
+  "backButtonClicked": false,
+  "wizardFootText": "上一步 第 1 步 · 未满足（provider）保存并继续",
+  "wizardOnStep": "1. 供应商",
+  "saveButtonDisabled": false,
+  "formInputCount": 4,
+  "formValuesAfterFill": [
+    "ProbeProvider",
+    "https://api.deepseek.com",
+    "probe-model",
+    ""
+  ],
+  "afterProviderCount": 1,
+  "savedProviderId": "p_muw5ier6",
+  "onboardingSatisfied": {
+    "provider": false,
+    "test": false,
+    "model": true,
+    "persona": true,
+    "permission": true,
+    "schedule": true
+  },
+  "finalProviderCount": 0,
+  "totalChecks": 10,
+  "passedChecks": 10,
+  "failedChecks": [],
+  "pass": true
+}

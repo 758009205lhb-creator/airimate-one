@@ -1,0 +1,31 @@
+{
+  "name": "@airimate/renderer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AiriMate One 渲染层（Vue 3 + Pinia + TypeScript）：AIRI 界面 + 单一角色舞台 + 径向轮盘",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@airimate/avatar-stage": "1.0.0",
+    "@airimate/motion-director": "1.0.0",
+    "@airimate/radial-menu": "1.0.0",
+    "@airimate/shared": "1.0.0",
+    "@pixiv/three-vrm": "^3.5.5",
+    "@pixiv/three-vrm-animation": "^3.5.5",
+    "dompurify": "^3.2.4",
+    "marked": "^15.0.6",
+    "pinia": "^3.0.1",
+    "three": "^0.186.1",
+    "vue": "^3.5.43"
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-vue": "^6.0.9",
+    "vite": "^7.0.0",
+    "vue-tsc": "^2.2.0"
+  }
+}

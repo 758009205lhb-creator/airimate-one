@@ -1,0 +1,160 @@
+{
+  "engine": "windows-sapi",
+  "maxChunkChars": 120,
+  "voicesOk": true,
+  "voiceCount": 2,
+  "voices": [
+    {
+      "name": "Microsoft Huihui Desktop",
+      "culture": "zh-CN",
+      "gender": "Female",
+      "enabled": true
+    },
+    {
+      "name": "Microsoft Zira Desktop",
+      "culture": "en-US",
+      "gender": "Female",
+      "enabled": true
+    }
+  ],
+  "error": null,
+  "chosenVoice": "Microsoft Huihui Desktop",
+  "chosenCulture": "zh-CN",
+  "hasChineseVoice": true,
+  "voiceSelectionStrategy": "zh-CN 优先（命中中文声音）",
+  "audibleUtterance": {
+    "ok": true,
+    "completed": true,
+    "reason": "completed",
+    "engine": "windows-sapi",
+    "voice": "Microsoft Huihui Desktop",
+    "chars": 7,
+    "chunks": 1,
+    "durationMs": 5167,
+    "wallMs": 5169,
+    "echoedText": false
+  },
+  "multiChunkUtterance": {
+    "ok": true,
+    "completed": true,
+    "reason": "completed",
+    "engine": "windows-sapi",
+    "voice": "Microsoft Huihui Desktop",
+    "chars": 420,
+    "chunks": 4,
+    "durationMs": 4465,
+    "wallMs": 4467,
+    "inputChars": 420,
+    "plannedChunks": 4,
+    "maxPlannedChunkChars": 105
+  },
+  "cancel": {
+    "stopAccepted": true,
+    "stopReturnLatencyMs": 2,
+    "speakingBeforeStop": true,
+    "spokenChunks": 2,
+    "result": {
+      "ok": true,
+      "completed": false,
+      "reason": "cancelled",
+      "engine": "windows-sapi",
+      "voice": "Microsoft Huihui Desktop",
+      "chars": 2100,
+      "chunks": 20,
+      "spokenChunks": 2,
+      "durationMs": 2513
+    },
+    "speakingAfter": false
+  },
+  "ipcVoices": {
+    "ok": true,
+    "engine": "windows-sapi",
+    "voices": [
+      {
+        "id": "Microsoft Huihui Desktop",
+        "label": "Microsoft Huihui Desktop (zh-CN)",
+        "lang": "zh-CN",
+        "gender": "Female"
+      },
+      {
+        "id": "Microsoft Zira Desktop",
+        "label": "Microsoft Zira Desktop (en-US)",
+        "lang": "en-US",
+        "gender": "Female"
+      }
+    ],
+    "selected": "Microsoft Huihui Desktop",
+    "preferred": null,
+    "preferredMissing": false
+  },
+  "ipcSpeak": {
+    "ok": true,
+    "completed": true,
+    "reason": "completed",
+    "engine": "windows-sapi",
+    "voice": "Microsoft Huihui Desktop",
+    "chars": 5,
+    "chunks": 1,
+    "durationMs": 3374,
+    "activeVoice": "Microsoft Huihui Desktop",
+    "wallMs": 3378
+  },
+  "ipcStop": {
+    "ipcStop": {
+      "ok": true,
+      "cancelled": true,
+      "engine": "windows-sapi"
+    },
+    "ipcStopLatencyMs": 3,
+    "ipcCancel": {
+      "ok": true,
+      "completed": false,
+      "reason": "cancelled",
+      "engine": "windows-sapi",
+      "voice": "Microsoft Huihui Desktop",
+      "chars": 700,
+      "chunks": 7,
+      "spokenChunks": 0,
+      "durationMs": 1434,
+      "activeVoice": "Microsoft Huihui Desktop"
+    }
+  },
+  "tempFile": {
+    "underTtsDir": true,
+    "basename": "probe-tts-muirleuq.txt",
+    "removed": true,
+    "deletedAfterUse": true
+  },
+  "checks": {
+    "voicesEnumerated": true,
+    "zhPreferredWhenAvailable": true,
+    "audibleCompleted": true,
+    "audibleVoiceIsReal": true,
+    "audibleTookRealTime": true,
+    "noTextEcho": true,
+    "multiChunkPlanned": true,
+    "everyPlannedChunkWithinLimit": true,
+    "multiChunkCompleted": true,
+    "chunkCountMatchesPlan": true,
+    "charsPreserved": true,
+    "stateEventsOrdered": true,
+    "stopAccepted": true,
+    "cancelResultShape": true,
+    "cancelPrompt": true,
+    "cancelInterruptedMidSpeech": true,
+    "engineIdleAfterCancel": true,
+    "stopIdempotentWhenIdle": true,
+    "ipcVoicesOk": true,
+    "ipcVoicesShape": true,
+    "ipcSpeakOk": true,
+    "ipcSpeakReturnedVoice": true,
+    "ipcStopAccepted": true,
+    "ipcCancelSettled": true,
+    "ttsSettingRestored": true,
+    "tempFileInRestrictedDir": true,
+    "tempFileDeleted": true
+  },
+  "passedChecks": 27,
+  "totalChecks": 27,
+  "pass": true
+}

@@ -1,0 +1,112 @@
+{
+  "checks": {
+    "m4.status.ok": true,
+    "m4.status.default-off": true,
+    "m4.status.threshold-visible": true,
+    "m4.status.no-content": true,
+    "m4.dryrun.ran": true,
+    "m4.dryrun.extracted-something": true,
+    "m4.dryrun.no-memory-write": true,
+    "m4.dryrun.has-daily-summary": true,
+    "m4.dryrun.has-disclosure": true,
+    "m4.confidence.high-exists": true,
+    "m4.confidence.low-exists": true,
+    "m4.confidence.high-all-pending-in-dryrun": true,
+    "m4.real.ran": true,
+    "m4.real.auto-wrote-high-confidence": true,
+    "m4.real.auto-items-have-memory-id": true,
+    "m4.real.low-never-auto-written": true,
+    "m4.pending.listed": true,
+    "m4.pending.has-day-and-rule": true,
+    "m4.decide.approve-writes-memory": true,
+    "m4.decide.reject-does-not-write": true,
+    "m4.decide.replay-rejected": true,
+    "m4.no-config-mutation.settings": true,
+    "m4.no-config-mutation.permissions": true,
+    "m4.history.readable": true,
+    "m4.clear.removes-reflections": true,
+    "m4.clear.keeps-memory": true,
+    "m4.cleanup.done": true
+  },
+  "status": {
+    "ok": true,
+    "enabled": false,
+    "at": "22:30",
+    "runs": 20,
+    "pendingCount": 0,
+    "highConfidence": 0.75
+  },
+  "historyBefore": 15,
+  "dryRun": {
+    "ok": true,
+    "ran": true,
+    "items": 3,
+    "autoWritten": 0,
+    "pending": 3,
+    "method": "heuristic",
+    "hasSummary": true,
+    "adviceCount": 1,
+    "disclosures": [
+      "本次是演练（dryRun）：没有写入任何长期记忆",
+      "注意：自学习当前是关闭状态（本次为手动触发）",
+      "外部资料来自本地缓存（本次未联网抓取）"
+    ]
+  },
+  "confidenceSplit": {
+    "high": [
+      {
+        "kind": "fact",
+        "c": 0.9
+      }
+    ],
+    "low": [
+      {
+        "kind": "todo",
+        "c": 0.6
+      },
+      {
+        "kind": "emotion",
+        "c": 0.5
+      }
+    ]
+  },
+  "realRun": {
+    "ok": true,
+    "ran": true,
+    "items": 3,
+    "auto": 1,
+    "pending": 2,
+    "pausedMemoryDelta": 1
+  },
+  "pending": {
+    "ok": true,
+    "count": 2
+  },
+  "confirm": {
+    "ok": true,
+    "memoryId": "m_musk9dgb_2",
+    "memoryDelta": 1
+  },
+  "reject": {
+    "ok": true,
+    "memoryId": null,
+    "memoryDelta": 0
+  },
+  "configUnchanged": {
+    "settings": true,
+    "permissions": true
+  },
+  "clear": {
+    "ok": true,
+    "removedDays": 1,
+    "remaining": 0,
+    "memoryKept": 2
+  },
+  "cleanup": {
+    "memories": 2
+  },
+  "totalChecks": 27,
+  "passedChecks": 27,
+  "failedChecks": [],
+  "pass": true
+}

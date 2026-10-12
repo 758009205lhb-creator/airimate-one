@@ -1,0 +1,220 @@
+{
+  "preDrag": {
+    "bounds": {
+      "x": 858,
+      "y": 116,
+      "width": 482,
+      "height": 761
+    },
+    "workArea": {
+      "x": 0,
+      "y": 0,
+      "width": 1434,
+      "height": 1028
+    },
+    "scaleFactor": 1.25,
+    "resizable": true,
+    "insideWorkArea": true
+  },
+  "postDrag": {
+    "bounds": {
+      "x": 900,
+      "y": 140,
+      "width": 482,
+      "height": 761
+    },
+    "workArea": {
+      "x": 0,
+      "y": 0,
+      "width": 1434,
+      "height": 1028
+    },
+    "scaleFactor": 1.25,
+    "resizable": true
+  },
+  "sizeSequence": [
+    {
+      "w": 482,
+      "h": 761,
+      "x": 864,
+      "y": 120
+    },
+    {
+      "w": 482,
+      "h": 761,
+      "x": 868,
+      "y": 124
+    },
+    {
+      "w": 482,
+      "h": 761,
+      "x": 872,
+      "y": 124
+    },
+    {
+      "w": 482,
+      "h": 761,
+      "x": 880,
+      "y": 128
+    },
+    {
+      "w": 482,
+      "h": 761,
+      "x": 884,
+      "y": 132
+    },
+    {
+      "w": 482,
+      "h": 761,
+      "x": 888,
+      "y": 136
+    },
+    {
+      "w": 482,
+      "h": 761,
+      "x": 892,
+      "y": 136
+    },
+    {
+      "w": 482,
+      "h": 761,
+      "x": 900,
+      "y": 140
+    }
+  ],
+  "windowLayer": {
+    "startBounds": {
+      "x": 858,
+      "y": 116,
+      "width": 482,
+      "height": 761
+    },
+    "endBounds": {
+      "x": 900,
+      "y": 140,
+      "width": 482,
+      "height": 761
+    },
+    "moved": true,
+    "distance": 48,
+    "positions": [
+      {
+        "x": 864,
+        "y": 120
+      },
+      {
+        "x": 868,
+        "y": 124
+      },
+      {
+        "x": 872,
+        "y": 124
+      },
+      {
+        "x": 880,
+        "y": 128
+      },
+      {
+        "x": 884,
+        "y": 132
+      },
+      {
+        "x": 888,
+        "y": 136
+      },
+      {
+        "x": 892,
+        "y": 136
+      },
+      {
+        "x": 900,
+        "y": 140
+      }
+    ],
+    "maxWidthDrift": 0,
+    "maxHeightDrift": 0
+  },
+  "passWindowMoves": true,
+  "boneLayer": {
+    "during": {
+      "maxAbsLeanZ": 31.34,
+      "maxAbsLeanX": 0,
+      "limbZ": 23.021,
+      "limbX": 0,
+      "weight": 1,
+      "atRest": false,
+      "baseClipId": "misc_pet_dragging",
+      "hipsQuatAfter": {
+        "x": 0,
+        "y": 0,
+        "z": 0.51605,
+        "w": 0.85656
+      }
+    },
+    "heavy": {
+      "maxAbsLeanZ": 31.671,
+      "maxAbsLeanX": 7.472,
+      "limbZ": 4.179,
+      "limbX": -2.565,
+      "weight": 1,
+      "atRest": false,
+      "baseClipId": "misc_pet_dragging",
+      "hipsQuatAfter": {
+        "x": 0.23116,
+        "y": -0.13082,
+        "z": 0.59657,
+        "w": 0.75733
+      }
+    },
+    "after": {
+      "maxAbsLeanZ": 33.576,
+      "maxAbsLeanX": 7.631,
+      "limbZ": 0,
+      "limbX": 0,
+      "weight": 0,
+      "atRest": true,
+      "baseClipId": "idle_pet_idle_10",
+      "hipsQuatAfter": {
+        "x": 0.23434,
+        "y": -0.17048,
+        "z": 0.84899,
+        "w": 0.44185
+      }
+    },
+    "state": {
+      "dragging": false,
+      "base": "idle_pet_idle_10",
+      "hipsQuat": {
+        "x": 0.23433600588920905,
+        "y": -0.1704791856283417,
+        "z": 0.8489936911206403,
+        "w": 0.4418520069533942
+      },
+      "warnings": []
+    }
+  },
+  "passDragTilts": true,
+  "passDragClipActive": true,
+  "passSpringReturns": true,
+  "sizeReadings": [
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761"
+  ],
+  "sizeReadingsDistinct": [
+    "482x761"
+  ],
+  "sizeReadingStart": "482x761",
+  "sizeDriftMaxDip": 0,
+  "passSizeReadingsConstant": true,
+  "passSizeDriftWithin1Dip": true,
+  "strictSizeUnchanged": true,
+  "passSizeUnchanged": true,
+  "passSizeUnchangedStrict": true,
+  "pass": true
+}

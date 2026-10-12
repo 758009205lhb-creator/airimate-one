@@ -1,0 +1,38 @@
+{
+  "probe": "petoverlay",
+  "checks": {
+    "petoverlay.probe-present": true,
+    "petoverlay.mode-is-pet": true,
+    "petoverlay.no-wizard": true,
+    "petoverlay.no-full-viewport-overlay": true,
+    "petoverlay.stage-root-present": true,
+    "petoverlay.canvas-present": true,
+    "petoverlay.pet-size-unchanged": true
+  },
+  "mode": "pet",
+  "uiMode": "pet",
+  "overlays": {
+    "viewport": {
+      "w": 340,
+      "h": 420
+    },
+    "wizardCount": 0,
+    "wizardBox": null,
+    "wizardCoversAll": false,
+    "toastsCount": 0,
+    "proactiveCount": 0,
+    "toolConfirmCount": 0,
+    "stageRootCount": 1,
+    "canvasCount": 1
+  },
+  "petBounds": {
+    "x": 1038,
+    "y": 528,
+    "width": 341,
+    "height": 420
+  },
+  "totalChecks": 7,
+  "passedChecks": 7,
+  "failedChecks": [],
+  "pass": true
+}

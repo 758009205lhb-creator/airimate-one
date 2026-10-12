@@ -1,0 +1,578 @@
+{
+  "probe": "conversation",
+  "technique": "renderer→preload→IPC→主进程 的真实开关链路；回复事件用主进程真实发射的 evt:chat-done",
+  "checks": {
+    "probe.ui-ready": true,
+    "precondition.pet-mode": true,
+    "stage.baseline-present": true,
+    "cycle.three-open-close": true,
+    "layout.opens-as-conversation": true,
+    "layout.closes-backed": true,
+    "layout.size-equals-geometry": true,
+    "layout.size-stable-across-cycles": true,
+    "anchor.error-le-2px": true,
+    "layout.returns-to-pet": true,
+    "single.instance": true,
+    "single.visible-window": true,
+    "single.browser-window": true,
+    "single.stage-ids-unchanged": true,
+    "anchor.unchanged-pet": true,
+    "ui.no-transcript-flow": true,
+    "ui.chat-tab-removed": true,
+    "entry.dblclick-opens-conversation": true,
+    "wheel.chat-item-labeled-conversation": true,
+    "wheel.chat-opens-conversation": true,
+    "wheel.chat-does-not-switch-panel": true,
+    "wheel.chat-toggles-both-ways": true,
+    "ui.open-flag": true,
+    "hotkey.reported": true,
+    "dock.rect-computed": true,
+    "hitregions.dock-reported": true,
+    "ime.enter-during-composition-does-not-send": true,
+    "ime.draft-preserved": true,
+    "imeLive.composition-happened": true,
+    "imeLive.enter-during-composition-does-not-send": true,
+    "send.dock-uses-single-chain": true,
+    "bubble.prereq-tts-on-renderer": true,
+    "bubble.appears-on-reply": true,
+    "bubble.tts-started": true,
+    "bubble.hides-after-tts": true,
+    "bubble.hides-after-tts-external": true,
+    "hitregions.bubble-reported": true,
+    "bubble.disabled-still-speaks": true,
+    "bubble.disabled-no-bubble": true,
+    "drag.size-constant-in-conversation": true,
+    "panel.overlay-keeps-conversation-open": true,
+    "panel.size-not-conversation": true,
+    "panel.dock-still-rendered": true,
+    "final.closed": true,
+    "final.no-bubble": true
+  },
+  "geometry": {
+    "width": 380,
+    "height": 560
+  },
+  "shots": [
+    {
+      "label": "pet-dock-closed",
+      "ok": true
+    },
+    {
+      "label": "pet-dock-open",
+      "ok": true
+    },
+    {
+      "label": "ime-live",
+      "ok": true
+    },
+    {
+      "label": "bubble-visible",
+      "ok": true
+    },
+    {
+      "label": "bubble-gone",
+      "ok": true
+    },
+    {
+      "label": "panel-dock-overlay",
+      "ok": true
+    }
+  ],
+  "startMode": "pet",
+  "modeForProbe": "pet",
+  "petBounds": {
+    "x": 1079,
+    "y": 620,
+    "width": 341,
+    "height": 420
+  },
+  "stageBefore": {
+    "stageId": "stage-1",
+    "rendererId": "renderer-2",
+    "mixerId": "mixer-4",
+    "vrmInstanceId": "vrm-3",
+    "sceneCount": 1,
+    "rendererCount": 1,
+    "mixerCount": 1,
+    "vrmCount": 1
+  },
+  "sizeConvergence": {
+    "requested": {
+      "width": 380,
+      "height": 560
+    },
+    "actual": {
+      "width": 380,
+      "height": 560
+    },
+    "tries": 1,
+    "settled": true
+  },
+  "cycles": [
+    {
+      "i": 0,
+      "phase": "open",
+      "ok": true,
+      "uiOpen": true,
+      "uiLayout": "conversation",
+      "bounds": {
+        "x": 1054,
+        "y": 468,
+        "width": 380,
+        "height": 560
+      },
+      "anchor": {
+        "x": 73.33333333333336,
+        "y": 110.75555555555567,
+        "w": 233.3333333333333,
+        "h": 404.4444444444444
+      }
+    },
+    {
+      "i": 0,
+      "phase": "close",
+      "ok": true,
+      "uiOpen": false,
+      "bounds": {
+        "x": 1079,
+        "y": 620,
+        "width": 341,
+        "height": 420
+      }
+    },
+    {
+      "i": 1,
+      "phase": "open",
+      "ok": true,
+      "uiOpen": true,
+      "uiLayout": "conversation",
+      "bounds": {
+        "x": 1054,
+        "y": 468,
+        "width": 380,
+        "height": 560
+      },
+      "anchor": {
+        "x": 73.33333333333336,
+        "y": 110.75555555555567,
+        "w": 233.3333333333333,
+        "h": 404.4444444444444
+      }
+    },
+    {
+      "i": 1,
+      "phase": "close",
+      "ok": true,
+      "uiOpen": false,
+      "bounds": {
+        "x": 1079,
+        "y": 620,
+        "width": 341,
+        "height": 420
+      }
+    },
+    {
+      "i": 2,
+      "phase": "open",
+      "ok": true,
+      "uiOpen": true,
+      "uiLayout": "conversation",
+      "bounds": {
+        "x": 1054,
+        "y": 468,
+        "width": 380,
+        "height": 560
+      },
+      "anchor": {
+        "x": 73.33333333333336,
+        "y": 110.75555555555567,
+        "w": 233.3333333333333,
+        "h": 404.4444444444444
+      }
+    },
+    {
+      "i": 2,
+      "phase": "close",
+      "ok": true,
+      "uiOpen": false,
+      "bounds": {
+        "x": 1079,
+        "y": 620,
+        "width": 341,
+        "height": 420
+      }
+    }
+  ],
+  "openSizes": [
+    "380x560",
+    "380x560",
+    "380x560"
+  ],
+  "sizeReadings": [
+    "380x560",
+    "380x560",
+    "380x560"
+  ],
+  "anchorRef": {
+    "x": 73.33333333333336,
+    "y": 110.75555555555567,
+    "w": 233.3333333333333,
+    "h": 404.4444444444444
+  },
+  "anchorErrPx": [
+    0,
+    0,
+    0
+  ],
+  "petBoundsAfter": {
+    "x": 1079,
+    "y": 620,
+    "width": 341,
+    "height": 420
+  },
+  "instances": 1,
+  "browserWindowCount": 1,
+  "visibleWindowCount": 1,
+  "hitRegionState": {
+    "ignoring": true,
+    "regions": 1,
+    "ids": [
+      "character"
+    ],
+    "kinds": [
+      "character"
+    ]
+  },
+  "stageAfter": {
+    "stageId": "stage-1",
+    "rendererId": "renderer-2",
+    "mixerId": "mixer-4",
+    "vrmInstanceId": "vrm-3",
+    "sceneCount": 1,
+    "rendererCount": 1,
+    "mixerCount": 1,
+    "vrmCount": 1
+  },
+  "dom": {
+    "chatList": 0,
+    "msgRows": 0,
+    "tabs": []
+  },
+  "doubleClick": {
+    "hitPoint": {
+      "clientX": 170,
+      "clientY": 249.9
+    },
+    "dispatched": true,
+    "reason": null,
+    "open": true,
+    "lastSource": "dblclick"
+  },
+  "wheelChat": {
+    "labels": [
+      "对话",
+      "听力",
+      "扬声器",
+      "角色",
+      "设置",
+      "居中",
+      "置顶"
+    ],
+    "error": null,
+    "open": true,
+    "mode": "pet",
+    "lastSource": "wheel"
+  },
+  "wheelChatSecondClick": {
+    "clicked": true,
+    "open": false
+  },
+  "uiOpened": {
+    "conversationOpen": true,
+    "layout": "conversation",
+    "hotkey": {
+      "accelerator": "Ctrl+Alt+Space",
+      "enabled": true,
+      "registered": true,
+      "error": null
+    },
+    "overlayRects": {
+      "dock": {
+        "x": 10,
+        "y": 467,
+        "w": 360,
+        "h": 81
+      },
+      "bubble": null,
+      "ticks": {
+        "dock": 3534,
+        "bubble": 3534,
+        "listening": 0
+      },
+      "probes": {
+        "dock": {
+          "hasEl": true,
+          "w": 360,
+          "h": 81,
+          "via": "ref",
+          "note": ""
+        },
+        "bubble": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "ref",
+          "note": "done"
+        },
+        "listening": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "none",
+          "note": "init"
+        }
+      },
+      "dockInDom": true
+    }
+  },
+  "hotkey": {
+    "accelerator": "Ctrl+Alt+Space",
+    "enabled": true,
+    "registered": true,
+    "error": null
+  },
+  "hitRegions": {
+    "ignoring": true,
+    "regions": 2,
+    "ids": [
+      "character",
+      "dock"
+    ],
+    "kinds": [
+      "character",
+      "panel"
+    ]
+  },
+  "ime": {
+    "before": "",
+    "during": "测试候选",
+    "after": "测试候选",
+    "composing": false,
+    "sendCountBefore": 0,
+    "sendCountAfter": 0
+  },
+  "imeLive": {
+    "chars": 8,
+    "hasNonAscii": true,
+    "sample": true,
+    "composing": false,
+    "sendCountBefore": 0,
+    "sendCountAfter": 0,
+    "external": {
+      "typed": true,
+      "reason": "typed",
+      "frontTitleBefore": "Deepseek Harness Desktop",
+      "frontClassBefore": "Tauri Window",
+      "frontTitleAfter": "AiriMate One",
+      "frontIsOurApp": true,
+      "keys": "nihao → Space（选词，提交中文）→ shijie → Enter（候选期，不得发送）"
+    },
+    "note": "外部真实敲键：n i h a o → Space（选词）→ s h i j i e → Enter（候选期）"
+  },
+  "submit": {
+    "clicked": true,
+    "disabledAtClick": false,
+    "sendCountBefore": 0,
+    "sendCountAfter": 1
+  },
+  "bubbleAutoHideSec": 3,
+  "rendererSettings": {
+    "ttsEnabled": true,
+    "bubbleAutoHideSec": 3
+  },
+  "bubblePhaseUi": {
+    "overlayRects": {
+      "dock": {
+        "x": 10,
+        "y": 461,
+        "w": 360,
+        "h": 87
+      },
+      "bubble": null,
+      "ticks": {
+        "dock": 4731,
+        "bubble": 4731,
+        "listening": 0
+      },
+      "probes": {
+        "dock": {
+          "hasEl": true,
+          "w": 360,
+          "h": 87,
+          "via": "ref",
+          "note": ""
+        },
+        "bubble": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "ref",
+          "note": "done"
+        },
+        "listening": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "none",
+          "note": "init"
+        }
+      },
+      "dockInDom": true
+    },
+    "bubbleTextChars": 30,
+    "ttsActive": true
+  },
+  "bubbleLifecycle": {
+    "replyChars": 30,
+    "bubbleShownAt": 1791429571909,
+    "ttsStartedAt": 1791429571909,
+    "ttsEndedAt": 1791429572480,
+    "bubbleGoneAt": 1791429574992,
+    "hideDeltaMs": 2512,
+    "samplePeriodMs": 75,
+    "samples": 41,
+    "autoHideDelayMs": 3005,
+    "autoHideTargetMs": 3000,
+    "bubbleTextChars": 0
+  },
+  "hitRegionsWhileBubble": {
+    "ignoring": true,
+    "regions": 3,
+    "ids": [
+      "character",
+      "dock",
+      "bubble"
+    ],
+    "kinds": [
+      "character",
+      "panel",
+      "bubble"
+    ]
+  },
+  "bubbleHitKindsSeen": [
+    "character",
+    "panel",
+    "bubble"
+  ],
+  "bubbleDisabledPrereq": {
+    "bubbleEnabled": true
+  },
+  "bubbleDisabled": {
+    "ttsPlayed": true,
+    "bubbleShown": false,
+    "uiTtsActive": false
+  },
+  "dragInConversation": {
+    "readings": [
+      "380x560",
+      "380x560",
+      "380x560",
+      "380x560",
+      "380x560",
+      "380x560",
+      "380x560",
+      "380x560"
+    ],
+    "distinct": [
+      "380x560"
+    ],
+    "sizeDriftMaxDip": 0,
+    "a14Criterion": "读数恒定且偏差 ≤1 DIP（用户 2026-09-27 方案 B）",
+    "endDrag": {
+      "targetSize": {
+        "width": 380,
+        "height": 560
+      },
+      "actualSize": {
+        "width": 380,
+        "height": 560
+      },
+      "sizeCorrections": 3,
+      "restoredOnEnd": false
+    }
+  },
+  "panelOverlay": {
+    "conversationOpen": true,
+    "layout": "panel",
+    "bounds": {
+      "x": 1052,
+      "y": 516,
+      "width": 480,
+      "height": 760
+    },
+    "expected": {
+      "width": 480,
+      "height": 760
+    },
+    "overlayRects": {
+      "dock": {
+        "x": 12,
+        "y": 597,
+        "w": 456,
+        "h": 87
+      },
+      "bubble": null,
+      "ticks": {
+        "dock": 5865,
+        "bubble": 5865,
+        "listening": 0
+      },
+      "probes": {
+        "dock": {
+          "hasEl": true,
+          "w": 456,
+          "h": 87,
+          "via": "ref",
+          "note": ""
+        },
+        "bubble": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "ref",
+          "note": "done"
+        },
+        "listening": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "none",
+          "note": "init"
+        }
+      },
+      "dockInDom": true
+    }
+  },
+  "finalUi": {
+    "conversationOpen": false,
+    "bubbleVisible": false,
+    "ttsActive": false,
+    "sendCount": 1,
+    "mode": "pet",
+    "bounds": {
+      "x": 1192,
+      "y": 516,
+      "width": 340,
+      "height": 420
+    }
+  },
+  "totalChecks": 45,
+  "passedChecks": 45,
+  "failedChecks": [],
+  "settingsRestoredFrom": {
+    "ttsEnabled": true,
+    "bubbleEnabled": false,
+    "bubbleAutoHideSec": 3
+  },
+  "pass": true
+}

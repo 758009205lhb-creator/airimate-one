@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-09-26T17:29:34.798Z",
+  "testBox": {
+    "ran": true,
+    "steps": [
+      {
+        "step": "a_withAnimation",
+        "nonBg": 1
+      },
+      {
+        "step": "b_bindPose",
+        "nonBg": 0.9931
+      },
+      {
+        "step": "b2_bindPoseAgain",
+        "nonBg": 0.9934
+      },
+      {
+        "step": "c_hiddenModel_plusTestBox",
+        "nonBg": 1,
+        "testBox": {
+          "added": true,
+          "ndc": {
+            "x": -5.009965586731042e-8,
+            "y": 0.06233466945584223,
+            "z": 0.9068105992124128
+          },
+          "redRatio": 0.0549
+        }
+      }
+    ]
+  },
+  "testBoxError": null,
+  "capError": null,
+  "readPixelsNonBg": 1,
+  "copyNonBg": 1,
+  "size": {
+    "w": 150,
+    "h": 630
+  }
+}

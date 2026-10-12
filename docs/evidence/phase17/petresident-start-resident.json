@@ -1,0 +1,1076 @@
+{
+  "probe": "petresident",
+  "technique": "renderer→preload→IPC→主进程 真实链路；启动态读数由 bootstrap 就地采集；窗口读数取自 BrowserWindow",
+  "startedAt": "2026-10-08T17:47:46.954Z",
+  "cliOverride": "start-resident",
+  "settingsBeforeProbe": {
+    "petResident": true,
+    "startupOpenChat": true,
+    "autoStart": false,
+    "chatWindowAlwaysOnTop": false
+  },
+  "startup": {
+    "settingsAtBoot": {
+      "petResident": true,
+      "startupOpenChat": true
+    },
+    "petVisibleAtBoot": true,
+    "petVisibleNow": true,
+    "petCreated": true,
+    "petStatusText": "桌宠常驻中",
+    "chatId": 2,
+    "chatVisible": true,
+    "chatTitle": "和 Lazuli 聊天",
+    "mode": "pet",
+    "windows": [
+      {
+        "id": 2,
+        "title": "和 Lazuli 聊天",
+        "url": "app://bundle/index.html?surface=chat",
+        "visible": true,
+        "bounds": {
+          "x": 357,
+          "y": 234,
+          "width": 720,
+          "height": 559
+        }
+      },
+      {
+        "id": 1,
+        "title": "AiriMate One",
+        "url": "app://bundle/index.html",
+        "visible": true,
+        "bounds": {
+          "x": 1038,
+          "y": 528,
+          "width": 341,
+          "height": 420
+        }
+      }
+    ]
+  },
+  "startupNote": "本次是 --probe-pet-mode start-resident 的覆盖启动，C1（默认态）不参与判定",
+  "residentOff": {
+    "resident": false,
+    "visible": false,
+    "created": true,
+    "minimized": false,
+    "windowId": 1,
+    "statusText": "桌宠已收回",
+    "settings": false
+  },
+  "residentOn": {
+    "ipc": {
+      "ok": true,
+      "changed": true,
+      "persisted": true,
+      "resident": true,
+      "pet": {
+        "resident": true,
+        "visible": true,
+        "created": true,
+        "minimized": false,
+        "windowId": 1,
+        "statusText": "桌宠常驻中"
+      },
+      "reason": null
+    },
+    "pet": {
+      "resident": true,
+      "visible": true,
+      "created": true,
+      "minimized": false,
+      "windowId": 1,
+      "statusText": "桌宠常驻中"
+    },
+    "settings": true
+  },
+  "residentOnDisk": true,
+  "syncReadings": {
+    "main": {
+      "resident": true,
+      "visible": true,
+      "statusText": "桌宠常驻中"
+    },
+    "chatMenu": {
+      "resident": true,
+      "visible": true,
+      "statusText": "桌宠常驻中",
+      "checkedInMenu": true
+    },
+    "petUi": {
+      "resident": true,
+      "visible": true,
+      "statusText": "桌宠常驻中"
+    }
+  },
+  "hideByIpc": {
+    "ipc": {
+      "ok": true,
+      "changed": true,
+      "pet": {
+        "resident": true,
+        "visible": false,
+        "created": true,
+        "minimized": false,
+        "windowId": 1,
+        "statusText": "桌宠已收回"
+      },
+      "mode": "pet",
+      "reason": null
+    },
+    "pet": {
+      "resident": true,
+      "visible": false,
+      "created": true,
+      "minimized": false,
+      "windowId": 1,
+      "statusText": "桌宠已收回"
+    },
+    "settings": true
+  },
+  "showByIpc": {
+    "ipc": {
+      "ok": true,
+      "changed": true,
+      "pet": {
+        "resident": true,
+        "visible": true,
+        "created": true,
+        "minimized": false,
+        "windowId": 1,
+        "statusText": "桌宠常驻中"
+      },
+      "mode": "pet",
+      "reason": null
+    },
+    "pet": {
+      "resident": true,
+      "visible": true,
+      "created": true,
+      "minimized": false,
+      "windowId": 1,
+      "statusText": "桌宠常驻中"
+    }
+  },
+  "recallAfterHide": {
+    "ipc": {
+      "ok": true,
+      "changed": true,
+      "pet": {
+        "resident": true,
+        "visible": true,
+        "created": true,
+        "minimized": false,
+        "windowId": 1,
+        "statusText": "桌宠常驻中"
+      },
+      "mode": "pet",
+      "reason": null
+    },
+    "visible": true
+  },
+  "residentOffAfter": {
+    "ipc": {
+      "ok": true,
+      "changed": true,
+      "persisted": true,
+      "resident": false,
+      "pet": {
+        "resident": false,
+        "visible": false,
+        "created": true,
+        "minimized": false,
+        "windowId": 1,
+        "statusText": "桌宠已收回"
+      },
+      "reason": null
+    },
+    "pet": {
+      "resident": false,
+      "visible": false,
+      "created": true,
+      "minimized": false,
+      "windowId": 1,
+      "statusText": "桌宠已收回"
+    },
+    "settings": false,
+    "onDisk": false
+  },
+  "tooltip": {
+    "note": "Electron 无 Tray.getToolTip()；这里断言的是生成 tooltip 的那个函数（托盘与菜单共用它）",
+    "residentVisible": "桌宠常驻中",
+    "residentHidden": "桌宠已收回",
+    "tempVisible": "桌宠已呼出",
+    "notCreated": "桌宠已收回（未创建）"
+  },
+  "uniqueness": {
+    "chatUi": {
+      "surface": "chat",
+      "title": "和 Lazuli 聊天",
+      "canvasCount": 0,
+      "stageHandlePresent": false,
+      "stageCanvasInDom": 0,
+      "textInputCount": 1,
+      "textInputTags": [
+        "textarea"
+      ],
+      "messageCount": 0,
+      "userMessageCount": 0,
+      "assistantMessageCount": 0,
+      "streaming": false,
+      "streamingChars": 0,
+      "sendCount": 0,
+      "composing": false,
+      "listening": false,
+      "ttsActive": false,
+      "focusOk": true,
+      "focusAttempts": 1,
+      "focusedEl": "textarea",
+      "titleRendered": "和 Lazuli 聊天",
+      "personaName": "Lazuli",
+      "clearArmed": false,
+      "hotkeyError": null,
+      "conversationOpen": true,
+      "menuBar": {
+        "groups": [
+          {
+            "id": "file",
+            "label": "文件",
+            "itemCount": 3
+          },
+          {
+            "id": "pet",
+            "label": "桌宠",
+            "itemCount": 4
+          },
+          {
+            "id": "chat",
+            "label": "对话",
+            "itemCount": 3
+          },
+          {
+            "id": "memory",
+            "label": "记忆",
+            "itemCount": 2
+          },
+          {
+            "id": "settings",
+            "label": "设置",
+            "itemCount": 5
+          },
+          {
+            "id": "help",
+            "label": "帮助",
+            "itemCount": 2
+          }
+        ],
+        "itemCount": 19,
+        "openMenu": null
+      },
+      "pet": {
+        "resident": false,
+        "visible": false,
+        "statusText": "桌宠已收回"
+      },
+      "shortcutVisible": false,
+      "aboutVisible": false
+    },
+    "stage": {
+      "sceneCount": 1,
+      "rendererCount": 1,
+      "mixerCount": 1,
+      "vrmCount": 1,
+      "live2dCount": 0
+    },
+    "windows": [
+      {
+        "id": 2,
+        "title": "和 Lazuli 聊天",
+        "url": "app://bundle/index.html?surface=chat",
+        "visible": true,
+        "bounds": {
+          "x": 357,
+          "y": 234,
+          "width": 720,
+          "height": 559
+        }
+      },
+      {
+        "id": 1,
+        "title": "AiriMate One",
+        "url": "app://bundle/index.html",
+        "visible": false,
+        "bounds": {
+          "x": 1038,
+          "y": 528,
+          "width": 341,
+          "height": 420
+        }
+      }
+    ]
+  },
+  "chatWindow": {
+    "title": "和 Lazuli 聊天",
+    "bounds": {
+      "x": 357,
+      "y": 234,
+      "width": 720,
+      "height": 559
+    },
+    "minSize": [
+      560,
+      420
+    ],
+    "resizable": true,
+    "minimizable": true,
+    "maximizable": true,
+    "frameNote": "Electron 无 frame getter：由真实桌面截图（可见系统标题栏/三个按钮）覆盖"
+  },
+  "chatMenu": {
+    "groups": [
+      {
+        "id": "file",
+        "label": "文件",
+        "items": [
+          {
+            "id": "file.hide",
+            "label": "隐藏窗口",
+            "action": "hideWindow",
+            "checked": null,
+            "leavesSession": true
+          },
+          {
+            "id": "file.restart",
+            "label": "重启应用",
+            "action": "restartApp",
+            "checked": null,
+            "leavesSession": true
+          },
+          {
+            "id": "file.quit",
+            "label": "退出应用",
+            "action": "quitApp",
+            "checked": null,
+            "leavesSession": true
+          }
+        ]
+      },
+      {
+        "id": "pet",
+        "label": "桌宠",
+        "items": [
+          {
+            "id": "pet.show",
+            "label": "显示桌宠",
+            "action": "petShow",
+            "checked": null,
+            "leavesSession": false
+          },
+          {
+            "id": "pet.hide",
+            "label": "收回桌宠",
+            "action": "petHide",
+            "checked": null,
+            "leavesSession": false
+          },
+          {
+            "id": "pet.resident",
+            "label": "桌宠常驻",
+            "action": "petToggleResident",
+            "checked": false,
+            "leavesSession": false
+          },
+          {
+            "id": "pet.panel",
+            "label": "打开管理面板",
+            "action": "petOpenPanel",
+            "checked": null,
+            "leavesSession": false
+          }
+        ]
+      },
+      {
+        "id": "chat",
+        "label": "对话",
+        "items": [
+          {
+            "id": "chat.new",
+            "label": "新建对话",
+            "action": "newConversation",
+            "checked": null,
+            "leavesSession": false
+          },
+          {
+            "id": "chat.clear",
+            "label": "清除对话",
+            "action": "clearConversation",
+            "checked": null,
+            "leavesSession": false
+          },
+          {
+            "id": "chat.dir",
+            "label": "打开数据目录",
+            "action": "openDataDir",
+            "checked": null,
+            "leavesSession": false
+          }
+        ]
+      },
+      {
+        "id": "memory",
+        "label": "记忆",
+        "items": [
+          {
+            "id": "memory.page",
+            "label": "打开记忆页",
+            "action": "openMemory",
+            "checked": null,
+            "leavesSession": false
+          },
+          {
+            "id": "memory.schedule",
+            "label": "打开日程与提醒",
+            "action": "openSchedule",
+            "checked": null,
+            "leavesSession": false
+          }
+        ]
+      },
+      {
+        "id": "settings",
+        "label": "设置",
+        "items": [
+          {
+            "id": "settings.pref",
+            "label": "偏好设置",
+            "action": "openSettings",
+            "checked": null,
+            "leavesSession": false
+          },
+          {
+            "id": "settings.voice",
+            "label": "语音与麦克风",
+            "action": "openVoice",
+            "checked": null,
+            "leavesSession": false
+          },
+          {
+            "id": "settings.hotkey",
+            "label": "快捷键",
+            "action": "openShortcuts",
+            "checked": null,
+            "leavesSession": false
+          },
+          {
+            "id": "settings.autostart",
+            "label": "开机自启",
+            "action": "toggleAutoStart",
+            "checked": false,
+            "leavesSession": false
+          },
+          {
+            "id": "settings.ontop",
+            "label": "对话窗口置顶",
+            "action": "toggleAlwaysOnTop",
+            "checked": false,
+            "leavesSession": false
+          }
+        ]
+      },
+      {
+        "id": "help",
+        "label": "帮助",
+        "items": [
+          {
+            "id": "help.shortcuts",
+            "label": "快捷键一览",
+            "action": "showShortcutList",
+            "checked": null,
+            "leavesSession": false
+          },
+          {
+            "id": "help.about",
+            "label": "关于",
+            "action": "showAbout",
+            "checked": null,
+            "leavesSession": false
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "file.hide",
+        "menu": "file",
+        "label": "隐藏窗口",
+        "action": "hideWindow",
+        "checked": null,
+        "leavesSession": true
+      },
+      {
+        "id": "file.restart",
+        "menu": "file",
+        "label": "重启应用",
+        "action": "restartApp",
+        "checked": null,
+        "leavesSession": true
+      },
+      {
+        "id": "file.quit",
+        "menu": "file",
+        "label": "退出应用",
+        "action": "quitApp",
+        "checked": null,
+        "leavesSession": true
+      },
+      {
+        "id": "pet.show",
+        "menu": "pet",
+        "label": "显示桌宠",
+        "action": "petShow",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "pet.hide",
+        "menu": "pet",
+        "label": "收回桌宠",
+        "action": "petHide",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "pet.resident",
+        "menu": "pet",
+        "label": "桌宠常驻",
+        "action": "petToggleResident",
+        "checked": false,
+        "leavesSession": false
+      },
+      {
+        "id": "pet.panel",
+        "menu": "pet",
+        "label": "打开管理面板",
+        "action": "petOpenPanel",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "chat.new",
+        "menu": "chat",
+        "label": "新建对话",
+        "action": "newConversation",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "chat.clear",
+        "menu": "chat",
+        "label": "清除对话",
+        "action": "clearConversation",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "chat.dir",
+        "menu": "chat",
+        "label": "打开数据目录",
+        "action": "openDataDir",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "memory.page",
+        "menu": "memory",
+        "label": "打开记忆页",
+        "action": "openMemory",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "memory.schedule",
+        "menu": "memory",
+        "label": "打开日程与提醒",
+        "action": "openSchedule",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "settings.pref",
+        "menu": "settings",
+        "label": "偏好设置",
+        "action": "openSettings",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "settings.voice",
+        "menu": "settings",
+        "label": "语音与麦克风",
+        "action": "openVoice",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "settings.hotkey",
+        "menu": "settings",
+        "label": "快捷键",
+        "action": "openShortcuts",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "settings.autostart",
+        "menu": "settings",
+        "label": "开机自启",
+        "action": "toggleAutoStart",
+        "checked": false,
+        "leavesSession": false
+      },
+      {
+        "id": "settings.ontop",
+        "menu": "settings",
+        "label": "对话窗口置顶",
+        "action": "toggleAlwaysOnTop",
+        "checked": false,
+        "leavesSession": false
+      },
+      {
+        "id": "help.shortcuts",
+        "menu": "help",
+        "label": "快捷键一览",
+        "action": "showShortcutList",
+        "checked": null,
+        "leavesSession": false
+      },
+      {
+        "id": "help.about",
+        "menu": "help",
+        "label": "关于",
+        "action": "showAbout",
+        "checked": null,
+        "leavesSession": false
+      }
+    ],
+    "itemCount": 19,
+    "menuRuns": []
+  },
+  "chatMovable": {
+    "movable": true,
+    "from": {
+      "x": 357,
+      "y": 234
+    },
+    "to": {
+      "x": 381,
+      "y": 252
+    },
+    "restored": {
+      "x": 357,
+      "y": 234
+    },
+    "changed": true,
+    "restoreOk": true,
+    "note": "注入真实鼠标拖动会落到前台窗口上（可能不是我们），所以这里用 isMovable + 真实 setBounds 位移覆盖；\"人手拖标题栏\"由真实桌面截图覆盖"
+  },
+  "menuRun": {
+    "executedCount": 16,
+    "failedCount": 0,
+    "missingActionCount": 0,
+    "leavesSessionCount": 3,
+    "results": [
+      {
+        "id": "file.hide",
+        "action": "hideWindow",
+        "leavesSession": true,
+        "ok": true,
+        "detail": "not-executed:leaves-session"
+      },
+      {
+        "id": "file.restart",
+        "action": "restartApp",
+        "leavesSession": true,
+        "ok": true,
+        "detail": "not-executed:leaves-session"
+      },
+      {
+        "id": "file.quit",
+        "action": "quitApp",
+        "leavesSession": true,
+        "ok": true,
+        "detail": "not-executed:leaves-session"
+      },
+      {
+        "id": "pet.show",
+        "action": "petShow",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "petVisible=true"
+      },
+      {
+        "id": "pet.hide",
+        "action": "petHide",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "petVisible=false"
+      },
+      {
+        "id": "pet.resident",
+        "action": "petToggleResident",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "resident=true persisted=true"
+      },
+      {
+        "id": "pet.panel",
+        "action": "petOpenPanel",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "mode=panel"
+      },
+      {
+        "id": "chat.new",
+        "action": "newConversation",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "archived=6 visible=0 total=6"
+      },
+      {
+        "id": "chat.clear",
+        "action": "clearConversation",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "clearArmed=true"
+      },
+      {
+        "id": "chat.dir",
+        "action": "openDataDir",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "opened=true dir=C:\\Users\\shiqian\\AppData\\Roaming\\AiriMateOne"
+      },
+      {
+        "id": "memory.page",
+        "action": "openMemory",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "view=memory"
+      },
+      {
+        "id": "memory.schedule",
+        "action": "openSchedule",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "view=schedule"
+      },
+      {
+        "id": "settings.pref",
+        "action": "openSettings",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "view=settings"
+      },
+      {
+        "id": "settings.voice",
+        "action": "openVoice",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "view=voice"
+      },
+      {
+        "id": "settings.hotkey",
+        "action": "openShortcuts",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "shortcutRows=5"
+      },
+      {
+        "id": "settings.autostart",
+        "action": "toggleAutoStart",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "autoStart=true"
+      },
+      {
+        "id": "settings.ontop",
+        "action": "toggleAlwaysOnTop",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "alwaysOnTop=true"
+      },
+      {
+        "id": "help.shortcuts",
+        "action": "showShortcutList",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "shortcutRows=5"
+      },
+      {
+        "id": "help.about",
+        "action": "showAbout",
+        "leavesSession": false,
+        "ok": true,
+        "detail": "persona=Lazuli"
+      }
+    ]
+  },
+  "chatMenuItems": {
+    "count": 19,
+    "shape": "items",
+    "groupCount": 6,
+    "ids": [
+      "file.hide",
+      "file.restart",
+      "file.quit",
+      "pet.show",
+      "pet.hide",
+      "pet.resident",
+      "pet.panel",
+      "chat.new",
+      "chat.clear",
+      "chat.dir",
+      "memory.page",
+      "memory.schedule",
+      "settings.pref",
+      "settings.voice",
+      "settings.hotkey",
+      "settings.autostart",
+      "settings.ontop",
+      "help.shortcuts",
+      "help.about"
+    ],
+    "error": null
+  },
+  "restore": {
+    "ipc": {
+      "ok": true,
+      "mode": "pet",
+      "bounds": {
+        "x": 1040,
+        "y": 528,
+        "width": 340,
+        "height": 420
+      }
+    },
+    "mode": "pet",
+    "bounds": {
+      "x": 1040,
+      "y": 528,
+      "width": 340,
+      "height": 420
+    }
+  },
+  "final": {
+    "petMode": "pet",
+    "petBounds": {
+      "x": 1040,
+      "y": 528,
+      "width": 340,
+      "height": 420
+    },
+    "diagnostics": {
+      "state": {
+        "open": true,
+        "layout": "pet",
+        "mode": "pet",
+        "bounds": {
+          "x": 1040,
+          "y": 528,
+          "width": 340,
+          "height": 420
+        },
+        "chat": {
+          "id": 2,
+          "visible": true,
+          "focused": false,
+          "minimized": false,
+          "bounds": {
+            "x": 357,
+            "y": 234,
+            "width": 722,
+            "height": 561
+          },
+          "alwaysOnTop": true,
+          "createdCount": 1,
+          "readyToShow": true,
+          "boundsSource": "remembered"
+        },
+        "pet": {
+          "resident": true,
+          "visible": true,
+          "created": true,
+          "minimized": false,
+          "windowId": 1,
+          "statusText": "桌宠常驻中"
+        },
+        "hotkey": {
+          "accelerator": "Ctrl+Alt+Space",
+          "enabled": true,
+          "registered": true,
+          "error": null
+        },
+        "openCount": 1,
+        "closeCount": 0,
+        "lastSource": "startup"
+      },
+      "hotkey": {
+        "accelerator": "Ctrl+Alt+Space",
+        "enabled": true,
+        "registered": true,
+        "error": null
+      },
+      "chat": {
+        "id": 2,
+        "title": "和 Lazuli 聊天",
+        "visible": true,
+        "focused": false,
+        "minimized": false,
+        "bounds": {
+          "x": 357,
+          "y": 234,
+          "width": 722,
+          "height": 561
+        },
+        "alwaysOnTop": true,
+        "createdCount": 1,
+        "readyToShow": true,
+        "boundsSource": "remembered",
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1434,
+          "height": 1028
+        },
+        "center": null,
+        "requestedBounds": {
+          "x": 357,
+          "y": 234,
+          "width": 713,
+          "height": 553
+        },
+        "sizeCorrection": {
+          "decor": {
+            "width": 20,
+            "height": 19
+          },
+          "from": {
+            "width": 733,
+            "height": 572
+          }
+        }
+      },
+      "chatHwnd": "788262",
+      "chatWindowId": 2,
+      "chatCreatedCount": 1,
+      "chatReadyToShow": true,
+      "chatBoundsSource": "remembered",
+      "center": null,
+      "petInvariant": {
+        "before": {
+          "x": 1038,
+          "y": 528,
+          "width": 341,
+          "height": 420
+        },
+        "after": {
+          "x": 1038,
+          "y": 528,
+          "width": 341,
+          "height": 420
+        },
+        "identical": true,
+        "modeBefore": "pet",
+        "modeAfter": "pet",
+        "modeIdentical": true
+      },
+      "lastOpenFocusInput": true,
+      "lastOpenListen": false
+    },
+    "state": {
+      "open": true,
+      "layout": "pet",
+      "mode": "pet",
+      "bounds": {
+        "x": 1040,
+        "y": 528,
+        "width": 340,
+        "height": 420
+      },
+      "chat": {
+        "id": 2,
+        "visible": true,
+        "focused": false,
+        "minimized": false,
+        "bounds": {
+          "x": 357,
+          "y": 234,
+          "width": 722,
+          "height": 561
+        },
+        "alwaysOnTop": true,
+        "createdCount": 1,
+        "readyToShow": true,
+        "boundsSource": "remembered"
+      },
+      "pet": {
+        "resident": true,
+        "visible": true,
+        "created": true,
+        "minimized": false,
+        "windowId": 1,
+        "statusText": "桌宠常驻中"
+      },
+      "hotkey": {
+        "accelerator": "Ctrl+Alt+Space",
+        "enabled": true,
+        "registered": true,
+        "error": null
+      },
+      "openCount": 1,
+      "closeCount": 0,
+      "lastSource": "startup"
+    },
+    "windows": [
+      {
+        "id": 2,
+        "title": "和 Lazuli 聊天",
+        "url": "app://bundle/index.html?surface=chat",
+        "visible": true,
+        "bounds": {
+          "x": 357,
+          "y": 234,
+          "width": 722,
+          "height": 561
+        }
+      },
+      {
+        "id": 1,
+        "title": "AiriMate One",
+        "url": "app://bundle/index.html",
+        "visible": true,
+        "bounds": {
+          "x": 1040,
+          "y": 528,
+          "width": 340,
+          "height": 420
+        }
+      }
+    ]
+  },
+  "settingsRestoredTo": {
+    "petResident": true,
+    "startupOpenChat": true,
+    "autoStart": false,
+    "chatWindowAlwaysOnTop": false,
+    "autoStartRestored": true,
+    "autoStartNow": false,
+    "nowOnDisk": {
+      "petResident": true
+    }
+  },
+  "totalChecks": 42,
+  "passedChecks": 42,
+  "failedChecks": [],
+  "pass": true
+}

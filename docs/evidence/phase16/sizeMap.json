@@ -1,0 +1,302 @@
+{
+  "probe": "sizeMap",
+  "note": "在多个 x 位置重复\"请求 targetSize → 读回\"，看映射是否随位置变化",
+  "baseline": {
+    "bounds": {
+      "x": 934,
+      "y": 134,
+      "width": 482,
+      "height": 762
+    },
+    "target": {
+      "width": 482,
+      "height": 762
+    },
+    "request": {
+      "width": 480,
+      "height": 760
+    },
+    "min": [
+      380,
+      520
+    ],
+    "max": [
+      0,
+      0
+    ]
+  },
+  "positions": [
+    {
+      "x": 814,
+      "viaRequest": "482x762",
+      "viaTarget": "483x763",
+      "reachable": true,
+      "deltaAtPosition": {
+        "width": -2,
+        "height": -2
+      },
+      "best": {
+        "width": 482,
+        "height": 762,
+        "distDip": 0
+      }
+    },
+    {
+      "x": 874,
+      "viaRequest": "482x762",
+      "viaTarget": "483x763",
+      "reachable": true,
+      "deltaAtPosition": {
+        "width": -2,
+        "height": -2
+      },
+      "best": {
+        "width": 482,
+        "height": 762,
+        "distDip": 0
+      }
+    },
+    {
+      "x": 934,
+      "viaRequest": "482x762",
+      "viaTarget": "483x763",
+      "reachable": true,
+      "deltaAtPosition": {
+        "width": -2,
+        "height": -2
+      },
+      "best": {
+        "width": 482,
+        "height": 762,
+        "distDip": 0
+      }
+    },
+    {
+      "x": 964,
+      "viaRequest": "482x762",
+      "viaTarget": "484x763",
+      "reachable": true,
+      "deltaAtPosition": {
+        "width": -2,
+        "height": -2
+      },
+      "best": {
+        "width": 482,
+        "height": 762,
+        "distDip": 0
+      }
+    },
+    {
+      "x": 996,
+      "viaRequest": "482x762",
+      "viaTarget": "484x763",
+      "reachable": true,
+      "deltaAtPosition": {
+        "width": -2,
+        "height": -2
+      },
+      "best": {
+        "width": 482,
+        "height": 762,
+        "distDip": 0
+      }
+    },
+    {
+      "x": 1024,
+      "viaRequest": "482x762",
+      "viaTarget": "484x763",
+      "reachable": true,
+      "deltaAtPosition": {
+        "width": -2,
+        "height": -2
+      },
+      "best": {
+        "width": 482,
+        "height": 762,
+        "distDip": 0
+      }
+    },
+    {
+      "x": 1054,
+      "viaRequest": "482x762",
+      "viaTarget": "483x763",
+      "reachable": true,
+      "deltaAtPosition": {
+        "width": -2,
+        "height": -2
+      },
+      "best": {
+        "width": 482,
+        "height": 762,
+        "distDip": 0
+      }
+    },
+    {
+      "x": 1114,
+      "viaRequest": "482x762",
+      "viaTarget": "483x763",
+      "reachable": true,
+      "deltaAtPosition": {
+        "width": -2,
+        "height": -2
+      },
+      "best": {
+        "width": 482,
+        "height": 762,
+        "distDip": 0
+      }
+    }
+  ],
+  "reachablePositions": [
+    814,
+    874,
+    934,
+    964,
+    996,
+    1024,
+    1054,
+    1114
+  ],
+  "reachableCount": 8,
+  "passPositionIndependent": true,
+  "verdict": "所有测过的位置都能逐位还原 ⇒ A11 的漂移不是位置性的，需另找原因",
+  "pinned": [
+    {
+      "pin": "pin-point-request-480x760",
+      "getMinimumSize": "480x760",
+      "getMaximumSize": "480x760",
+      "boundsAfterPin": "483x763",
+      "viaPinRequest": "481x761",
+      "viaTargetRequest": "481x761",
+      "targetReachedWhilePinned": false
+    },
+    {
+      "pin": "pin-point-target-482x762",
+      "getMinimumSize": "482x762",
+      "getMaximumSize": "482x762",
+      "boundsAfterPin": "481x761",
+      "viaPinRequest": "483x763",
+      "viaTargetRequest": "483x763",
+      "targetReachedWhilePinned": false
+    },
+    {
+      "pin": "pin-band-request±4",
+      "getMinimumSize": "476x756",
+      "getMaximumSize": "484x764",
+      "boundsAfterPin": "483x763",
+      "viaPinRequest": "482x762",
+      "viaTargetRequest": "483x763",
+      "targetReachedWhilePinned": false
+    }
+  ],
+  "passTargetReachableWithBand": false,
+  "pinnedVerdict": "⚠ 即使留了窄带目标仍不可达 ⇒ 需要换别的钉法（例如不钉 max、只钉 min）",
+  "gridAlignment": [
+    {
+      "position": "start-x",
+      "x": 934,
+      "request": "480x760",
+      "readings": [
+        "482x762",
+        "482x762"
+      ],
+      "stable": true,
+      "physical": {
+        "w": 600,
+        "h": 950
+      },
+      "bothIntegers": true
+    },
+    {
+      "position": "start-x",
+      "x": 934,
+      "request": "482x762",
+      "readings": [
+        "483x763",
+        "483x763"
+      ],
+      "stable": true,
+      "physical": {
+        "w": 602.5,
+        "h": 952.5
+      },
+      "bothIntegers": false
+    },
+    {
+      "position": "start-x",
+      "x": 934,
+      "request": "480x762",
+      "readings": [
+        "482x763",
+        "482x763"
+      ],
+      "stable": true,
+      "physical": {
+        "w": 600,
+        "h": 952.5
+      },
+      "bothIntegers": false
+    },
+    {
+      "position": "drag-end-x",
+      "x": 996,
+      "request": "480x760",
+      "readings": [
+        "482x762",
+        "482x762"
+      ],
+      "stable": true,
+      "physical": {
+        "w": 600,
+        "h": 950
+      },
+      "bothIntegers": true
+    },
+    {
+      "position": "drag-end-x",
+      "x": 996,
+      "request": "482x762",
+      "readings": [
+        "484x763",
+        "484x763"
+      ],
+      "stable": true,
+      "physical": {
+        "w": 602.5,
+        "h": 952.5
+      },
+      "bothIntegers": false
+    },
+    {
+      "position": "drag-end-x",
+      "x": 996,
+      "request": "480x762",
+      "readings": [
+        "482x763",
+        "482x763"
+      ],
+      "stable": true,
+      "physical": {
+        "w": 600,
+        "h": 952.5
+      },
+      "bothIntegers": false
+    }
+  ],
+  "stableGridSizes": [
+    "480x760",
+    "482x762",
+    "480x762",
+    "480x760",
+    "482x762",
+    "480x762"
+  ],
+  "gridVerdict": "在同一位置重复读回稳定的尺寸：480x760、482x762、480x762、480x760、482x762、480x762；不稳定的那些（读回值随亚像素相位在 ±1 内变化）不适合当\"不可变目标尺寸\"",
+  "restored": {
+    "x": 934,
+    "y": 134,
+    "width": 483,
+    "height": 763
+  },
+  "passRestored": false
+}

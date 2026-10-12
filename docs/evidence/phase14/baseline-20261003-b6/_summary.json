@@ -1,0 +1,122 @@
+{
+  "schema": "airimate/probe-summary/1",
+  "summarizedAt": "2026-10-04T15:25:44.363Z",
+  "dir": "docs/evidence/phase14/baseline-20261003-b6",
+  "probeCount": 11,
+  "passed": 11,
+  "failed": 0,
+  "skippedNonProbes": [],
+  "rows": [
+    {
+      "file": "a10.json",
+      "pass": true,
+      "passFieldsTrue": 4,
+      "passFieldsFalse": [],
+      "failFields": [],
+      "errors": [],
+      "checksTotal": 0,
+      "checksTrue": 0
+    },
+    {
+      "file": "a11.json",
+      "pass": true,
+      "passFieldsTrue": 17,
+      "passFieldsFalse": [],
+      "failFields": [],
+      "errors": [],
+      "checksTotal": 0,
+      "checksTrue": 0
+    },
+    {
+      "file": "a12.json",
+      "pass": true,
+      "passFieldsTrue": 7,
+      "passFieldsFalse": [],
+      "failFields": [],
+      "errors": [],
+      "checksTotal": 0,
+      "checksTrue": 0
+    },
+    {
+      "file": "a13.json",
+      "pass": true,
+      "passFieldsTrue": 4,
+      "passFieldsFalse": [],
+      "failFields": [],
+      "errors": [],
+      "checksTotal": 0,
+      "checksTrue": 0
+    },
+    {
+      "file": "a14.json",
+      "pass": true,
+      "passFieldsTrue": 9,
+      "passFieldsFalse": [],
+      "failFields": [],
+      "errors": [],
+      "checksTotal": 0,
+      "checksTrue": 0
+    },
+    {
+      "file": "kit.json",
+      "pass": true,
+      "passFieldsTrue": 1,
+      "passFieldsFalse": [],
+      "failFields": [],
+      "errors": [],
+      "checksTotal": 44,
+      "checksTrue": 44
+    },
+    {
+      "file": "m1m2.json",
+      "pass": true,
+      "passFieldsTrue": 1,
+      "passFieldsFalse": [],
+      "failFields": [],
+      "errors": [],
+      "checksTotal": 71,
+      "checksTrue": 71
+    },
+    {
+      "file": "m3.json",
+      "pass": true,
+      "passFieldsTrue": 1,
+      "passFieldsFalse": [],
+      "failFields": [],
+      "errors": [],
+      "checksTotal": 44,
+      "checksTrue": 44
+    },
+    {
+      "file": "m4.json",
+      "pass": true,
+      "passFieldsTrue": 1,
+      "passFieldsFalse": [],
+      "failFields": [],
+      "errors": [],
+      "checksTotal": 27,
+      "checksTrue": 27
+    },
+    {
+      "file": "petmode.json",
+      "pass": true,
+      "passFieldsTrue": 11,
+      "passFieldsFalse": [],
+      "failFields": [],
+      "errors": [],
+      "checksTotal": 0,
+      "checksTrue": 0
+    },
+    {
+      "file": "ui.json",
+      "pass": true,
+      "passFieldsTrue": 1,
+      "passFieldsFalse": [],
+      "failFields": [],
+      "errors": [],
+      "checksTotal": 43,
+      "checksTrue": 43
+    }
+  ],
+  "pass": true
+}

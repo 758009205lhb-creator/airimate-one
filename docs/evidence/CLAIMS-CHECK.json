@@ -1,0 +1,88 @@
+{
+  "schema": "airimate/claims-check/1",
+  "checkedAt": "2026-10-06T01:15:24.375Z",
+  "sourceFilesScanned": 105,
+  "distFilesScanned": 184,
+  "checks": [
+    {
+      "id": "no-live2d-dependency",
+      "claim": "工程内不存在 live2d 相关依赖（不只是在运行期没加载）",
+      "pass": true,
+      "hits": [],
+      "error": null
+    },
+    {
+      "id": "no-eval",
+      "claim": "生产源码不使用 eval",
+      "pass": true,
+      "hits": [],
+      "error": null
+    },
+    {
+      "id": "no-new-function",
+      "claim": "生产源码不使用 new Function（含 setTimeout 字符串形式）",
+      "pass": true,
+      "hits": [],
+      "error": null
+    },
+    {
+      "id": "no-cdp-in-production",
+      "claim": "生产源码不使用 CDP / 远程调试端口",
+      "pass": true,
+      "hits": [],
+      "error": null
+    },
+    {
+      "id": "no-setparent",
+      "claim": "生产源码不调用 SetParent 之类的窗口劫持 API",
+      "pass": true,
+      "hits": [],
+      "error": null
+    },
+    {
+      "id": "no-remote-resources-in-bundle",
+      "claim": "renderer 产物不含**远程资源引用**（只认真正的加载上下文；默认值/占位符逐条具名豁免）",
+      "pass": true,
+      "hits": [],
+      "error": null
+    },
+    {
+      "id": "renderer-source-has-no-egress-primitive",
+      "claim": "renderer **源码**不含任何出网原语（fetch / XHR / WebSocket / EventSource / sendBeacon）",
+      "pass": true,
+      "hits": [],
+      "error": null
+    },
+    {
+      "id": "bundle-network-primitives-are-known-and-constrained",
+      "claim": "renderer 产物里的出网原语**只有已具名的库级那些**，且不存在 XHR/WebSocket/EventSource 等无豁免余地者",
+      "pass": true,
+      "hits": [],
+      "error": null
+    },
+    {
+      "id": "no-sourcemap-in-dist",
+      "claim": "构建产物不含 sourcemap（未压缩源码不得进入分发）",
+      "pass": true,
+      "hits": [],
+      "error": null
+    },
+    {
+      "id": "window-hardening-params",
+      "claim": "窗口创建显式加固（contextIsolation / nodeIntegration:false / sandbox / webSecurity）",
+      "pass": true,
+      "hits": [],
+      "error": null
+    },
+    {
+      "id": "renderer-csp-blocks-remote-egress",
+      "claim": "renderer 的 CSP 把出网堵死，且**源码与产物两份一致**（default-src / script-src / connect-src 都不放行任意远程源）",
+      "pass": true,
+      "hits": [],
+      "error": null
+    }
+  ],
+  "passed": 11,
+  "failed": [],
+  "pass": true
+}

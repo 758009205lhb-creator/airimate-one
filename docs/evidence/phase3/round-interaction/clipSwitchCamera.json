@@ -1,0 +1,143 @@
+{
+  "probe": "clipSwitchCamera",
+  "technique": "页面内合成 PointerEvent；拖动位移由主进程的可注入光标源推进（单一驱动源）",
+  "shell": null,
+  "rounds": [
+    {
+      "i": 0,
+      "switched": {
+        "clipId": "idle_pet_idle_10",
+        "applied": true,
+        "baseClipId": "idle_pet_idle_10"
+      },
+      "cameraUnchangedOnSwitch": true,
+      "clipAfterSwitch": "idle_pet_idle_10",
+      "clipAfterDwell": "idle_pet_idle_10"
+    },
+    {
+      "i": 1,
+      "switched": {
+        "clipId": "idle_pet_idle_2",
+        "applied": true,
+        "baseClipId": "idle_pet_idle_2"
+      },
+      "cameraUnchangedOnSwitch": true,
+      "clipAfterSwitch": "idle_pet_idle_2",
+      "clipAfterDwell": "idle_pet_idle_2"
+    },
+    {
+      "i": 2,
+      "switched": {
+        "clipId": "idle_pet_idle_3",
+        "applied": true,
+        "baseClipId": "idle_pet_idle_3"
+      },
+      "cameraUnchangedOnSwitch": true,
+      "clipAfterSwitch": "idle_pet_idle_3",
+      "clipAfterDwell": "idle_pet_idle_3"
+    },
+    {
+      "i": 3,
+      "switched": {
+        "clipId": "idle_pet_idle_4",
+        "applied": true,
+        "baseClipId": "idle_pet_idle_4"
+      },
+      "cameraUnchangedOnSwitch": true,
+      "clipAfterSwitch": "idle_pet_idle_4",
+      "clipAfterDwell": "idle_pet_idle_4"
+    },
+    {
+      "i": 4,
+      "switched": {
+        "clipId": "idle_pet_idle_5",
+        "applied": true,
+        "baseClipId": "idle_pet_idle_5"
+      },
+      "cameraUnchangedOnSwitch": true,
+      "clipAfterSwitch": "idle_pet_idle_5",
+      "clipAfterDwell": "idle_pet_idle_5"
+    },
+    {
+      "i": 5,
+      "switched": {
+        "clipId": "idle_pet_idle_6",
+        "applied": true,
+        "baseClipId": "idle_pet_idle_6"
+      },
+      "cameraUnchangedOnSwitch": true,
+      "clipAfterSwitch": "idle_pet_idle_6",
+      "clipAfterDwell": "idle_pet_idle_6"
+    },
+    {
+      "i": 6,
+      "switched": {
+        "clipId": "idle_pet_idle_7",
+        "applied": true,
+        "baseClipId": "idle_pet_idle_7"
+      },
+      "cameraUnchangedOnSwitch": true,
+      "clipAfterSwitch": "idle_pet_idle_7",
+      "clipAfterDwell": "idle_pet_idle_7"
+    },
+    {
+      "i": 7,
+      "switched": {
+        "clipId": "idle_pet_idle_8",
+        "applied": true,
+        "baseClipId": "idle_pet_idle_8"
+      },
+      "cameraUnchangedOnSwitch": true,
+      "clipAfterSwitch": "idle_pet_idle_8",
+      "clipAfterDwell": "idle_pet_idle_8"
+    },
+    {
+      "i": 8,
+      "switched": {
+        "clipId": "idle_pet_idle_9",
+        "applied": true,
+        "baseClipId": "idle_pet_idle_9"
+      },
+      "cameraUnchangedOnSwitch": true,
+      "clipAfterSwitch": "idle_pet_idle_9",
+      "clipAfterDwell": "idle_pet_idle_9"
+    },
+    {
+      "i": 9,
+      "switched": {
+        "clipId": "idle_pet_idle",
+        "applied": true,
+        "baseClipId": "idle_pet_idle"
+      },
+      "cameraUnchangedOnSwitch": true,
+      "clipAfterSwitch": "idle_pet_idle",
+      "clipAfterDwell": "idle_pet_idle"
+    }
+  ],
+  "distinctClips": [
+    "idle_pet_idle_10",
+    "idle_pet_idle_2",
+    "idle_pet_idle_3",
+    "idle_pet_idle_4",
+    "idle_pet_idle_5",
+    "idle_pet_idle_6",
+    "idle_pet_idle_7",
+    "idle_pet_idle_8",
+    "idle_pet_idle_9",
+    "idle_pet_idle"
+  ],
+  "distinctClipCount": 10,
+  "distinctCameraSignatures": 1,
+  "cameraSignature": "{\"position\":{\"x\":0,\"y\":1.083029358988872,\"z\":4.812287131333698},\"lookAt\":{\"x\":0,\"y\":1.083029358988872,\"z\":0},\"fov\":30,\"near\":0.24061435656668492,\"far\":57.74744557600438}",
+  "passTenClips": true,
+  "passCameraFrozen": true,
+  "passAllSwitches": true,
+  "pass": true,
+  "shots": [
+    {
+      "label": "clipSwitchCamera",
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase3\\round-interaction\\clipSwitchCamera-clipSwitchCamera.png",
+      "bytes": 140736
+    }
+  ]
+}

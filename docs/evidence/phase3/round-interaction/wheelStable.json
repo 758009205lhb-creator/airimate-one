@@ -1,0 +1,39 @@
+{
+  "probe": "wheelStable",
+  "technique": "页面内合成 PointerEvent；拖动位移由主进程的可注入光标源推进（单一驱动源）",
+  "shell": null,
+  "anchors": [
+    {
+      "i": 0,
+      "x": 135,
+      "y": 334.874,
+      "scale": 0
+    },
+    {
+      "i": 1,
+      "x": 135,
+      "y": 334.874,
+      "scale": 0
+    },
+    {
+      "i": 2,
+      "x": 135,
+      "y": 334.874,
+      "scale": 0
+    }
+  ],
+  "anchorErrorPx": 0,
+  "passOpenCloseOpen": true,
+  "passAnchorWithin2px": true,
+  "f1Opens": true,
+  "escCloses": true,
+  "passRightAndF1Unchanged": true,
+  "pass": true,
+  "shots": [
+    {
+      "label": "wheelStable",
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase3\\round-interaction\\wheelStable-wheelStable.png",
+      "bytes": 148000
+    }
+  ]
+}

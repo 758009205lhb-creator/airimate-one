@@ -1,0 +1,2301 @@
+{
+  "schema": "vrma-validation-report/1",
+  "generated": "2026-09-26T17:03:43.164Z",
+  "independence": "本报告由 validate-vrma.mjs 生成，该脚本不 import convert-anim.mjs / humanoid-map.mjs / parse-anim.mjs",
+  "nodeVersion": "v24.19.0",
+  "summary": {
+    "files": 16,
+    "failed": 0,
+    "verdict": "PASS"
+  },
+  "files": [
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\idle_pet_idle.vrma",
+      "file": "idle_pet_idle.vrma",
+      "bytes": 83908,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 2.45001220703125,
+        "frames": 75,
+        "bones": 54,
+        "rotationTracks": 54,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=83908"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:17880 + BIN:66000"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "56 accessor / 56 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "54 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=54"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "55 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=2.450012s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "4050 个四元数，最大偏差 4.103e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=54"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.357980"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=2.450012s frames=75"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\idle_pet_idle_10.vrma",
+      "file": "idle_pet_idle_10.vrma",
+      "bytes": 309296,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 11.000000953674316,
+        "frames": 331,
+        "bones": 54,
+        "rotationTracks": 54,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=309296"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:17988 + BIN:291280"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "56 accessor / 56 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "54 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=54"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "55 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=11.000001s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "17874 个四元数，最大偏差 4.180e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=54"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.831245"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=11.000001s frames=331"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\idle_pet_idle_2.vrma",
+      "file": "idle_pet_idle_2.vrma",
+      "bytes": 377640,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 13.333333969116211,
+        "frames": 401,
+        "bones": 55,
+        "rotationTracks": 55,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=377640"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:18316 + BIN:359296"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "57 accessor / 57 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "55 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=55"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "56 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=13.333334s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "22055 个四元数，最大偏差 4.132e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=55"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=1.023888"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=13.333334s frames=401"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\idle_pet_idle_3.vrma",
+      "file": "idle_pet_idle_3.vrma",
+      "bytes": 117416,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 3.7333335876464844,
+        "frames": 113,
+        "bones": 54,
+        "rotationTracks": 54,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=117416"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:17948 + BIN:99440"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "56 accessor / 56 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "54 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=54"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "55 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=3.733334s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "6102 个四元数，最大偏差 3.918e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=54"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.266218"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=3.733334s frames=113"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\idle_pet_idle_4.vrma",
+      "file": "idle_pet_idle_4.vrma",
+      "bytes": 377640,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 13.333333969116211,
+        "frames": 401,
+        "bones": 55,
+        "rotationTracks": 55,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=377640"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:18316 + BIN:359296"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "57 accessor / 57 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "55 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=55"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "56 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=13.333334s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "22055 个四元数，最大偏差 4.130e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=55"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=1.034122"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=13.333334s frames=401"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\idle_pet_idle_5.vrma",
+      "file": "idle_pet_idle_5.vrma",
+      "bytes": 274592,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 9.500000953674316,
+        "frames": 286,
+        "bones": 55,
+        "rotationTracks": 55,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=274592"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:18308 + BIN:256256"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "57 accessor / 57 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "55 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=55"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "56 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=9.500001s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "15730 个四元数，最大偏差 4.150e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=55"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=1.287964"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=9.500001s frames=286"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\idle_pet_idle_6.vrma",
+      "file": "idle_pet_idle_6.vrma",
+      "bytes": 171532,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 5.6666669845581055,
+        "frames": 171,
+        "bones": 55,
+        "rotationTracks": 55,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=171532"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:18288 + BIN:153216"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "57 accessor / 57 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "55 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=55"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "56 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=5.666667s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "9405 个四元数，最大偏差 4.212e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=55"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.768156"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=5.666667s frames=171"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\idle_pet_idle_7.vrma",
+      "file": "idle_pet_idle_7.vrma",
+      "bytes": 270112,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 9.333333969116211,
+        "frames": 281,
+        "bones": 55,
+        "rotationTracks": 55,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=270112"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:18308 + BIN:251776"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "57 accessor / 57 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "55 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=55"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "56 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=9.333334s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "15455 个四元数，最大偏差 4.184e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=55"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.739824"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=9.333334s frames=281"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\idle_pet_idle_8.vrma",
+      "file": "idle_pet_idle_8.vrma",
+      "bytes": 180500,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 6.000000476837158,
+        "frames": 181,
+        "bones": 55,
+        "rotationTracks": 55,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=180500"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:18296 + BIN:162176"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "57 accessor / 57 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "55 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=55"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "56 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=6.000000s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "9955 个四元数，最大偏差 4.090e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=55"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.737191"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=6.000000s frames=181"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\idle_pet_idle_9.vrma",
+      "file": "idle_pet_idle_9.vrma",
+      "bytes": 282896,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 10.000000953674316,
+        "frames": 301,
+        "bones": 54,
+        "rotationTracks": 54,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=282896"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:17988 + BIN:264880"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "56 accessor / 56 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "54 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=54"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "55 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=10.000001s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "16254 个四元数，最大偏差 4.202e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=54"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.972756"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=10.000001s frames=301"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\locomotion_pet_walk_left.vrma",
+      "file": "locomotion_pet_walk_left.vrma",
+      "bytes": 55704,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 1.4166666269302368,
+        "frames": 43,
+        "bones": 54,
+        "rotationTracks": 54,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=55704"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:17836 + BIN:37840"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "56 accessor / 56 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "54 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=54"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "55 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=1.416667s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "2322 个四元数，最大偏差 3.901e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=54"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.593699"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=1.416667s frames=43"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\misc_pet_dragging.vrma",
+      "file": "misc_pet_dragging.vrma",
+      "bytes": 356816,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 12.783333778381348,
+        "frames": 385,
+        "bones": 54,
+        "rotationTracks": 54,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=356816"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:17988 + BIN:338800"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "56 accessor / 56 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "54 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=54"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "55 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=12.783334s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "20790 个四元数，最大偏差 4.179e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=54"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.707107"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=12.783334s frames=385"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\pose_pet_pose_1.vrma",
+      "file": "pose_pet_pose_1.vrma",
+      "bytes": 198396,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 6.800000190734863,
+        "frames": 205,
+        "bones": 54,
+        "rotationTracks": 54,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=198396"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:17968 + BIN:180400"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "56 accessor / 56 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "54 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=54"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "55 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=6.800000s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "11070 个四元数，最大偏差 3.653e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=54"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.069168"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=6.800000s frames=205"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\sitting_pet_sit_01.vrma",
+      "file": "sitting_pet_sit_01.vrma",
+      "bytes": 102396,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 3.166748046875,
+        "frames": 96,
+        "bones": 54,
+        "rotationTracks": 54,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=102396"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:17888 + BIN:84480"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "56 accessor / 56 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "54 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=54"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "55 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=3.166748s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "5184 个四元数，最大偏差 3.926e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=54"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.330172"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=3.166748s frames=96"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\sitting_pet_sit_02.vrma",
+      "file": "sitting_pet_sit_02.vrma",
+      "bytes": 189600,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 6.4666748046875,
+        "frames": 195,
+        "bones": 54,
+        "rotationTracks": 54,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=189600"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:17972 + BIN:171600"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "56 accessor / 56 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "54 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=54"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "55 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=6.466675s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "10530 个四元数，最大偏差 4.133e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=54"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=0.258235"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=6.466675s frames=195"
+        }
+      ]
+    },
+    {
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\assets\\motion\\sleeping_pet_sleeping.vrma",
+      "file": "sleeping_pet_sleeping.vrma",
+      "bytes": 947424,
+      "ok": true,
+      "pass": 21,
+      "fail": 0,
+      "info": {
+        "duration": 35.16666793823242,
+        "frames": 1056,
+        "bones": 54,
+        "rotationTracks": 54,
+        "translationTracks": 1
+      },
+      "checks": [
+        {
+          "id": "G-01",
+          "name": "GLB 头部（magic/version/length）",
+          "ok": true,
+          "detail": "bytes=947424"
+        },
+        {
+          "id": "G-02",
+          "name": "chunk 布局与 4 字节对齐、无越界",
+          "ok": true,
+          "detail": "JSON:18116 + BIN:929280"
+        },
+        {
+          "id": "G-03",
+          "name": "JSON chunk 可解析",
+          "ok": true,
+          "detail": "10 个顶层键"
+        },
+        {
+          "id": "G-03b",
+          "name": "asset.version == \"2.0\"",
+          "ok": true,
+          "detail": "asset={\"version\":\"2.0\",\"generator\":\"motion-lab/convert-anim.mjs\"}"
+        },
+        {
+          "id": "G-04",
+          "name": "extensionsUsed 含 VRMC_vrm_animation 且 extensions 里有它",
+          "ok": true,
+          "detail": "extensionsUsed=[\"VRMC_vrm_animation\"]"
+        },
+        {
+          "id": "G-05",
+          "name": "specVersion ∈ {1.0, 1.0-draft}",
+          "ok": true,
+          "detail": "specVersion=1.0"
+        },
+        {
+          "id": "A-01",
+          "name": "全部 accessor / bufferView 不越界、byteStride 合法",
+          "ok": true,
+          "detail": "56 accessor / 56 bufferView"
+        },
+        {
+          "id": "H-01",
+          "name": "humanoid.humanBones 存在且每项 node 为数字",
+          "ok": true,
+          "detail": "54 根"
+        },
+        {
+          "id": "H-02",
+          "name": "humanBones 的 node 索引在 nodes 范围内",
+          "ok": true,
+          "detail": "nodes=54"
+        },
+        {
+          "id": "H-02b",
+          "name": "humanBones 的 node 不重复",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "H-03",
+          "name": "hips 存在（加载器要用它算 rest 姿势）",
+          "ok": true,
+          "detail": "node=2"
+        },
+        {
+          "id": "H-04",
+          "name": "任务书要求的 22 根核心骨齐全",
+          "ok": true,
+          "detail": "22/22"
+        },
+        {
+          "id": "N-01",
+          "name": "恰有 1 条 animation",
+          "ok": true,
+          "detail": "anims=1"
+        },
+        {
+          "id": "A-02",
+          "name": "sampler 的 input/output 类型与 count 自洽",
+          "ok": true,
+          "detail": "55 sampler"
+        },
+        {
+          "id": "A-03",
+          "name": "采样时间严格递增、首帧为 0、非负",
+          "ok": true,
+          "detail": "duration=35.166668s，input 组合数=1"
+        },
+        {
+          "id": "Q-01",
+          "name": "全部旋转四元数归一化（|q|−1| < 1e-3）",
+          "ok": true,
+          "detail": "57024 个四元数，最大偏差 4.572e-8"
+        },
+        {
+          "id": "Q-02",
+          "name": "四元数无 NaN/Inf",
+          "ok": true,
+          "detail": "ok"
+        },
+        {
+          "id": "T-01",
+          "name": "translation 轨道只出现在 hips",
+          "ok": true,
+          "detail": "translation 骨: hips"
+        },
+        {
+          "id": "T-02",
+          "name": "每条通道的 node 都在 humanBones 里",
+          "ok": true,
+          "detail": "rotation 骨数=54"
+        },
+        {
+          "id": "M-01",
+          "name": "动作非静态（有非零旋转幅度）或为单帧定格",
+          "ok": true,
+          "detail": "最大分量幅度=1.271805"
+        },
+        {
+          "id": "M-02",
+          "name": "时长 > 0 且 ≤ 60s",
+          "ok": true,
+          "detail": "duration=35.166668s frames=1056"
+        }
+      ]
+    }
+  ]
+}

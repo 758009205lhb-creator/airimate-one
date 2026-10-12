@@ -1,0 +1,31 @@
+{
+  "blocker": "BLOCKER-1",
+  "title": "AIRI 源码无法固定到明确 tag/commit",
+  "decision": "A",
+  "decisionMeaning": "接受能力等价实现：用 AIRI 同源且已发布的 MIT 依赖实现等价能力（@xsai/stream-text@0.5.0、@xsai-ext/providers、unspeech@0.1.16、@proj-airi/ui@0.12.0-beta.5、@proj-airi/server-sdk），不以 AIRI 源代码本身作为集成对象。",
+  "status": "RESOLVED-A",
+  "decidedBy": "用户（本会话直接裁定）",
+  "decidedAt": "2026-09-27T19:40:00Z",
+  "verbatim": "A：认可能力等价实现（推荐）",
+  "verbatimContext": "问：BLOCKER-1（AIRI 源码无法锁定）：交付文档该怎么写这个口径？ 答：A：认可能力等价实现。同一轮另两项裁定：fpsCap 保持 60；sleep 动作暂不重导、保持屏蔽。",
+  "evidenceOfFacts": {
+    "license": "MIT（app.asar 内 package.json 实测 \"license\":\"MIT\"；repository=github.com/moeru-ai/airi；version=0.12.0-beta.5）",
+    "githubReachable": false,
+    "mirrorsReachable": false,
+    "localSourceCopy": false,
+    "asarGitMetadata": false,
+    "airiCorePackagesPublished": false,
+    "reference": "docs/evidence/E0-recon-baseline.md §2"
+  },
+  "wordingConstraint": "交付物在**能力**上与 AIRI 对齐（聊天 / 人设 / 记忆 / TTS / 供应商），但不是 AIRI 源代码本身 ⇒ **不得声称或暗示「AIRI 源级集成」**。该约束写入 docs/DELIVERY.md §5.2 与 docs/DELIVERY-最终状态.md §5。",
+  "notClaimed": [
+    "AIRI 源级集成",
+    "AIRI 源码的某一 tag/commit 的可复现构建"
+  ],
+  "upgradePath": "环境变化时另起一轮：GitHub 可达 ⇒ 按 tag/commit 锁定并做真正的源级集成；或用户提供离线源码包 ⇒ 同上。两者都需要**新的**实现与验收证据，不得沿用本轮结论。",
+  "affectedGates": {
+    "P2": "原为「依赖用户对 BLOCKER-1 的裁定」⇒ 裁定已给出，门禁不再被本项阻塞",
+    "other": "P0/P1/P3/P4/P5/P6/P7 全程未受本项阻塞"
+  },
+  "note": "本文件按 docs/Acceptance-Matrix.md §5 的「裁定记录要求」建立：必须落盘 {blocker, decision, decidedBy, decidedAt, verbatim}，且**不允许由实现方自行选定选项后继续**。此处 decision 来自用户在会话中的直接选择。"
+}

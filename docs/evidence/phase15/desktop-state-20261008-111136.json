@@ -1,0 +1,190 @@
+{
+    "generatedAt":  "2026-10-08T11:11:37.4540667+08:00",
+    "host":  {
+                 "computer":  "666AMCN",
+                 "user":  "shiqian",
+                 "os":  "10.0.28000",
+                 "psVersion":  "5.1.28000.2952"
+             },
+    "counts":  {
+                   "mineVisibleWindows":  1,
+                   "mineAllWindows":  10,
+                   "legacyKernelVisibleWindows":  0,
+                   "legacyKernelAllWindows":  0,
+                   "legacyPetVisibleWindows":  0,
+                   "totalVisibleTopLevel":  19
+               },
+    "mineWindows":  [
+                        {
+                            "hwnd":  3803154,
+                            "pid":  16188,
+                            "visible":  true,
+                            "cls":  "Chrome_WidgetWin_1",
+                            "title":  "AiriMate One",
+                            "rect":  [
+                                         1349,
+                                         775,
+                                         425,
+                                         525
+                                     ],
+                            "exStyle":  "0x00280028",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" \"F:\\deepseek harness\\AI女友\\新工程\\apps\\desktop\" --dev --mode=pet --no-dialogs --probe conversation --probe-out \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\conversation.json\" --probe-shot \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111115\" --probe-exit "
+                        },
+                        {
+                            "hwnd":  3213196,
+                            "pid":  16188,
+                            "visible":  false,
+                            "cls":  "Chrome_WidgetWin_0",
+                            "title":  "",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000080",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" \"F:\\deepseek harness\\AI女友\\新工程\\apps\\desktop\" --dev --mode=pet --no-dialogs --probe conversation --probe-out \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\conversation.json\" --probe-shot \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111115\" --probe-exit "
+                        },
+                        {
+                            "hwnd":  4065106,
+                            "pid":  5076,
+                            "visible":  false,
+                            "cls":  "Chrome_WidgetWin_0",
+                            "title":  "",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000080",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" --type=gpu-process --user-data-dir=\"C:\\Users\\shiqian\\AppData\\Roaming\\AiriMateOne\" --gpu-preferences=WAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAAEAAAAAIAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --field-trial-handle=1972,i,2404997482841939616,15107578557316149058,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1980,i,570230658199157068,9132112143980536259,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=1964 /prefetch:2"
+                        },
+                        {
+                            "hwnd":  4786124,
+                            "pid":  16188,
+                            "visible":  false,
+                            "cls":  "Electron_NotifyIconHostWindow",
+                            "title":  "",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000000",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" \"F:\\deepseek harness\\AI女友\\新工程\\apps\\desktop\" --dev --mode=pet --no-dialogs --probe conversation --probe-out \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\conversation.json\" --probe-shot \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111115\" --probe-exit "
+                        },
+                        {
+                            "hwnd":  2950614,
+                            "pid":  16188,
+                            "visible":  false,
+                            "cls":  "Electron_SystemPreferencesHostWindow",
+                            "title":  "",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000000",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" \"F:\\deepseek harness\\AI女友\\新工程\\apps\\desktop\" --dev --mode=pet --no-dialogs --probe conversation --probe-out \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\conversation.json\" --probe-shot \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111115\" --probe-exit "
+                        },
+                        {
+                            "hwnd":  4458316,
+                            "pid":  16188,
+                            "visible":  false,
+                            "cls":  "Chrome_WidgetWin_0",
+                            "title":  "",
+                            "rect":  [
+                                         32,
+                                         32,
+                                         1344,
+                                         938
+                                     ],
+                            "exStyle":  "0x00000100",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" \"F:\\deepseek harness\\AI女友\\新工程\\apps\\desktop\" --dev --mode=pet --no-dialogs --probe conversation --probe-out \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\conversation.json\" --probe-shot \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111115\" --probe-exit "
+                        },
+                        {
+                            "hwnd":  4196392,
+                            "pid":  16188,
+                            "visible":  false,
+                            "cls":  "Base_PowerMessageWindow",
+                            "title":  "",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x08000000",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" \"F:\\deepseek harness\\AI女友\\新工程\\apps\\desktop\" --dev --mode=pet --no-dialogs --probe conversation --probe-out \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\conversation.json\" --probe-shot \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111115\" --probe-exit "
+                        },
+                        {
+                            "hwnd":  2164766,
+                            "pid":  16188,
+                            "visible":  false,
+                            "cls":  "MSCTFIME UI",
+                            "title":  "MSCTFIME UI",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000008",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" \"F:\\deepseek harness\\AI女友\\新工程\\apps\\desktop\" --dev --mode=pet --no-dialogs --probe conversation --probe-out \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\conversation.json\" --probe-shot \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111115\" --probe-exit "
+                        },
+                        {
+                            "hwnd":  3212102,
+                            "pid":  16188,
+                            "visible":  false,
+                            "cls":  "IME",
+                            "title":  "Default IME",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000008",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" \"F:\\deepseek harness\\AI女友\\新工程\\apps\\desktop\" --dev --mode=pet --no-dialogs --probe conversation --probe-out \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\conversation.json\" --probe-shot \"F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15\\screens\\conversation-20261008-111115\" --probe-exit "
+                        },
+                        {
+                            "hwnd":  5571992,
+                            "pid":  5076,
+                            "visible":  false,
+                            "cls":  "IME",
+                            "title":  "Default IME",
+                            "rect":  [
+                                         0,
+                                         0,
+                                         0,
+                                         0
+                                     ],
+                            "exStyle":  "0x00000000",
+                            "imagePath":  "F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe",
+                            "commandLine":  "\"F:\\deepseek harness\\AI女友\\新工程\\node_modules\\electron\\dist\\electron.exe\" --type=gpu-process --user-data-dir=\"C:\\Users\\shiqian\\AppData\\Roaming\\AiriMateOne\" --gpu-preferences=WAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAADgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAAEAAAAAIAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --field-trial-handle=1972,i,2404997482841939616,15107578557316149058,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1980,i,570230658199157068,9132112143980536259,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=1964 /prefetch:2"
+                        }
+                    ],
+    "legacyKernelWindows":  [
+
+                            ],
+    "legacyPetWindows":  [
+
+                         ],
+    "methodology":  [
+                        "top-level windows via EnumWindows; ownership by full image path + command line markers (never by name alone)",
+                        "legacy kernel predicate: imagePath ends with MateEngineX.exe OR commandLine contains MateEngineX",
+                        "this-app predicate: imagePath or commandLine contains 新工程 (workspace root of AiriMate One)"
+                    ]
+}

@@ -1,0 +1,600 @@
+{
+  "steps": [
+    {
+      "step": "m1.provider.upsert.ok",
+      "ok": true
+    },
+    {
+      "step": "m1.provider.list.ok",
+      "ok": true
+    },
+    {
+      "step": "m1.provider.no-secret-field",
+      "ok": true
+    },
+    {
+      "step": "m1.provider.has-key-metadata",
+      "ok": true
+    },
+    {
+      "step": "m1.provider.backend-available",
+      "ok": true
+    },
+    {
+      "step": "m1.provider.schema-reject-bad-url",
+      "ok": true
+    },
+    {
+      "step": "m1.provider.test-returns-structured-code",
+      "ok": true
+    },
+    {
+      "step": "m1.provider.test-result-has-no-key",
+      "ok": true
+    },
+    {
+      "step": "m1.provider.models-channel-ok",
+      "ok": true
+    },
+    {
+      "step": "m1.onboarding.status-shape",
+      "ok": true
+    },
+    {
+      "step": "m1.onboarding.hint-present",
+      "ok": true
+    },
+    {
+      "step": "m1.onboarding.refuses-premature-complete",
+      "ok": true
+    },
+    {
+      "step": "m1.onboarding.set-step-ok",
+      "ok": true
+    },
+    {
+      "step": "m1.persona.get-ok",
+      "ok": true
+    },
+    {
+      "step": "m1.persona.userTitle-present",
+      "ok": true
+    },
+    {
+      "step": "m1.persona.round-trip",
+      "ok": true
+    },
+    {
+      "step": "m1.persona.schema-reject-empty-name",
+      "ok": true
+    },
+    {
+      "step": "m1.chat.history-ok",
+      "ok": true
+    },
+    {
+      "step": "m1.chat.abort-honest-when-idle",
+      "ok": true
+    },
+    {
+      "step": "m1.memory.add-ok",
+      "ok": true
+    },
+    {
+      "step": "m1.memory.update-ok",
+      "ok": true
+    },
+    {
+      "step": "m1.memory.update-missing-id-errors",
+      "ok": true
+    },
+    {
+      "step": "m1.memory.search-ok",
+      "ok": true
+    },
+    {
+      "step": "m1.memory.preview-hits",
+      "ok": true
+    },
+    {
+      "step": "m1.memory.preview-injected-block",
+      "ok": true
+    },
+    {
+      "step": "m1.memory.add-oversize-rejected",
+      "ok": true
+    },
+    {
+      "step": "m1.memory.delete-ok",
+      "ok": true
+    },
+    {
+      "step": "m1.privacy.export-ok",
+      "ok": true
+    },
+    {
+      "step": "m1.privacy.export-file-exists",
+      "ok": true
+    },
+    {
+      "step": "m1.privacy.export-excludes-chats",
+      "ok": true
+    },
+    {
+      "step": "m1.privacy.export-has-no-secret",
+      "ok": true
+    },
+    {
+      "step": "m1.privacy.export-has-placeholder",
+      "ok": true
+    },
+    {
+      "step": "m1.privacy.summary-ok",
+      "ok": true
+    },
+    {
+      "step": "m1.privacy.telemetry-default-off",
+      "ok": true
+    },
+    {
+      "step": "m2.permission.list-ok",
+      "ok": true
+    },
+    {
+      "step": "m2.permission.payment-blocked",
+      "ok": true
+    },
+    {
+      "step": "m2.permission.credential-access-blocked",
+      "ok": true
+    },
+    {
+      "step": "m2.permission.system-settings-blocked",
+      "ok": true
+    },
+    {
+      "step": "m2.permission.input-simulate-blocked",
+      "ok": true
+    },
+    {
+      "step": "m2.permission.floor-enforced",
+      "ok": true
+    },
+    {
+      "step": "m2.permission.confirm-floor-enforced",
+      "ok": true
+    },
+    {
+      "step": "m2.quiet.default-values",
+      "ok": true
+    },
+    {
+      "step": "m2.quiet.schema-reject-bad-time",
+      "ok": true
+    },
+    {
+      "step": "m2.quiet.cross-midnight-saved",
+      "ok": true
+    },
+    {
+      "step": "m2.policy.schema-reject-zero",
+      "ok": true
+    },
+    {
+      "step": "m2.schedule.reject-weekly-without-days",
+      "ok": true
+    },
+    {
+      "step": "m2.schedule.reject-bad-time-format",
+      "ok": true
+    },
+    {
+      "step": "m2.schedule.add-ok",
+      "ok": true
+    },
+    {
+      "step": "m2.schedule.list-ok",
+      "ok": true
+    },
+    {
+      "step": "m2.reminder.add-ok",
+      "ok": true
+    },
+    {
+      "step": "m2.reminder.schedule-without-time-rejected",
+      "ok": true
+    },
+    {
+      "step": "m2.reminder.schema-reject-bad-priority",
+      "ok": true
+    },
+    {
+      "step": "m2.reminder.list-ok",
+      "ok": true
+    },
+    {
+      "step": "m2.activity.stats-channel-ok",
+      "ok": true
+    },
+    {
+      "step": "m2.activity.probe-script-present",
+      "ok": true
+    },
+    {
+      "step": "m2.activity.no-title-plaintext",
+      "ok": true
+    },
+    {
+      "step": "m2.engine.tick-ok",
+      "ok": true
+    },
+    {
+      "step": "m2.engine.status-ok",
+      "ok": true
+    },
+    {
+      "step": "m2.engine.has-ticked",
+      "ok": true
+    },
+    {
+      "step": "m2.engine.focus-never-true-shape",
+      "ok": true
+    },
+    {
+      "step": "m2.radio.content-ok",
+      "ok": true
+    },
+    {
+      "step": "m2.radio.has-date-and-weekday",
+      "ok": true
+    },
+    {
+      "step": "m2.radio.has-encouragement",
+      "ok": true
+    },
+    {
+      "step": "m2.radio.duration-30-60s",
+      "ok": true
+    },
+    {
+      "step": "m2.radio.not-spoken-when-asked-false",
+      "ok": true
+    },
+    {
+      "step": "m2.radio.weather-honest",
+      "ok": true
+    },
+    {
+      "step": "m2.radio.disclosures-present",
+      "ok": true
+    },
+    {
+      "step": "m2.radio.news-has-source",
+      "ok": true
+    },
+    {
+      "step": "m2.radio.news-has-url",
+      "ok": true
+    },
+    {
+      "step": "m2.radio.dedupe-same-day",
+      "ok": true
+    },
+    {
+      "step": "m2.inbox.shape-ok",
+      "ok": true
+    }
+  ],
+  "checks": {
+    "m1.provider.upsert.ok": true,
+    "m1.provider.list.ok": true,
+    "m1.provider.no-secret-field": true,
+    "m1.provider.has-key-metadata": true,
+    "m1.provider.backend-available": true,
+    "m1.provider.schema-reject-bad-url": true,
+    "m1.provider.test-returns-structured-code": true,
+    "m1.provider.test-result-has-no-key": true,
+    "m1.provider.models-channel-ok": true,
+    "m1.onboarding.status-shape": true,
+    "m1.onboarding.hint-present": true,
+    "m1.onboarding.refuses-premature-complete": true,
+    "m1.onboarding.set-step-ok": true,
+    "m1.persona.get-ok": true,
+    "m1.persona.userTitle-present": true,
+    "m1.persona.round-trip": true,
+    "m1.persona.schema-reject-empty-name": true,
+    "m1.chat.history-ok": true,
+    "m1.chat.abort-honest-when-idle": true,
+    "m1.memory.add-ok": true,
+    "m1.memory.update-ok": true,
+    "m1.memory.update-missing-id-errors": true,
+    "m1.memory.search-ok": true,
+    "m1.memory.preview-hits": true,
+    "m1.memory.preview-injected-block": true,
+    "m1.memory.add-oversize-rejected": true,
+    "m1.memory.delete-ok": true,
+    "m1.privacy.export-ok": true,
+    "m1.privacy.export-file-exists": true,
+    "m1.privacy.export-excludes-chats": true,
+    "m1.privacy.export-has-no-secret": true,
+    "m1.privacy.export-has-placeholder": true,
+    "m1.privacy.summary-ok": true,
+    "m1.privacy.telemetry-default-off": true,
+    "m2.permission.list-ok": true,
+    "m2.permission.payment-blocked": true,
+    "m2.permission.credential-access-blocked": true,
+    "m2.permission.system-settings-blocked": true,
+    "m2.permission.input-simulate-blocked": true,
+    "m2.permission.floor-enforced": true,
+    "m2.permission.confirm-floor-enforced": true,
+    "m2.quiet.default-values": true,
+    "m2.quiet.schema-reject-bad-time": true,
+    "m2.quiet.cross-midnight-saved": true,
+    "m2.policy.schema-reject-zero": true,
+    "m2.schedule.reject-weekly-without-days": true,
+    "m2.schedule.reject-bad-time-format": true,
+    "m2.schedule.add-ok": true,
+    "m2.schedule.list-ok": true,
+    "m2.reminder.add-ok": true,
+    "m2.reminder.schedule-without-time-rejected": true,
+    "m2.reminder.schema-reject-bad-priority": true,
+    "m2.reminder.list-ok": true,
+    "m2.activity.stats-channel-ok": true,
+    "m2.activity.probe-script-present": true,
+    "m2.activity.no-title-plaintext": true,
+    "m2.engine.tick-ok": true,
+    "m2.engine.status-ok": true,
+    "m2.engine.has-ticked": true,
+    "m2.engine.focus-never-true-shape": true,
+    "m2.radio.content-ok": true,
+    "m2.radio.has-date-and-weekday": true,
+    "m2.radio.has-encouragement": true,
+    "m2.radio.duration-30-60s": true,
+    "m2.radio.not-spoken-when-asked-false": true,
+    "m2.radio.weather-honest": true,
+    "m2.radio.disclosures-present": true,
+    "m2.radio.news-has-source": true,
+    "m2.radio.news-has-url": true,
+    "m2.radio.dedupe-same-day": true,
+    "m2.inbox.shape-ok": true
+  },
+  "providerList": {
+    "ok": true,
+    "backend": "safeStorage",
+    "count": 1,
+    "probeHasKey": true,
+    "probeKeyLength": 37,
+    "probeFingerprintLen": 8,
+    "keys": [
+      "active",
+      "baseUrl",
+      "createdAt",
+      "hasKey",
+      "id",
+      "keyFingerprint",
+      "keyLength",
+      "kind",
+      "label",
+      "model",
+      "updatedAt"
+    ]
+  },
+  "badUrlReject": {
+    "ok": false,
+    "code": "IPC_SCHEMA"
+  },
+  "testProvider": {
+    "ok": false,
+    "code": "auth",
+    "latencyMs": 423,
+    "modelCount": null
+  },
+  "providerModels": {
+    "ok": true,
+    "supported": false,
+    "code": "auth"
+  },
+  "onboardingInitial": {
+    "ok": true,
+    "step": "test",
+    "satisfied": {
+      "provider": true,
+      "test": false,
+      "model": true,
+      "persona": true,
+      "permission": true,
+      "schedule": true
+    },
+    "blockedBy": "test",
+    "completed": false,
+    "hintLen": 36
+  },
+  "onboardingCompleteAttempt": {
+    "ok": false,
+    "code": "ONBOARDING_INCOMPLETE"
+  },
+  "persona": {
+    "ok": true,
+    "name": "Lazuli",
+    "userTitle": "你",
+    "promptChars": 462
+  },
+  "personaRoundTrip": {
+    "setOk": true,
+    "readBack": "探针称呼muq8htt2",
+    "expected": "探针称呼muq8htt2"
+  },
+  "history": {
+    "ok": true,
+    "count": 14,
+    "total": 14
+  },
+  "abortWhenIdle": {
+    "ok": true,
+    "aborted": false
+  },
+  "memoryPreview": {
+    "ok": true,
+    "hits": 1,
+    "injectedChars": 38,
+    "injectedIsNull": false
+  },
+  "privacyExport": {
+    "ok": true,
+    "bytes": 10282,
+    "sections": [
+      "settings",
+      "providers",
+      "persona",
+      "schedules",
+      "reminders",
+      "quiet",
+      "permissions",
+      "activity",
+      "memory",
+      "reflections"
+    ],
+    "excludedCount": 2,
+    "fileExists": true
+  },
+  "privacySummary": {
+    "ok": true,
+    "telemetryEnabled": false,
+    "fileCount": 13
+  },
+  "permissions": {
+    "ok": true,
+    "total": 11,
+    "kinds": [
+      "screen-capture",
+      "file-read",
+      "file-write",
+      "app-launch",
+      "shell-exec",
+      "clipboard-read",
+      "window-control",
+      "input-simulate",
+      "system-settings",
+      "credential-access",
+      "payment"
+    ],
+    "blocked": [
+      "input-simulate",
+      "system-settings",
+      "credential-access",
+      "payment"
+    ]
+  },
+  "permissionRaise": {
+    "ok": true,
+    "requested": "read-only",
+    "effective": "blocked",
+    "enabled": false,
+    "grantedBy": "floor"
+  },
+  "quietInitial": {
+    "ok": true,
+    "enabled": true,
+    "start": "23:00",
+    "end": "07:30",
+    "continuousMinutes": 50,
+    "sedentaryMinutes": 60,
+    "nightRestAt": "23:30",
+    "maxRetries": 3
+  },
+  "scheduleBad": {
+    "ok": false,
+    "code": "SCHEDULE_INVALID"
+  },
+  "scheduleList": {
+    "ok": true,
+    "count": 1
+  },
+  "reminderAdd": {
+    "ok": true,
+    "id": "r_scheduled_muq8htvf_1",
+    "state": "pending",
+    "priority": "silent",
+    "hasFireAt": true
+  },
+  "activity": {
+    "ok": true,
+    "available": true,
+    "unavailableReason": null,
+    "blockReason": "none",
+    "blocked": false,
+    "probeScriptExists": true,
+    "hasShell": true,
+    "adviceCount": 0,
+    "titleDigest": null,
+    "titleChars": 0
+  },
+  "tick": {
+    "ok": true,
+    "code": null,
+    "result": {
+      "at": 1790901469580,
+      "blockReason": "none",
+      "delivered": 0,
+      "queued": 0,
+      "skipped": [
+        "greeting",
+        "schedule-brief",
+        "reflection:disabled"
+      ]
+    }
+  },
+  "proactiveStatus": {
+    "ok": true,
+    "running": true,
+    "ticks": 283,
+    "queueLength": 0,
+    "enabled": {
+      "greeting": true,
+      "scheduleBrief": true,
+      "morningRadio": true,
+      "continuous": true,
+      "sedentary": true,
+      "night": true
+    },
+    "recentDecisionCount": 64
+  },
+  "radio": {
+    "ok": true,
+    "skippedReason": null,
+    "day": "2026-10-02",
+    "weekday": "星期五",
+    "scriptChars": 142,
+    "estimatedSeconds": 32.6,
+    "scheduleCount": 1,
+    "newsCount": 6,
+    "adviceCount": 0,
+    "hasEncouragement": true,
+    "disclosures": [
+      "天气：未配置城市（可在设置 → 主动陪伴里填写）",
+      "AI 热点：使用本地缓存（本次未联网抓取）"
+    ],
+    "weatherAvailable": false,
+    "weatherReason": "未配置城市（可在设置 → 主动陪伴里填写）",
+    "spoken": false
+  },
+  "radioSecond": {
+    "ok": true,
+    "skippedReason": "今天已经播报过",
+    "contentIsNull": true
+  },
+  "inbox": {
+    "ok": true,
+    "queued": 0,
+    "unacked": 1
+  },
+  "cleanup": {
+    "providers": 1,
+    "schedules": 1,
+    "reminders": 1
+  },
+  "totalChecks": 71,
+  "passedChecks": 71,
+  "failedChecks": [],
+  "pass": true
+}

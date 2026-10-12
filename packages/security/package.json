@@ -1,0 +1,23 @@
+{
+  "name": "@airimate/security",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AiriMate One 安全基元：路径规范化、日志脱敏、密钥指纹、CSP",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:prod": "tsc -p tsconfig.prod.json"
+  },
+  "dependencies": {
+    "@airimate/shared": "1.0.0",
+    "zod": "^3.24.1"
+  }
+}

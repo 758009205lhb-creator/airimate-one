@@ -1,0 +1,355 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>motion-lab contact sheet renderer</title>
+<style>
+  html,body{margin:0;padding:0;background:#101014;color:#ddd;font:12px/1.4 Consolas,monospace;overflow:hidden}
+  #stage{position:relative;width:100vw;height:100vh}
+  #gl{position:absolute;inset:0}
+  #hud{position:absolute;left:8px;top:8px;pointer-events:none;text-shadow:0 0 4px #000;white-space:pre}
+  #err{position:absolute;left:8px;bottom:8px;color:#ff6b6b;white-space:pre-wrap;max-width:96vw}
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="gl"></canvas><div id="hud"></div><div id="err"></div></div>
+<script id="cs-config" type="application/json">__CONTACT_SHEET_CONFIG_JSON__</script>
+<script>
+  /**
+   * 诊断探针：在 module script 之前挂上，这样**模块解析失败**（例如相对路径写错）
+   * 也能被记录下来。否则顶层 import 失败时页面什么都不会说，
+   * 主进程只能等到超时（实测就是这么踩的：`./three/...` 路径不存在，
+   * 页面静默不动，300s 后才超时）。
+   */
+  window.__RENDER_REPORT__ = { ok: false, gl: null, frames: [], errors: [], vrmLoaded: false, clip: null, stage: 'boot' }
+  window.addEventListener('error', (e) => {
+    window.__RENDER_REPORT__.errors.push(`window.error: ${e.message} @ ${e.filename}:${e.lineno}`)
+    window.__RENDER_READY__ = true
+  })
+  window.addEventListener('unhandledrejection', (e) => {
+    window.__RENDER_REPORT__.errors.push(`unhandledrejection: ${e.reason?.message ?? e.reason}`)
+    window.__RENDER_READY__ = true
+  })
+</script>
+<script type="module">
+/**
+ * renderer.html —— 在 Electron 的**隐藏窗口**里用真 WebGL 渲染 VRM + VRMA 的验证帧。
+ *
+ * 为什么要这么绕：本机没有可用的浏览器自动化（没有 puppeteer/playwright 的浏览器），
+ * 但 `node_modules/electron` 里有完整 Chromium。于是：
+ *   · 主进程创建隐藏 BrowserWindow（`show:false`），GL 上下文照样能建
+ *   · `--use-gl=angle --use-angle=swiftshader` 让它在无 GPU 时走软件渲染
+ *   · 本文件用真 `@pixiv/three-vrm` 加载真 `.vrm`，用 `VRMAnimationLoaderPlugin`
+ *     加载真 `.vrma`，`mixer.setTime(t)` 定帧，`toDataURL()` 回传 PNG
+ *
+ * 四个**必须**的细节（都踩过）：
+ *   ① `preserveDrawingBuffer: true` —— 否则 `toDataURL()` 拿到全黑图（图能存，只是空的）
+ *   ② 配置由主进程**写进本文件的临时副本**（不是 executeJavaScript 注入）——
+ *      模块脚本在注入之前就已经跑完了，注入式配置永远晚一步
+ *   ③ 模块路径必须真实可达。`three-vrm*.module.js` 内部 import 的是裸 `three`，
+ *      所以要有 `three/` 子目录（由 render-contact-sheet.mjs 保证存在）
+ *   ④ 贴图全部失败时也要能出图 ⇒ 材质统一换成 `MeshNormalMaterial`，
+ *      这样"骨架对不对"与贴图管线完全解耦
+ */
+import * as THREE from './three/three.module.js'
+import { GLTFLoader } from './three-stdlib/loaders/GLTFLoader.js'
+import { VRMLoaderPlugin, VRMUtils } from './three-vrm.module.js'
+import { VRMAnimationLoaderPlugin, createVRMAnimationClip } from './three-vrm-animation.module.js'
+
+const hud = document.getElementById('hud')
+const errEl = document.getElementById('err')
+const canvas = document.getElementById('gl')
+const report = window.__RENDER_REPORT__
+report.stage = 'modules-loaded'
+
+function fail(msg) {
+  report.errors.push(String(msg))
+  errEl.textContent = String(msg)
+  window.__RENDER_READY__ = true
+}
+
+function glInfo() {
+  const gl = canvas.getContext('webgl2') || canvas.getContext('webgl')
+  if (!gl) return null
+  const dbg = gl.getExtension('WEBGL_debug_renderer_info')
+  return {
+    version: gl.getParameter(gl.VERSION),
+    shading: gl.getParameter(gl.SHADING_LANGUAGE_VERSION),
+    vendor: dbg ? gl.getParameter(dbg.UNMASKED_VENDOR_WEBGL) : gl.getParameter(gl.VENDOR),
+    renderer: dbg ? gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER),
+    webgl2: typeof WebGL2RenderingContext !== 'undefined' && gl instanceof WebGL2RenderingContext,
+  }
+}
+
+function b64ToBuf(b64) {
+  const bin = atob(b64)
+  const u8 = new Uint8Array(bin.length)
+  for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i)
+  return u8.buffer
+}
+
+/**
+ * 取资产：优先 `fetch('/asset/vrm')`（主进程的迷你 HTTP 服务），
+ * 拿不到再退回内联 base64。
+ *
+ * 为什么走 HTTP：`.vrm` 59 MB，内联成 base64 就是 79 MB 的 HTML，
+ * Chromium 解析它要几分钟，页面会一直停在 `stage: 'boot'`（实测踩到）。
+ */
+async function getAsset(kind, inlineB64) {
+  try {
+    const r = await fetch(`/asset/${kind}`)
+    if (r.ok) {
+      const ab = await r.arrayBuffer()
+      report.assetSource = `http (${ab.byteLength} bytes)`
+      return ab
+    }
+  } catch { /* 落到内联 */ }
+  if (inlineB64) { report.assetSource = 'inline-base64'; return b64ToBuf(inlineB64) }
+  throw new Error(`无法取得资产 ${kind}`)
+}
+
+async function main() {
+  const t0 = performance.now()
+  const info = glInfo()
+  report.gl = info
+  if (!info) { fail('无法取得 WebGL 上下文（canvas.getContext 返回 null）'); return }
+
+  report.stage = 'gl-ready'
+  const cfg = JSON.parse(document.getElementById('cs-config').textContent)
+  report.config = { width: cfg.width, height: cfg.height, view: cfg.view, times: cfg.times, textureStripped: !!cfg.textureStripped }
+
+  report.stage = 'renderer-created'
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true, alpha: false })
+  renderer.setPixelRatio(1)
+  renderer.setSize(cfg.width, cfg.height, false)
+  renderer.setClearColor(0x101014, 1)
+
+  const scene = new THREE.Scene()
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x333344, 2.0))
+  const key = new THREE.DirectionalLight(0xffffff, 1.8); key.position.set(1.2, 2.0, 2.5); scene.add(key)
+  const rim = new THREE.DirectionalLight(0x88aaff, 0.9); rim.position.set(-1.5, 1.0, -2.0); scene.add(rim)
+
+  const grid = new THREE.GridHelper(4, 16, 0x556677, 0x2a3542); scene.add(grid)
+  const axes = new THREE.AxesHelper(0.35); axes.position.y = 0.001; scene.add(axes)
+
+  const camera = new THREE.PerspectiveCamera(35, cfg.width / cfg.height, 0.05, 60)
+
+  /**
+   * 相机取景：优先用**骨骼世界坐标**的包围盒，其次退回 `Box3.setFromObject`。
+   *
+   * ⚠ 实测踩到的坑：`bones` 档下 `vrm.scene` 里已经没有 mesh，
+   *   `Box3.setFromObject` 会得到一个**退化**包围盒（骨架的 Object3D 位置都在原点附近），
+   *   于是相机被放到原点、"看向自己"，出图是全黑/全空的 4 张**完全相同**的 PNG
+   *   （文件大小一模一样，这正是"图是空的"的信号）。
+   */
+  function computeBounds() {
+    const box = new THREE.Box3()
+    let any = false
+    for (const b of Object.keys(vrm.humanoid.humanBones)) {
+      const nd = vrm.humanoid.getNormalizedBoneNode(b)
+      if (!nd) continue
+      const p = nd.getWorldPosition(new THREE.Vector3())
+      if (!Number.isFinite(p.x) || !Number.isFinite(p.y) || !Number.isFinite(p.z)) continue
+      box.expandByPoint(p)
+      any = true
+    }
+    if (!any) return new THREE.Box3(new THREE.Vector3(-0.5, 0, -0.5), new THREE.Vector3(0.5, 1.6, 0.5))
+    // 骨骼点是一个"线框"，包围盒可能在某个方向上是 0 厚度 ⇒ 撑开一点
+    const s = box.getSize(new THREE.Vector3())
+    const c = box.getCenter(new THREE.Vector3())
+    const minSpan = 0.35
+    return new THREE.Box3(
+      new THREE.Vector3(c.x - Math.max(s.x, minSpan) / 2, c.y - Math.max(s.y, minSpan) / 2, c.z - Math.max(s.z, minSpan) / 2),
+      new THREE.Vector3(c.x + Math.max(s.x, minSpan) / 2, c.y + Math.max(s.y, minSpan) / 2, c.z + Math.max(s.z, minSpan) / 2))
+  }
+
+  function frameCamera(view) {
+    const box = computeBounds()
+    const c = box.getCenter(new THREE.Vector3())
+    const size = box.getSize(new THREE.Vector3())
+    const radius = Math.max(size.x, size.y, size.z) * 0.5 || 0.8
+    const dist = (radius / Math.sin((camera.fov * Math.PI) / 180 / 2)) * 1.3
+    // ⚠ 参照物必须**跟着角色走**。实测踩到过：网格与坐标轴留在世界原点 (0,0,0)，
+    //   而角色（因为 RootT 基准）在 x≈-4.7，出图就是"网格在中间、角色飘在旁边"，
+    //   看起来像骨架倒了/飘了，其实是参照物错位。
+    grid.position.set(c.x, 0, c.z)
+    axes.position.set(c.x, 0.001, c.z)
+    const dir = view === 'front' ? new THREE.Vector3(0, 0.12, 1)
+      : view === 'side' ? new THREE.Vector3(1, 0.12, 0)
+        : new THREE.Vector3(0.75, 0.45, 0.95)
+    camera.position.copy(c).add(dir.normalize().multiplyScalar(dist))
+    camera.lookAt(c)
+    report.lastBounds = {
+      center: c.toArray().map((v) => +v.toFixed(4)), size: size.toArray().map((v) => +v.toFixed(4)),
+      radius: +radius.toFixed(4), dist: +dist.toFixed(4),
+      camPos: camera.position.toArray().map((v) => +v.toFixed(4)),
+      gridAt: [+c.x.toFixed(4), 0, +c.z.toFixed(4)],
+    }
+  }
+
+  // ── 加载 VRM
+  report.stage = 'loading-vrm'
+  let vrm
+  try {
+    const loader = new GLTFLoader()
+    loader.register((parser) => new VRMLoaderPlugin(parser))
+    const vrmBuf = await getAsset('vrm', cfg.vrmBase64)
+    const gltf = await new Promise((res, rej) => loader.parse(vrmBuf, '', res, rej))
+    vrm = gltf.userData.vrm
+    if (!vrm) throw new Error('gltf.userData.vrm 为空')
+    try { VRMUtils.removeUnnecessaryVertices(gltf.scene) } catch { /* 可选优化，失败无所谓 */ }
+    try { VRMUtils.combineSkeletons(gltf.scene) } catch { /* 同上 */ }
+    vrm.scene.traverse((o) => { o.frustumCulled = false })
+    scene.add(vrm.scene)
+    vrm.scene.updateWorldMatrix(true, true)
+  } catch (e) {
+    fail(`VRM 加载失败：${e?.message ?? e}`)
+    return
+  }
+  report.vrmLoaded = true
+
+  // 材质归一化 + （可选）骨块可视化。
+  //
+  // 三档由主进程的 `meshMode` 决定：
+  //   'original' —— 原贴图 + MToon（最重；SwiftShader 下最容易失败）
+  //   'flat'     —— 网格几何 + 默认材质（主进程已删光材质）
+  //   'bones'    —— 只剩骨架：这里给每根归一化骨挂一个小方块，每帧同步世界矩阵。
+  //                 这一档与贴图/MToon/mesh 完全无关，任何环境都能出图，
+  //                 是"骨架姿态对不对"最可靠的证据。
+  //
+  // 为什么本步验证不看贴图：要回答的问题是「Unity 肌肉解码出来的世界骨向对不对」，
+  // 贴图在这条链路上零信息量，却是在无 GPU 环境下最容易整段失败的一环。
+  let meshCount = 0
+  scene.traverse((o) => {
+    if (o.isMesh || o.isSkinnedMesh) {
+      meshCount++
+      if (!cfg.keepMaterials) o.material = new THREE.MeshNormalMaterial({ skinning: true, side: THREE.DoubleSide })
+    }
+  })
+  report.materialMode = cfg.keepMaterials ? 'original' : 'MeshNormalMaterial'
+
+  const boneCubes = []
+  if (cfg.meshMode === 'bones') {
+    const geo = new THREE.BoxGeometry(1, 1, 1)
+    for (const b of Object.keys(vrm.humanoid.humanBones)) {
+      const nd = vrm.humanoid.getNormalizedBoneNode(b)
+      if (!nd) continue
+      const isLeg = /Leg|Foot|Toes/.test(b)
+      const isArm = /Shoulder|Arm|Hand|Thumb|Index|Middle|Ring|Little/.test(b)
+      const isSpine = /hips|spine|chest|neck|head/i.test(b)
+      const col = isSpine ? 0xffd479 : isLeg ? 0x7fd1ff : isArm ? 0xb8ff9a : 0xaaaaaa
+      const size = isSpine ? 0.075 : 0.04
+      const m = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ color: col }))
+      m.scale.setScalar(size)
+      m.userData.bone = b
+      scene.add(m)
+      boneCubes.push(m)
+    }
+    report.boneCubeCount = boneCubes.length
+  }
+  report.meshCount = meshCount
+
+  // ── 加载 VRMA
+  report.stage = 'loading-vrma'
+  let clip, va
+  try {
+    const al = new GLTFLoader()
+    al.register((p) => new VRMAnimationLoaderPlugin(p))
+    const vrmaBuf = await getAsset('vrma', cfg.vrmaBase64)
+    const ag = await new Promise((res, rej) => al.parse(vrmaBuf, '', res, rej))
+    va = ag.userData?.vrmAnimations?.[0]
+    if (!va) throw new Error('未解析出 VRMAnimation')
+    clip = createVRMAnimationClip(va, vrm)
+  } catch (e) {
+    fail(`VRMA 加载失败：${e?.message ?? e}`)
+    return
+  }
+  report.clip = { name: clip.name, duration: clip.duration, tracks: clip.tracks.length }
+
+  // ── 诊断：hips 位移被加载器改成了什么
+  //
+  // 关键机制（读 three-vrm-animation 源码 + 实测确认）：
+  //   `createVRMAnimationHumanoidTracks()` 对 hips 位移做了**缩放**：
+  //       scale = humanoid.normalizedRestPose.hips.position[1] / vrmAnimation.restHipsPosition.y
+  //       track.values[i] *= scale
+  //   `restHipsPosition` = **VRMA 文件里 hips 节点的世界位置**（本工程的转换器写的是
+  //   `RootT` 首帧，PET_IDLE 实测 y=0.172），`normalizedRestPose` = **模型自己的**髋高
+  //   （Lazuli 实测 0.834）⇒ scale = 0.834 / 0.172 ≈ 4.85，位移被放大近 5 倍。
+  //   转换器若把 VRMA 的 hips rest 写成模型真实髋高，scale 就是 1，位移原样保留。
+  {
+    const ht = clip.tracks.find((t) => /hips\.position$/i.test(t.name))
+    report.hipsTrack = ht ? { name: ht.name, count: ht.values.length / 3, first: [ht.values[0], ht.values[1], ht.values[2]].map((v) => +v.toFixed(5)) } : null
+    const rp = va.restHipsPosition
+    report.vrmAnimation = { restHipsPosition: rp ? [+rp.x.toFixed(5), +rp.y.toFixed(5), +rp.z.toFixed(5)] : null }
+    const modelY = vrm.humanoid.normalizedRestPose?.hips?.position?.[1]
+    report.modelNormalizedHipsY = modelY ?? null
+    report.loaderScale = (modelY != null && rp && rp.y) ? +(modelY / rp.y).toFixed(5) : null
+  }
+
+  // ── 世界原点对齐（`hipsOriginMode`）
+  //
+  // ⚠ 实测发现：这些 `.anim` 的 `RootT.*` **不是**角色的世界位置。
+  //   同一个角色的不同 clip 给出完全不同的基准：
+  //     PET_IDLE.anim      RootT = [0.966, 0.172, -0.114]
+  //     PET_IDLE_2.anim    RootT = [0.969, 0.005,  0.031]
+  //     PET_POSE_1.anim    RootT = [0.982, 0.008,  0.018]
+  //     PET_WALK_LEFT.anim RootT = [0.986, 0.005,  0.006]
+  //     PET_SIT_01.anim    RootT = [0.813, 1.372, -0.199]
+  //   再叠加上面那个 ≈4.85 倍的 loader scale，角色会整体偏到 x≈-4.7 且浮空。
+  //   ⇒ 默认只保留**相对首帧的位移**并**除以 loader scale** 抵消放大，
+  //     把髋钉在模型自己的髋高上。这样"腿是否踩地 / 幅度是否对"可直接看图判。
+  //   想看原始 RootT 请用 `hipsOriginMode: 'absolute'`。
+  {
+    const hipsTrack = clip.tracks.find((t) => /hips\.position$/i.test(t.name))
+    if (hipsTrack && cfg.hipsOriginMode !== 'absolute') {
+      const scale = (report.loaderScale && report.loaderScale > 0) ? report.loaderScale : 1
+      const restY = report.modelNormalizedHipsY ?? hipsTrack.values[1]
+      const x0 = hipsTrack.values[0], y0 = hipsTrack.values[1], z0 = hipsTrack.values[2]
+      for (let i = 0; i < hipsTrack.values.length; i += 3) {
+        hipsTrack.values[i] = (hipsTrack.values[i] - x0) / scale
+        // Y：保留 clip 内的起伏，但把基准高度换成模型的真实髋高
+        hipsTrack.values[i + 1] = (hipsTrack.values[i + 1] - y0) / scale + restY
+        hipsTrack.values[i + 2] = (hipsTrack.values[i + 2] - z0) / scale
+      }
+      report.hipsRealign = { mode: 'relative/divide-by-loader-scale', loaderScale: scale, restY, firstFrame: [+x0.toFixed(5), +y0.toFixed(5), +z0.toFixed(5)] }
+    } else {
+      report.hipsRealign = { mode: hipsTrack ? 'absolute' : 'no-hips-translation-track' }
+    }
+  }
+
+  // ── 定帧渲染
+  report.stage = 'rendering-frames'
+  const mixer = new THREE.AnimationMixer(vrm.scene)
+  const action = mixer.clipAction(clip)
+  action.play()
+
+  for (let i = 0; i < cfg.times.length; i++) {
+    const t = cfg.times[i]
+    mixer.setTime(t)
+    vrm.scene.updateWorldMatrix(true, true)
+    // 骨块同步：直接读归一化骨的世界矩阵
+    for (const m of boneCubes) {
+      const nd = vrm.humanoid.getNormalizedBoneNode(m.userData.bone)
+      if (nd) { nd.updateWorldMatrix(true, false); m.position.setFromMatrixPosition(nd.matrixWorld) }
+    }
+    frameCamera(cfg.view ?? 'three-quarter')
+    renderer.render(scene, camera)
+    const url = renderer.domElement.toDataURL('image/png')
+    const b64 = url.replace(/^data:image\/png;base64,/, '')
+    const g = (n) => { const nd = vrm.humanoid.getNormalizedBoneNode(n); const p = nd?.getWorldPosition(new THREE.Vector3()); return p ? [+p.x.toFixed(4), +p.y.toFixed(4), +p.z.toFixed(4)] : null }
+    report.frames.push({
+      i, t: +t.toFixed(4), base64: b64,
+      bones: { hips: g('hips'), head: g('head'), leftHand: g('leftHand'), rightHand: g('rightHand'), leftFoot: g('leftFoot'), rightFoot: g('rightFoot') },
+    })
+    await new Promise((r) => requestAnimationFrame(r))
+  }
+
+  report.ok = report.frames.length > 0
+  report.elapsedMs = Math.round(performance.now() - t0)
+  window.__RENDER_READY__ = true
+}
+
+main().catch((e) => fail(`未捕获异常：${e?.stack ?? e}`))
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "@airimate/desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AiriMate One Electron 主进程（单实例、单窗口、托盘、安全策略）",
+  "main": "dist/main/index.js",
+  "scripts": {
+    "build:main": "tsc -p tsconfig.main.json",
+    "build:preload": "tsc -p tsconfig.preload.json",
+    "build": "npm run build:main && npm run build:preload",
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build:main:prod": "tsc -p tsconfig.main.prod.json",
+    "build:preload:prod": "tsc -p tsconfig.preload.prod.json",
+    "build:prod": "npm run build:main:prod && npm run build:preload:prod"
+  },
+  "dependencies": {
+    "@airimate/shared": "1.0.0",
+    "@airimate/security": "1.0.0",
+    "@airimate/companion-kit": "1.0.0"
+  },
+  "devDependencies": {
+    "electron": "^44.4.5"
+  }
+}

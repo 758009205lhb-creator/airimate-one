@@ -1,0 +1,169 @@
+{
+  "probe": "layoutDiag",
+  "technique": "页面内合成 PointerEvent；拖动位移由主进程的可注入光标源推进（单一驱动源）",
+  "shell": null,
+  "layout": {
+    "inner": [
+      340,
+      420
+    ],
+    "devicePixelRatio": 1.25,
+    "shellClass": "shell shell--pet",
+    "html": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 340,
+        "h": 420
+      },
+      "display": "block",
+      "position": "static",
+      "flex": "0 1 auto",
+      "width": "340px",
+      "height": "420px"
+    },
+    "body": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 340,
+        "h": 420
+      },
+      "display": "block",
+      "position": "static",
+      "flex": "0 1 auto",
+      "width": "340px",
+      "height": "420px"
+    },
+    "app": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 340,
+        "h": 420
+      },
+      "display": "block",
+      "position": "static",
+      "flex": "0 1 auto",
+      "width": "340px",
+      "height": "420px"
+    },
+    "shell": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 340,
+        "h": 420
+      },
+      "display": "flex",
+      "position": "relative",
+      "flex": "0 1 auto",
+      "width": "340px",
+      "height": "420px"
+    },
+    "shellBody": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 340,
+        "h": 420
+      },
+      "display": "flex",
+      "position": "static",
+      "flex": "1 1 0%",
+      "width": "340px",
+      "height": "420px"
+    },
+    "side": null,
+    "stageSlot": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 340,
+        "h": 420
+      },
+      "display": "block",
+      "position": "relative",
+      "flex": "1 1 0%",
+      "width": "340px",
+      "height": "420px"
+    },
+    "stageRoot": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 340,
+        "h": 420
+      },
+      "display": "block",
+      "position": "absolute",
+      "flex": "0 1 auto",
+      "width": "340px",
+      "height": "420px"
+    },
+    "canvas": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 340,
+        "h": 420
+      },
+      "display": "block",
+      "position": "static",
+      "flex": "0 1 auto",
+      "width": "340px",
+      "height": "420px"
+    }
+  },
+  "window": {
+    "bounds": {
+      "x": 1038,
+      "y": 528,
+      "width": 341,
+      "height": 420
+    },
+    "mode": "pet",
+    "innerViaJs": [
+      340,
+      420
+    ]
+  },
+  "uiMode": {
+    "idleCount": 10,
+    "manifestCount": 16,
+    "manifestNames": [
+      "idle_pet_idle",
+      "idle_pet_idle_10",
+      "idle_pet_idle_2",
+      "idle_pet_idle_3",
+      "idle_pet_idle_4",
+      "idle_pet_idle_5",
+      "idle_pet_idle_6",
+      "idle_pet_idle_7",
+      "idle_pet_idle_8",
+      "idle_pet_idle_9",
+      "locomotion_pet_walk_left",
+      "misc_pet_dragging",
+      "pose_pet_pose_1",
+      "sitting_pet_sit_01",
+      "sitting_pet_sit_02",
+      "sleeping_pet_sleeping"
+    ],
+    "manifestSets": [
+      "idle",
+      "walk",
+      "drag",
+      "single",
+      "sit",
+      "sleep"
+    ],
+    "stageIdleTotal": 10,
+    "clipIds": 16,
+    "failed": 0,
+    "uiMode": "pet",
+    "isPetLayout": true,
+    "settingsMode": "pet"
+  },
+  "pass": true,
+  "shots": []
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@airimate/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AiriMate One 统一契约与运行时校验（唯一真源）",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "build:prod": "tsc -p tsconfig.prod.json"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

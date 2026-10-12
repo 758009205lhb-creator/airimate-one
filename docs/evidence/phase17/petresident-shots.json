@@ -1,0 +1,198 @@
+{
+    "id":  "petresident-shots",
+    "invariant":  "六张真实桌面截图（默认态只有对话窗口 / 菜单栏展开 / 常驻后桌宠出现 / 桌宠右键菜单 / 取消常驻后桌宠消失 / 拖走后的对话窗口）全部落盘且非空，且每一步都有桌面枚举的身份读数",
+    "generatedAt":  "2026-10-08T18:34:47.6479925Z",
+    "commandLine":  "powershell -NoProfile -ExecutionPolicy Bypass -File tools\\qa\\petresident-shots.ps1 -OutDir F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase17 -TimeoutSec 300",
+    "prefix":  "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase17\\screens\\petresident-20261009-023348",
+    "shotsFromProbe":  [
+                           {
+                               "probe":  "menuopen",
+                               "label":  "chat-menu-file",
+                               "png":  "petresident-20261009-023348-chat-menu-file-desktop.png",
+                               "bytes":  563573,
+                               "at":  "2026-10-09T02:34:10"
+                           },
+                           {
+                               "probe":  "menuopen",
+                               "label":  "pet-menu-open",
+                               "png":  "petresident-20261009-023348-pet-menu-open-desktop.png",
+                               "bytes":  648909,
+                               "at":  "2026-10-09T02:34:14"
+                           }
+                       ],
+    "shotsFromScript":  [
+                            {
+                                "label":  "default-only-chat",
+                                "png":  "petresident-20261009-023348-default-only-chat-desktop.png",
+                                "bytes":  487560,
+                                "at":  "2026-10-09T02:34:24",
+                                "ours":  [
+                                             "和 Lazuli 聊天"
+                                         ],
+                                "counts":  {
+                                               "visibleOurs":  1,
+                                               "character":  0,
+                                               "chat":  1
+                                           }
+                            },
+                            {
+                                "label":  "pet-resident-on",
+                                "png":  "petresident-20261009-023348-pet-resident-on-desktop.png",
+                                "bytes":  473260,
+                                "at":  "2026-10-09T02:34:34",
+                                "ours":  [
+                                             "AiriMate One",
+                                             "和 她 聊天"
+                                         ],
+                                "counts":  {
+                                               "visibleOurs":  2,
+                                               "character":  1,
+                                               "chat":  1
+                                           }
+                            },
+                            {
+                                "label":  "pet-resident-off",
+                                "png":  "petresident-20261009-023348-pet-resident-off-desktop.png",
+                                "bytes":  493194,
+                                "at":  "2026-10-09T02:34:43",
+                                "ours":  [
+                                             "和 Lazuli 聊天"
+                                         ],
+                                "counts":  {
+                                               "visibleOurs":  1,
+                                               "character":  0,
+                                               "chat":  1
+                                           }
+                            },
+                            {
+                                "label":  "chat-dragged",
+                                "png":  "petresident-20261009-023348-chat-dragged-desktop.png",
+                                "bytes":  471816,
+                                "at":  "2026-10-09T02:34:47",
+                                "drag":  {
+                                             "attempted":  true,
+                                             "from":  "639,317",
+                                             "to":  "459,305",
+                                             "rectBefore":  "881x680+459+305",
+                                             "rectAfter":  "881x680+459+305",
+                                             "movedPx":  0,
+                                             "injectResult":  "aborted:left-target-at-step-4"
+                                         },
+                                "chatWindowBoundsOnDisk":  null
+                            }
+                        ],
+    "shotCount":  6,
+    "menuProbe":  {
+                      "json":  "menuopen.json",
+                      "jsonExists":  true,
+                      "pass":  true
+                  },
+    "requiredLabels":  [
+                           "default-only-chat",
+                           "chat-menu-file",
+                           "pet-resident-on",
+                           "pet-menu-open",
+                           "pet-resident-off",
+                           "chat-dragged"
+                       ],
+    "missingLabels":  [
+
+                      ],
+    "requiredNonEmptyCount":  6,
+    "raiseChecks":  [
+                        "title=\u0027AiriMate One\u0027 visible=True topmost=True rect=425x525+1298+660",
+                        "title=\u0027和 Lazuli 聊天\u0027 visible=True topmost=True rect=899x698+446+293",
+                        "title=\u0027和 Lazuli 聊天\u0027 visible=True topmost=False rect=881x680+459+305",
+                        "title=\u0027和 她 聊天\u0027 visible=True topmost=True rect=881x680+459+305",
+                        "title=\u0027和 她 聊天\u0027 visible=True topmost=False rect=881x680+459+305",
+                        "title=\u0027和 Lazuli 聊天\u0027 visible=True topmost=True rect=881x680+459+305"
+                    ],
+    "perWindowShots":  [
+                           {
+                               "kind":  "chat",
+                               "png":  "petresident-20261009-023348-chat-menu-file-window-chat.png",
+                               "bytes":  9960,
+                               "rect":  "899x698+446+293",
+                               "title":  "和 Lazuli 聊天"
+                           },
+                           {
+                               "kind":  "character",
+                               "png":  "petresident-20261009-023348-chat-menu-file-window-character.png",
+                               "bytes":  97936,
+                               "rect":  "425x525+1298+660",
+                               "title":  "AiriMate One"
+                           },
+                           {
+                               "kind":  "chat",
+                               "png":  "petresident-20261009-023348-pet-menu-open-window-chat.png",
+                               "bytes":  52178,
+                               "rect":  "899x698+446+293",
+                               "title":  "和 Lazuli 聊天"
+                           },
+                           {
+                               "kind":  "character",
+                               "png":  "petresident-20261009-023348-pet-menu-open-window-character.png",
+                               "bytes":  141832,
+                               "rect":  "425x525+1298+660",
+                               "title":  "AiriMate One"
+                           },
+                           {
+                               "kind":  "chat",
+                               "png":  "petresident-20261009-023348-A-window-chat.png",
+                               "bytes":  26348,
+                               "rect":  "881x680+459+305",
+                               "title":  "和 Lazuli 聊天"
+                           },
+                           {
+                               "kind":  "chat",
+                               "png":  "petresident-20261009-023348-C-window-chat.png",
+                               "bytes":  8198,
+                               "rect":  "881x680+459+305",
+                               "title":  "和 她 聊天"
+                           },
+                           {
+                               "kind":  "character",
+                               "png":  "petresident-20261009-023348-C-window-character.png",
+                               "bytes":  11640,
+                               "rect":  "425x525+1298+660",
+                               "title":  "AiriMate One"
+                           },
+                           {
+                               "kind":  "chat",
+                               "png":  "petresident-20261009-023348-E-window-chat.png",
+                               "bytes":  32273,
+                               "rect":  "881x680+459+305",
+                               "title":  "和 她 聊天"
+                           },
+                           {
+                               "kind":  "chat",
+                               "png":  "petresident-20261009-023348-F-window-chat.png",
+                               "bytes":  8214,
+                               "rect":  "881x680+459+305",
+                               "title":  "和 Lazuli 聊天"
+                           }
+                       ],
+    "minimizeOthersEnabled":  false,
+    "raiseOurWindowsEnabled":  true,
+    "settingsBefore":  {
+                           "petResident":  false,
+                           "startupOpenChat":  true
+                       },
+    "settingsRestoredTo":  {
+                               "petResident":  false
+                           },
+    "checks":  {
+                   "shots.all-six-present":  true,
+                   "shots.all-non-empty":  true,
+                   "default.pet-absent-chat-present":  true,
+                   "resident-on.pet-present-chat-present":  true,
+                   "resident-off.pet-absent-chat-present":  true,
+                   "menu.probe-pass":  true,
+                   "menu.shots-non-empty":  true,
+                   "drag.titlebar-moved-window":  false,
+                   "drag.bounds-written-to-settings":  false,
+                   "drag.affects-pass-verdict":  false
+               },
+    "dragInformationalOnly":  false,
+    "pass":  true
+}

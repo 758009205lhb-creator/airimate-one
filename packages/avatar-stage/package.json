@@ -1,0 +1,25 @@
+{
+  "name": "@airimate/avatar-stage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AiriMate One 唯一角色舞台：VRM 加载、相机、材质、表情、口型、视线、眨眼（一个 Scene/Renderer/Mixer/VRM）",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:prod": "tsc -p tsconfig.prod.json"
+  },
+  "dependencies": {
+    "@airimate/shared": "1.0.0",
+    "@pixiv/three-vrm": "^3.5.5",
+    "@pixiv/three-vrm-animation": "^3.5.5",
+    "three": "^0.186.1"
+  }
+}

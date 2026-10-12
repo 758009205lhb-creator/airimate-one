@@ -1,0 +1,106 @@
+{
+  "probe": "avatarVisible",
+  "technique": "页面内合成 PointerEvent；拖动位移由主进程的可注入光标源推进（单一驱动源）",
+  "shell": null,
+  "pixels": {
+    "ratio": 0.1411,
+    "nonBg": 20145,
+    "total": 142800,
+    "box": {
+      "x": 62,
+      "y": 33,
+      "w": 195,
+      "h": 306
+    },
+    "bgMode": [
+      0,
+      0,
+      0
+    ],
+    "canvas": [
+      340,
+      420
+    ]
+  },
+  "sample": {
+    "baseClipId": "idle_pet_idle",
+    "dragging": false,
+    "screenRect": {
+      "x": 58.2948204141535,
+      "y": 74.48875675511216,
+      "w": 201.55921670049236,
+      "h": 319.57818134136147,
+      "source": "skinned"
+    },
+    "inFrustum": true,
+    "canvasViewport": {
+      "x": 0,
+      "y": 0,
+      "w": 340,
+      "h": 420
+    },
+    "canvasBuffer": {
+      "w": 340,
+      "h": 420
+    },
+    "camera": {
+      "position": {
+        "x": 0,
+        "y": 0.862579440759957,
+        "z": 3.8328463035304647
+      },
+      "lookAt": {
+        "x": 0,
+        "y": 0.862579440759957,
+        "z": 0
+      },
+      "fov": 30,
+      "near": 0.19164231517652325,
+      "far": 45.99415564236558
+    },
+    "avatarBox": {
+      "x": 58.2948204141535,
+      "y": 74.48875675511216,
+      "w": 201.55921670049236,
+      "h": 319.57818134136147
+    },
+    "anchorBox": {
+      "x": 82.5,
+      "y": 83.06666666666666,
+      "w": 175,
+      "h": 303.33333333333337
+    },
+    "hitEllipse": {
+      "cx": 170,
+      "cy": 234.73333333333335,
+      "rx": 87.5,
+      "ry": 151.66666666666669
+    },
+    "avatarScale": 1,
+    "pixelRatio": 0.141,
+    "pixelBox": {
+      "x": 62,
+      "y": 33,
+      "w": 195,
+      "h": 306
+    }
+  },
+  "canvasViewport": {
+    "x": 0,
+    "y": 0,
+    "w": 340,
+    "h": 420
+  },
+  "insideRatio": 1,
+  "passInFrustum": true,
+  "passInsideCanvas": true,
+  "passHasPixels": true,
+  "pass": true,
+  "shots": [
+    {
+      "label": "avatarVisible",
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase3\\round-interaction\\avatarVisible-avatarVisible.png",
+      "bytes": 82863
+    }
+  ]
+}

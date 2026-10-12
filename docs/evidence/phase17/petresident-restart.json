@@ -1,0 +1,48 @@
+{
+    "id":  "petresident-restart",
+    "invariant":  "「桌宠常驻」写进设置文件后，**下一次进程启动**桌宠窗口自己出现（C2 的重启后一半）",
+    "generatedAt":  "2026-10-08T17:48:14.4483368Z",
+    "commandLine":  "powershell -NoProfile -ExecutionPolicy Bypass -File tools\\qa\\petresident-restart.ps1 -OutDir F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase17 -TimeoutSec 300",
+    "technique":  "两次独立进程启动；第二次带 --probe-pet-mode start-resident（会话级覆盖、不写设置）",
+    "settingsBefore":  {
+                           "petResident":  false,
+                           "startupOpenChat":  true
+                       },
+    "settingsRestoredTo":  {
+                               "petResident":  false
+                           },
+    "petResidentOnDiskBeforePassB":  true,
+    "steps":  [
+                  {
+                      "step":  "passA-default-run",
+                      "probe":  "petresident.json",
+                      "exists":  true,
+                      "pass":  true
+                  },
+                  {
+                      "step":  "passB-start-resident",
+                      "probe":  "petresident-start-resident.json",
+                      "exists":  true,
+                      "pass":  true
+                  }
+              ],
+    "passAJsonExists":  true,
+    "passBJsonExists":  true,
+    "passBpetVisibleAtBoot":  true,
+    "passBpetVisibleNow":  true,
+    "passBsettingsReadTrue":  true,
+    "passBchatAlsoOpen":  true,
+    "failures":  [
+
+                 ],
+    "checks":  {
+                   "passA.json-exists":  true,
+                   "passB.json-exists":  true,
+                   "disk.petResident-true-before-passB":  true,
+                   "passB.pet-window-auto-shown":  true,
+                   "passB.startup-read-resident-from-settings":  true,
+                   "passB.chat-window-also-open":  true,
+                   "no-failures":  true
+               },
+    "pass":  true
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "airimate/dist-integrity/1",
+  "verifiedAt": "2026-10-03T15:25:28.155Z",
+  "payloadRoot": "dist-package",
+  "stagedAt": "2026-10-03T15:25:16.572Z",
+  "algorithm": "sha256",
+  "manifestFiles": 367,
+  "hashedFiles": 367,
+  "payloadBytes": 391584406,
+  "payloadMB": 373.44,
+  "payloadDigest": "8c520ef4aac40c17cd6216ccd525f63ea71e22d16912c18ecfc0189a438a268e",
+  "recomputedDigest": "47a5c521833f5499f2c8f4060e40fbac534617d6d9d7fefc69018acf1ab89206",
+  "digestMatch": false,
+  "hashMismatches": [
+    {
+      "rel": "README.md",
+      "recorded": "ac0558f7c89c57c0",
+      "actual": "e69db1fd1eb0d301",
+      "size": 8137
+    }
+  ],
+  "sizeMismatches": [],
+  "missingOnDisk": [],
+  "extraOnDisk": [],
+  "problems": [
+    {
+      "code": "hash-mismatch",
+      "detail": "1 个文件内容与清单不符（截断/损坏/被替换）：README.md(ac0558f7c89c57c0…≠e69db1fd1eb0d301…)"
+    },
+    {
+      "code": "payload-digest-mismatch",
+      "detail": "总摘要不符：清单 8c520ef4aac40c17… vs 复算 47a5c521833f5499…"
+    }
+  ],
+  "pass": false
+}

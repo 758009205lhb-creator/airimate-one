@@ -1,0 +1,12 @@
+{
+    "schema":  "airimate/run-soak-and-finish/1",
+    "finishedAt":  "2026-10-06T00:03:26.1946190+08:00",
+    "soakExit":  1,
+    "drillExit":  null,
+    "withDrill":  false,
+    "pass":  false,
+    "soakSummary":  "docs/evidence/phase8/A15-soak-run7-summary.json",
+    "drillSummary":  null,
+    "statusSnapshot":  "docs/evidence/STATUS-after-A15-soak-run7.txt",
+    "note":  "run1 因系统睡眠被打断、不计通过（见 docs/evidence/phase8/A15-soak-run1-sleep.md）"
+}

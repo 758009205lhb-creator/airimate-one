@@ -1,0 +1,22 @@
+{
+  "name": "@airimate/radial-menu",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AiriMate One 唯一径向轮盘：scale 0→1 弹出（rAF 驱动）、头部锚点跟随、命中测试与视觉同源",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:prod": "tsc -p tsconfig.prod.json"
+  },
+  "dependencies": {
+    "@airimate/shared": "1.0.0"
+  }
+}

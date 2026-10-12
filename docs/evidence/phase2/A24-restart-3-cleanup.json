@@ -1,0 +1,16 @@
+{
+  "bootId": "e020997a-3a43-4dcc-a62c-7b1849318f56",
+  "existingMarker": {
+    "id": "m_muir0ycr_1",
+    "text": "AIRIMATE_MEMPROBE_跨进程持久化标记（写入进程 bootId=efe9bfdd-8db0-4eee-9b6b-21f534f34731）",
+    "createdAt": 1790448865515
+  },
+  "existingMarkerCount": 1,
+  "totalBefore": 1,
+  "cleanup": {
+    "removed": 1,
+    "remainingMarkers": 0,
+    "totalAfter": 0
+  },
+  "pass": true
+}

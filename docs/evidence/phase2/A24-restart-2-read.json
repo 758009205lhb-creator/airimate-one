@@ -1,0 +1,13 @@
+{
+  "bootId": "ac87553a-be0f-4144-a64b-6fc09506ce32",
+  "existingMarker": {
+    "id": "m_muir0ycr_1",
+    "text": "AIRIMATE_MEMPROBE_跨进程持久化标记（写入进程 bootId=efe9bfdd-8db0-4eee-9b6b-21f534f34731）",
+    "createdAt": 1790448865515
+  },
+  "existingMarkerCount": 1,
+  "totalBefore": 1,
+  "mode": "read",
+  "pass": true,
+  "conclusion": "上一进程写入的记忆在本进程（新 bootId）中读到了 ⇒ 跨进程持久化成立"
+}

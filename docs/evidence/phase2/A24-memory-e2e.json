@@ -1,0 +1,123 @@
+{
+  "steps": [
+    {
+      "step": "list-before",
+      "ok": true,
+      "total": 0
+    },
+    {
+      "step": "ipc-add",
+      "ok": true,
+      "entryId": "m_muiqx48f_1",
+      "total": 1,
+      "code": null
+    },
+    {
+      "step": "disk-after-add",
+      "exists": true,
+      "bytes": 317,
+      "containsTestText": true
+    },
+    {
+      "step": "cold-read",
+      "count": 1,
+      "hits": 1,
+      "topText": "用户养了一只叫豆豆的猫，最喜欢抹茶拿铁"
+    },
+    {
+      "step": "ipc-recall",
+      "ok": true,
+      "count": 1,
+      "top": "用户养了一只叫豆豆的猫，最喜欢抹茶拿铁",
+      "score": 1.415
+    },
+    {
+      "step": "schema-reject-oversize",
+      "ok": true,
+      "code": "IPC_SCHEMA"
+    },
+    {
+      "step": "injection",
+      "chars": 43,
+      "hits": 1,
+      "fingerprint": "4e9588dfdefb",
+      "queryChars": 10,
+      "at": 1790448686568,
+      "totalInjections": 1
+    },
+    {
+      "step": "ipc-delete",
+      "ok": true,
+      "removed": true,
+      "total": 0
+    }
+  ],
+  "passIpcAdd": true,
+  "diskAfterAdd": {
+    "exists": true,
+    "bytes": 317,
+    "containsTestText": true
+  },
+  "passPersisted": true,
+  "coldRead": {
+    "count": 1,
+    "hits": 1,
+    "topText": "用户养了一只叫豆豆的猫，最喜欢抹茶拿铁"
+  },
+  "passColdRead": true,
+  "ipcRecall": {
+    "ok": true,
+    "count": 1,
+    "top": "用户养了一只叫豆豆的猫，最喜欢抹茶拿铁",
+    "score": 1.415
+  },
+  "passIpcRecall": true,
+  "schemaReject": {
+    "ok": false,
+    "code": "IPC_SCHEMA"
+  },
+  "passSchemaReject": true,
+  "schemaRejectEmptyQuery": {
+    "ok": false,
+    "code": "IPC_SCHEMA"
+  },
+  "passSchemaRejectEmpty": true,
+  "chatSend": {
+    "ok": true,
+    "requestId": "req_muiqx49r_1"
+  },
+  "passChatAccepted": true,
+  "injection": {
+    "chars": 43,
+    "hits": 1,
+    "fingerprint": "4e9588dfdefb",
+    "queryChars": 10,
+    "at": 1790448686568,
+    "totalInjections": 1
+  },
+  "passInjected": true,
+  "injectionNegative": {
+    "chars": 0,
+    "hits": 0,
+    "fingerprint": null,
+    "queryChars": 14,
+    "at": 1790448688102,
+    "totalInjections": 2
+  },
+  "passNoInjectionWhenIrrelevant": true,
+  "passInjectionCounted": true,
+  "ipcDelete": {
+    "ok": true,
+    "removed": true,
+    "total": 0
+  },
+  "passIpcDelete": true,
+  "diskAfterDelete": {
+    "exists": true,
+    "bytes": 36,
+    "containsTestText": false
+  },
+  "passGoneFromDisk": true,
+  "cleanedUp": true,
+  "pass": true
+}

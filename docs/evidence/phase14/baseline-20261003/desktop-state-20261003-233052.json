@@ -1,0 +1,31 @@
+{
+    "generatedAt":  "2026-10-03T23:30:53.3471261+08:00",
+    "host":  {
+                 "computer":  "666AMCN",
+                 "user":  "shiqian",
+                 "os":  "10.0.28000",
+                 "psVersion":  "5.1.28000.2952"
+             },
+    "counts":  {
+                   "mineVisibleWindows":  0,
+                   "mineAllWindows":  0,
+                   "legacyKernelVisibleWindows":  0,
+                   "legacyKernelAllWindows":  0,
+                   "legacyPetVisibleWindows":  0,
+                   "totalVisibleTopLevel":  16
+               },
+    "mineWindows":  [
+
+                    ],
+    "legacyKernelWindows":  [
+
+                            ],
+    "legacyPetWindows":  [
+
+                         ],
+    "methodology":  [
+                        "top-level windows via EnumWindows; ownership by full image path + command line markers (never by name alone)",
+                        "legacy kernel predicate: imagePath ends with MateEngineX.exe OR commandLine contains MateEngineX",
+                        "this-app predicate: imagePath or commandLine contains 新工程 (workspace root of AiriMate One)"
+                    ]
+}

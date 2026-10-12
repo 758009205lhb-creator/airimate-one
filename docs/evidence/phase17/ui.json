@@ -1,0 +1,343 @@
+{
+  "checks": {
+    "ui.probe-present": true,
+    "ui.mode-is-panel": true,
+    "overlay.panel-wizard-present-when-needed": true,
+    "overlay.stage-root-present": true,
+    "overlay.canvas-present": true,
+    "ui.single-stage": true,
+    "ui.tabs-rendered": true,
+    "ui.tab-schedule-exists": true,
+    "ui.tab-reminder-exists": true,
+    "ui.tab-memory-exists": true,
+    "ui.tab-voice-exists": true,
+    "ui.tab-learning-exists": true,
+    "ui.tab-capability-exists": true,
+    "ui.wizard-present-or-completed": true,
+    "ui.wizard-hint-visible": true,
+    "ui.skip-button-present-when-unfinished": true,
+    "ui.skip-button-enabled": true,
+    "ui.reset-wizard-entry-present": true,
+    "ui.canvas-present": true,
+    "ui.canvas-has-size": true,
+    "ui.no-secret-in-dom": true,
+    "ui.memory-search-wired": true,
+    "ui.permissions-loaded": true,
+    "ui.blocked-permissions-counted": true,
+    "ui.telemetry-reflected": true,
+    "ui.proactive-state-reflected": true,
+    "ui.statusbar-present": true,
+    "ui.capability-tab-clickable": true,
+    "ui.capability-tab-has-adapters": true,
+    "ui.capability-tab-has-license": true,
+    "ui.capability-tab-has-tools": true,
+    "ui.capability-tab-has-stores": true,
+    "ui.voice-tab-clickable": true,
+    "ui.voice-tab-shows-mic-state": true,
+    "ui.voice-tab-shows-default-off": true,
+    "ui.voice-tab-shows-privacy-notice": true,
+    "ui.voice-tab-has-stop-button": true,
+    "ui.voice-tab-shows-screen-on-demand": true,
+    "ui.voice-tab-shows-allowlist": true,
+    "ui.voice-tab-shows-hard-floor": true,
+    "ui.voice-tab-has-call-section": true,
+    "ui.voice-tab-has-call-buttons": true,
+    "ui.voice-tab-shows-call-phase": true,
+    "ui.learning-tab-clickable": true,
+    "ui.learning-tab-shows-default-off": true,
+    "ui.learning-tab-shows-threshold": true,
+    "ui.learning-tab-shows-pending": true,
+    "ui.learning-tab-states-no-config-change": true,
+    "ui.learning-tab-has-run-buttons": true
+  },
+  "ui": {
+    "idleCount": 10,
+    "manifestCount": 16,
+    "manifestNames": [
+      "idle_pet_idle",
+      "idle_pet_idle_10",
+      "idle_pet_idle_2",
+      "idle_pet_idle_3",
+      "idle_pet_idle_4",
+      "idle_pet_idle_5",
+      "idle_pet_idle_6",
+      "idle_pet_idle_7",
+      "idle_pet_idle_8",
+      "idle_pet_idle_9",
+      "locomotion_pet_walk_left",
+      "misc_pet_dragging",
+      "pose_pet_pose_1",
+      "sitting_pet_sit_01",
+      "sitting_pet_sit_02",
+      "sleeping_pet_sleeping"
+    ],
+    "manifestSets": [
+      "idle",
+      "walk",
+      "drag",
+      "single",
+      "sit",
+      "sleep"
+    ],
+    "stageIdleTotal": 10,
+    "clipIds": 16,
+    "failed": 0,
+    "uiMode": "panel",
+    "isPetLayout": false,
+    "settingsMode": "panel",
+    "onboardingStep": "done",
+    "onboardingBlockedBy": null,
+    "onboardingSatisfied": {
+      "provider": true,
+      "test": true,
+      "model": true,
+      "persona": true,
+      "permission": true,
+      "schedule": true
+    },
+    "onboardingHint": "全部就绪",
+    "onboardingCompleted": true,
+    "personaName": "Lazuli",
+    "personaUserTitle": "你",
+    "providerCount": 1,
+    "providerLabels": [
+      "DeepSeek"
+    ],
+    "activeProviderId": "p_muzkd4is",
+    "providerHasKey": [
+      true
+    ],
+    "providerKeyFingerprints": [
+      "6daa7bd6"
+    ],
+    "scheduleCount": 0,
+    "reminderCount": 4,
+    "queuedCount": 4,
+    "unackedCount": 0,
+    "permissionKinds": [
+      "screen-capture",
+      "file-read",
+      "file-write",
+      "app-launch",
+      "shell-exec",
+      "clipboard-read",
+      "window-control",
+      "input-simulate",
+      "system-settings",
+      "credential-access",
+      "payment"
+    ],
+    "permissionEffective": {
+      "screen-capture": "read-only",
+      "file-read": "read-only",
+      "file-write": "confirm",
+      "app-launch": "confirm",
+      "shell-exec": "confirm",
+      "clipboard-read": "confirm",
+      "window-control": "read-only",
+      "input-simulate": "blocked",
+      "system-settings": "blocked",
+      "credential-access": "blocked",
+      "payment": "blocked"
+    },
+    "blockedPermissionCount": 4,
+    "telemetryEnabled": false,
+    "activityAvailable": true,
+    "memoryResultCount": 0,
+    "memoryQueryChars": 0,
+    "recallPreviewHits": null,
+    "recallPreviewInjectedChars": null,
+    "proactiveEnabled": true,
+    "proactiveRunning": false,
+    "proactiveBlockReason": "quiet-hours",
+    "lastProactiveKind": null,
+    "lastProactivePriority": null,
+    "radioDay": null,
+    "radioNewsCount": null,
+    "radioDisclosures": [],
+    "ttsEnabled": true,
+    "conversationOpen": true,
+    "chatVisible": true,
+    "chatWindowId": 2,
+    "chatCreatedCount": 1,
+    "petMenuState": {
+      "resident": false,
+      "visible": false,
+      "statusText": "桌宠已收回"
+    },
+    "bubbleVisible": false,
+    "bubbleTextChars": 0,
+    "ttsActive": false,
+    "composing": false,
+    "listening": false,
+    "ttsAskVisible": false,
+    "bubbleExpanded": false,
+    "bubbleFullChars": 0,
+    "bubbleAutoHide": null,
+    "sendCount": 0,
+    "conversationHotkey": {
+      "accelerator": "Ctrl+Alt+Space",
+      "enabled": true,
+      "registered": true,
+      "error": null
+    },
+    "textInputs": {
+      "count": 15,
+      "tags": [
+        "input",
+        "input",
+        "input",
+        "input",
+        "input",
+        "input",
+        "input",
+        "input",
+        "input",
+        "textarea",
+        "input",
+        "textarea",
+        "input",
+        "input",
+        "input"
+      ],
+      "conversationCount": 0,
+      "conversationTags": [],
+      "configCount": 15,
+      "dockInDom": false,
+      "msgInDom": 0
+    },
+    "overlays": {
+      "viewport": {
+        "w": 482,
+        "h": 760
+      },
+      "wizardCount": 0,
+      "wizardBox": null,
+      "wizardCoversAll": false,
+      "toastsCount": 0,
+      "proactiveCount": 0,
+      "toolConfirmCount": 0,
+      "stageRootCount": 1,
+      "canvasCount": 1
+    },
+    "overlayRects": {
+      "dock": null,
+      "bubble": null,
+      "ticks": {
+        "dock": 0,
+        "bubble": 496,
+        "listening": 0
+      },
+      "probes": {
+        "dock": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "none",
+          "note": "init"
+        },
+        "bubble": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "ref",
+          "note": "done"
+        },
+        "listening": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "none",
+          "note": "init"
+        }
+      },
+      "dockInDom": false
+    }
+  },
+  "overlays": {
+    "viewport": {
+      "w": 482,
+      "h": 760
+    },
+    "wizardCount": 0,
+    "wizardBox": null,
+    "wizardCoversAll": false,
+    "toastsCount": 0,
+    "proactiveCount": 0,
+    "toolConfirmCount": 0,
+    "stageRootCount": 1,
+    "canvasCount": 1
+  },
+  "tabs": [
+    "日程",
+    "提醒4",
+    "记忆",
+    "语音",
+    "学习",
+    "能力",
+    "设置"
+  ],
+  "wizard": {
+    "present": false
+  },
+  "skipPath": {
+    "skipButtonPresent": false,
+    "skipButtonDisabled": null,
+    "skipNoteChars": 0
+  },
+  "resetPath": {
+    "clicked": true,
+    "resetPresent": true
+  },
+  "skipClick": {
+    "skipped": true,
+    "reason": "onboarding 已完成或跳过按钮不在（这两条不作要求）"
+  },
+  "canvas": {
+    "present": true,
+    "w": 232,
+    "h": 629,
+    "bw": 232,
+    "bh": 629,
+    "visible": true
+  },
+  "bodyTextChars": 1373,
+  "capabilityTab": {
+    "clicked": true,
+    "chars": 7891,
+    "hasKindLabel": true,
+    "hasLicense": true,
+    "hasToolSection": true,
+    "hasStores": true,
+    "hasDigestNote": true
+  },
+  "voiceTab": {
+    "clicked": true,
+    "chars": 1592,
+    "hasMicState": true,
+    "hasDefaultOff": true,
+    "hasPrivacy": true,
+    "hasStopButton": true,
+    "hasScreenOnDemand": true,
+    "hasAllowlist": true,
+    "hasHardFloor": true,
+    "hasCallSection": true,
+    "hasCallButtons": true,
+    "hasCallPhase": true
+  },
+  "learningTab": {
+    "clicked": true,
+    "chars": 527,
+    "hasDefaultOff": true,
+    "hasThreshold": true,
+    "hasPendingSection": true,
+    "hasNoConfigClaim": true,
+    "hasSummary": true,
+    "hasRunButton": true,
+    "hasPreviewButton": true
+  },
+  "totalChecks": 49,
+  "passedChecks": 49,
+  "failedChecks": [],
+  "pass": true
+}

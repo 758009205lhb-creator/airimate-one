@@ -1,0 +1,735 @@
+{
+  "appId": "com.airimate.one",
+  "version": "1.0.0",
+  "pid": 11852,
+  "bootId": "c02cc20c-ed67-4117-92fd-dde3e45ab507",
+  "uptimeSec": 61,
+  "instances": 1,
+  "windows": [
+    {
+      "id": 1,
+      "title": "AiriMate One",
+      "bounds": {
+        "x": 934,
+        "y": 134,
+        "width": 482,
+        "height": 762
+      },
+      "visible": true,
+      "mode": "panel",
+      "alwaysOnTop": false,
+      "ignoreMouseEvents": false
+    }
+  ],
+  "browserWindowCount": 1,
+  "mutex": {
+    "holderPid": 14244,
+    "status": "held"
+  },
+  "lockFile": {
+    "path": "C:\\Users\\shiqian\\AppData\\Roaming\\AiriMateOne\\run\\instance.lock",
+    "pid": 11852,
+    "stale": false
+  },
+  "listeningPorts": [],
+  "legacy": {
+    "checked": true,
+    "blocked": true,
+    "hits": [
+      {
+        "kind": "legacy-bridge",
+        "pid": 18840,
+        "imagePath": "C:\\Program Files\\nodejs\\node.exe",
+        "reason": "命令行命中旧入口标记：airi-host.mjs"
+      },
+      {
+        "kind": "mate-engine-kernel",
+        "pid": 22984,
+        "imagePath": "F:\\deepseek harness\\AI女友\\build\\workcopy\\MateEngineX.exe",
+        "reason": "映像路径位于旧工程前缀内；SHA256 命中已知旧内核"
+      },
+      {
+        "kind": "legacy-brain",
+        "pid": 18840,
+        "imagePath": "C:\\Program Files\\nodejs\\node.exe",
+        "reason": "旧宿主锁文件存活（C:\\Users\\shiqian\\AppData\\Local\\AiriMate\\host.lock.json，pid=18840）；固定控制端口占用：18191,18190,6199"
+      },
+      {
+        "kind": "legacy-airi-combo",
+        "pid": 12820,
+        "imagePath": "F:\\AIRI\\airi.exe",
+        "reason": "AIRI 进程与旧桥进程（pid 18840）同时存在，属已废弃的\"双窗口\"组合"
+      }
+    ]
+  },
+  "secrets": {
+    "backend": "safeStorage",
+    "providerCount": 0
+  },
+  "motion": {
+    "clipCount": 16,
+    "manifestCount": 16,
+    "failed": [],
+    "clipIds": [
+      "idle_pet_idle",
+      "idle_pet_idle_10",
+      "idle_pet_idle_2",
+      "idle_pet_idle_3",
+      "idle_pet_idle_4",
+      "idle_pet_idle_5",
+      "idle_pet_idle_6",
+      "idle_pet_idle_7",
+      "idle_pet_idle_8",
+      "idle_pet_idle_9",
+      "locomotion_pet_walk_left",
+      "misc_pet_dragging",
+      "pose_pet_pose_1",
+      "sitting_pet_sit_01",
+      "sitting_pet_sit_02",
+      "sleeping_pet_sleeping"
+    ]
+  },
+  "stage": {
+    "stageId": "stage-1",
+    "rendererId": "renderer-2",
+    "mixerId": "mixer-4",
+    "vrmInstanceId": "vrm-3",
+    "sceneCount": 1,
+    "rendererCount": 1,
+    "mixerCount": 1,
+    "vrmCount": 1,
+    "live2dCount": 0,
+    "activeClip": "idle_pet_idle",
+    "activeWeight": 1,
+    "baseClipId": "idle_pet_idle_4",
+    "crossfade": {
+      "from": null,
+      "to": "idle_pet_idle_4",
+      "t": 1
+    },
+    "idleIndex": 4,
+    "idleTotal": 10,
+    "dragging": false,
+    "bones": {
+      "hips": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "spine": {
+        "x": 0.007951033301651478,
+        "y": -0.022514021024107933,
+        "z": -0.010467619635164738,
+        "w": 0.9996601343154907
+      },
+      "chest": {
+        "x": 0.0041134473867714405,
+        "y": 0.00003648826532298699,
+        "z": -0.008870058692991734,
+        "w": 0.9999521970748901
+      },
+      "neck": {
+        "x": -0.01830120198428631,
+        "y": -0.0890912264585495,
+        "z": 0.07672008126974106,
+        "w": 0.9928956627845764
+      },
+      "head": {
+        "x": -0.024197719991207123,
+        "y": 0.0020530724432319403,
+        "z": 0.08451700955629349,
+        "w": 0.9961260557174683
+      },
+      "leftUpperLeg": {
+        "x": 0.044186875224113464,
+        "y": 0.3879590928554535,
+        "z": -0.13302667438983917,
+        "w": 0.9109550714492798
+      },
+      "rightUpperLeg": {
+        "x": -0.23780333995819092,
+        "y": 0.3843541443347931,
+        "z": 0.17135751247406006,
+        "w": 0.8754187822341919
+      },
+      "leftLowerLeg": {
+        "x": 0.13134561479091644,
+        "y": -0.003147073555737734,
+        "z": -0.00041696877451613545,
+        "w": 0.9913315773010254
+      },
+      "rightLowerLeg": {
+        "x": 0.07923231273889542,
+        "y": -0.0003629825368989259,
+        "z": -0.000028850648959632963,
+        "w": 0.9968560934066772
+      },
+      "leftFoot": {
+        "x": -0.03323082625865936,
+        "y": 0.002619724255055189,
+        "z": 0.00008710401016287506,
+        "w": 0.9994442462921143
+      },
+      "rightFoot": {
+        "x": 0.13694675266742706,
+        "y": -0.009612428955733776,
+        "z": 0.0013289751950651407,
+        "w": 0.9905309081077576
+      },
+      "leftUpperArm": {
+        "x": 0.3164382874965668,
+        "y": -0.1417004019021988,
+        "z": -0.16084040701389313,
+        "w": 0.9240769147872925
+      },
+      "rightUpperArm": {
+        "x": -0.36810770630836487,
+        "y": 0.06537788361310959,
+        "z": 0.057457730174064636,
+        "w": 0.925700306892395
+      },
+      "leftLowerArm": {
+        "x": 0.5783230662345886,
+        "y": 0,
+        "z": 0,
+        "w": 0.8158078193664551
+      },
+      "rightLowerArm": {
+        "x": -0.5108755826950073,
+        "y": 0,
+        "z": 0,
+        "w": 0.8596546649932861
+      },
+      "leftHand": {
+        "x": -0.41317591071128845,
+        "y": 0.49240386486053467,
+        "z": -0.49240386486053467,
+        "w": 0.5868240594863892
+      },
+      "rightHand": {
+        "x": -0.1523958146572113,
+        "y": -0.18161825835704803,
+        "z": 0.6244609355926514,
+        "w": 0.744203507900238
+      }
+    },
+    "boneTravelAccum": {
+      "hips": 0,
+      "spine": 6.640264876578502,
+      "chest": 34.75145644168812,
+      "neck": 128.12109026431693,
+      "head": 64.53277152065395,
+      "leftUpperLeg": 157.14346009329185,
+      "rightUpperLeg": 154.78578953610796,
+      "leftLowerLeg": 24.577604935877496,
+      "rightLowerLeg": 123.39512380237855,
+      "leftFoot": 137.1226121114328,
+      "rightFoot": 39.1039642976488,
+      "leftUpperArm": 99.59653080553528,
+      "rightUpperArm": 28.285823922517114,
+      "leftLowerArm": 96.92308198972106,
+      "rightLowerArm": 6.064494968411012,
+      "leftHand": 127.74455263154454,
+      "rightHand": 26.18022746456619
+    },
+    "fps": {
+      "avg1s": 63,
+      "avg5s": 63.1
+    },
+    "heapMB": 137.4,
+    "wheel": {
+      "open": false,
+      "cx": 0,
+      "cy": 0,
+      "scale": 0
+    },
+    "modelId": "lazuli",
+    "modelLoadMs": 3090,
+    "warnings": [],
+    "view": {
+      "canvasCss": {
+        "w": 232,
+        "h": 678
+      },
+      "canvasBuffer": {
+        "w": 232,
+        "h": 678
+      },
+      "rendererSize": {
+        "w": 232,
+        "h": 678
+      },
+      "pixelRatio": 1,
+      "devicePixelRatio": 1.25,
+      "cameraPos": {
+        "x": 0.076,
+        "y": 1.089,
+        "z": 7.127
+      },
+      "cameraDist": 8.157,
+      "near": 0.3522683226803287,
+      "far": 84.54439744327888,
+      "fov": 30,
+      "modelBox": {
+        "min": {
+          "x": -5.230160188715057,
+          "y": -0.00010733950485509075,
+          "z": 0.12238130274701808
+        },
+        "max": {
+          "x": -4.02183069477796,
+          "y": 1.433564248330081,
+          "z": 0.8220920526028113
+        },
+        "size": {
+          "x": 1.2083294939370965,
+          "y": 1.4336715878349362,
+          "z": 0.6997107498557932
+        }
+      },
+      "inFrustum": false,
+      "visibleMeshes": 14,
+      "mtoonMeshes": 14,
+      "skinnedMeshes": 14,
+      "drawCalls": 24,
+      "triangles": 130235,
+      "lastRenderAt": 1790447788074,
+      "rafTicks": 5836,
+      "intervalTicks": 5912,
+      "paused": false,
+      "screenRect": {
+        "x": -949.334187215752,
+        "y": 259.6207132705575,
+        "w": 326.04156059345485,
+        "h": 287.4343188496569
+      },
+      "canvasNonBgRatio": 0.9903,
+      "modelHealth": {
+        "meshWorldScale": 1,
+        "hipsWorldY": 0.7171,
+        "headWorldY": 1.1076,
+        "leftFootWorldY": 0.048,
+        "vrmRestHipsY": null,
+        "maxVertices": 13014,
+        "animationRestHipsY": 0.0955,
+        "clearColorRgb": {
+          "r": 2,
+          "g": 2,
+          "b": 4,
+          "a": 255
+        },
+        "pixelSamples": [
+          {
+            "x": 116,
+            "y": 372,
+            "rgba": [
+              209,
+              210,
+              223,
+              255
+            ]
+          },
+          {
+            "x": 116,
+            "y": 474,
+            "rgba": [
+              21,
+              24,
+              36,
+              255
+            ]
+          },
+          {
+            "x": 116,
+            "y": 271,
+            "rgba": [
+              42,
+              42,
+              48,
+              255
+            ]
+          },
+          {
+            "x": 69,
+            "y": 339,
+            "rgba": [
+              16,
+              12,
+              16,
+              255
+            ]
+          },
+          {
+            "x": 162,
+            "y": 339,
+            "rgba": [
+              21,
+              24,
+              36,
+              255
+            ]
+          },
+          {
+            "x": 116,
+            "y": 610,
+            "rgba": [
+              21,
+              24,
+              36,
+              255
+            ]
+          },
+          {
+            "x": 116,
+            "y": 67,
+            "rgba": [
+              21,
+              24,
+              36,
+              255
+            ]
+          }
+        ],
+        "skin": {
+          "skinnedMeshCount": 1,
+          "boneCount": 189,
+          "boneInversesSample": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "firstVertexSkinIndex": [
+            0,
+            16,
+            16,
+            16
+          ],
+          "firstVertexSkinWeight": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "hasSkinAttribute": true
+        },
+        "pixelStats": {
+          "total": 157296,
+          "nonBg": 15104,
+          "ratio": 0.096,
+          "bgMode": [
+            21,
+            24,
+            36
+          ],
+          "contentBox": {
+            "x": 14,
+            "y": 135,
+            "w": 168,
+            "h": 263
+          }
+        },
+        "meshDraw": [
+          {
+            "name": "Bodybaked",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 17742,
+            "positionCount": 3910,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Bodybaked_1",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 3831,
+            "positionCount": 952,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Bodybaked_2",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 3120,
+            "positionCount": 608,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Body_Base",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 67212,
+            "positionCount": 13014,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Costume_Dress",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 31338,
+            "positionCount": 10474,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Costume_Dress_Cape",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 10872,
+            "positionCount": 2694,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Costume_Shoes",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 9864,
+            "positionCount": 3752,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Costume_Stockings",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 8790,
+            "positionCount": 1660,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Costume_Underwear",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 16836,
+            "positionCount": 3357,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Hair",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 21864,
+            "positionCount": 5509,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_HairRibbon",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 948,
+            "positionCount": 332,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Headband",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 5358,
+            "positionCount": 1193,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Kemobaked",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 14358,
+            "positionCount": 2775,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Kemobaked_1",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 4806,
+            "positionCount": 3103,
+            "drawRangeCount": null,
+            "inScene": true
+          }
+        ],
+        "skinProbe": {
+          "meshName": "Bodybaked",
+          "vertexCount": 3910,
+          "reason": null,
+          "attrNames": [
+            "skinIndex",
+            "normal",
+            "position",
+            "uv",
+            "skinWeight"
+          ],
+          "boneMatrixCount": 3136,
+          "samples": [
+            {
+              "i": 0,
+              "local": [
+                0,
+                1.219,
+                -0.057
+              ],
+              "world": [
+                0.012,
+                1.098,
+                0.213
+              ],
+              "ndc": [
+                -0.101,
+                0.035,
+                0.906
+              ],
+              "skinIndex": [
+                0,
+                16,
+                16,
+                16
+              ],
+              "skinWeight": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "weightSum": 1
+            },
+            {
+              "i": 1303,
+              "local": [
+                -0.069,
+                1.25,
+                0.015
+              ],
+              "world": [
+                0.102,
+                1.112,
+                0.16
+              ],
+              "ndc": [
+                0.04,
+                0.043,
+                0.907
+              ],
+              "skinIndex": [
+                0,
+                16,
+                16,
+                16
+              ],
+              "skinWeight": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "weightSum": 1
+            },
+            {
+              "i": 2606,
+              "local": [
+                -0.001,
+                1.22,
+                -0.058
+              ],
+              "world": [
+                0.013,
+                1.098,
+                0.214
+              ],
+              "ndc": [
+                -0.099,
+                0.035,
+                0.906
+              ],
+              "skinIndex": [
+                0,
+                16,
+                16,
+                16
+              ],
+              "skinWeight": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "weightSum": 1
+            },
+            {
+              "i": 3909,
+              "local": [
+                -0.068,
+                1.262,
+                -0.031
+              ],
+              "world": [
+                0.093,
+                1.121,
+                0.207
+              ],
+              "ndc": [
+                0.026,
+                0.047,
+                0.906
+              ],
+              "skinIndex": [
+                0,
+                16,
+                16,
+                16
+              ],
+              "skinWeight": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "weightSum": 1
+            }
+          ]
+        }
+      },
+      "canvasViewport": {
+        "x": 249,
+        "y": 48,
+        "w": 232,
+        "h": 678
+      },
+      "canvasStyle": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "zIndex": "auto",
+        "position": "static"
+      }
+    }
+  },
+  "stageAgeMs": 72
+}

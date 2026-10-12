@@ -1,0 +1,23 @@
+{
+  "sendResult": {
+    "ok": true,
+    "requestId": "req_muiqq181_1"
+  },
+  "sendAccepted": true,
+  "notImplemented": false,
+  "events": [
+    {
+      "kind": "error",
+      "e": {
+        "requestId": "req_muiqq181_1",
+        "code": "auth",
+        "message": "鉴权失败（HTTP 401）",
+        "retryable": false
+      }
+    }
+  ],
+  "errorCode": "auth",
+  "passChainWired": true,
+  "passReachedServer": true,
+  "cleanedUp": true
+}

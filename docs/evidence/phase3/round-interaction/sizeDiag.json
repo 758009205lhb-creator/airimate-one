@@ -1,0 +1,312 @@
+{
+  "original": {
+    "bounds": {
+      "x": 1288,
+      "y": 352,
+      "width": 482,
+      "height": 761
+    },
+    "min": [
+      380,
+      520
+    ],
+    "max": [
+      0,
+      0
+    ]
+  },
+  "boundsMoveSizes": [
+    "484x761",
+    "484x761",
+    "484x761",
+    "484x761",
+    "484x761",
+    "484x761",
+    "484x761",
+    "484x761"
+  ],
+  "positionMoveSizes": [
+    "485x762",
+    "487x763",
+    "488x765",
+    "490x765"
+  ],
+  "partialBoundsMoveSizes": [
+    "492x765",
+    "494x765",
+    "496x765",
+    "498x765",
+    "500x765",
+    "502x765",
+    "504x765",
+    "506x765"
+  ],
+  "partialBoundsBefore": "490x765",
+  "shrinkAttempts": [
+    {
+      "req": "470x750",
+      "got": "472x751"
+    },
+    {
+      "req": "482x762",
+      "got": "484x763"
+    },
+    {
+      "req": "484x763",
+      "got": "486x764"
+    },
+    {
+      "req": "482x762",
+      "got": "484x763"
+    }
+  ],
+  "pinnedMoveSizes": [
+    "484x762",
+    "483x763",
+    "484x762"
+  ],
+  "steps": [
+    {
+      "label": "baseline_noTuning",
+      "bounds": {
+        "x": 1288,
+        "y": 352,
+        "width": 482,
+        "height": 761
+      },
+      "getMinimumSize": [
+        380,
+        520
+      ],
+      "getMaximumSize": [
+        0,
+        0
+      ],
+      "scaleFactor": 1.25,
+      "physical": {
+        "w": 602.5,
+        "h": 951.25
+      }
+    },
+    {
+      "label": "after8BoundsMoves",
+      "bounds": {
+        "x": 1248,
+        "y": 328,
+        "width": 484,
+        "height": 761
+      },
+      "getMinimumSize": [
+        380,
+        520
+      ],
+      "getMaximumSize": [
+        0,
+        0
+      ],
+      "scaleFactor": 1.25,
+      "physical": {
+        "w": 605,
+        "h": 951.25
+      }
+    },
+    {
+      "label": "after4PositionMoves",
+      "bounds": {
+        "x": 1308,
+        "y": 364,
+        "width": 490,
+        "height": 765
+      },
+      "getMinimumSize": [
+        380,
+        520
+      ],
+      "getMaximumSize": [
+        0,
+        0
+      ],
+      "scaleFactor": 1.25,
+      "physical": {
+        "w": 612.5,
+        "h": 956.25
+      }
+    },
+    {
+      "label": "after8PartialBoundsMoves",
+      "bounds": {
+        "x": 1248,
+        "y": 328,
+        "width": 506,
+        "height": 765
+      },
+      "getMinimumSize": [
+        380,
+        520
+      ],
+      "getMaximumSize": [
+        0,
+        0
+      ],
+      "scaleFactor": 1.25,
+      "physical": {
+        "w": 632.5,
+        "h": 956.25
+      }
+    },
+    {
+      "label": "afterShrinkAttempts",
+      "bounds": {
+        "x": 1288,
+        "y": 352,
+        "width": 484,
+        "height": 763
+      },
+      "getMinimumSize": [
+        380,
+        520
+      ],
+      "getMaximumSize": [
+        0,
+        0
+      ],
+      "scaleFactor": 1.25,
+      "physical": {
+        "w": 605,
+        "h": 953.75
+      }
+    },
+    {
+      "label": "afterPinMinMax",
+      "bounds": {
+        "x": 1288,
+        "y": 352,
+        "width": 484,
+        "height": 763
+      },
+      "getMinimumSize": [
+        482,
+        761
+      ],
+      "getMaximumSize": [
+        482,
+        761
+      ],
+      "scaleFactor": 1.25,
+      "physical": {
+        "w": 605,
+        "h": 953.75
+      }
+    },
+    {
+      "label": "afterPinnedMoves",
+      "bounds": {
+        "x": 1348,
+        "y": 388,
+        "width": 484,
+        "height": 762
+      },
+      "getMinimumSize": [
+        482,
+        761
+      ],
+      "getMaximumSize": [
+        482,
+        761
+      ],
+      "scaleFactor": 1.25,
+      "physical": {
+        "w": 605,
+        "h": 952.5
+      }
+    },
+    {
+      "label": "afterRestoreMinMax",
+      "bounds": {
+        "x": 1288,
+        "y": 352,
+        "width": 484,
+        "height": 761
+      },
+      "getMinimumSize": [
+        380,
+        520
+      ],
+      "getMaximumSize": [
+        0,
+        0
+      ],
+      "scaleFactor": 1.25,
+      "physical": {
+        "w": 605,
+        "h": 951.25
+      }
+    }
+  ],
+  "summary": {
+    "baseline": "482x761",
+    "boundsMoveSizes": [
+      "484x761",
+      "484x761",
+      "484x761",
+      "484x761",
+      "484x761",
+      "484x761",
+      "484x761",
+      "484x761"
+    ],
+    "boundsMoveConstant": true,
+    "boundsMoveMatchesRequest": false,
+    "boundsMoveDistinct": [
+      "484x761"
+    ],
+    "positionMoveSizes": [
+      "485x762",
+      "487x763",
+      "488x765",
+      "490x765"
+    ],
+    "positionMoveKeepsSize": false,
+    "partialBoundsBefore": "490x765",
+    "partialBoundsMoveSizes": [
+      "492x765",
+      "494x765",
+      "496x765",
+      "498x765",
+      "500x765",
+      "502x765",
+      "504x765",
+      "506x765"
+    ],
+    "partialBoundsKeepsSize": false,
+    "shrinkAttempts": [
+      {
+        "req": "470x750",
+        "got": "472x751"
+      },
+      {
+        "req": "482x762",
+        "got": "484x763"
+      },
+      {
+        "req": "484x763",
+        "got": "486x764"
+      },
+      {
+        "req": "482x762",
+        "got": "484x763"
+      }
+    ],
+    "canShrinkBack": false,
+    "afterPinMinMax": "484x763",
+    "pinnedMoveSizes": [
+      "484x762",
+      "483x763",
+      "484x762"
+    ],
+    "pinnedMoveKeepsSize": false,
+    "physicalBaseline": "602.5x951.25"
+  },
+  "passBoundsDragNoAccumulation": true,
+  "pass": true
+}

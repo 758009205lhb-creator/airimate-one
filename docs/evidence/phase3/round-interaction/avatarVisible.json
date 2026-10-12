@@ -1,0 +1,106 @@
+{
+  "probe": "avatarVisible",
+  "technique": "页面内合成 PointerEvent；拖动位移由主进程的可注入光标源推进（单一驱动源）",
+  "shell": null,
+  "pixels": {
+    "ratio": 0.198,
+    "nonBg": 29715,
+    "total": 150104,
+    "box": {
+      "x": 0,
+      "y": 51,
+      "w": 222,
+      "h": 373
+    },
+    "bgMode": [
+      21,
+      24,
+      36
+    ],
+    "canvas": [
+      482,
+      760
+    ]
+  },
+  "sample": {
+    "baseClipId": "idle_pet_idle",
+    "dragging": false,
+    "screenRect": {
+      "x": -18.556459291793924,
+      "y": 219.6209360919604,
+      "w": 242.79173658194463,
+      "h": 385.1320653110321,
+      "source": "skinned"
+    },
+    "inFrustum": true,
+    "canvasViewport": {
+      "x": 249,
+      "y": 48,
+      "w": 232,
+      "h": 647
+    },
+    "canvasBuffer": {
+      "w": 232,
+      "h": 647
+    },
+    "camera": {
+      "position": {
+        "x": 0,
+        "y": 1.083029358988872,
+        "z": 4.812287131333698
+      },
+      "lookAt": {
+        "x": 0,
+        "y": 1.083029358988872,
+        "z": 0
+      },
+      "fov": 30,
+      "near": 0.24061435656668492,
+      "far": 57.74744557600438
+    },
+    "avatarBox": {
+      "x": -18.556459291793924,
+      "y": 219.6209360919604,
+      "w": 242.79173658194463,
+      "h": 385.1320653110321
+    },
+    "anchorBox": {
+      "x": 8.59259259259261,
+      "y": 223.1703097571856,
+      "w": 214.81481481481478,
+      "h": 372.34567901234567
+    },
+    "hitEllipse": {
+      "cx": 116,
+      "cy": 409.34314926335844,
+      "rx": 107.40740740740739,
+      "ry": 186.17283950617283
+    },
+    "avatarScale": 1,
+    "pixelRatio": 0.198,
+    "pixelBox": {
+      "x": 0,
+      "y": 51,
+      "w": 222,
+      "h": 373
+    }
+  },
+  "canvasViewport": {
+    "x": 249,
+    "y": 48,
+    "w": 232,
+    "h": 647
+  },
+  "insideRatio": 0.9236,
+  "passInFrustum": true,
+  "passInsideCanvas": true,
+  "passHasPixels": true,
+  "pass": true,
+  "shots": [
+    {
+      "label": "avatarVisible",
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase3\\round-interaction\\avatarVisible-avatarVisible.png",
+      "bytes": 146705
+    }
+  ]
+}

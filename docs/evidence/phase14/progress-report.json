@@ -1,0 +1,105 @@
+{
+    "schema":  "airimate/progress-report/1",
+    "generatedAt":  "2026-10-06T02:31:56.8518046Z",
+    "root":  "F:\\deepseek harness\\AI女友\\新工程",
+    "codeBaseline":  {
+                         "sourceFiles":  162,
+                         "appFiles":  126,
+                         "newestAny":  "apps\\desktop\\test\\m1-onboarding-privacy.test.cjs",
+                         "newestAnyAt":  "2026-10-06T10:19:08.7798913+08:00",
+                         "newestApp":  "apps\\desktop\\test\\m1-onboarding-privacy.test.cjs",
+                         "newestAppAt":  "2026-10-06T10:19:08.7798913+08:00"
+                     },
+    "evidenceDir":  "docs/evidence/phase14/baseline-20261006-wizardfix",
+    "evidenceDirAuto":  true,
+    "rows":  [
+                 {
+                     "name":  "code-baseline",
+                     "verdict":  "INFO",
+                     "detail":  "应用代码 2026-10-06 10:19 / 探针相关 2026-10-06 10:19",
+                     "evidence":  "",
+                     "basisDate":  "2026-10-06"
+                 },
+                 {
+                     "name":  "check-claims",
+                     "verdict":  "PASS",
+                     "detail":  "failed=[]",
+                     "evidence":  "tools/qa/check-claims.mjs",
+                     "basisDate":  "2026-10-06"
+                 },
+                 {
+                     "name":  "check-no-src-artifacts",
+                     "verdict":  "PASS",
+                     "detail":  "src 下无编译产物且无 BOM JSON",
+                     "evidence":  "",
+                     "basisDate":  "2026-10-06"
+                 },
+                 {
+                     "name":  "audit-acceptance",
+                     "verdict":  "PASS",
+                     "detail":  "PASS=24 FAIL=0 进行中=0 无证据=0",
+                     "evidence":  "tools/qa/audit-acceptance.mjs",
+                     "basisDate":  "2026-10-06"
+                 },
+                 {
+                     "name":  "dist-integrity",
+                     "verdict":  "PASS",
+                     "detail":  "files=369 digest=6e0e33d0",
+                     "evidence":  "dist-package/MANIFEST.json",
+                     "basisDate":  "2026-10-06"
+                 },
+                 {
+                     "name":  "dist-vs-appcode",
+                     "verdict":  "PASS",
+                     "detail":  "包 2026-10-06 10:22 / 应用代码 2026-10-06 10:19",
+                     "evidence":  "",
+                     "basisDate":  "2026-10-06"
+                 },
+                 {
+                     "name":  "unit-suites",
+                     "verdict":  "SKIP",
+                     "detail":  "未跑（-Tests 才跑）",
+                     "evidence":  "",
+                     "basisDate":  ""
+                 },
+                 {
+                     "name":  "typecheck",
+                     "verdict":  "SKIP",
+                     "detail":  "未跑（-Typecheck 才跑）",
+                     "evidence":  "",
+                     "basisDate":  ""
+                 },
+                 {
+                     "name":  "probes",
+                     "verdict":  "PASS",
+                     "detail":  "11/11",
+                     "evidence":  "docs/evidence/phase14/baseline-20261006-wizardfix/_summary.json",
+                     "basisDate":  "2026-10-06"
+                 },
+                 {
+                     "name":  "probes-vs-code",
+                     "verdict":  "PASS",
+                     "detail":  "证据 2026-10-06 10:31 / 探针相关代码 2026-10-06 10:19",
+                     "evidence":  "",
+                     "basisDate":  "2026-10-06"
+                 },
+                 {
+                     "name":  "soak-A15A16",
+                     "verdict":  "STALE",
+                     "detail":  "A15-soak-run7-summary.json：passA15=True passA16=True 实跑 7206s",
+                     "evidence":  "docs/evidence/phase8/A15-soak-run7-summary.json",
+                     "basisDate":  "2026-10-06"
+                 }
+             ],
+    "counts":  {
+                   "SKIP":  2,
+                   "PASS":  7,
+                   "FAIL":  0,
+                   "INFO":  1,
+                   "STALE":  1
+               },
+    "problems":  [
+
+                 ],
+    "pass":  true
+}

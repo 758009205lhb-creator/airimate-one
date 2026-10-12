@@ -1,0 +1,53 @@
+{
+    "schema":  "airimate/soak-clock-negative-test/1",
+    "at":  "2026-10-06T08:18:11.5844349+08:00",
+    "criterion":  {
+                      "minChangeRatio":  0.95,
+                      "maxStuckRun":  3,
+                      "minDistinctRatio":  0.3,
+                      "note":  "用户 2026-10-06 裁定方案①：原「相邻对必须全部相异」在 30s 采样 / 12s 轮换下偶发不稳定"
+                  },
+    "variants":  [
+                     {
+                         "variant":  "real-run7",
+                         "intent":  "真实数据，期望PASS",
+                         "clockAdvancing":  true,
+                         "clockChangeRatio":  0.9788,
+                         "clockMaxStuckRun":  2,
+                         "clockDistinctValues":  225,
+                         "passA15":  true,
+                         "passBoneMotion":  true
+                     },
+                     {
+                         "variant":  "A-frozen-all",
+                         "intent":  "时钟全冻，期望FAIL",
+                         "clockAdvancing":  false,
+                         "clockChangeRatio":  0,
+                         "clockMaxStuckRun":  237,
+                         "clockDistinctValues":  1,
+                         "passA15":  false,
+                         "passBoneMotion":  true
+                     },
+                     {
+                         "variant":  "B-cyclic-10",
+                         "intent":  "每10样本循环，期望FAIL",
+                         "clockAdvancing":  false,
+                         "clockChangeRatio":  1,
+                         "clockMaxStuckRun":  1,
+                         "clockDistinctValues":  10,
+                         "passA15":  false,
+                         "passBoneMotion":  true
+                     },
+                     {
+                         "variant":  "C-creep-monotonic",
+                         "intent":  "单调蠕变，已知漏判",
+                         "clockAdvancing":  true,
+                         "clockChangeRatio":  1,
+                         "clockMaxStuckRun":  1,
+                         "clockDistinctValues":  237,
+                         "passA15":  true,
+                         "passBoneMotion":  true
+                     }
+                 ],
+    "knownGap":  "C（单调蠕变、无回绕）能骗过本判据 —— 真实 AnimationMixer 不会产生该形态；时钟\"是否正确推进\"由 passBoneMotion 与 uniqueClips 独立佐证"
+}

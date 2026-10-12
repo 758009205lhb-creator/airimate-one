@@ -1,0 +1,233 @@
+{
+  "criteria": {
+    "clickShort": "不移动窗口 / 不进入拖拽 / 不开轮盘",
+    "dragOverThreshold": "进入拖拽且窗口真的移动",
+    "dragBarely": "2px < 4px 阈值 ⇒ 不进入拖拽",
+    "blankDrag": "空白处不进入拖拽"
+  },
+  "technique": "页面内合成 PointerEvent（走完整 Vue 处理器 → IPC → 主进程 setBounds 链路）",
+  "coordinates": {
+    "windowBounds": {
+      "x": 890,
+      "y": 120,
+      "width": 482,
+      "height": 761
+    },
+    "rendererScreenX": 883,
+    "hitCenterClient": {
+      "clientX": 364.8000030517578,
+      "clientY": 475.76043245103625
+    }
+  },
+  "clickShort": {
+    "renderer": {
+      "n": 1,
+      "at": {
+        "clientX": 364.8000030517578,
+        "clientY": 475.76043245103625
+      },
+      "before": {
+        "wheelOpen": false,
+        "dragging": false
+      },
+      "after": {
+        "wheelOpen": false,
+        "dragging": false
+      },
+      "scaleBefore": 1,
+      "scaleAfter": 1,
+      "cameraUnchanged": true
+    },
+    "windowBefore": {
+      "x": 890,
+      "y": 120,
+      "width": 482,
+      "height": 761
+    },
+    "windowAfter": {
+      "x": 890,
+      "y": 120,
+      "width": 482,
+      "height": 761
+    },
+    "windowMoved": false,
+    "sizeChanged": false
+  },
+  "passClickDoesNotDrag": true,
+  "passClickDoesNotMoveWindow": true,
+  "passClickDoesNotOpenWheel": true,
+  "passClickDoesNotRescale": true,
+  "dragBarely": {
+    "requested": {
+      "dx": 2,
+      "dy": 1
+    },
+    "at": {
+      "clientX": 364.8000030517578,
+      "clientY": 475.76043245103625
+    },
+    "before": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "afterUp": {
+      "wheelOpen": false,
+      "dragging": false
+    }
+  },
+  "passBarelyDoesNotDrag": true,
+  "blankDrag": {
+    "requested": {
+      "dx": 20,
+      "dy": 12
+    },
+    "at": {
+      "clientX": 254.8000030517578,
+      "clientY": 53.79999923706055
+    },
+    "before": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": false,
+      "dragging": false
+    }
+  },
+  "passBlankDoesNotDrag": true,
+  "dragOverThreshold": {
+    "renderer": {
+      "mode": "begin",
+      "requested": {
+        "dx": 20,
+        "dy": 12,
+        "steps": 4
+      },
+      "at": {
+        "clientX": 364.8000030517578,
+        "clientY": 475.76043245103625
+      },
+      "before": {
+        "wheelOpen": false,
+        "dragging": false
+      },
+      "afterDown": {
+        "wheelOpen": false,
+        "dragging": true
+      },
+      "after": {
+        "wheelOpen": false,
+        "dragging": true
+      }
+    },
+    "windowStart": {
+      "x": 890,
+      "y": 120,
+      "width": 482,
+      "height": 761
+    },
+    "windowDuring": {
+      "x": 952,
+      "y": 152,
+      "width": 482,
+      "height": 761
+    },
+    "windowAfterEnd": {
+      "x": 952,
+      "y": 152,
+      "width": 482,
+      "height": 761
+    },
+    "moved": {
+      "dx": 62,
+      "dy": 32
+    },
+    "end": {
+      "moved": true,
+      "distance": 70,
+      "bounds": {
+        "x": 952,
+        "y": 152,
+        "width": 482,
+        "height": 761
+      },
+      "targetSize": {
+        "width": 482,
+        "height": 761
+      },
+      "actualSize": {
+        "width": 482,
+        "height": 761
+      },
+      "sizeCorrections": 0,
+      "restoredOnEnd": false,
+      "endSizeConvergence": {
+        "tries": 0,
+        "converged": true,
+        "requestedDelta": {
+          "width": -2,
+          "height": -1
+        }
+      },
+      "sizeCalibration": {
+        "target": {
+          "width": 482,
+          "height": 761
+        },
+        "firstActual": {
+          "width": 483,
+          "height": 761
+        },
+        "requestedDelta": {
+          "width": -2,
+          "height": -1
+        },
+        "calibratedActual": {
+          "width": 483,
+          "height": 761
+        },
+        "ok": true,
+        "attempts": 3,
+        "requestSnapped": {
+          "width": 480,
+          "height": 760
+        },
+        "snappedActual": {
+          "width": 482,
+          "height": 761
+        }
+      }
+    }
+  },
+  "passLeftStartsDrag": true,
+  "passDragMovesWindow": true,
+  "passDragSizeStable": true,
+  "duringDragSizeDelta": {
+    "dw": 0,
+    "dh": 0,
+    "max": 0
+  },
+  "strictDuringDragIdentical": true,
+  "passDragSizeStableWithinQuantization": true,
+  "passSizeRestoredOnEnd": true,
+  "passPositionKeptOnEnd": true,
+  "rightMenu": {
+    "before": {
+      "wheelOpen": false,
+      "dragging": true
+    },
+    "after": {
+      "wheelOpen": true,
+      "dragging": true
+    }
+  },
+  "passRightOpensWheel": true,
+  "passRightTogglesWheel": true,
+  "passF1OpensWheel": true,
+  "passEscClosesWheel": true,
+  "allPass": true
+}

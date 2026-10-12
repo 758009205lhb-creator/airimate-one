@@ -1,0 +1,206 @@
+{
+  "checks": {
+    "m3.voice.status-ok": true,
+    "m3.voice.wakeword-default-off": true,
+    "m3.voice.mic-not-active-by-default": true,
+    "m3.voice.availability-honest": true,
+    "m3.voice.no-text-in-status": true,
+    "m3.voice.listen-refused-when-disabled": true,
+    "m3.voice.listen-denied-did-not-open-mic": true,
+    "m3.voice.config-ok": true,
+    "m3.voice.config-rejects-too-long": true,
+    "m3.voice.stop-ok": true,
+    "m3.voice.config-restored": true,
+    "m3.call.state-ok": true,
+    "m3.call.not-active-by-default": true,
+    "m3.call.state-has-no-text": true,
+    "m3.call.preflight-explains": true,
+    "m3.call.start-refused-when-not-ready": true,
+    "m3.call.refusal-did-not-open-mic": true,
+    "m3.call.interrupt-safe-when-idle": true,
+    "m3.call.stop-safe-when-idle": true,
+    "m3.loop.status-ok": true,
+    "m3.loop.bridge-installed": true,
+    "m3.loop.stages-reported": true,
+    "m3.loop.wake-watch-off-by-default": true,
+    "m3.loop.barge-in-off-by-default": true,
+    "m3.loop.status-has-no-text": true,
+    "m3.loop.wake-watch-refused-when-disabled": true,
+    "m3.loop.wake-watch-refusal-did-not-open-mic": true,
+    "m3.loop.wake-watch-still-off-after-refusal": true,
+    "m3.screen.status-ok": true,
+    "m3.screen.no-capture-yet": true,
+    "m3.screen.permitted-false-by-default": true,
+    "m3.screen.pause-works": true,
+    "m3.screen.resume-works": true,
+    "m3.screen.status-has-no-image": true,
+    "m3.fs.allowlist-ok": true,
+    "m3.fs.rules-present": true,
+    "m3.fs.allowlist-no-full-path": true,
+    "m3.fs.allow-dir-ok": true,
+    "m3.fs.entry-has-id-and-label": true,
+    "m3.fs.rejects-sensitive-dir": true,
+    "m3.fs.rejects-system-dir": true,
+    "m3.fs.rejects-missing-dir": true,
+    "m3.kit.has-m3-state": true,
+    "m3.audit.distinguishes-not-executed": true,
+    "m3.audit.has-records": true,
+    "m3.tools.registered": true,
+    "m3.tools.screen-denied-by-default": true,
+    "m3.tools.file-read-denied-by-default": true,
+    "m3.tools.clipboard-needs-confirm-or-denied": true,
+    "m3.tools.shell-exec-registered-forbidden": true,
+    "m3.tools.file-write-registered-forbidden": true,
+    "m3.tools.forbidden-not-model-visible": true,
+    "m3.fs.cleanup-done": true
+  },
+  "voice": {
+    "ok": true,
+    "available": true,
+    "recognizerCount": 1,
+    "wakeWordEnabled": false,
+    "micActive": false,
+    "state": "idle",
+    "wakeWord": "你好助手"
+  },
+  "listenWhenDisabled": {
+    "ok": false,
+    "code": "VOICE_DISABLED"
+  },
+  "voiceCall": {
+    "ok": true,
+    "active": false,
+    "phase": "idle",
+    "turn": 0,
+    "silenceTurns": 0,
+    "interruptions": 0,
+    "preflightReady": false,
+    "preflightReasons": [
+      "语音识别未启用",
+      "TTS 朗读未启用（她将只说文字不出声）",
+      "未配置供应商"
+    ]
+  },
+  "callStartDenied": {
+    "ok": false,
+    "code": "VOICE_CALL_REFUSED"
+  },
+  "loop": {
+    "ok": true,
+    "bridgeInstalled": true,
+    "wakeWatchRunning": false,
+    "bargeInEnabled": false,
+    "recognizedCount": 0,
+    "stages": {
+      "listen": false,
+      "think": false,
+      "speak": false,
+      "activate": false
+    }
+  },
+  "screen": {
+    "ok": true,
+    "permitted": false,
+    "paused": false,
+    "captureCount": 0,
+    "lastCaptureAt": null,
+    "excludeRegions": 0,
+    "redactSensitive": true
+  },
+  "fsRules": {
+    "file": 17,
+    "dir": 21
+  },
+  "fsAdd": {
+    "ok": true,
+    "code": null,
+    "label": "airimate-m3-probe-7880",
+    "labels": [
+      "airimate-m3-probe-7880"
+    ]
+  },
+  "fsAddSensitive": {
+    "ok": false,
+    "code": "SENSITIVE-DIR"
+  },
+  "kitM3": {
+    "voice": {
+      "available": true,
+      "unavailableReason": null,
+      "state": "stopped",
+      "micActive": false,
+      "wakeWordEnabled": false,
+      "wakeWord": "你好助手",
+      "lastWakeAt": null,
+      "lastTextChars": null,
+      "lastTextAt": null,
+      "recognizerCount": 1,
+      "utteranceCount": 0,
+      "lastError": null
+    },
+    "screen": {
+      "permitted": false,
+      "paused": false,
+      "lastCaptureAt": null,
+      "captureCount": 0,
+      "excludeRegions": [],
+      "redactSensitive": true
+    },
+    "call": {
+      "active": false,
+      "phase": "idle",
+      "turn": 0,
+      "turnsCompleted": 0,
+      "lastHeardChars": null,
+      "lastSpokeChars": null,
+      "interruptions": 0,
+      "silenceTurns": 0,
+      "lastError": null,
+      "startedAt": null,
+      "wakeWatchRunning": false,
+      "lastRecognizedChars": null,
+      "lastWasWake": null,
+      "recognizedCount": 0,
+      "bargeInInterruptions": 0
+    },
+    "callPreflight": {
+      "ready": false,
+      "reasons": [
+        "语音识别未启用",
+        "TTS 朗读未启用（她将只说文字不出声）",
+        "未配置供应商"
+      ]
+    }
+  },
+  "toolAudit": {
+    "total": 12,
+    "byDecision": {
+      "denied": 12
+    },
+    "neverExecuted": 12,
+    "executedOk": 0,
+    "executedFailed": 0
+  },
+  "toolDecisions": {
+    "screen.capture": "denied",
+    "file.read": "denied",
+    "file.list": "denied",
+    "app.launch": "denied",
+    "clipboard.read": "denied",
+    "window.list": "denied",
+    "payment.pay": "denied",
+    "credential.read": "denied",
+    "system.settings": "denied",
+    "input.simulate": "denied",
+    "shell.exec": "denied",
+    "file.write": "denied"
+  },
+  "cleanup": {
+    "revoked": 1,
+    "remaining": 0
+  },
+  "totalChecks": 53,
+  "passedChecks": 53,
+  "failedChecks": [],
+  "pass": true
+}

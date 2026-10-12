@@ -1,0 +1,63 @@
+{
+  "leftDown": {
+    "before": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": false,
+      "dragging": false
+    }
+  },
+  "passLeftStartsDrag": false,
+  "passLeftDoesNotOpenWheel": true,
+  "leftWindowDelta": {
+    "moved": false,
+    "distance": 0
+  },
+  "rightMenu": {
+    "before": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": true,
+      "dragging": false
+    }
+  },
+  "passRightOpensWheel": true,
+  "rightMenuAgain": {
+    "before": {
+      "wheelOpen": true,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": false,
+      "dragging": false
+    }
+  },
+  "passRightTogglesWheel": true,
+  "keyF1": {
+    "before": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": true,
+      "dragging": false
+    }
+  },
+  "passF1OpensWheel": true,
+  "keyEsc": {
+    "before": {
+      "wheelOpen": true,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": false,
+      "dragging": false
+    }
+  },
+  "passEscClosesWheel": true,
+  "allPass": false
+}

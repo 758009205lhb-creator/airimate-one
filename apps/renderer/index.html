@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!--
+      CSP 的第二道防线（第一道在主进程 onHeadersReceived）。
+      注意：
+        · `script-src 'self'` 不含 'unsafe-inline' —— 不允许任何内联脚本；
+        · `connect-src` 必须含 `app:` —— 模型/动作位于 app://model 与 app://asset，
+          与文档源 app://bundle **不同 host**，`'self'` 覆盖不到（实测被拦过）。
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: app:; font-src 'self' data:; connect-src 'self' app: blob: data: http://127.0.0.1:* ws://127.0.0.1:*; media-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>AiriMate One</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

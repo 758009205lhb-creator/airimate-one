@@ -1,0 +1,53 @@
+{
+    "generatedAt":  "2026-09-27T01:10:58.4614447+08:00",
+    "rect":  [
+                 1581,
+                 140,
+                 189,
+                 786
+             ],
+    "screenshot":  "docs\\evidence\\phase1\\screens\\decide-20260927-011057.png",
+    "sampled":  37335,
+    "opaqueSampled":  37335,
+    "brightSampled":  502,
+    "brightRatio":  0.0134,
+    "topColorBuckets":  [
+                            {
+                                "bucket":  "1-2-0",
+                                "count":  31680
+                            },
+                            {
+                                "bucket":  "2-2-0",
+                                "count":  2293
+                            },
+                            {
+                                "bucket":  "3-3-0",
+                                "count":  2250
+                            },
+                            {
+                                "bucket":  "0-1-0",
+                                "count":  232
+                            },
+                            {
+                                "bucket":  "15-15-0",
+                                "count":  188
+                            },
+                            {
+                                "bucket":  "0-0-0",
+                                "count":  164
+                            },
+                            {
+                                "bucket":  "2-3-0",
+                                "count":  125
+                            },
+                            {
+                                "bucket":  "8-3-0",
+                                "count":  118
+                            }
+                        ],
+    "interpretation":  [
+                           "brightSampled 明显大于 0 ⇒ 画面上有亮内容（角色/UI）",
+                           "brightSampled ≈ 0 且 opaqueSampled 高 ⇒ 只有深色面板，角色没画上去",
+                           "opaqueSampled ≈ 0 ⇒ 窗口区域是透明的（可能窗口不可见或被完全遮挡）"
+                       ]
+}

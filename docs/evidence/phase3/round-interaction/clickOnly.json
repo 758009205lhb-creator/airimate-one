@@ -1,0 +1,58 @@
+{
+  "probe": "clickOnly",
+  "technique": "页面内合成 PointerEvent；拖动位移由主进程的可注入光标源推进（单一驱动源）",
+  "shell": null,
+  "clicks": 1,
+  "renderer": {
+    "n": 1,
+    "at": {
+      "clientX": 364.8000030517578,
+      "clientY": 475.76043245103625
+    },
+    "before": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "scaleBefore": 1,
+    "scaleAfter": 1,
+    "cameraUnchanged": true
+  },
+  "windowBefore": {
+    "x": 1218,
+    "y": 292,
+    "width": 482,
+    "height": 761
+  },
+  "windowAfter": {
+    "x": 1218,
+    "y": 292,
+    "width": 482,
+    "height": 761
+  },
+  "windowMoved": {
+    "dx": 0,
+    "dy": 0
+  },
+  "sizeDrift": {
+    "dw": 0,
+    "dh": 0
+  },
+  "passNoDrag": true,
+  "passNoWheel": true,
+  "passNoWindowMove": true,
+  "passNoSizeChange": true,
+  "passNoRescale": true,
+  "passCameraUnchanged": true,
+  "pass": true,
+  "shots": [
+    {
+      "label": "clickOnly",
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase3\\round-interaction\\clickOnly-clickOnly.png",
+      "bytes": 146921
+    }
+  ]
+}

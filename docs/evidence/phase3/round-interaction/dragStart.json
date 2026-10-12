@@ -1,0 +1,66 @@
+{
+  "probe": "dragStart",
+  "technique": "页面内合成 PointerEvent；拖动位移由主进程的可注入光标源推进（单一驱动源）",
+  "shell": null,
+  "rendererBegin": {
+    "mode": "begin",
+    "requested": {
+      "dx": 20,
+      "dy": 12,
+      "steps": 4
+    },
+    "at": {
+      "clientX": 364.8000030517578,
+      "clientY": 475.76043245103625
+    },
+    "before": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "afterDown": {
+      "wheelOpen": false,
+      "dragging": true
+    },
+    "after": {
+      "wheelOpen": false,
+      "dragging": true
+    }
+  },
+  "windowStart": {
+    "x": 1218,
+    "y": 292,
+    "width": 482,
+    "height": 761
+  },
+  "windowDuringBeforeDrive": {
+    "x": 1240,
+    "y": 300,
+    "width": 482,
+    "height": 761
+  },
+  "windowDuringAfterDrive": {
+    "x": 1304,
+    "y": 332,
+    "width": 482,
+    "height": 761
+  },
+  "movedDuringDrag": {
+    "dx": 86,
+    "dy": 40
+  },
+  "draggingState": true,
+  "passEnteredDrag": true,
+  "passWindowMoved": true,
+  "passSizeStableWhileDragging": true,
+  "duringDragSizeDelta": 0,
+  "strictSizeStableWhileDragging": true,
+  "passSizeStableWithinQuantization": true,
+  "pass": true,
+  "shots": [
+    {
+      "label": "dragStart",
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase3\\round-interaction\\dragStart-dragStart.png",
+      "bytes": 112815
+    }
+  ]
+}

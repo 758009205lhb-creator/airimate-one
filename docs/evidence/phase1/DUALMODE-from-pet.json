@@ -1,0 +1,196 @@
+{
+  "start": {
+    "windowId": 1,
+    "webContentsId": 1,
+    "allWindows": 1,
+    "visibleWindows": 1,
+    "mode": "pet",
+    "bounds": {
+      "x": 1038,
+      "y": 528,
+      "width": 341,
+      "height": 420
+    },
+    "resizable": false,
+    "skipTaskbar": true,
+    "alwaysOnTop": true,
+    "hasShadow": false,
+    "minSize": [
+      340,
+      420
+    ]
+  },
+  "stageAtStart": {
+    "idleCount": 10,
+    "manifestCount": 16,
+    "manifestNames": [
+      "idle_pet_idle",
+      "idle_pet_idle_10",
+      "idle_pet_idle_2",
+      "idle_pet_idle_3",
+      "idle_pet_idle_4",
+      "idle_pet_idle_5",
+      "idle_pet_idle_6",
+      "idle_pet_idle_7",
+      "idle_pet_idle_8",
+      "idle_pet_idle_9",
+      "locomotion_pet_walk_left",
+      "misc_pet_dragging",
+      "pose_pet_pose_1",
+      "sitting_pet_sit_01",
+      "sitting_pet_sit_02",
+      "sleeping_pet_sleeping"
+    ],
+    "manifestSets": [
+      "idle",
+      "walk",
+      "drag",
+      "single",
+      "sit",
+      "sleep"
+    ],
+    "stageIdleTotal": 10,
+    "clipIds": 16,
+    "failed": 0,
+    "uiMode": "pet",
+    "isPetLayout": true,
+    "settingsMode": "pet"
+  },
+  "target": "panel",
+  "afterSwitch": {
+    "windowId": 1,
+    "webContentsId": 1,
+    "allWindows": 1,
+    "visibleWindows": 1,
+    "mode": "panel",
+    "bounds": {
+      "x": 899,
+      "y": 528,
+      "width": 481,
+      "height": 760
+    },
+    "resizable": true,
+    "skipTaskbar": false,
+    "alwaysOnTop": false,
+    "hasShadow": true,
+    "minSize": [
+      0,
+      0
+    ]
+  },
+  "returnedRect": {
+    "x": 899,
+    "y": 528,
+    "width": 481,
+    "height": 760
+  },
+  "stageAfterSwitch": {
+    "idleCount": 10,
+    "manifestCount": 16,
+    "manifestNames": [
+      "idle_pet_idle",
+      "idle_pet_idle_10",
+      "idle_pet_idle_2",
+      "idle_pet_idle_3",
+      "idle_pet_idle_4",
+      "idle_pet_idle_5",
+      "idle_pet_idle_6",
+      "idle_pet_idle_7",
+      "idle_pet_idle_8",
+      "idle_pet_idle_9",
+      "locomotion_pet_walk_left",
+      "misc_pet_dragging",
+      "pose_pet_pose_1",
+      "sitting_pet_sit_01",
+      "sitting_pet_sit_02",
+      "sleeping_pet_sleeping"
+    ],
+    "manifestSets": [
+      "idle",
+      "walk",
+      "drag",
+      "single",
+      "sit",
+      "sleep"
+    ],
+    "stageIdleTotal": 10,
+    "clipIds": 16,
+    "failed": 0,
+    "uiMode": "panel",
+    "isPetLayout": false,
+    "settingsMode": "pet"
+  },
+  "afterReturn": {
+    "windowId": 1,
+    "webContentsId": 1,
+    "allWindows": 1,
+    "visibleWindows": 1,
+    "mode": "pet",
+    "bounds": {
+      "x": 1040,
+      "y": 528,
+      "width": 340,
+      "height": 420
+    },
+    "resizable": false,
+    "skipTaskbar": true,
+    "alwaysOnTop": true,
+    "hasShadow": false,
+    "minSize": [
+      340,
+      420
+    ]
+  },
+  "stageAfterReturn": {
+    "idleCount": 10,
+    "manifestCount": 16,
+    "manifestNames": [
+      "idle_pet_idle",
+      "idle_pet_idle_10",
+      "idle_pet_idle_2",
+      "idle_pet_idle_3",
+      "idle_pet_idle_4",
+      "idle_pet_idle_5",
+      "idle_pet_idle_6",
+      "idle_pet_idle_7",
+      "idle_pet_idle_8",
+      "idle_pet_idle_9",
+      "locomotion_pet_walk_left",
+      "misc_pet_dragging",
+      "pose_pet_pose_1",
+      "sitting_pet_sit_01",
+      "sitting_pet_sit_02",
+      "sleeping_pet_sleeping"
+    ],
+    "manifestSets": [
+      "idle",
+      "walk",
+      "drag",
+      "single",
+      "sit",
+      "sleep"
+    ],
+    "stageIdleTotal": 10,
+    "clipIds": 16,
+    "failed": 0,
+    "uiMode": "pet",
+    "isPetLayout": true,
+    "settingsMode": "pet"
+  },
+  "passSameWindowId": true,
+  "passSameWebContentsId": true,
+  "passSingleWindowThroughout": true,
+  "passSingleVisibleWindowThroughout": true,
+  "passModeActuallyChanged": true,
+  "passGeometryChanged": true,
+  "geometryTolerancePx": 2,
+  "geometryDeltaAfterReturn": {
+    "w": -1,
+    "h": 0
+  },
+  "passGeometryRestored": true,
+  "passModeAttributesApplied": true,
+  "passStageHealthyThroughout": true,
+  "passRendererFollowedMode": true,
+  "pass": true
+}

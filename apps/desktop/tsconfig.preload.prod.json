@@ -1,0 +1,14 @@
+{
+  "//": [
+    "生产构建（preload）：关闭 sourcemap。理由同 tsconfig.main.prod.json。",
+    "preload 尤其敏感：它直接持有 IPC 白名单，`.map` 会把通道名与校验逻辑完整暴露。"
+  ],
+  "extends": "./tsconfig.preload.json",
+  "compilerOptions": {
+    "sourceMap": false,
+    "declaration": false,
+    "declarationMap": false,
+    "outDir": "./dist/preload"
+  }
+}
+

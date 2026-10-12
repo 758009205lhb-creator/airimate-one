@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-09-27T00:00:00.000Z",
+  "note": "本文件只保存**路径引用与完整性信息**，不包含任何资产本体。分发物不得包含 .vrm / .vrma / .anim。",
+  "avatars": [
+    {
+      "id": "lazuli",
+      "label": "Lazuli",
+      "path": "F:\\deepseek harness\\AI女友\\repos\\Mate-Engine\\Assets\\MATE ENGINE - Avatar\\DLCs\\Lazuli_VRM.vrm",
+      "sha256": "78950B046DAA169859025D1C1616E302DA3A0980C29EF9D4049195F27F8CA462",
+      "bytes": 60609288,
+      "license": "upstream-dlc-asset",
+      "redistributable": false,
+      "source": "Mate Engine DLC（F:\\deepseek harness\\AI女友\\repos\\Mate-Engine），目录内无独立许可文件；仅本机私有使用，不得分发"
+    }
+  ],
+  "motions": {
+    "dir": "assets/motion",
+    "manifestGlob": "assets/motion/manifests/*.json",
+    "license": "由 Mate Engine 的 .anim 动捕剪辑本地转换为 VRMA；转换产物同样不得分发"
+  }
+}

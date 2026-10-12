@@ -1,0 +1,36 @@
+{
+  "name": "@airimate/motion-director",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Airimate 动作导演：冻结的数据契约 + 纯逻辑状态机（优先级 / 待机轮换 / 交叉淡化 / 拖拽覆盖 / 一次性动作回退）。core 不依赖 three / DOM / 任何渲染库。",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./manifest": {
+      "types": "./dist/manifest.d.ts",
+      "default": "./dist/manifest.js"
+    }
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/director.test.mjs test/no-three-import.test.mjs",
+    "build:prod": "tsc -p tsconfig.prod.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

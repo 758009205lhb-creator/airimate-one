@@ -1,0 +1,390 @@
+{
+  "schema": "motion-clip-manifest/1",
+  "name": "idle_pet_idle_5",
+  "slug": "idle_pet_idle_5",
+  "set": "idle",
+  "source": "F:\\deepseek harness\\AI女友\\repos\\Mate-Engine\\Assets\\MATE ENGINE - Animations\\PET_IDLE\\PET_IDLE_5.anim",
+  "sourceRelative": "PET_IDLE/PET_IDLE_5.anim",
+  "sourceBytes": 11180005,
+  "clip": {
+    "unityName": "PET_IDLE_5",
+    "unitySampleRate": 30,
+    "unityWrapMode": 0,
+    "unityLoopTime": true,
+    "unityCompressed": false,
+    "serializedVersion": 7
+  },
+  "vrma": {
+    "file": "idle_pet_idle_5.vrma",
+    "bytes": 274592,
+    "hz": 30,
+    "frames": 286,
+    "bones": 55,
+    "boneNames": [
+      "chest",
+      "head",
+      "hips",
+      "jaw",
+      "leftEye",
+      "leftFoot",
+      "leftHand",
+      "leftIndexDistal",
+      "leftIndexIntermediate",
+      "leftIndexProximal",
+      "leftLittleDistal",
+      "leftLittleIntermediate",
+      "leftLittleProximal",
+      "leftLowerArm",
+      "leftLowerLeg",
+      "leftMiddleDistal",
+      "leftMiddleIntermediate",
+      "leftMiddleProximal",
+      "leftRingDistal",
+      "leftRingIntermediate",
+      "leftRingProximal",
+      "leftShoulder",
+      "leftThumbDistal",
+      "leftThumbMetacarpal",
+      "leftThumbProximal",
+      "leftToes",
+      "leftUpperArm",
+      "leftUpperLeg",
+      "neck",
+      "rightEye",
+      "rightFoot",
+      "rightHand",
+      "rightIndexDistal",
+      "rightIndexIntermediate",
+      "rightIndexProximal",
+      "rightLittleDistal",
+      "rightLittleIntermediate",
+      "rightLittleProximal",
+      "rightLowerArm",
+      "rightLowerLeg",
+      "rightMiddleDistal",
+      "rightMiddleIntermediate",
+      "rightMiddleProximal",
+      "rightRingDistal",
+      "rightRingIntermediate",
+      "rightRingProximal",
+      "rightShoulder",
+      "rightThumbDistal",
+      "rightThumbMetacarpal",
+      "rightThumbProximal",
+      "rightToes",
+      "rightUpperArm",
+      "rightUpperLeg",
+      "spine",
+      "upperChest"
+    ],
+    "specVersion": "1.0",
+    "generator": "motion-lab/convert-anim.mjs",
+    "restMode": "normalized",
+    "quaternionConvention": {
+      "negateXZForVrm0": false,
+      "evidence": "_probe-conv.mjs：metaVersion=0 的模型，写\"未取反\"的四元数得到预期世界朝向；自己先取反会得到镜像姿态（左臂朝上而不是朝下）"
+    }
+  },
+  "duration": 9.500001,
+  "loopable": true,
+  "loop": {
+    "loopable": true,
+    "unityLoopTime": true,
+    "maxFirstLastPoseDistanceDeg": 0.001,
+    "rootDriftMeters": 0,
+    "perBoneFirstLastDeg": {
+      "chest": 0,
+      "head": 0,
+      "hips": 0,
+      "jaw": 0,
+      "leftEye": 0,
+      "leftFoot": 0,
+      "leftHand": 0,
+      "leftIndexDistal": 0,
+      "leftIndexIntermediate": 0,
+      "leftIndexProximal": 0,
+      "leftLittleDistal": 0,
+      "leftLittleIntermediate": 0,
+      "leftLittleProximal": 0,
+      "leftLowerArm": 0,
+      "leftLowerLeg": 0,
+      "leftMiddleDistal": 0,
+      "leftMiddleIntermediate": 0,
+      "leftMiddleProximal": 0,
+      "leftRingDistal": 0,
+      "leftRingIntermediate": 0,
+      "leftRingProximal": 0,
+      "leftShoulder": 0,
+      "leftThumbDistal": 0,
+      "leftThumbMetacarpal": 0,
+      "leftThumbProximal": 0,
+      "leftToes": 0,
+      "leftUpperArm": 0,
+      "leftUpperLeg": 0,
+      "neck": 0,
+      "rightEye": 0,
+      "rightFoot": 0.001,
+      "rightHand": 0,
+      "rightIndexDistal": 0,
+      "rightIndexIntermediate": 0,
+      "rightIndexProximal": 0,
+      "rightLittleDistal": 0,
+      "rightLittleIntermediate": 0,
+      "rightLittleProximal": 0,
+      "rightLowerArm": 0,
+      "rightLowerLeg": 0,
+      "rightMiddleDistal": 0,
+      "rightMiddleIntermediate": 0,
+      "rightMiddleProximal": 0,
+      "rightRingDistal": 0,
+      "rightRingIntermediate": 0,
+      "rightRingProximal": 0.001,
+      "rightShoulder": 0,
+      "rightThumbDistal": 0,
+      "rightThumbMetacarpal": 0,
+      "rightThumbProximal": 0,
+      "rightToes": 0,
+      "rightUpperArm": 0,
+      "rightUpperLeg": 0.001,
+      "spine": 0,
+      "upperChest": 0
+    },
+    "thresholds": {
+      "poseTolDeg": 3,
+      "driftTolMeters": 0.02
+    }
+  },
+  "rootDisplacement": {
+    "hasTranslation": true,
+    "rest": [
+      0.96889,
+      0.00517,
+      0.03143
+    ],
+    "min": [
+      0.96589,
+      -0.1219,
+      -0.0169
+    ],
+    "max": [
+      1.05016,
+      0.03575,
+      0.04482
+    ],
+    "range": [
+      0.08427,
+      0.15765,
+      0.06172
+    ]
+  },
+  "perBoneActivityDeg": {
+    "chest": 54.988,
+    "head": 42.867,
+    "hips": 0,
+    "jaw": 71.341,
+    "leftEye": 0,
+    "leftFoot": 131.894,
+    "leftHand": 613.353,
+    "leftIndexDistal": 94.889,
+    "leftIndexIntermediate": 46.136,
+    "leftIndexProximal": 16.647,
+    "leftLittleDistal": 0,
+    "leftLittleIntermediate": 46.52,
+    "leftLittleProximal": 102.059,
+    "leftLowerArm": 346.519,
+    "leftLowerLeg": 97.14,
+    "leftMiddleDistal": 95.393,
+    "leftMiddleIntermediate": 46.607,
+    "leftMiddleProximal": 23.116,
+    "leftRingDistal": 92.591,
+    "leftRingIntermediate": 46.866,
+    "leftRingProximal": 53.717,
+    "leftShoulder": 136.759,
+    "leftThumbDistal": 89.844,
+    "leftThumbMetacarpal": 0,
+    "leftThumbProximal": 5.803,
+    "leftToes": 62.896,
+    "leftUpperArm": 765.789,
+    "leftUpperLeg": 318.714,
+    "neck": 154.993,
+    "rightEye": 0,
+    "rightFoot": 128.796,
+    "rightHand": 387.724,
+    "rightIndexDistal": 312.788,
+    "rightIndexIntermediate": 157.416,
+    "rightIndexProximal": 53.808,
+    "rightLittleDistal": 0.039,
+    "rightLittleIntermediate": 163.878,
+    "rightLittleProximal": 342.705,
+    "rightLowerArm": 505.556,
+    "rightLowerLeg": 84.884,
+    "rightMiddleDistal": 297.886,
+    "rightMiddleIntermediate": 157.793,
+    "rightMiddleProximal": 70.716,
+    "rightRingDistal": 320.439,
+    "rightRingIntermediate": 152.51,
+    "rightRingProximal": 376.092,
+    "rightShoulder": 142.456,
+    "rightThumbDistal": 284.002,
+    "rightThumbMetacarpal": 0,
+    "rightThumbProximal": 181.567,
+    "rightToes": 59.886,
+    "rightUpperArm": 898.528,
+    "rightUpperLeg": 271.163,
+    "spine": 59.338,
+    "upperChest": 33.021
+  },
+  "legActivity": {
+    "total": 1155.373,
+    "perBone": {
+      "leftUpperLeg": 318.714,
+      "leftLowerLeg": 97.14,
+      "leftFoot": 131.894,
+      "leftToes": 62.896,
+      "rightUpperLeg": 271.163,
+      "rightLowerLeg": 84.884,
+      "rightFoot": 128.796,
+      "rightToes": 59.886
+    },
+    "metric": "总角行程（逐帧四元数夹角之和，度）"
+  },
+  "allowedOverlayLayers": [
+    "emotion-face",
+    "breathing-reduced"
+  ],
+  "curveStats": {
+    "totalCurves": 158,
+    "fromFloatCurves": 158,
+    "fromEditorCurves": 0,
+    "counts": {
+      "rootT": 3,
+      "rootQ": 4,
+      "muscle": 55,
+      "fingerMuscle": 30,
+      "ikT": 12,
+      "ikQ": 16,
+      "other": 38
+    }
+  },
+  "warnings": [
+    "22 条肌肉曲线超出 Unity 的 [-1,1] 归一化范围（运行时会被夹取）：Neck Tilt Left-Right, Right Upper Leg Twist In-Out, Left Arm Twist In-Out, Right Arm Twist In-Out"
+  ],
+  "outOfRangeMuscles": [
+    {
+      "muscle": "Neck Tilt Left-Right",
+      "min": -0.07840632,
+      "max": 1.3344474
+    },
+    {
+      "muscle": "Right Upper Leg Twist In-Out",
+      "min": -0.6041187,
+      "max": 1.011198
+    },
+    {
+      "muscle": "Left Arm Twist In-Out",
+      "min": -0.67343616,
+      "max": 1.0883812
+    },
+    {
+      "muscle": "Right Arm Twist In-Out",
+      "min": -0.5570419,
+      "max": 1.0839663
+    },
+    {
+      "muscle": "Right Forearm Stretch",
+      "min": -0.6763842,
+      "max": 1.2867262
+    },
+    {
+      "muscle": "Right Hand Down-Up",
+      "min": -1.0472763,
+      "max": 0.23993877
+    },
+    {
+      "muscle": "Right Hand In-Out",
+      "min": -1.3965766,
+      "max": -1.3601791
+    },
+    {
+      "muscle": "LeftHand.Index.2 Stretched",
+      "min": 0.78052324,
+      "max": 1.2535694
+    },
+    {
+      "muscle": "LeftHand.Middle.1 Stretched",
+      "min": -1.6756756,
+      "max": -1.2393178
+    },
+    {
+      "muscle": "LeftHand.Middle.2 Stretched",
+      "min": 0.7799199,
+      "max": 1.2831249
+    },
+    {
+      "muscle": "LeftHand.Ring.2 Stretched",
+      "min": 0.7790911,
+      "max": 1.2928878
+    },
+    {
+      "muscle": "LeftHand.Little.2 Stretched",
+      "min": 0.7798518,
+      "max": 1.276014
+    },
+    {
+      "muscle": "LeftHand.Little.3 Stretched",
+      "min": -1.3625515,
+      "max": -1.3625172
+    },
+    {
+      "muscle": "RightHand.Thumb.2 Stretched",
+      "min": 0.5767911,
+      "max": 1.2583817
+    },
+    {
+      "muscle": "RightHand.Index.2 Stretched",
+      "min": 0.7373472,
+      "max": 1.3563426
+    },
+    {
+      "muscle": "RightHand.Index.3 Stretched",
+      "min": 0.34386665,
+      "max": 1.055971
+    },
+    {
+      "muscle": "RightHand.Middle.1 Stretched",
+      "min": -1.7058018,
+      "max": -1.200751
+    },
+    {
+      "muscle": "RightHand.Middle.2 Stretched",
+      "min": 0.7347216,
+      "max": 1.3226444
+    },
+    {
+      "muscle": "RightHand.Middle.3 Stretched",
+      "min": 0.39495978,
+      "max": 1.0991498
+    },
+    {
+      "muscle": "RightHand.Ring.1 Stretched",
+      "min": -0.22526254,
+      "max": 1.035048
+    },
+    {
+      "muscle": "RightHand.Ring.2 Stretched",
+      "min": 0.60928464,
+      "max": 1.3429525
+    },
+    {
+      "muscle": "RightHand.Little.2 Stretched",
+      "min": 0.529629,
+      "max": 1.329339
+    }
+  ],
+  "unverified": [
+    "手指肌肉的轴向/符号未逐轴实测（活动量 < 1°）",
+    "左右 In-Out / Twist 的**命名方向**（哪个叫\"内\"）未与 Unity 文档逐条比对；轴与符号已实测",
+    "脚趾 Up-Down 的符号未独立实测（脚趾与脚踝世界位置重合，位置探测无法区分）",
+    "欧拉序（ZXY vs ZYX）未在本工程的样本上被独立区分"
+  ]
+}

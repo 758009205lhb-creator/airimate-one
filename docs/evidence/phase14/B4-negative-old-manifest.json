@@ -1,0 +1,2248 @@
+{
+  "schema": "airimate/dist-integrity/1",
+  "verifiedAt": "2026-10-03T15:24:46.323Z",
+  "payloadRoot": "dist-package",
+  "stagedAt": "2026-10-02T00:39:12.187Z",
+  "algorithm": "sha256",
+  "manifestFiles": 367,
+  "hashedFiles": 367,
+  "payloadBytes": 391577769,
+  "payloadMB": 373.44,
+  "payloadDigest": null,
+  "recomputedDigest": "f00736a5b26a8272054deee606c8e623965348d36755cc174d46e96fe9b984d0",
+  "digestMatch": false,
+  "hashMismatches": [
+    {
+      "rel": "app/main/act-parser.d.ts",
+      "recorded": "undefined",
+      "actual": "11abc72729ef5da3",
+      "size": 1554
+    },
+    {
+      "rel": "app/main/act-parser.js",
+      "recorded": "undefined",
+      "actual": "4fdf82c60437f4c4",
+      "size": 3390
+    },
+    {
+      "rel": "app/main/activity-probe.d.ts",
+      "recorded": "undefined",
+      "actual": "164ddea4b1e3ba73",
+      "size": 3330
+    },
+    {
+      "rel": "app/main/activity-probe.js",
+      "recorded": "undefined",
+      "actual": "3230cb96b5cd07e5",
+      "size": 9544
+    },
+    {
+      "rel": "app/main/activity-stats.d.ts",
+      "recorded": "undefined",
+      "actual": "591efcde9a20ab2a",
+      "size": 5246
+    },
+    {
+      "rel": "app/main/activity-stats.js",
+      "recorded": "undefined",
+      "actual": "c78e27df3acc01cf",
+      "size": 7050
+    },
+    {
+      "rel": "app/main/asset-protocol.d.ts",
+      "recorded": "undefined",
+      "actual": "9f765df8a96efc5e",
+      "size": 1104
+    },
+    {
+      "rel": "app/main/asset-protocol.js",
+      "recorded": "undefined",
+      "actual": "2cd98712deabb750",
+      "size": 9107
+    },
+    {
+      "rel": "app/main/autostart.d.ts",
+      "recorded": "undefined",
+      "actual": "876c7d2085ffc2c3",
+      "size": 5075
+    },
+    {
+      "rel": "app/main/autostart.js",
+      "recorded": "undefined",
+      "actual": "c8a39f4fa1f63768",
+      "size": 22489
+    },
+    {
+      "rel": "app/main/blocker.d.ts",
+      "recorded": "undefined",
+      "actual": "3913ce53540ef345",
+      "size": 3612
+    },
+    {
+      "rel": "app/main/blocker.js",
+      "recorded": "undefined",
+      "actual": "120b171b8d91d3fa",
+      "size": 4486
+    },
+    {
+      "rel": "app/main/bootstrap.d.ts",
+      "recorded": "undefined",
+      "actual": "5019da8e1ea9fefc",
+      "size": 265
+    },
+    {
+      "rel": "app/main/bootstrap.js",
+      "recorded": "undefined",
+      "actual": "a938be49ac13c11e",
+      "size": 306143
+    },
+    {
+      "rel": "app/main/capabilities/asset-adapter.d.ts",
+      "recorded": "undefined",
+      "actual": "b75ff495870740b2",
+      "size": 3771
+    },
+    {
+      "rel": "app/main/capabilities/asset-adapter.js",
+      "recorded": "undefined",
+      "actual": "9dd6cc26bea5ecc7",
+      "size": 9302
+    },
+    {
+      "rel": "app/main/capabilities/future-adapters.d.ts",
+      "recorded": "undefined",
+      "actual": "e0dd6bfa3adb2f5d",
+      "size": 3735
+    },
+    {
+      "rel": "app/main/capabilities/future-adapters.js",
+      "recorded": "undefined",
+      "actual": "6ea6e7a1ef3f0ae0",
+      "size": 8086
+    },
+    {
+      "rel": "app/main/capabilities/index.d.ts",
+      "recorded": "undefined",
+      "actual": "f7babd056df4eae3",
+      "size": 6371
+    },
+    {
+      "rel": "app/main/capabilities/index.js",
+      "recorded": "undefined",
+      "actual": "68609d93bdd6f9c9",
+      "size": 19086
+    },
+    {
+      "rel": "app/main/capabilities/llm-adapter.d.ts",
+      "recorded": "undefined",
+      "actual": "dd1098ae7599f5a6",
+      "size": 1876
+    },
+    {
+      "rel": "app/main/capabilities/llm-adapter.js",
+      "recorded": "undefined",
+      "actual": "afcc66308a767290",
+      "size": 3893
+    },
+    {
+      "rel": "app/main/capabilities/motion-adapter.d.ts",
+      "recorded": "undefined",
+      "actual": "c18b60bbebcff546",
+      "size": 1102
+    },
+    {
+      "rel": "app/main/capabilities/motion-adapter.js",
+      "recorded": "undefined",
+      "actual": "29eba23c0b1843ec",
+      "size": 6831
+    },
+    {
+      "rel": "app/main/capabilities/tts-adapter.d.ts",
+      "recorded": "undefined",
+      "actual": "edc305fee12f7e01",
+      "size": 1987
+    },
+    {
+      "rel": "app/main/capabilities/tts-adapter.js",
+      "recorded": "undefined",
+      "actual": "bcbe3b92b7296f3c",
+      "size": 5152
+    },
+    {
+      "rel": "app/main/chat-client.d.ts",
+      "recorded": "undefined",
+      "actual": "fc8d519c3b4f90ac",
+      "size": 1736
+    },
+    {
+      "rel": "app/main/chat-client.js",
+      "recorded": "undefined",
+      "actual": "bc05d78a51c294b0",
+      "size": 5089
+    },
+    {
+      "rel": "app/main/computer-use.d.ts",
+      "recorded": "undefined",
+      "actual": "d6531cf3ed1551c8",
+      "size": 8151
+    },
+    {
+      "rel": "app/main/computer-use.js",
+      "recorded": "undefined",
+      "actual": "62a9717c60f98db8",
+      "size": 40225
+    },
+    {
+      "rel": "app/main/diagnostics.d.ts",
+      "recorded": "undefined",
+      "actual": "1007fb784226a391",
+      "size": 2688
+    },
+    {
+      "rel": "app/main/diagnostics.js",
+      "recorded": "undefined",
+      "actual": "6a49386fcb1d7215",
+      "size": 8884
+    },
+    {
+      "rel": "app/main/egress-guard.d.ts",
+      "recorded": "undefined",
+      "actual": "bca6bba6f7509f3f",
+      "size": 852
+    },
+    {
+      "rel": "app/main/egress-guard.js",
+      "recorded": "undefined",
+      "actual": "ed48ec32a8305be5",
+      "size": 2770
+    },
+    {
+      "rel": "app/main/engine-state.d.ts",
+      "recorded": "undefined",
+      "actual": "2a33c3ed78fe5dc1",
+      "size": 5987
+    },
+    {
+      "rel": "app/main/engine-state.js",
+      "recorded": "undefined",
+      "actual": "30c133ee40c41c62",
+      "size": 5356
+    },
+    {
+      "rel": "app/main/event-sink.d.ts",
+      "recorded": "undefined",
+      "actual": "b78583e8322ac98d",
+      "size": 447
+    },
+    {
+      "rel": "app/main/event-sink.js",
+      "recorded": "undefined",
+      "actual": "7f33eee3d72aad99",
+      "size": 1464
+    },
+    {
+      "rel": "app/main/fs-allowlist.d.ts",
+      "recorded": "undefined",
+      "actual": "a5086cb21e298591",
+      "size": 3086
+    },
+    {
+      "rel": "app/main/fs-allowlist.js",
+      "recorded": "undefined",
+      "actual": "60f504b1de6a7acf",
+      "size": 13940
+    },
+    {
+      "rel": "app/main/hit-region-registry.d.ts",
+      "recorded": "undefined",
+      "actual": "e8db6e19ce67cbcc",
+      "size": 422
+    },
+    {
+      "rel": "app/main/hit-region-registry.js",
+      "recorded": "undefined",
+      "actual": "d3ce0fa7b8aa223f",
+      "size": 586
+    },
+    {
+      "rel": "app/main/hit-region.d.ts",
+      "recorded": "undefined",
+      "actual": "c2db27fd3faee280",
+      "size": 1758
+    },
+    {
+      "rel": "app/main/hit-region.js",
+      "recorded": "undefined",
+      "actual": "7280150368f77614",
+      "size": 4581
+    },
+    {
+      "rel": "app/main/index.d.ts",
+      "recorded": "undefined",
+      "actual": "8e609bb71c20b858",
+      "size": 11
+    },
+    {
+      "rel": "app/main/index.js",
+      "recorded": "undefined",
+      "actual": "424016340af7f55e",
+      "size": 3414
+    },
+    {
+      "rel": "app/main/ipc.d.ts",
+      "recorded": "undefined",
+      "actual": "c07b8b0869672c40",
+      "size": 1472
+    },
+    {
+      "rel": "app/main/ipc.js",
+      "recorded": "undefined",
+      "actual": "97250fac0b10fcf2",
+      "size": 61061
+    },
+    {
+      "rel": "app/main/json-store.d.ts",
+      "recorded": "undefined",
+      "actual": "f1e99a7686aa2370",
+      "size": 2199
+    },
+    {
+      "rel": "app/main/json-store.js",
+      "recorded": "undefined",
+      "actual": "33d1727bdc9f446f",
+      "size": 9961
+    },
+    {
+      "rel": "app/main/knowledge-source.d.ts",
+      "recorded": "undefined",
+      "actual": "8dc249cb0242f4a2",
+      "size": 2084
+    },
+    {
+      "rel": "app/main/knowledge-source.js",
+      "recorded": "undefined",
+      "actual": "79cc228ae1fae9e5",
+      "size": 20243
+    },
+    {
+      "rel": "app/main/legacy-guard.d.ts",
+      "recorded": "undefined",
+      "actual": "15d774e65d0be647",
+      "size": 3001
+    },
+    {
+      "rel": "app/main/legacy-guard.js",
+      "recorded": "undefined",
+      "actual": "7b7e7d8a059563f0",
+      "size": 15954
+    },
+    {
+      "rel": "app/main/legacy-state.d.ts",
+      "recorded": "undefined",
+      "actual": "6a6bf4d426319987",
+      "size": 312
+    },
+    {
+      "rel": "app/main/legacy-state.js",
+      "recorded": "undefined",
+      "actual": "e27f544b298b480c",
+      "size": 277
+    },
+    {
+      "rel": "app/main/lock-file.d.ts",
+      "recorded": "undefined",
+      "actual": "19891327f37745c3",
+      "size": 2051
+    },
+    {
+      "rel": "app/main/lock-file.js",
+      "recorded": "undefined",
+      "actual": "dfd9331ede03a290",
+      "size": 9058
+    },
+    {
+      "rel": "app/main/log.d.ts",
+      "recorded": "undefined",
+      "actual": "528ad65070a76635",
+      "size": 356
+    },
+    {
+      "rel": "app/main/log.js",
+      "recorded": "undefined",
+      "actual": "63e992e4d24ce9bb",
+      "size": 2674
+    },
+    {
+      "rel": "app/main/memory-state.d.ts",
+      "recorded": "undefined",
+      "actual": "ab1c14e198a468d2",
+      "size": 775
+    },
+    {
+      "rel": "app/main/memory-state.js",
+      "recorded": "undefined",
+      "actual": "b4b784ccb583549e",
+      "size": 1543
+    },
+    {
+      "rel": "app/main/memory-store.d.ts",
+      "recorded": "undefined",
+      "actual": "0b5785cb41f15b16",
+      "size": 5757
+    },
+    {
+      "rel": "app/main/memory-store.js",
+      "recorded": "undefined",
+      "actual": "9807aa1574851dca",
+      "size": 17164
+    },
+    {
+      "rel": "app/main/morning-radio.d.ts",
+      "recorded": "undefined",
+      "actual": "e48108037dd2c5db",
+      "size": 2545
+    },
+    {
+      "rel": "app/main/morning-radio.js",
+      "recorded": "undefined",
+      "actual": "ec31d82b326e0699",
+      "size": 9649
+    },
+    {
+      "rel": "app/main/motion-state.d.ts",
+      "recorded": "undefined",
+      "actual": "f2ce19bb494e6b9f",
+      "size": 3993
+    },
+    {
+      "rel": "app/main/motion-state.js",
+      "recorded": "undefined",
+      "actual": "3275b8748be476aa",
+      "size": 4034
+    },
+    {
+      "rel": "app/main/mutex-keeper.d.ts",
+      "recorded": "undefined",
+      "actual": "02802585bb6b1c86",
+      "size": 1557
+    },
+    {
+      "rel": "app/main/mutex-keeper.js",
+      "recorded": "undefined",
+      "actual": "70d4576d43dfcce3",
+      "size": 12319
+    },
+    {
+      "rel": "app/main/onboarding-store.d.ts",
+      "recorded": "undefined",
+      "actual": "962a6b03a2ada3f2",
+      "size": 5014
+    },
+    {
+      "rel": "app/main/onboarding-store.js",
+      "recorded": "undefined",
+      "actual": "bef15f915c692665",
+      "size": 10050
+    },
+    {
+      "rel": "app/main/paths.d.ts",
+      "recorded": "undefined",
+      "actual": "d19e647475c1ce50",
+      "size": 1362
+    },
+    {
+      "rel": "app/main/paths.js",
+      "recorded": "undefined",
+      "actual": "9809263d25d663b3",
+      "size": 4525
+    },
+    {
+      "rel": "app/main/permission-store.d.ts",
+      "recorded": "undefined",
+      "actual": "3d85e8565863eeed",
+      "size": 4394
+    },
+    {
+      "rel": "app/main/permission-store.js",
+      "recorded": "undefined",
+      "actual": "1cc9462ab21eb75a",
+      "size": 8806
+    },
+    {
+      "rel": "app/main/ports.d.ts",
+      "recorded": "undefined",
+      "actual": "12249bb9b3cd194a",
+      "size": 515
+    },
+    {
+      "rel": "app/main/ports.js",
+      "recorded": "undefined",
+      "actual": "aae541088c424896",
+      "size": 2834
+    },
+    {
+      "rel": "app/main/privacy.d.ts",
+      "recorded": "undefined",
+      "actual": "36e3aba3eda22994",
+      "size": 2073
+    },
+    {
+      "rel": "app/main/privacy.js",
+      "recorded": "undefined",
+      "actual": "f37daeb41d1d0b8d",
+      "size": 16531
+    },
+    {
+      "rel": "app/main/proactive-engine.d.ts",
+      "recorded": "undefined",
+      "actual": "e37ea38a9d031f40",
+      "size": 3993
+    },
+    {
+      "rel": "app/main/proactive-engine.js",
+      "recorded": "undefined",
+      "actual": "1e58d2736b4309da",
+      "size": 34353
+    },
+    {
+      "rel": "app/main/provider-store.d.ts",
+      "recorded": "undefined",
+      "actual": "1116fdd48fba0fee",
+      "size": 5723
+    },
+    {
+      "rel": "app/main/provider-store.js",
+      "recorded": "undefined",
+      "actual": "e29ebb78caef654a",
+      "size": 16115
+    },
+    {
+      "rel": "app/main/ps-runner.d.ts",
+      "recorded": "undefined",
+      "actual": "000cd38490983907",
+      "size": 2759
+    },
+    {
+      "rel": "app/main/ps-runner.js",
+      "recorded": "undefined",
+      "actual": "314a2f8f8ded370d",
+      "size": 5358
+    },
+    {
+      "rel": "app/main/quiet-store.d.ts",
+      "recorded": "undefined",
+      "actual": "4d6c1d4821e0e041",
+      "size": 4265
+    },
+    {
+      "rel": "app/main/quiet-store.js",
+      "recorded": "undefined",
+      "actual": "71995b1b2cc1a6ca",
+      "size": 5357
+    },
+    {
+      "rel": "app/main/reflection-engine.d.ts",
+      "recorded": "undefined",
+      "actual": "2cc16ac3bab50580",
+      "size": 2045
+    },
+    {
+      "rel": "app/main/reflection-engine.js",
+      "recorded": "undefined",
+      "actual": "8f39edca8b6ab73a",
+      "size": 12641
+    },
+    {
+      "rel": "app/main/reflection-extract.d.ts",
+      "recorded": "undefined",
+      "actual": "a4c479113649f368",
+      "size": 6217
+    },
+    {
+      "rel": "app/main/reflection-extract.js",
+      "recorded": "undefined",
+      "actual": "d2b8301fd8ce5eca",
+      "size": 13235
+    },
+    {
+      "rel": "app/main/reflection-store.d.ts",
+      "recorded": "undefined",
+      "actual": "240119313d15bc84",
+      "size": 21024
+    },
+    {
+      "rel": "app/main/reflection-store.js",
+      "recorded": "undefined",
+      "actual": "4918afe56d54f419",
+      "size": 11173
+    },
+    {
+      "rel": "app/main/reminder-store.d.ts",
+      "recorded": "undefined",
+      "actual": "fe38550c7c15743b",
+      "size": 11254
+    },
+    {
+      "rel": "app/main/reminder-store.js",
+      "recorded": "undefined",
+      "actual": "60389d00fd450838",
+      "size": 15881
+    },
+    {
+      "rel": "app/main/schedule-store.d.ts",
+      "recorded": "undefined",
+      "actual": "99f1481b3802db81",
+      "size": 8498
+    },
+    {
+      "rel": "app/main/schedule-store.js",
+      "recorded": "undefined",
+      "actual": "330bed7200cce128",
+      "size": 8200
+    },
+    {
+      "rel": "app/main/secrets-store.d.ts",
+      "recorded": "undefined",
+      "actual": "da9b3623047f7865",
+      "size": 107
+    },
+    {
+      "rel": "app/main/secrets-store.js",
+      "recorded": "undefined",
+      "actual": "88ea57b06c982c15",
+      "size": 7504
+    },
+    {
+      "rel": "app/main/session-store.d.ts",
+      "recorded": "undefined",
+      "actual": "e01e61a43a49dedb",
+      "size": 10275
+    },
+    {
+      "rel": "app/main/session-store.js",
+      "recorded": "undefined",
+      "actual": "9752bc7a58f28e14",
+      "size": 10929
+    },
+    {
+      "rel": "app/main/session.d.ts",
+      "recorded": "undefined",
+      "actual": "55061efe381c9961",
+      "size": 679
+    },
+    {
+      "rel": "app/main/session.js",
+      "recorded": "undefined",
+      "actual": "c801ccd4fb453465",
+      "size": 466
+    },
+    {
+      "rel": "app/main/settings-store.d.ts",
+      "recorded": "undefined",
+      "actual": "d8d090d6ff1e1cb3",
+      "size": 1156
+    },
+    {
+      "rel": "app/main/settings-store.js",
+      "recorded": "undefined",
+      "actual": "b3b17e4e55b1ba5d",
+      "size": 5949
+    },
+    {
+      "rel": "app/main/single-instance.d.ts",
+      "recorded": "undefined",
+      "actual": "1311f8b4190c27bd",
+      "size": 1336
+    },
+    {
+      "rel": "app/main/single-instance.js",
+      "recorded": "undefined",
+      "actual": "44af65850c2854d3",
+      "size": 6141
+    },
+    {
+      "rel": "app/main/stage-state.d.ts",
+      "recorded": "undefined",
+      "actual": "07dc71d1642f35b6",
+      "size": 620
+    },
+    {
+      "rel": "app/main/stage-state.js",
+      "recorded": "undefined",
+      "actual": "853924a0fa008c88",
+      "size": 455
+    },
+    {
+      "rel": "app/main/store-registry.d.ts",
+      "recorded": "undefined",
+      "actual": "aa1fb114e83bb646",
+      "size": 2106
+    },
+    {
+      "rel": "app/main/store-registry.js",
+      "recorded": "undefined",
+      "actual": "eb54125b3e74a73b",
+      "size": 1951
+    },
+    {
+      "rel": "app/main/tool-audit.d.ts",
+      "recorded": "undefined",
+      "actual": "e5e3a30577d1960a",
+      "size": 2809
+    },
+    {
+      "rel": "app/main/tool-audit.js",
+      "recorded": "undefined",
+      "actual": "ec7a72d8480d276e",
+      "size": 4336
+    },
+    {
+      "rel": "app/main/tool-confirm.d.ts",
+      "recorded": "undefined",
+      "actual": "35cb90a92c3c87a0",
+      "size": 1212
+    },
+    {
+      "rel": "app/main/tool-confirm.js",
+      "recorded": "undefined",
+      "actual": "602c384afec4b6b2",
+      "size": 6063
+    },
+    {
+      "rel": "app/main/tray.d.ts",
+      "recorded": "undefined",
+      "actual": "55ff038a9dd1dd21",
+      "size": 777
+    },
+    {
+      "rel": "app/main/tray.js",
+      "recorded": "undefined",
+      "actual": "ab9a42e399ce9fb9",
+      "size": 4047
+    },
+    {
+      "rel": "app/main/tts-engine.d.ts",
+      "recorded": "undefined",
+      "actual": "91824e565e31ae1c",
+      "size": 13164
+    },
+    {
+      "rel": "app/main/tts-engine.js",
+      "recorded": "undefined",
+      "actual": "ce7cecd2f162a5d4",
+      "size": 37530
+    },
+    {
+      "rel": "app/main/voice-call.d.ts",
+      "recorded": "undefined",
+      "actual": "b2ebbffa27427f83",
+      "size": 3011
+    },
+    {
+      "rel": "app/main/voice-call.js",
+      "recorded": "undefined",
+      "actual": "cecaff1f38b1db9b",
+      "size": 15653
+    },
+    {
+      "rel": "app/main/voice-engine.d.ts",
+      "recorded": "undefined",
+      "actual": "5633b8bf3169c124",
+      "size": 6609
+    },
+    {
+      "rel": "app/main/voice-engine.js",
+      "recorded": "undefined",
+      "actual": "93c20934c95355c0",
+      "size": 15004
+    },
+    {
+      "rel": "app/main/window-manager.d.ts",
+      "recorded": "undefined",
+      "actual": "6c67f2a80db9e5d5",
+      "size": 8368
+    },
+    {
+      "rel": "app/main/window-manager.js",
+      "recorded": "undefined",
+      "actual": "2854c7c684f71adf",
+      "size": 40411
+    },
+    {
+      "rel": "app/preload/index.d.ts",
+      "recorded": "undefined",
+      "actual": "2785c1bf4c3fab11",
+      "size": 6088
+    },
+    {
+      "rel": "app/preload/index.js",
+      "recorded": "undefined",
+      "actual": "d128ea66da7f7637",
+      "size": 15875
+    },
+    {
+      "rel": "app/renderer/assets/index-3hvQ1zXV.css",
+      "recorded": "undefined",
+      "actual": "e0dad12e351158a2",
+      "size": 14649
+    },
+    {
+      "rel": "app/renderer/assets/index-DmycnPYX.js",
+      "recorded": "undefined",
+      "actual": "ec313982e99e2cb9",
+      "size": 342911
+    },
+    {
+      "rel": "app/renderer/assets/three-BVQP6t8l.js",
+      "recorded": "undefined",
+      "actual": "ab693cc8aab0fc31",
+      "size": 588590
+    },
+    {
+      "rel": "app/renderer/assets/vendor-YIo-ID3R.js",
+      "recorded": "undefined",
+      "actual": "22e953d75040ae09",
+      "size": 71750
+    },
+    {
+      "rel": "app/renderer/assets/vrm-DyXoMEXQ.js",
+      "recorded": "undefined",
+      "actual": "0e23de529b0e4ccf",
+      "size": 156350
+    },
+    {
+      "rel": "app/renderer/index.html",
+      "recorded": "undefined",
+      "actual": "a4e3aadf9cf9a990",
+      "size": 1457
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/commands.d.ts",
+      "recorded": "undefined",
+      "actual": "a2fc2fbe1318a512",
+      "size": 11961
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/commands.js",
+      "recorded": "undefined",
+      "actual": "e131f9c1a9a5fc3a",
+      "size": 6137
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/errors.d.ts",
+      "recorded": "undefined",
+      "actual": "7bfc03e50bcb2a14",
+      "size": 2215
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/errors.js",
+      "recorded": "undefined",
+      "actual": "01ace622449ac957",
+      "size": 2145
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/index.d.ts",
+      "recorded": "undefined",
+      "actual": "73ca22a03aff71a5",
+      "size": 683
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/index.js",
+      "recorded": "undefined",
+      "actual": "73ca22a03aff71a5",
+      "size": 683
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/ipc.d.ts",
+      "recorded": "undefined",
+      "actual": "5a8984369edaf9a3",
+      "size": 144422
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/ipc.js",
+      "recorded": "undefined",
+      "actual": "b3d70642bc660250",
+      "size": 54809
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/preload-api.d.ts",
+      "recorded": "undefined",
+      "actual": "4c54eafb65f08ead",
+      "size": 19097
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/preload-api.js",
+      "recorded": "undefined",
+      "actual": "8e609bb71c20b858",
+      "size": 11
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/proactive.d.ts",
+      "recorded": "undefined",
+      "actual": "9d9814d021a36503",
+      "size": 116629
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/proactive.js",
+      "recorded": "undefined",
+      "actual": "a156939d667ac8f8",
+      "size": 36552
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/settings.d.ts",
+      "recorded": "undefined",
+      "actual": "25533b6e2e14f095",
+      "size": 18527
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/settings.js",
+      "recorded": "undefined",
+      "actual": "e8c311036749022c",
+      "size": 12715
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/csp.d.ts",
+      "recorded": "undefined",
+      "actual": "06c09e9ea1b5339c",
+      "size": 1229
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/csp.js",
+      "recorded": "undefined",
+      "actual": "d4f5becf83818908",
+      "size": 3241
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/index.d.ts",
+      "recorded": "undefined",
+      "actual": "d5fce75601254a96",
+      "size": 142
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/index.js",
+      "recorded": "undefined",
+      "actual": "d5fce75601254a96",
+      "size": 142
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/logger.d.ts",
+      "recorded": "undefined",
+      "actual": "5eb9d6d8eb7d2d73",
+      "size": 1990
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/logger.js",
+      "recorded": "undefined",
+      "actual": "ce23b5083fbdbfb4",
+      "size": 3020
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/paths.d.ts",
+      "recorded": "undefined",
+      "actual": "e3310d427dfcdfc1",
+      "size": 1696
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/paths.js",
+      "recorded": "undefined",
+      "actual": "1cd608061dea8cdf",
+      "size": 5228
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/redact.d.ts",
+      "recorded": "undefined",
+      "actual": "70ecb8aa82e94c40",
+      "size": 1609
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/redact.js",
+      "recorded": "undefined",
+      "actual": "95e9c34f89900b7e",
+      "size": 4103
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/secrets.d.ts",
+      "recorded": "undefined",
+      "actual": "c7a44ee4739f1125",
+      "size": 2473
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/secrets.js",
+      "recorded": "undefined",
+      "actual": "023720df6c8c2603",
+      "size": 4749
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/asset-resolver.d.ts",
+      "recorded": "undefined",
+      "actual": "b2e602922cde8ab7",
+      "size": 3844
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/asset-resolver.js",
+      "recorded": "undefined",
+      "actual": "7be36e040da7bb6a",
+      "size": 8467
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/index.d.ts",
+      "recorded": "undefined",
+      "actual": "5e7794a76601a3f7",
+      "size": 1219
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/index.js",
+      "recorded": "undefined",
+      "actual": "5e7794a76601a3f7",
+      "size": 1219
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/kit.d.ts",
+      "recorded": "undefined",
+      "actual": "5099d10d7301dc77",
+      "size": 3758
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/kit.js",
+      "recorded": "undefined",
+      "actual": "4b60c6195f9445ed",
+      "size": 9386
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/motion-resolver.d.ts",
+      "recorded": "undefined",
+      "actual": "70e141e86b4e697a",
+      "size": 2746
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/motion-resolver.js",
+      "recorded": "undefined",
+      "actual": "84a44b553bb7c89a",
+      "size": 8306
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/store-descriptors.d.ts",
+      "recorded": "undefined",
+      "actual": "9c53b83bacbca0c9",
+      "size": 1322
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/store-descriptors.js",
+      "recorded": "undefined",
+      "actual": "07c94577f2d81e9c",
+      "size": 2235
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/store-migrator.d.ts",
+      "recorded": "undefined",
+      "actual": "a39d2ceb3acf84ed",
+      "size": 3820
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/store-migrator.js",
+      "recorded": "undefined",
+      "actual": "b32176c2e0223104",
+      "size": 5626
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/tool-registry.d.ts",
+      "recorded": "undefined",
+      "actual": "ffe715f780916692",
+      "size": 2642
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/tool-registry.js",
+      "recorded": "undefined",
+      "actual": "08d7d6a515f412db",
+      "size": 8348
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/types.d.ts",
+      "recorded": "undefined",
+      "actual": "4404054cd9973c00",
+      "size": 12419
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/types.js",
+      "recorded": "undefined",
+      "actual": "32de99876fbb441c",
+      "size": 3206
+    },
+    {
+      "rel": "app/package.json",
+      "recorded": "undefined",
+      "actual": "cb2623b2ecaa8933",
+      "size": 243
+    },
+    {
+      "rel": "THIRD-PARTY-NOTICES.md",
+      "recorded": "undefined",
+      "actual": "cd5f025c02966334",
+      "size": 308397
+    },
+    {
+      "rel": "README.md",
+      "recorded": "undefined",
+      "actual": "f8a7d7d43522257c",
+      "size": 7389
+    },
+    {
+      "rel": "AiriMateOne.exe",
+      "recorded": "undefined",
+      "actual": "bd14928e0728366f",
+      "size": 246032896
+    },
+    {
+      "rel": "LICENSE",
+      "recorded": "undefined",
+      "actual": "5154e165bd6c2cc0",
+      "size": 1096
+    },
+    {
+      "rel": "LICENSES.chromium.html",
+      "recorded": "undefined",
+      "actual": "7b328b8c7463ac9b",
+      "size": 20472830
+    },
+    {
+      "rel": "icudtl.dat",
+      "recorded": "undefined",
+      "actual": "9f48c7f9c7c94d51",
+      "size": 10876560
+    },
+    {
+      "rel": "resources.pak",
+      "recorded": "undefined",
+      "actual": "ee5707e9409e7674",
+      "size": 12435875
+    },
+    {
+      "rel": "chrome_100_percent.pak",
+      "recorded": "undefined",
+      "actual": "ab7c4b7b6cb8832a",
+      "size": 719654
+    },
+    {
+      "rel": "chrome_200_percent.pak",
+      "recorded": "undefined",
+      "actual": "30fa4a6e27c9ff2f",
+      "size": 1269017
+    },
+    {
+      "rel": "snapshot_blob.bin",
+      "recorded": "undefined",
+      "actual": "132b5c838d93d506",
+      "size": 368768
+    },
+    {
+      "rel": "v8_context_snapshot.bin",
+      "recorded": "undefined",
+      "actual": "d11a9fff344e9a6d",
+      "size": 742200
+    },
+    {
+      "rel": "ffmpeg.dll",
+      "recorded": "undefined",
+      "actual": "22e07be5d900ecad",
+      "size": 3113472
+    },
+    {
+      "rel": "vulkan-1.dll",
+      "recorded": "undefined",
+      "actual": "17f4fb133bf92744",
+      "size": 939520
+    },
+    {
+      "rel": "vk_swiftshader.dll",
+      "recorded": "undefined",
+      "actual": "20938b3bb2da284a",
+      "size": 5520384
+    },
+    {
+      "rel": "vk_swiftshader_icd.json",
+      "recorded": "undefined",
+      "actual": "32d83ff113fef532",
+      "size": 106
+    },
+    {
+      "rel": "d3dcompiler_47.dll",
+      "recorded": "undefined",
+      "actual": "a05f99734f7c4822",
+      "size": 4741488
+    },
+    {
+      "rel": "dxcompiler.dll",
+      "recorded": "undefined",
+      "actual": "e389f028b89a7a14",
+      "size": 25745408
+    },
+    {
+      "rel": "dxil.dll",
+      "recorded": "undefined",
+      "actual": "77e039c905030a64",
+      "size": 1509760
+    },
+    {
+      "rel": "locales/af.pak",
+      "recorded": "undefined",
+      "actual": "3017b141bd16e241",
+      "size": 636155
+    },
+    {
+      "rel": "locales/am.pak",
+      "recorded": "undefined",
+      "actual": "67b938d162bc75db",
+      "size": 1029450
+    },
+    {
+      "rel": "locales/ar.pak",
+      "recorded": "undefined",
+      "actual": "4c47004abd0969cb",
+      "size": 1130919
+    },
+    {
+      "rel": "locales/bg.pak",
+      "recorded": "undefined",
+      "actual": "2eb9c74c67e4b13b",
+      "size": 1178203
+    },
+    {
+      "rel": "locales/bn.pak",
+      "recorded": "undefined",
+      "actual": "415621a5c0b1546e",
+      "size": 1513545
+    },
+    {
+      "rel": "locales/ca.pak",
+      "recorded": "undefined",
+      "actual": "6f28297c1ccb628f",
+      "size": 716908
+    },
+    {
+      "rel": "locales/cs.pak",
+      "recorded": "undefined",
+      "actual": "799a789ce531991c",
+      "size": 743351
+    },
+    {
+      "rel": "locales/da.pak",
+      "recorded": "undefined",
+      "actual": "530fd95daee21d79",
+      "size": 666471
+    },
+    {
+      "rel": "locales/de.pak",
+      "recorded": "undefined",
+      "actual": "58165025c4252ba8",
+      "size": 717862
+    },
+    {
+      "rel": "locales/el.pak",
+      "recorded": "undefined",
+      "actual": "37d2e1ef69fea9bd",
+      "size": 1295538
+    },
+    {
+      "rel": "locales/en-GB.pak",
+      "recorded": "undefined",
+      "actual": "01d9200a5daee177",
+      "size": 580030
+    },
+    {
+      "rel": "locales/en-US.pak",
+      "recorded": "undefined",
+      "actual": "23b271e8009bfa14",
+      "size": 586582
+    },
+    {
+      "rel": "locales/es-419.pak",
+      "recorded": "undefined",
+      "actual": "2766fd52da83ff67",
+      "size": 707627
+    },
+    {
+      "rel": "locales/es.pak",
+      "recorded": "undefined",
+      "actual": "fe6fff51ef19db1f",
+      "size": 703941
+    },
+    {
+      "rel": "locales/et.pak",
+      "recorded": "undefined",
+      "actual": "dd1205eae606f125",
+      "size": 642216
+    },
+    {
+      "rel": "locales/fa.pak",
+      "recorded": "undefined",
+      "actual": "ba33624ccad6d0e4",
+      "size": 1063069
+    },
+    {
+      "rel": "locales/fi.pak",
+      "recorded": "undefined",
+      "actual": "1f3123d7fb5c22a9",
+      "size": 655113
+    },
+    {
+      "rel": "locales/fil.pak",
+      "recorded": "undefined",
+      "actual": "02e2c70d3d85b0de",
+      "size": 741385
+    },
+    {
+      "rel": "locales/fr.pak",
+      "recorded": "undefined",
+      "actual": "8bad7fd88072ac66",
+      "size": 763461
+    },
+    {
+      "rel": "locales/gu.pak",
+      "recorded": "undefined",
+      "actual": "e86e8c240d4b6283",
+      "size": 1495625
+    },
+    {
+      "rel": "locales/he.pak",
+      "recorded": "undefined",
+      "actual": "ddc1f304ab1f4489",
+      "size": 928748
+    },
+    {
+      "rel": "locales/hi.pak",
+      "recorded": "undefined",
+      "actual": "015b3856dc05e863",
+      "size": 1586602
+    },
+    {
+      "rel": "locales/hr.pak",
+      "recorded": "undefined",
+      "actual": "d46c64ae8af3562e",
+      "size": 715279
+    },
+    {
+      "rel": "locales/hu.pak",
+      "recorded": "undefined",
+      "actual": "0a46fc8d50f74eff",
+      "size": 765640
+    },
+    {
+      "rel": "locales/id.pak",
+      "recorded": "undefined",
+      "actual": "f567569c42a25bb2",
+      "size": 635080
+    },
+    {
+      "rel": "locales/it.pak",
+      "recorded": "undefined",
+      "actual": "aeb1d99a2a09476d",
+      "size": 693991
+    },
+    {
+      "rel": "locales/ja.pak",
+      "recorded": "undefined",
+      "actual": "f6e0d8eda3bc8f11",
+      "size": 842053
+    },
+    {
+      "rel": "locales/kn.pak",
+      "recorded": "undefined",
+      "actual": "af5fed2130102ecc",
+      "size": 1720240
+    },
+    {
+      "rel": "locales/ko.pak",
+      "recorded": "undefined",
+      "actual": "55a3a8db9c84b1fe",
+      "size": 718705
+    },
+    {
+      "rel": "locales/lt.pak",
+      "recorded": "undefined",
+      "actual": "af969f4407c190dd",
+      "size": 777281
+    },
+    {
+      "rel": "locales/lv.pak",
+      "recorded": "undefined",
+      "actual": "4455ab7c06172c2c",
+      "size": 774733
+    },
+    {
+      "rel": "locales/ml.pak",
+      "recorded": "undefined",
+      "actual": "b5606265910e4509",
+      "size": 1767850
+    },
+    {
+      "rel": "locales/mr.pak",
+      "recorded": "undefined",
+      "actual": "8465d4077ed5414c",
+      "size": 1467313
+    },
+    {
+      "rel": "locales/ms.pak",
+      "recorded": "undefined",
+      "actual": "af7021a00befa586",
+      "size": 668356
+    },
+    {
+      "rel": "locales/nb.pak",
+      "recorded": "undefined",
+      "actual": "d97a2b0cbe6adc99",
+      "size": 638121
+    },
+    {
+      "rel": "locales/nl.pak",
+      "recorded": "undefined",
+      "actual": "b642c8ab5ce11438",
+      "size": 664759
+    },
+    {
+      "rel": "locales/pl.pak",
+      "recorded": "undefined",
+      "actual": "8a0969fc743d3e2f",
+      "size": 742064
+    },
+    {
+      "rel": "locales/pt-BR.pak",
+      "recorded": "undefined",
+      "actual": "5546559a56f9ac31",
+      "size": 697019
+    },
+    {
+      "rel": "locales/pt-PT.pak",
+      "recorded": "undefined",
+      "actual": "bdfa7264dddf70f9",
+      "size": 701056
+    },
+    {
+      "rel": "locales/ro.pak",
+      "recorded": "undefined",
+      "actual": "1e6b5b0dac63a9e9",
+      "size": 728144
+    },
+    {
+      "rel": "locales/ru.pak",
+      "recorded": "undefined",
+      "actual": "a9e76536472c45b3",
+      "size": 1200985
+    },
+    {
+      "rel": "locales/sk.pak",
+      "recorded": "undefined",
+      "actual": "3cdc8bca8696c90a",
+      "size": 755481
+    },
+    {
+      "rel": "locales/sl.pak",
+      "recorded": "undefined",
+      "actual": "e1371c8df577b979",
+      "size": 722720
+    },
+    {
+      "rel": "locales/sr.pak",
+      "recorded": "undefined",
+      "actual": "c42a674e3f43aa70",
+      "size": 1112909
+    },
+    {
+      "rel": "locales/sv.pak",
+      "recorded": "undefined",
+      "actual": "7b0399a206bfbebe",
+      "size": 646543
+    },
+    {
+      "rel": "locales/sw.pak",
+      "recorded": "undefined",
+      "actual": "bd41ea707a0d90d6",
+      "size": 685127
+    },
+    {
+      "rel": "locales/ta.pak",
+      "recorded": "undefined",
+      "actual": "91fb1460711df108",
+      "size": 1758067
+    },
+    {
+      "rel": "locales/te.pak",
+      "recorded": "undefined",
+      "actual": "fc8c2706c5dfd36e",
+      "size": 1629379
+    },
+    {
+      "rel": "locales/th.pak",
+      "recorded": "undefined",
+      "actual": "c1f4235c31bc0515",
+      "size": 1368866
+    },
+    {
+      "rel": "locales/tr.pak",
+      "recorded": "undefined",
+      "actual": "d5648d7eaf182621",
+      "size": 697394
+    },
+    {
+      "rel": "locales/uk.pak",
+      "recorded": "undefined",
+      "actual": "ec5d0b426e289c06",
+      "size": 1211563
+    },
+    {
+      "rel": "locales/ur.pak",
+      "recorded": "undefined",
+      "actual": "c218e21744df2ff0",
+      "size": 1047994
+    },
+    {
+      "rel": "locales/vi.pak",
+      "recorded": "undefined",
+      "actual": "76a32f8ad5d08a6f",
+      "size": 830014
+    },
+    {
+      "rel": "locales/zh-CN.pak",
+      "recorded": "undefined",
+      "actual": "7887bd3d01e12306",
+      "size": 592081
+    },
+    {
+      "rel": "locales/zh-TW.pak",
+      "recorded": "undefined",
+      "actual": "7cb5f76e54a548d4",
+      "size": 583887
+    },
+    {
+      "rel": "resources/default_app.asar",
+      "recorded": "undefined",
+      "actual": "0eb2491b0a9ac947",
+      "size": 110862
+    },
+    {
+      "rel": "version",
+      "recorded": "undefined",
+      "actual": "c3dadc2fa9b04e77",
+      "size": 6
+    },
+    {
+      "rel": "workspace/assets/models/catalog.json",
+      "recorded": "undefined",
+      "actual": "99ecd296b3eb23f6",
+      "size": 944
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle/idle_pet_idle_f00_t0.000.png",
+      "recorded": "undefined",
+      "actual": "dc002f57ca184074",
+      "size": 57692
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle/idle_pet_idle_f01_t0.800.png",
+      "recorded": "undefined",
+      "actual": "d15ea9bbd4641dfb",
+      "size": 57959
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle/idle_pet_idle_f02_t1.601.png",
+      "recorded": "undefined",
+      "actual": "dc85f2921f49b75f",
+      "size": 58298
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle/idle_pet_idle_f03_t2.401.png",
+      "recorded": "undefined",
+      "actual": "58430848de60a381",
+      "size": 58271
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle/idle_pet_idle_render.json",
+      "recorded": "undefined",
+      "actual": "b3447272840b2665",
+      "size": 4737
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10/idle_pet_idle_10_f00_t0.000.png",
+      "recorded": "undefined",
+      "actual": "ac806d41a2b169c0",
+      "size": 58062
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10/idle_pet_idle_10_f01_t3.593.png",
+      "recorded": "undefined",
+      "actual": "d9058a3cc4dd8644",
+      "size": 56771
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10/idle_pet_idle_10_f02_t7.187.png",
+      "recorded": "undefined",
+      "actual": "49573e4411c3b840",
+      "size": 59480
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10/idle_pet_idle_10_f03_t10.780.png",
+      "recorded": "undefined",
+      "actual": "9807fb95c7492a12",
+      "size": 58207
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10/idle_pet_idle_10_render.json",
+      "recorded": "undefined",
+      "actual": "69cbb9e5ea6e399b",
+      "size": 4786
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10_bonetrace.json",
+      "recorded": "undefined",
+      "actual": "f5ffc5f67510a7d4",
+      "size": 5258
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10_front.svg",
+      "recorded": "undefined",
+      "actual": "ecfcdc8fbec9066c",
+      "size": 12484
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10_side.svg",
+      "recorded": "undefined",
+      "actual": "2c515d287e708c8f",
+      "size": 12683
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2/idle_pet_idle_2_f00_t0.000.png",
+      "recorded": "undefined",
+      "actual": "6c3e2421c73208f3",
+      "size": 58022
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2/idle_pet_idle_2_f01_t4.356.png",
+      "recorded": "undefined",
+      "actual": "bc1bfcf65f58f8c9",
+      "size": 58113
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2/idle_pet_idle_2_f02_t8.711.png",
+      "recorded": "undefined",
+      "actual": "a0c095b12c65c8e3",
+      "size": 58890
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2/idle_pet_idle_2_f03_t13.067.png",
+      "recorded": "undefined",
+      "actual": "3780baeb9e3493b8",
+      "size": 58289
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2/idle_pet_idle_2_render.json",
+      "recorded": "undefined",
+      "actual": "8ff8480db75c4967",
+      "size": 4773
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2_bonetrace.json",
+      "recorded": "undefined",
+      "actual": "6cd5f7dd0429d887",
+      "size": 5276
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2_front.svg",
+      "recorded": "undefined",
+      "actual": "36f7ec80c83cd2e9",
+      "size": 12483
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2_side.svg",
+      "recorded": "undefined",
+      "actual": "fdd503c4eb5527ed",
+      "size": 12682
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3/idle_pet_idle_3_f00_t0.000.png",
+      "recorded": "undefined",
+      "actual": "a20884a9ac671b26",
+      "size": 58398
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3/idle_pet_idle_3_f01_t1.220.png",
+      "recorded": "undefined",
+      "actual": "c24b570327bfb6fe",
+      "size": 58641
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3/idle_pet_idle_3_f02_t2.439.png",
+      "recorded": "undefined",
+      "actual": "c1eaa9a6eb14a28e",
+      "size": 58248
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3/idle_pet_idle_3_f03_t3.659.png",
+      "recorded": "undefined",
+      "actual": "127cf77f08f0e5d7",
+      "size": 58212
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3/idle_pet_idle_3_render.json",
+      "recorded": "undefined",
+      "actual": "0f1f9de79bdfd5ce",
+      "size": 4761
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3_bonetrace.json",
+      "recorded": "undefined",
+      "actual": "de39c61ff8896259",
+      "size": 5151
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3_front.svg",
+      "recorded": "undefined",
+      "actual": "1d7ec4cee5b24067",
+      "size": 12481
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3_side.svg",
+      "recorded": "undefined",
+      "actual": "81efbf51f7a449a4",
+      "size": 12680
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4/idle_pet_idle_4_f00_t0.000.png",
+      "recorded": "undefined",
+      "actual": "45920a55d0dd56cb",
+      "size": 57995
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4/idle_pet_idle_4_f01_t4.356.png",
+      "recorded": "undefined",
+      "actual": "5db0bfde9b6aeb1e",
+      "size": 57792
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4/idle_pet_idle_4_f02_t8.711.png",
+      "recorded": "undefined",
+      "actual": "11e8cc1321986026",
+      "size": 58148
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4/idle_pet_idle_4_f03_t13.067.png",
+      "recorded": "undefined",
+      "actual": "9dc35250c726ff8e",
+      "size": 57952
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4/idle_pet_idle_4_render.json",
+      "recorded": "undefined",
+      "actual": "379ba51d4882f3e7",
+      "size": 4782
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4_bonetrace.json",
+      "recorded": "undefined",
+      "actual": "0723695a86a2b639",
+      "size": 5275
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4_front.svg",
+      "recorded": "undefined",
+      "actual": "2669c15360cdf6f5",
+      "size": 12483
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4_side.svg",
+      "recorded": "undefined",
+      "actual": "89708923591286ce",
+      "size": 12682
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5/idle_pet_idle_5_f00_t0.000.png",
+      "recorded": "undefined",
+      "actual": "d2aca99cefdf76e4",
+      "size": 57804
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5/idle_pet_idle_5_f01_t3.103.png",
+      "recorded": "undefined",
+      "actual": "2923ca262c73b50a",
+      "size": 58178
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5/idle_pet_idle_5_f02_t6.207.png",
+      "recorded": "undefined",
+      "actual": "38508dd129c8de02",
+      "size": 58755
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5/idle_pet_idle_5_f03_t9.310.png",
+      "recorded": "undefined",
+      "actual": "90d623e1292f6bdc",
+      "size": 58202
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5/idle_pet_idle_5_render.json",
+      "recorded": "undefined",
+      "actual": "76e44b5833fa177e",
+      "size": 4765
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5_bonetrace.json",
+      "recorded": "undefined",
+      "actual": "91a867bdb8694ed7",
+      "size": 5224
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5_front.svg",
+      "recorded": "undefined",
+      "actual": "9fd5124bc10d744c",
+      "size": 12481
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5_side.svg",
+      "recorded": "undefined",
+      "actual": "cb2c6a686e09ab52",
+      "size": 12680
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6/idle_pet_idle_6_f00_t0.000.png",
+      "recorded": "undefined",
+      "actual": "1140d87dfa3e2dc7",
+      "size": 57834
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6/idle_pet_idle_6_f01_t1.851.png",
+      "recorded": "undefined",
+      "actual": "4c30e09cc74bd584",
+      "size": 56846
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6/idle_pet_idle_6_f02_t3.702.png",
+      "recorded": "undefined",
+      "actual": "35cd1c10a68d4250",
+      "size": 57087
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6/idle_pet_idle_6_f03_t5.553.png",
+      "recorded": "undefined",
+      "actual": "23beb2ddd12c7a08",
+      "size": 58065
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6/idle_pet_idle_6_render.json",
+      "recorded": "undefined",
+      "actual": "e15dcdbc0550a47e",
+      "size": 4783
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6_bonetrace.json",
+      "recorded": "undefined",
+      "actual": "b424f844f15f310b",
+      "size": 5263
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6_front.svg",
+      "recorded": "undefined",
+      "actual": "d5a027f98a1b5b07",
+      "size": 12481
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6_side.svg",
+      "recorded": "undefined",
+      "actual": "e5da961199a067c1",
+      "size": 12680
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7/idle_pet_idle_7_f00_t0.000.png",
+      "recorded": "undefined",
+      "actual": "7b2c967825f706c0",
+      "size": 57743
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7/idle_pet_idle_7_f01_t3.049.png",
+      "recorded": "undefined",
+      "actual": "a1c6a6910e554f9c",
+      "size": 58732
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7/idle_pet_idle_7_f02_t6.098.png",
+      "recorded": "undefined",
+      "actual": "4d80ed47aeec32fb",
+      "size": 57766
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7/idle_pet_idle_7_f03_t9.147.png",
+      "recorded": "undefined",
+      "actual": "c84cc8afcbfc20cc",
+      "size": 57977
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7/idle_pet_idle_7_render.json",
+      "recorded": "undefined",
+      "actual": "10bd8a8d417291d0",
+      "size": 4778
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7_bonetrace.json",
+      "recorded": "undefined",
+      "actual": "5aa949dfd22586ec",
+      "size": 5271
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7_front.svg",
+      "recorded": "undefined",
+      "actual": "208b37cc1556cb86",
+      "size": 12481
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7_side.svg",
+      "recorded": "undefined",
+      "actual": "7b47f3ac9a801a25",
+      "size": 12680
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8/idle_pet_idle_8_f00_t0.000.png",
+      "recorded": "undefined",
+      "actual": "d2aca99cefdf76e4",
+      "size": 57804
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8/idle_pet_idle_8_f01_t1.960.png",
+      "recorded": "undefined",
+      "actual": "e4046a3588c89515",
+      "size": 58160
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8/idle_pet_idle_8_f02_t3.920.png",
+      "recorded": "undefined",
+      "actual": "45ca208df524574f",
+      "size": 57724
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8/idle_pet_idle_8_f03_t5.880.png",
+      "recorded": "undefined",
+      "actual": "a763e6fcd9359821",
+      "size": 58015
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8/idle_pet_idle_8_render.json",
+      "recorded": "undefined",
+      "actual": "2b2f38cdaa4e8224",
+      "size": 4764
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8_bonetrace.json",
+      "recorded": "undefined",
+      "actual": "439de0b4d43acf5e",
+      "size": 5208
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8_front.svg",
+      "recorded": "undefined",
+      "actual": "be7e77e3fe0c179d",
+      "size": 12481
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8_side.svg",
+      "recorded": "undefined",
+      "actual": "f58ad6b4b37823e1",
+      "size": 12680
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9/idle_pet_idle_9_f00_t0.000.png",
+      "recorded": "undefined",
+      "actual": "18a15c8f76c2186e",
+      "size": 58077
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9/idle_pet_idle_9_f01_t3.267.png",
+      "recorded": "undefined",
+      "actual": "aaaefa8f339fae11",
+      "size": 57876
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9/idle_pet_idle_9_f02_t6.533.png",
+      "recorded": "undefined",
+      "actual": "cfcbed36d1212dc6",
+      "size": 58294
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9/idle_pet_idle_9_f03_t9.800.png",
+      "recorded": "undefined",
+      "actual": "e23fc89c960c5cb5",
+      "size": 58359
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9/idle_pet_idle_9_render.json",
+      "recorded": "undefined",
+      "actual": "836c72ae97c61b8d",
+      "size": 4768
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9_bonetrace.json",
+      "recorded": "undefined",
+      "actual": "29d794db20f4e7aa",
+      "size": 5201
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9_front.svg",
+      "recorded": "undefined",
+      "actual": "846ea07053fd6c03",
+      "size": 12482
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9_side.svg",
+      "recorded": "undefined",
+      "actual": "361f874e8c2d1382",
+      "size": 12681
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_bonetrace.json",
+      "recorded": "undefined",
+      "actual": "6f5405239b1de2ba",
+      "size": 5082
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_front.svg",
+      "recorded": "undefined",
+      "actual": "b9489e30d50d1f0a",
+      "size": 12479
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_side.svg",
+      "recorded": "undefined",
+      "actual": "0147574883a61bd9",
+      "size": 12678
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_contact-sheet-report.json",
+      "recorded": "undefined",
+      "actual": "1db2f014f7529efc",
+      "size": 14718
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle.json",
+      "recorded": "undefined",
+      "actual": "856cebcfed8230ae",
+      "size": 566
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_10.json",
+      "recorded": "undefined",
+      "actual": "a84d5e44235416b9",
+      "size": 575
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_2.json",
+      "recorded": "undefined",
+      "actual": "b2e6999bc9196f71",
+      "size": 574
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_3.json",
+      "recorded": "undefined",
+      "actual": "268a7fc855321f22",
+      "size": 573
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_4.json",
+      "recorded": "undefined",
+      "actual": "625cb581ec87e800",
+      "size": 574
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_5.json",
+      "recorded": "undefined",
+      "actual": "5a4fb3cce8de6363",
+      "size": 571
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_6.json",
+      "recorded": "undefined",
+      "actual": "e13939643c96f15b",
+      "size": 573
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_7.json",
+      "recorded": "undefined",
+      "actual": "951261f580c4fdbc",
+      "size": 573
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_8.json",
+      "recorded": "undefined",
+      "actual": "dda8c1ebd6dbd009",
+      "size": 567
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_9.json",
+      "recorded": "undefined",
+      "actual": "9e913f1fcc3d0744",
+      "size": 570
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_probe-visible/idle_pet_idle.visible_f00_t0.000.png",
+      "recorded": "undefined",
+      "actual": "f778a5c9a97bfc8f",
+      "size": 57788
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_probe-visible/idle_pet_idle.visible_f01_t2.401.png",
+      "recorded": "undefined",
+      "actual": "c4bf2bd5cc0e83f8",
+      "size": 58063
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_probe-visible/idle_pet_idle.visible_render.json",
+      "recorded": "undefined",
+      "actual": "7fcc7029d79289dc",
+      "size": 3546
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_probe-visible/idle_pet_idle.visible_visible-copy.png",
+      "recorded": "undefined",
+      "actual": "11601c7ab3f7ca88",
+      "size": 10501
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_probe-visible/_probe-cfg.idle_pet_idle.json",
+      "recorded": "undefined",
+      "actual": "be8d50c0dcfcfa74",
+      "size": 605
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle.json",
+      "recorded": "undefined",
+      "actual": "d86793b3c3fde473",
+      "size": 9109
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_10.json",
+      "recorded": "undefined",
+      "actual": "a23f9f8fe0b0ddb5",
+      "size": 8211
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_2.json",
+      "recorded": "undefined",
+      "actual": "92dad4170b40fc73",
+      "size": 8600
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_3.json",
+      "recorded": "undefined",
+      "actual": "b99add62012cc6ab",
+      "size": 7956
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_4.json",
+      "recorded": "undefined",
+      "actual": "f51baafde5b2095b",
+      "size": 8715
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_5.json",
+      "recorded": "undefined",
+      "actual": "669d7708679df738",
+      "size": 9792
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_6.json",
+      "recorded": "undefined",
+      "actual": "388371e9cbbacd04",
+      "size": 9384
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_7.json",
+      "recorded": "undefined",
+      "actual": "011aa160f281e48d",
+      "size": 9604
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_8.json",
+      "recorded": "undefined",
+      "actual": "0c37c928300fed73",
+      "size": 9179
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_9.json",
+      "recorded": "undefined",
+      "actual": "4a1bd23310315fbb",
+      "size": 8728
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/locomotion_pet_walk_left.json",
+      "recorded": "undefined",
+      "actual": "7082965074fb8fbf",
+      "size": 8244
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/misc_pet_dragging.json",
+      "recorded": "undefined",
+      "actual": "e67ae5895d4884fb",
+      "size": 10548
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/pose_pet_pose_1.json",
+      "recorded": "undefined",
+      "actual": "c07fa884f0a76fec",
+      "size": 7975
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/sitting_pet_sit_01.json",
+      "recorded": "undefined",
+      "actual": "2fffa17a050f0828",
+      "size": 8498
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/sitting_pet_sit_02.json",
+      "recorded": "undefined",
+      "actual": "99bc2cd5f4654442",
+      "size": 8450
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/sleeping_pet_sleeping.json",
+      "recorded": "undefined",
+      "actual": "ea1d7b6fb428b80f",
+      "size": 10902
+    },
+    {
+      "rel": "workspace/assets/motion/reports/_load-test-report.json",
+      "recorded": "undefined",
+      "actual": "2e77ea7749fe0e22",
+      "size": 43047
+    },
+    {
+      "rel": "workspace/assets/motion/reports/_validation-report.json",
+      "recorded": "undefined",
+      "actual": "4228ae67f4461421",
+      "size": 64877
+    }
+  ],
+  "sizeMismatches": [],
+  "missingOnDisk": [],
+  "extraOnDisk": [],
+  "problems": [
+    {
+      "code": "manifest-schema",
+      "detail": "schema=airimate/dist-package-manifest/1（期望 airimate/dist-package-manifest/2，即带 sha256 的那一版）"
+    },
+    {
+      "code": "payload-digest",
+      "detail": "payloadDigest 不是 64 位十六进制：undefined"
+    },
+    {
+      "code": "digest-algorithm",
+      "detail": "digestAlgorithm=undefined"
+    },
+    {
+      "code": "missing-hash",
+      "detail": "367 条记录没有合法 sha256：app/main/act-parser.d.ts, app/main/act-parser.js, app/main/activity-probe.d.ts, app/main/activity-probe.js, app/main/activity-stats.d.ts"
+    },
+    {
+      "code": "hash-mismatch",
+      "detail": "367 个文件内容与清单不符（截断/损坏/被替换）：app/main/act-parser.d.ts(undefined…≠11abc72729ef5da3…), app/main/act-parser.js(undefined…≠4fdf82c60437f4c4…), app/main/activity-probe.d.ts(undefined…≠164ddea4b1e3ba73…), app/main/activity-probe.js(undefined…≠3230cb96b5cd07e5…), app/main/activity-stats.d.ts(undefined…≠591efcde9a20ab2a…)"
+    },
+    {
+      "code": "payload-digest-mismatch",
+      "detail": "总摘要不符：清单 undefined… vs 复算 f00736a5b26a8272…"
+    }
+  ],
+  "pass": false
+}

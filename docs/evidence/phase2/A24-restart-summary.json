@@ -1,0 +1,27 @@
+{
+    "schema":  "airimate/memory-restart-evidence/1",
+    "at":  "2026-09-27T02:54:54.9036247+08:00",
+    "writePass":  true,
+    "readPass":  true,
+    "cleanupPass":  true,
+    "bootIdWrite":  "efe9bfdd-8db0-4eee-9b6b-21f534f34731",
+    "bootIdRead":  "ac87553a-be0f-4144-a64b-6fc09506ce32",
+    "distinctBoots":  true,
+    "writtenId":  "m_muir0ycr_1",
+    "readBackId":  "m_muir0ycr_1",
+    "readBackText":  "AIRIMATE_MEMPROBE_跨进程持久化标记（写入进程 bootId=efe9bfdd-8db0-4eee-9b6b-21f534f34731）",
+    "diskWrite":  {
+                      "exists":  true,
+                      "bytes":  347,
+                      "containsTestText":  true
+                  },
+    "markerCountAtRead":  1,
+    "markerCountAfterCleanup":  0,
+    "cleanupRemoved":  1,
+    "evidenceFiles":  [
+                          "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase2\\A24-restart-1-write.json",
+                          "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase2\\A24-restart-2-read.json",
+                          "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase2\\A24-restart-3-cleanup.json"
+                      ],
+    "pass":  true
+}

@@ -1,0 +1,27 @@
+{
+  "windowSec": 27,
+  "samples": 55,
+  "switches": [
+    {
+      "atMs": 10000,
+      "from": "idle_pet_idle_10",
+      "to": "idle_pet_idle_2"
+    },
+    {
+      "atMs": 21000,
+      "from": "idle_pet_idle_2",
+      "to": "idle_pet_idle_3"
+    }
+  ],
+  "switchCount": 2,
+  "switchGapsMs": [
+    11000
+  ],
+  "idleTotal": 10,
+  "passRotationHappened": true,
+  "passRotationPeriod": true,
+  "emptyClipSamples": 0,
+  "passNoTposeWindow": true,
+  "distinctClipsObserved": 3,
+  "pass": true
+}

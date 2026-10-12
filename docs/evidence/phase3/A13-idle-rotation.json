@@ -1,0 +1,33 @@
+{
+  "windowSec": 27,
+  "samples": 55,
+  "switches": [
+    {
+      "atMs": 1000,
+      "from": "idle_pet_idle",
+      "to": "idle_pet_idle_10"
+    },
+    {
+      "atMs": 12000,
+      "from": "idle_pet_idle_10",
+      "to": "idle_pet_idle_2"
+    },
+    {
+      "atMs": 23500,
+      "from": "idle_pet_idle_2",
+      "to": "idle_pet_idle_3"
+    }
+  ],
+  "switchCount": 3,
+  "switchGapsMs": [
+    11000,
+    11500
+  ],
+  "idleTotal": 10,
+  "passRotationHappened": true,
+  "passRotationPeriod": true,
+  "emptyClipSamples": 0,
+  "passNoTposeWindow": true,
+  "distinctClipsObserved": 4,
+  "pass": true
+}

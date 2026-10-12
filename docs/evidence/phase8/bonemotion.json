@@ -1,0 +1,210 @@
+{
+  "boneMotion": {
+    "baseClipId": "idle_pet_idle_10",
+    "activeClip": "idle_pet_idle",
+    "activeWeight": 1,
+    "idleIndex": 1,
+    "windowMs": 5000,
+    "series": [
+      {
+        "atMs": 500,
+        "normalized": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        },
+        "raw": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        }
+      },
+      {
+        "atMs": 1000,
+        "normalized": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        },
+        "raw": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        }
+      },
+      {
+        "atMs": 1500,
+        "normalized": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        },
+        "raw": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        }
+      },
+      {
+        "atMs": 2000,
+        "normalized": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        },
+        "raw": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        }
+      },
+      {
+        "atMs": 2500,
+        "normalized": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        },
+        "raw": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        }
+      },
+      {
+        "atMs": 3000,
+        "normalized": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        },
+        "raw": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        }
+      },
+      {
+        "atMs": 3500,
+        "normalized": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        },
+        "raw": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        }
+      },
+      {
+        "atMs": 4000,
+        "normalized": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        },
+        "raw": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        }
+      },
+      {
+        "atMs": 4500,
+        "normalized": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        },
+        "raw": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        }
+      },
+      {
+        "atMs": 5000,
+        "normalized": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        },
+        "raw": {
+          "hips": 0,
+          "spine": 0,
+          "head": 0.017,
+          "leftUpperArm": 0.026,
+          "rightUpperArm": 0,
+          "leftUpperLeg": 0.025
+        }
+      }
+    ],
+    "maxNormalizedDeg": 0.026,
+    "maxRawDeg": 0.026,
+    "sumNormalizedDeg": 0.68,
+    "sumRawDeg": 0.68,
+    "rawIsAnimating": false,
+    "normalizedLooksFrozen": true,
+    "legTravelDeg": 278.87
+  },
+  "pass": false,
+  "diagnosis": "归一化骨骼节点近乎静止（快照 bones 不适合做卡死判定）；原始节点在动 ⇒ 动画确实在推进"
+}

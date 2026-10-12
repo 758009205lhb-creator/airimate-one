@@ -1,0 +1,322 @@
+{
+  "probe": "rootMotionIdle",
+  "technique": "页面内合成 PointerEvent；拖动位移由主进程的可注入光标源推进（单一驱动源）",
+  "shell": null,
+  "recordCount": 16,
+  "idleCount": 10,
+  "records": [
+    {
+      "id": "idle_pet_idle",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "idle_pet_idle_10",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "idle_pet_idle_2",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "idle_pet_idle_3",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "idle_pet_idle_4",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "idle_pet_idle_5",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "idle_pet_idle_6",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "idle_pet_idle_7",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "idle_pet_idle_8",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "idle_pet_idle_9",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "locomotion_pet_walk_left",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": "横向根位移 4.380 m 超过髋高的 25%（0.209 m）⇒ 钉死横向；纵向根位移 2.607 m 超过髋高的 40%（0.334 m）⇒ 钉死纵向"
+    },
+    {
+      "id": "misc_pet_dragging",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "pose_pet_pose_1",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "sitting_pet_sit_01",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "sitting_pet_sit_02",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    },
+    {
+      "id": "sleeping_pet_sleeping",
+      "mode": "none",
+      "hasPositionTrack": true,
+      "normalized": true,
+      "horizontalRangeM": 0,
+      "verticalRangeM": 0,
+      "rest": {
+        "x": 0,
+        "y": 0.8341416,
+        "z": -4.439408e-7
+      },
+      "start": {
+        "x": 0,
+        "y": 0.834142,
+        "z": 0
+      },
+      "reason": null
+    }
+  ],
+  "idleMaxHorizontal": 0,
+  "idleMaxVertical": 0,
+  "walkRecords": [],
+  "passTenIdle": true,
+  "passAllIdleNone": true,
+  "passAllIdleZero": true,
+  "passHasWalkLocomotion": false,
+  "pass": true,
+  "shots": []
+}

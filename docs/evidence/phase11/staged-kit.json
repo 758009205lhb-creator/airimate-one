@@ -1,0 +1,401 @@
+{
+  "checks": {
+    "kit.capabilities.ok": true,
+    "kit.profile-known": true,
+    "kit.adapters-enumerated": true,
+    "kit.every-kind-registered": true,
+    "kit.active-avatar": true,
+    "kit.active-tts": true,
+    "kit.active-adapters-available": true,
+    "kit.planned-capabilities-honest": true,
+    "kit.no-secret-in-output": true,
+    "kit.no-abs-path-in-output": true,
+    "kit.assets.ok": true,
+    "kit.assets.no-abs-path": true,
+    "kit.assets.selected-in-development": true,
+    "kit.forbidden-tools-registered": true,
+    "kit.forbidden-tools-not-model-visible": true,
+    "kit.forbidden-tools-denied": true,
+    "kit.placeholder-tools-denied-by-default": true,
+    "kit.tool-audit.ok": true,
+    "kit.tool-audit-has-records": true,
+    "kit.tool-audit-never-executed-counted": true,
+    "kit.tool-audit-digest-only": true,
+    "kit.tool-audit-no-plaintext": true,
+    "kit.stores.ok": true,
+    "kit.stores-registered": true,
+    "kit.stores-versioned": true,
+    "kit.stores-personal-listed": true,
+    "kit.stores-descriptions": true,
+    "kit.single-window-preserved": true,
+    "kit.no-extra-window": true
+  },
+  "kitRaw": {
+    "ok": true,
+    "code": null,
+    "message": null,
+    "topKeys": [
+      "ok",
+      "kit"
+    ]
+  },
+  "apiMethods": [
+    "abortChat",
+    "ackReminder",
+    "activityStats",
+    "addMemory",
+    "appVersion",
+    "autoResize",
+    "avatarCatalog",
+    "center",
+    "clearChat",
+    "contractVersion",
+    "deleteMemory",
+    "deleteProvider",
+    "deleteReminder",
+    "deleteSchedule",
+    "diagnostics",
+    "dragBegin",
+    "dragEnd",
+    "dragMove",
+    "getMode",
+    "getPersona",
+    "getQuiet",
+    "getSettings",
+    "hide",
+    "history",
+    "kitAssets",
+    "kitCapabilities",
+    "kitStores",
+    "kitToolAudit",
+    "legacyScan",
+    "listMemory",
+    "listMotions",
+    "listPermissions",
+    "listProviderModels",
+    "listProviders",
+    "listReminders",
+    "listSchedules",
+    "listVoices",
+    "onActivity",
+    "onAlert",
+    "onChatDelta",
+    "onChatDone",
+    "onChatError",
+    "onDragPos",
+    "onModeChanged",
+    "onProactive",
+    "onReminderQueue",
+    "onSettingsChanged",
+    "onStageCommand",
+    "onTtsState",
+    "onWindowState",
+    "onboardingComplete",
+    "onboardingGet",
+    "onboardingReset",
+    "onboardingSetStep",
+    "patchSettings",
+    "platform",
+    "previewRecallMemory",
+    "privacyExport",
+    "privacySummary",
+    "privacyWipe",
+    "proactiveInbox",
+    "proactiveStatus",
+    "proactiveTick",
+    "quit",
+    "recallMemory",
+    "reloadMotions",
+    "reportHitRegions",
+    "reportStageSnapshot",
+    "searchMemory",
+    "selectProvider",
+    "sendChat",
+    "setAlwaysOnTop",
+    "setMode",
+    "setPermission",
+    "setPersona",
+    "setQuiet",
+    "setReminderPolicy",
+    "show",
+    "speak",
+    "startupGet",
+    "startupSet",
+    "stopSpeak",
+    "testProvider",
+    "triggerRadio",
+    "updateMemory",
+    "upsertProvider",
+    "upsertReminder",
+    "upsertSchedule"
+  ],
+  "control": {
+    "ok": true,
+    "summary": {
+      "userDataDir": "C:\\Users\\shiqian\\AppData\\Roaming\\AiriMateOne",
+      "files": [
+        {
+          "name": "settings",
+          "exists": true,
+          "bytes": 1325,
+          "kind": "config"
+        },
+        {
+          "name": "providers",
+          "exists": true,
+          "bytes": 58,
+          "kind": "config"
+        },
+        {
+          "name": "secrets-meta",
+          "exists": true,
+          "bytes": 36,
+          "kind": "config"
+        },
+        {
+          "name": "session",
+          "exists": true,
+          "bytes": 4308,
+          "kind": "personal"
+        },
+        {
+          "name": "memory",
+          "exists": true,
+          "bytes": 36,
+          "kind": "personal"
+        },
+        {
+          "name": "schedules",
+          "exists": true,
+          "bytes": 38,
+          "kind": "personal"
+        },
+        {
+          "name": "reminders",
+          "exists": true,
+          "bytes": 596,
+          "kind": "personal"
+        },
+        {
+          "name": "quiet-hours",
+          "exists": true,
+          "bytes": 623,
+          "kind": "config"
+        },
+        {
+          "name": "permissions",
+          "exists": true,
+          "bytes": 3445,
+          "kind": "config"
+        },
+        {
+          "name": "activity",
+          "exists": true,
+          "bytes": 1221,
+          "kind": "personal"
+        },
+        {
+          "name": "engine-state",
+          "exists": true,
+          "bytes": 7524,
+          "kind": "config"
+        },
+        {
+          "name": "knowledge-cache",
+          "exists": true,
+          "bytes": 2115,
+          "kind": "config"
+        }
+      ],
+      "secretFiles": 0,
+      "telemetryEnabled": false,
+      "logFiles": 4,
+      "exportFiles": 8
+    }
+  },
+  "stepByStep": {
+    "hasMethod": "function",
+    "awaited": "object",
+    "keys": [
+      "ok",
+      "kit"
+    ],
+    "thrown": null,
+    "valueOk": true,
+    "jsonLen": 5086
+  },
+  "kit": {
+    "ok": true,
+    "profile": "development",
+    "total": 6,
+    "byKind": {
+      "avatar": {
+        "registered": 1,
+        "available": 1,
+        "activeId": "asset.catalog-vrm"
+      },
+      "motion": {
+        "registered": 0,
+        "available": 0,
+        "activeId": null
+      },
+      "tts": {
+        "registered": 2,
+        "available": 2,
+        "activeId": "tts.windows-sapi"
+      },
+      "stt": {
+        "registered": 1,
+        "available": 0,
+        "activeId": null
+      },
+      "wakeword": {
+        "registered": 1,
+        "available": 0,
+        "activeId": null
+      },
+      "llm": {
+        "registered": 1,
+        "available": 0,
+        "activeId": null
+      },
+      "tool": {
+        "registered": 0,
+        "available": 0,
+        "activeId": null
+      },
+      "storage": {
+        "registered": 0,
+        "available": 0,
+        "activeId": null
+      },
+      "privacy": {
+        "registered": 0,
+        "available": 0,
+        "activeId": null
+      }
+    },
+    "adapterCount": 6,
+    "adapters": [
+      {
+        "id": "asset.catalog-vrm",
+        "kind": "avatar",
+        "available": true,
+        "active": true,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": false
+      },
+      {
+        "id": "tts.windows-sapi",
+        "kind": "tts",
+        "available": true,
+        "active": true,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": true
+      },
+      {
+        "id": "tts.silent",
+        "kind": "tts",
+        "available": true,
+        "active": false,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": false
+      },
+      {
+        "id": "llm.openai-compatible",
+        "kind": "llm",
+        "available": false,
+        "active": false,
+        "provenance": "licensed",
+        "requiresNetwork": true,
+        "writesUserContent": true
+      },
+      {
+        "id": "stt.placeholder",
+        "kind": "stt",
+        "available": false,
+        "active": false,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": true
+      },
+      {
+        "id": "wakeword.placeholder",
+        "kind": "wakeword",
+        "available": false,
+        "active": false,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": true
+      }
+    ],
+    "modelVisibleTools": [],
+    "toolCount": 6
+  },
+  "assets": {
+    "ok": true,
+    "selectedId": "lazuli",
+    "usable": 1,
+    "rejected": [],
+    "total": 1,
+    "detail": "可用 1 / 1；当前选中「lazuli」（upstream-dlc-asset）"
+  },
+  "assetsCheckedSample": "{\"u\":[{\"id\":\"lazuli\",\"license\":{\"provenance\":\"private-only\",\"redistributable\":false,\"commercialUse\":false,\"license\":\"upstream-dlc-asset\",\"licenseSource\":null,\"author\":null,\"attributionRequired\":true,\"note\":\"Mate Engine DLC（<path>），目录内无独立许可文件；仅本机私有使用，不得分发\"},\"verdict\":{\"allowed\":true,\"reason\":\"ok-development-private\",\"detail\":\"开发形态：允许本机使用任意来源资产（不得随分发给出）\"}}],\"r\":[]}",
+  "tools": {
+    "total": 6,
+    "decisions": {
+      "screen.capture": "denied",
+      "file.read": "denied",
+      "payment.pay": "denied",
+      "credential.read": "denied",
+      "system.settings": "denied",
+      "input.simulate": "denied"
+    },
+    "modelVisible": []
+  },
+  "toolAudit": {
+    "ok": true,
+    "digest": {
+      "total": 6,
+      "byDecision": {
+        "denied": 6
+      },
+      "neverExecuted": 6,
+      "executedOk": 0,
+      "executedFailed": 0
+    },
+    "sampleCount": 6
+  },
+  "stores": {
+    "ok": true,
+    "count": 12,
+    "personal": [
+      "session",
+      "memory",
+      "schedules",
+      "reminders",
+      "activity"
+    ],
+    "versions": [
+      "session@1",
+      "memory@1",
+      "schedules@1",
+      "reminders@1",
+      "activity@1",
+      "settings@1",
+      "providers@1",
+      "secrets-meta@1",
+      "quiet-hours@1",
+      "permissions@1",
+      "engine-state@1",
+      "knowledge-cache@1"
+    ]
+  },
+  "totalChecks": 29,
+  "passedChecks": 29,
+  "failedChecks": [],
+  "pass": true
+}

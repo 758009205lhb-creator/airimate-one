@@ -1,0 +1,39 @@
+# 构建产物（不入库）
+dist/
+dist-package/
+dist-types/
+*.tsbuildinfo
+
+# 依赖
+node_modules/
+
+# 验收证据里的**截图**与长采样数据
+# （小体积的 JSON 证据**要**入库 —— 它们是验收依据，必须可复核）
+docs/evidence/**/*.png
+docs/evidence/**/*.jsonl
+
+# 日志与临时文件
+*.log
+*.tmp
+.tmp/
+tools/qa/_tmp-*.cjs
+
+# 本机运行时路径产物
+.electron-path.json
+tools/runtime/install-evidence.json
+
+# 本机自启审计与回滚证据：包含 Windows SID，禁止进入公开仓库
+docs/evidence/E0-autostart-inventory.json
+docs/evidence/phase7/A19-*
+
+# 本地资产：VRM / VRMA / .anim **绝不入库、绝不分发**
+# （Mate Engine 为 MateEngine Pro License v2.1，DLC 资产无独立许可）
+assets/models/*.vrm
+assets/motion/*.vrma
+assets/motion/contact-sheets/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

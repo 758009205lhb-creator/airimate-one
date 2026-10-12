@@ -1,0 +1,1391 @@
+{
+  "schema": "vrma-load-test-report/1",
+  "generated": "2026-09-26T17:03:48.682Z",
+  "node": "v24.19.0",
+  "three": "185",
+  "vrm": "F:/deepseek harness/AI女友/repos/Mate-Engine/Assets/MATE ENGINE - Avatar/DLCs/Lazuli_VRM.vrm",
+  "vrmMetaVersion": "0",
+  "plugin": "@pixiv/three-vrm-animation VRMAnimationLoaderPlugin（AIRI 发行版副本）",
+  "loader": "three-stdlib/loaders/GLTFLoader.js",
+  "modelBones": 53,
+  "assertions": {
+    "total": 161,
+    "failed": 0
+  },
+  "summary": {
+    "files": 16,
+    "failed": 0,
+    "verdict": "PASS"
+  },
+  "checks": [
+    {
+      "file": "idle_pet_idle.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "83908 字节"
+    },
+    {
+      "file": "idle_pet_idle.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=54 translation轨=1"
+    },
+    {
+      "file": "idle_pet_idle.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=2.450012s"
+    },
+    {
+      "file": "idle_pet_idle.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=53 期望=53（写入 54 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "idle_pet_idle.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "53 条轨道全部解析"
+    },
+    {
+      "file": "idle_pet_idle.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=183.577° leftUpperLeg=180.062 rightUpperLeg=183.577 leftLowerLeg=54.232 rightLowerLeg=55.783"
+    },
+    {
+      "file": "idle_pet_idle.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=180.062° rightUpperLeg=183.577°"
+    },
+    {
+      "file": "idle_pet_idle.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=180.062° rightUpperLeg=183.577° leftLowerLeg=54.232° rightLowerLeg=55.783°"
+    },
+    {
+      "file": "idle_pet_idle.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "idle_pet_idle.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "54 骨"
+    },
+    {
+      "file": "idle_pet_idle_10.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "309296 字节"
+    },
+    {
+      "file": "idle_pet_idle_10.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=54 translation轨=1"
+    },
+    {
+      "file": "idle_pet_idle_10.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=11.000001s"
+    },
+    {
+      "file": "idle_pet_idle_10.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=53 期望=53（写入 54 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "idle_pet_idle_10.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "53 条轨道全部解析"
+    },
+    {
+      "file": "idle_pet_idle_10.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=256.869° leftUpperLeg=256.869 rightUpperLeg=247.09 leftLowerLeg=60.696 rightLowerLeg=84.818"
+    },
+    {
+      "file": "idle_pet_idle_10.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=256.869° rightUpperLeg=247.09°"
+    },
+    {
+      "file": "idle_pet_idle_10.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=256.869° rightUpperLeg=247.09° leftLowerLeg=60.696° rightLowerLeg=84.818°"
+    },
+    {
+      "file": "idle_pet_idle_10.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "idle_pet_idle_10.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "54 骨"
+    },
+    {
+      "file": "idle_pet_idle_2.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "377640 字节"
+    },
+    {
+      "file": "idle_pet_idle_2.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=55 translation轨=1"
+    },
+    {
+      "file": "idle_pet_idle_2.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=13.333334s"
+    },
+    {
+      "file": "idle_pet_idle_2.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=54 期望=54（写入 55 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "idle_pet_idle_2.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "54 条轨道全部解析"
+    },
+    {
+      "file": "idle_pet_idle_2.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=121.283° leftUpperLeg=121.283 rightUpperLeg=106.611 leftLowerLeg=12.269 rightLowerLeg=10.143"
+    },
+    {
+      "file": "idle_pet_idle_2.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=121.283° rightUpperLeg=106.611°"
+    },
+    {
+      "file": "idle_pet_idle_2.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=121.283° rightUpperLeg=106.611° leftLowerLeg=12.269° rightLowerLeg=10.143°"
+    },
+    {
+      "file": "idle_pet_idle_2.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "idle_pet_idle_2.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "55 骨"
+    },
+    {
+      "file": "idle_pet_idle_3.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "117416 字节"
+    },
+    {
+      "file": "idle_pet_idle_3.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=54 translation轨=1"
+    },
+    {
+      "file": "idle_pet_idle_3.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=3.733334s"
+    },
+    {
+      "file": "idle_pet_idle_3.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=53 期望=53（写入 54 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "idle_pet_idle_3.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "53 条轨道全部解析"
+    },
+    {
+      "file": "idle_pet_idle_3.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=85.05° leftUpperLeg=85.05 rightUpperLeg=84.364 leftLowerLeg=12.804 rightLowerLeg=11.571"
+    },
+    {
+      "file": "idle_pet_idle_3.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=85.05° rightUpperLeg=84.364°"
+    },
+    {
+      "file": "idle_pet_idle_3.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=85.05° rightUpperLeg=84.364° leftLowerLeg=12.804° rightLowerLeg=11.571°"
+    },
+    {
+      "file": "idle_pet_idle_3.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "idle_pet_idle_3.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "54 骨"
+    },
+    {
+      "file": "idle_pet_idle_4.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "377640 字节"
+    },
+    {
+      "file": "idle_pet_idle_4.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=55 translation轨=1"
+    },
+    {
+      "file": "idle_pet_idle_4.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=13.333334s"
+    },
+    {
+      "file": "idle_pet_idle_4.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=54 期望=54（写入 55 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "idle_pet_idle_4.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "54 条轨道全部解析"
+    },
+    {
+      "file": "idle_pet_idle_4.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=66.576° leftUpperLeg=62.285 rightUpperLeg=66.576 leftLowerLeg=9.255 rightLowerLeg=3.07"
+    },
+    {
+      "file": "idle_pet_idle_4.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=62.285° rightUpperLeg=66.576°"
+    },
+    {
+      "file": "idle_pet_idle_4.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=62.285° rightUpperLeg=66.576° leftLowerLeg=9.255° rightLowerLeg=3.07°"
+    },
+    {
+      "file": "idle_pet_idle_4.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "idle_pet_idle_4.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "55 骨"
+    },
+    {
+      "file": "idle_pet_idle_5.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "274592 字节"
+    },
+    {
+      "file": "idle_pet_idle_5.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=55 translation轨=1"
+    },
+    {
+      "file": "idle_pet_idle_5.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=9.500001s"
+    },
+    {
+      "file": "idle_pet_idle_5.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=54 期望=54（写入 55 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "idle_pet_idle_5.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "54 条轨道全部解析"
+    },
+    {
+      "file": "idle_pet_idle_5.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=212.956° leftUpperLeg=210.199 rightUpperLeg=212.956 leftLowerLeg=68.626 rightLowerLeg=74.627"
+    },
+    {
+      "file": "idle_pet_idle_5.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=210.199° rightUpperLeg=212.956°"
+    },
+    {
+      "file": "idle_pet_idle_5.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=210.199° rightUpperLeg=212.956° leftLowerLeg=68.626° rightLowerLeg=74.627°"
+    },
+    {
+      "file": "idle_pet_idle_5.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "idle_pet_idle_5.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "55 骨"
+    },
+    {
+      "file": "idle_pet_idle_6.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "171532 字节"
+    },
+    {
+      "file": "idle_pet_idle_6.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=55 translation轨=1"
+    },
+    {
+      "file": "idle_pet_idle_6.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=5.666667s"
+    },
+    {
+      "file": "idle_pet_idle_6.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=54 期望=54（写入 55 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "idle_pet_idle_6.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "54 条轨道全部解析"
+    },
+    {
+      "file": "idle_pet_idle_6.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=153.883° leftUpperLeg=153.883 rightUpperLeg=135.554 leftLowerLeg=46.577 rightLowerLeg=131.465"
+    },
+    {
+      "file": "idle_pet_idle_6.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=153.883° rightUpperLeg=135.554°"
+    },
+    {
+      "file": "idle_pet_idle_6.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=153.883° rightUpperLeg=135.554° leftLowerLeg=46.577° rightLowerLeg=131.465°"
+    },
+    {
+      "file": "idle_pet_idle_6.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "idle_pet_idle_6.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "55 骨"
+    },
+    {
+      "file": "idle_pet_idle_7.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "270112 字节"
+    },
+    {
+      "file": "idle_pet_idle_7.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=55 translation轨=1"
+    },
+    {
+      "file": "idle_pet_idle_7.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=9.333334s"
+    },
+    {
+      "file": "idle_pet_idle_7.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=54 期望=54（写入 55 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "idle_pet_idle_7.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "54 条轨道全部解析"
+    },
+    {
+      "file": "idle_pet_idle_7.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=35.519° leftUpperLeg=35.519 rightUpperLeg=26.101 leftLowerLeg=3.979 rightLowerLeg=2.035"
+    },
+    {
+      "file": "idle_pet_idle_7.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=35.519° rightUpperLeg=26.101°"
+    },
+    {
+      "file": "idle_pet_idle_7.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "未达标: rightLowerLeg=2.035°（源 clip 的 Lower Leg Stretch 全程非负 ⇒ 膝盖在源数据里就是直的）"
+    },
+    {
+      "file": "idle_pet_idle_7.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "idle_pet_idle_7.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "55 骨"
+    },
+    {
+      "file": "idle_pet_idle_8.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "180500 字节"
+    },
+    {
+      "file": "idle_pet_idle_8.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=55 translation轨=1"
+    },
+    {
+      "file": "idle_pet_idle_8.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=6.000000s"
+    },
+    {
+      "file": "idle_pet_idle_8.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=54 期望=54（写入 55 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "idle_pet_idle_8.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "54 条轨道全部解析"
+    },
+    {
+      "file": "idle_pet_idle_8.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=63.289° leftUpperLeg=25.256 rightUpperLeg=63.289 leftLowerLeg=5.353 rightLowerLeg=17.772"
+    },
+    {
+      "file": "idle_pet_idle_8.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=25.256° rightUpperLeg=63.289°"
+    },
+    {
+      "file": "idle_pet_idle_8.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=25.256° rightUpperLeg=63.289° leftLowerLeg=5.353° rightLowerLeg=17.772°"
+    },
+    {
+      "file": "idle_pet_idle_8.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "idle_pet_idle_8.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "55 骨"
+    },
+    {
+      "file": "idle_pet_idle_9.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "282896 字节"
+    },
+    {
+      "file": "idle_pet_idle_9.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=54 translation轨=1"
+    },
+    {
+      "file": "idle_pet_idle_9.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=10.000001s"
+    },
+    {
+      "file": "idle_pet_idle_9.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=53 期望=53（写入 54 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "idle_pet_idle_9.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "53 条轨道全部解析"
+    },
+    {
+      "file": "idle_pet_idle_9.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=152.205° leftUpperLeg=152.205 rightUpperLeg=152.04 leftLowerLeg=57.884 rightLowerLeg=117.806"
+    },
+    {
+      "file": "idle_pet_idle_9.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=152.205° rightUpperLeg=152.04°"
+    },
+    {
+      "file": "idle_pet_idle_9.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=152.205° rightUpperLeg=152.04° leftLowerLeg=57.884° rightLowerLeg=117.806°"
+    },
+    {
+      "file": "idle_pet_idle_9.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "idle_pet_idle_9.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "54 骨"
+    },
+    {
+      "file": "locomotion_pet_walk_left.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "55704 字节"
+    },
+    {
+      "file": "locomotion_pet_walk_left.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=54 translation轨=1"
+    },
+    {
+      "file": "locomotion_pet_walk_left.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=1.416667s"
+    },
+    {
+      "file": "locomotion_pet_walk_left.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=53 期望=53（写入 54 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "locomotion_pet_walk_left.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "53 条轨道全部解析"
+    },
+    {
+      "file": "locomotion_pet_walk_left.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=550.839° leftUpperLeg=550.839 rightUpperLeg=525.508 leftLowerLeg=116.552 rightLowerLeg=118.899"
+    },
+    {
+      "file": "locomotion_pet_walk_left.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=550.839° rightUpperLeg=525.508°"
+    },
+    {
+      "file": "locomotion_pet_walk_left.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=550.839° rightUpperLeg=525.508° leftLowerLeg=116.552° rightLowerLeg=118.899°"
+    },
+    {
+      "file": "locomotion_pet_walk_left.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "locomotion_pet_walk_left.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "54 骨"
+    },
+    {
+      "file": "misc_pet_dragging.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "356816 字节"
+    },
+    {
+      "file": "misc_pet_dragging.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=54 translation轨=1"
+    },
+    {
+      "file": "misc_pet_dragging.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=12.783334s"
+    },
+    {
+      "file": "misc_pet_dragging.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=53 期望=53（写入 54 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "misc_pet_dragging.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "53 条轨道全部解析"
+    },
+    {
+      "file": "misc_pet_dragging.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=83.912° leftUpperLeg=83.912 rightUpperLeg=63.194 leftLowerLeg=40.617 rightLowerLeg=33.842"
+    },
+    {
+      "file": "misc_pet_dragging.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=83.912° rightUpperLeg=63.194°"
+    },
+    {
+      "file": "misc_pet_dragging.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=83.912° rightUpperLeg=63.194° leftLowerLeg=40.617° rightLowerLeg=33.842°"
+    },
+    {
+      "file": "misc_pet_dragging.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "misc_pet_dragging.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "54 骨"
+    },
+    {
+      "file": "pose_pet_pose_1.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "198396 字节"
+    },
+    {
+      "file": "pose_pet_pose_1.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=54 translation轨=1"
+    },
+    {
+      "file": "pose_pet_pose_1.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=6.800000s"
+    },
+    {
+      "file": "pose_pet_pose_1.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=53 期望=53（写入 54 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "pose_pet_pose_1.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "53 条轨道全部解析"
+    },
+    {
+      "file": "pose_pet_pose_1.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=20.786° leftUpperLeg=16.889 rightUpperLeg=20.786 leftLowerLeg=0.902 rightLowerLeg=1.359"
+    },
+    {
+      "file": "pose_pet_pose_1.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=16.889° rightUpperLeg=20.786°"
+    },
+    {
+      "file": "pose_pet_pose_1.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "未达标: leftLowerLeg=0.902°, rightLowerLeg=1.359°（源 clip 的 Lower Leg Stretch 全程非负 ⇒ 膝盖在源数据里就是直的）"
+    },
+    {
+      "file": "pose_pet_pose_1.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "pose_pet_pose_1.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "54 骨"
+    },
+    {
+      "file": "sitting_pet_sit_01.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "102396 字节"
+    },
+    {
+      "file": "sitting_pet_sit_01.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=54 translation轨=1"
+    },
+    {
+      "file": "sitting_pet_sit_01.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=3.166748s"
+    },
+    {
+      "file": "sitting_pet_sit_01.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=53 期望=53（写入 54 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "sitting_pet_sit_01.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "53 条轨道全部解析"
+    },
+    {
+      "file": "sitting_pet_sit_01.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=285.481° leftUpperLeg=285.481 rightUpperLeg=206.733 leftLowerLeg=103.496 rightLowerLeg=203.085"
+    },
+    {
+      "file": "sitting_pet_sit_01.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=285.481° rightUpperLeg=206.733°"
+    },
+    {
+      "file": "sitting_pet_sit_01.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=285.481° rightUpperLeg=206.733° leftLowerLeg=103.496° rightLowerLeg=203.085°"
+    },
+    {
+      "file": "sitting_pet_sit_01.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "sitting_pet_sit_01.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "54 骨"
+    },
+    {
+      "file": "sitting_pet_sit_02.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "189600 字节"
+    },
+    {
+      "file": "sitting_pet_sit_02.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=54 translation轨=1"
+    },
+    {
+      "file": "sitting_pet_sit_02.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=6.466675s"
+    },
+    {
+      "file": "sitting_pet_sit_02.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=53 期望=53（写入 54 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "sitting_pet_sit_02.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "53 条轨道全部解析"
+    },
+    {
+      "file": "sitting_pet_sit_02.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=45.963° leftUpperLeg=45.963 rightUpperLeg=41.585 leftLowerLeg=9.922 rightLowerLeg=12.355"
+    },
+    {
+      "file": "sitting_pet_sit_02.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=45.963° rightUpperLeg=41.585°"
+    },
+    {
+      "file": "sitting_pet_sit_02.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=45.963° rightUpperLeg=41.585° leftLowerLeg=9.922° rightLowerLeg=12.355°"
+    },
+    {
+      "file": "sitting_pet_sit_02.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "sitting_pet_sit_02.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "54 骨"
+    },
+    {
+      "file": "sleeping_pet_sleeping.vrma",
+      "id": "L-00",
+      "name": "GLTFLoader + VRMAnimationLoaderPlugin 解析无异常",
+      "ok": true,
+      "detail": "947424 字节"
+    },
+    {
+      "file": "sleeping_pet_sleeping.vrma",
+      "id": "L-01",
+      "name": "解析出 VRMAnimation（userData.vrmAnimations[0]）",
+      "ok": true,
+      "detail": "rotation人形轨=54 translation轨=1"
+    },
+    {
+      "file": "sleeping_pet_sleeping.vrma",
+      "id": "L-02",
+      "name": "clip.duration > 0",
+      "ok": true,
+      "detail": "duration=35.166668s"
+    },
+    {
+      "file": "sleeping_pet_sleeping.vrma",
+      "id": "L-03",
+      "name": "轨道数 == 可解析的写入通道数",
+      "ok": true,
+      "detail": "实际=53 期望=53（写入 54 旋转 + 1 位移；模型缺 2 根骨 ⇒ 丢弃 jaw,upperChest）"
+    },
+    {
+      "file": "sleeping_pet_sleeping.vrma",
+      "id": "L-04",
+      "name": "每条轨道名都解析到模型里的真实节点",
+      "ok": true,
+      "detail": "53 条轨道全部解析"
+    },
+    {
+      "file": "sleeping_pet_sleeping.vrma",
+      "id": "L-05",
+      "name": "至少一根腿骨在某个 5 秒窗口内 > 3°",
+      "ok": true,
+      "detail": "最大腿骨行程=251.115° leftUpperLeg=219.859 rightUpperLeg=251.115 leftLowerLeg=56.655 rightLowerLeg=103.522"
+    },
+    {
+      "file": "sleeping_pet_sleeping.vrma",
+      "id": "L-05b",
+      "name": "两根**上腿**（髋）在某个 5 秒窗口内各自 > 3°",
+      "ok": true,
+      "detail": "leftUpperLeg=219.859° rightUpperLeg=251.115°"
+    },
+    {
+      "file": "sleeping_pet_sleeping.vrma",
+      "id": "L-05c",
+      "name": "【报告项】四条腿骨各自 > 3°（源素材膝盖动作少的 clip 会不满足）",
+      "ok": true,
+      "detail": "leftUpperLeg=219.859° rightUpperLeg=251.115° leftLowerLeg=56.655° rightLowerLeg=103.522°"
+    },
+    {
+      "file": "sleeping_pet_sleeping.vrma",
+      "id": "L-06",
+      "name": "任意采样区间都有骨在动（无\"静止假动作\"）",
+      "ok": true,
+      "detail": "10 个区间中 10 个有 >0.05° 的变化"
+    },
+    {
+      "file": "sleeping_pet_sleeping.vrma",
+      "id": "L-07",
+      "name": "与 manifest 里声明的骨名集合一致",
+      "ok": true,
+      "detail": "54 骨"
+    },
+    {
+      "file": "(set)",
+      "id": "SET-01",
+      "name": "idle 集合里**每一个** clip 的两根上腿在某个 5s 窗口内都 > 3°",
+      "ok": true,
+      "detail": "10/10"
+    }
+  ],
+  "files": [
+    {
+      "file": "idle_pet_idle.vrma",
+      "ok": true,
+      "duration": 2.45001220703125,
+      "tracks": 53,
+      "expectedTracks": 53,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 88.231,
+        "rightUpperLeg": 89.953,
+        "leftLowerLeg": 26.574,
+        "rightLowerLeg": 27.334
+      },
+      "errors": []
+    },
+    {
+      "file": "idle_pet_idle_10.vrma",
+      "ok": true,
+      "duration": 11.000000953674316,
+      "tracks": 53,
+      "expectedTracks": 53,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 372.257,
+        "rightUpperLeg": 353.416,
+        "leftLowerLeg": 72.642,
+        "rightLowerLeg": 123.63
+      },
+      "errors": []
+    },
+    {
+      "file": "idle_pet_idle_2.vrma",
+      "ok": true,
+      "duration": 13.333333969116211,
+      "tracks": 54,
+      "expectedTracks": 54,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 183.55,
+        "rightUpperLeg": 159.981,
+        "leftLowerLeg": 20.512,
+        "rightLowerLeg": 16.22
+      },
+      "errors": []
+    },
+    {
+      "file": "idle_pet_idle_3.vrma",
+      "ok": true,
+      "duration": 3.7333335876464844,
+      "tracks": 53,
+      "expectedTracks": 53,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 63.504,
+        "rightUpperLeg": 62.992,
+        "leftLowerLeg": 9.56,
+        "rightLowerLeg": 8.64
+      },
+      "errors": []
+    },
+    {
+      "file": "idle_pet_idle_4.vrma",
+      "ok": true,
+      "duration": 13.333333969116211,
+      "tracks": 54,
+      "expectedTracks": 54,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 98.806,
+        "rightUpperLeg": 102.448,
+        "leftLowerLeg": 12.833,
+        "rightLowerLeg": 6.04
+      },
+      "errors": []
+    },
+    {
+      "file": "idle_pet_idle_5.vrma",
+      "ok": true,
+      "duration": 9.500000953674316,
+      "tracks": 54,
+      "expectedTracks": 54,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 318.714,
+        "rightUpperLeg": 271.161,
+        "leftLowerLeg": 97.139,
+        "rightLowerLeg": 84.874
+      },
+      "errors": []
+    },
+    {
+      "file": "idle_pet_idle_6.vrma",
+      "ok": true,
+      "duration": 5.6666669845581055,
+      "tracks": 54,
+      "expectedTracks": 54,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 157.377,
+        "rightUpperLeg": 139.256,
+        "leftLowerLeg": 47.082,
+        "rightLowerLeg": 131.913
+      },
+      "errors": []
+    },
+    {
+      "file": "idle_pet_idle_7.vrma",
+      "ok": true,
+      "duration": 9.333333969116211,
+      "tracks": 54,
+      "expectedTracks": 54,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 51.194,
+        "rightUpperLeg": 40.296,
+        "leftLowerLeg": 5.09,
+        "rightLowerLeg": 3.499
+      },
+      "errors": []
+    },
+    {
+      "file": "idle_pet_idle_8.vrma",
+      "ok": true,
+      "duration": 6.000000476837158,
+      "tracks": 54,
+      "expectedTracks": 54,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 26.992,
+        "rightUpperLeg": 65.861,
+        "leftLowerLeg": 5.708,
+        "rightLowerLeg": 18.138
+      },
+      "errors": []
+    },
+    {
+      "file": "idle_pet_idle_9.vrma",
+      "ok": true,
+      "duration": 10.000000953674316,
+      "tracks": 53,
+      "expectedTracks": 53,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 258.971,
+        "rightUpperLeg": 257.197,
+        "leftLowerLeg": 77.767,
+        "rightLowerLeg": 170.573
+      },
+      "errors": []
+    },
+    {
+      "file": "locomotion_pet_walk_left.vrma",
+      "ok": true,
+      "duration": 1.4166666269302368,
+      "tracks": 53,
+      "expectedTracks": 53,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 156.071,
+        "rightUpperLeg": 148.894,
+        "leftLowerLeg": 33.023,
+        "rightLowerLeg": 33.688
+      },
+      "errors": []
+    },
+    {
+      "file": "misc_pet_dragging.vrma",
+      "ok": true,
+      "duration": 12.783333778381348,
+      "tracks": 53,
+      "expectedTracks": 53,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 119.459,
+        "rightUpperLeg": 97.422,
+        "leftLowerLeg": 74.849,
+        "rightLowerLeg": 66.083
+      },
+      "errors": []
+    },
+    {
+      "file": "pose_pet_pose_1.vrma",
+      "ok": true,
+      "duration": 6.800000190734863,
+      "tracks": 53,
+      "expectedTracks": 53,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 22.322,
+        "rightUpperLeg": 25.729,
+        "leftLowerLeg": 1.165,
+        "rightLowerLeg": 1.843
+      },
+      "errors": []
+    },
+    {
+      "file": "sitting_pet_sit_01.vrma",
+      "ok": true,
+      "duration": 3.166748046875,
+      "tracks": 53,
+      "expectedTracks": 53,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 180.809,
+        "rightUpperLeg": 130.934,
+        "leftLowerLeg": 65.549,
+        "rightLowerLeg": 128.624
+      },
+      "errors": []
+    },
+    {
+      "file": "sitting_pet_sit_02.vrma",
+      "ok": true,
+      "duration": 6.4666748046875,
+      "tracks": 53,
+      "expectedTracks": 53,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 58.357,
+        "rightUpperLeg": 50.232,
+        "leftLowerLeg": 13.11,
+        "rightLowerLeg": 15.182
+      },
+      "errors": []
+    },
+    {
+      "file": "sleeping_pet_sleeping.vrma",
+      "ok": true,
+      "duration": 35.16666793823242,
+      "tracks": 53,
+      "expectedTracks": 53,
+      "unresolved": [],
+      "legTravel": {
+        "leftUpperLeg": 750.187,
+        "rightUpperLeg": 706.862,
+        "leftLowerLeg": 145.861,
+        "rightLowerLeg": 265.554
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "pass":  true,
+    "schema":  "airimate/a21-act-parser/1",
+    "command":  "node --test apps/desktop/test/act-parser.test.cjs",
+    "at":  "2026-09-27T04:32:20.4486866+08:00",
+    "testsPassed":  11,
+    "tapFile":  "A21-act-parser.tap",
+    "note":  "唯一解析点：主进程解析，renderer 不解析（禁止双驱动）",
+    "testsFailed":  0
+}

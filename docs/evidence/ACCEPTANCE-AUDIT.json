@@ -1,0 +1,579 @@
+{
+  "schema": "airimate/acceptance-audit/1",
+  "auditedAt": "2026-10-05T16:03:18.024Z",
+  "criteriaCount": 24,
+  "byVerdict": {
+    "PASS": 24
+  },
+  "deliveryDocReferences": {
+    "checked": 28,
+    "missing": []
+  },
+  "passed": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "A14",
+    "A15",
+    "A16",
+    "A17",
+    "A18",
+    "A19",
+    "A20",
+    "A21",
+    "A22",
+    "A23",
+    "A24"
+  ],
+  "evidenceWithoutVerdict": [],
+  "noEvidence": [],
+  "failed": [],
+  "pending": [],
+  "rows": [
+    {
+      "id": "A1",
+      "title": "应用实例数 = 1",
+      "evidence": [
+        {
+          "file": "phase1/desktop-state-20260927-031853.json",
+          "exists": true,
+          "bytes": 12005,
+          "values": {
+            "counts.mineVisibleWindows": 1
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A2",
+      "title": "可见主窗口数 = 1",
+      "evidence": [
+        {
+          "file": "phase1/desktop-state-20260927-031853.json",
+          "exists": true,
+          "bytes": 12005,
+          "values": {
+            "counts.mineVisibleWindows": 1
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A3",
+      "title": "可见 MateEngineX 窗口 = 0",
+      "evidence": [
+        {
+          "file": "phase1/desktop-state-20260927-031853.json",
+          "exists": true,
+          "bytes": 12005,
+          "values": {
+            "counts.legacyKernelVisibleWindows": 0
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A4",
+      "title": "旧 build\\pet 可见窗口 = 0",
+      "evidence": [
+        {
+          "file": "phase1/desktop-state-20260927-031853.json",
+          "exists": true,
+          "bytes": 12005,
+          "values": {
+            "counts.legacyPetVisibleWindows": 0
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A5",
+      "title": "VRM 实例数 = 1",
+      "evidence": [
+        {
+          "file": "phase1/A-boot-diagnostics.json",
+          "exists": true,
+          "bytes": 17709,
+          "values": {
+            "stage.vrmCount": 1,
+            "stage.sceneCount": 1
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A6",
+      "title": "Live2D 实例数 = 0",
+      "evidence": [
+        {
+          "file": "phase8/A15-soak-run5.jsonl",
+          "exists": true,
+          "bytes": 559138,
+          "analysis": {
+            "kind": "jsonl",
+            "ended": true,
+            "samples": 241,
+            "live2dAllZero": true,
+            "rendererAllOne": true,
+            "mixerAllOne": true,
+            "vrmAllOne": true,
+            "sceneAllOne": true,
+            "baseClipAlwaysPresent": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A7",
+      "title": "WebGLRenderer 数 = 1",
+      "evidence": [
+        {
+          "file": "phase8/A15-soak-run5.jsonl",
+          "exists": true,
+          "bytes": 559138,
+          "analysis": {
+            "kind": "jsonl",
+            "ended": true,
+            "samples": 241,
+            "live2dAllZero": true,
+            "rendererAllOne": true,
+            "mixerAllOne": true,
+            "vrmAllOne": true,
+            "sceneAllOne": true,
+            "baseClipAlwaysPresent": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A8",
+      "title": "AnimationMixer 数 = 1",
+      "evidence": [
+        {
+          "file": "phase8/A15-soak-run5.jsonl",
+          "exists": true,
+          "bytes": 559138,
+          "analysis": {
+            "kind": "jsonl",
+            "ended": true,
+            "samples": 241,
+            "live2dAllZero": true,
+            "rendererAllOne": true,
+            "mixerAllOne": true,
+            "vrmAllOne": true,
+            "sceneAllOne": true,
+            "baseClipAlwaysPresent": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A9",
+      "title": "第二次启动不新增窗口",
+      "evidence": [
+        {
+          "file": "phase7/A19-no-legacy.json",
+          "exists": true,
+          "bytes": 2151,
+          "values": {
+            "ownEntryCount": 0,
+            "legacyEntryCount": 0
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A10",
+      "title": "轮盘锚点误差 ≤ 2px",
+      "evidence": [
+        {
+          "file": "phase3/A10-wheel-anchor.json",
+          "exists": true,
+          "bytes": 2731,
+          "values": {
+            "passA10": true,
+            "passHitRegionMatchesVisual": true,
+            "passWheelInWindow": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A11",
+      "title": "短按不动；越 4px 阈值且命中角色才拖窗口；右键/F1 开轮盘",
+      "evidence": [
+        {
+          "file": "phase3/A11-input.json",
+          "exists": true,
+          "bytes": 4799,
+          "values": {
+            "allPass": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A12",
+      "title": "5 秒内腿部有运动（任一根 >5° 且 4 骨总行程 >20°，用户 2026-09-27 定稿）",
+      "evidence": [
+        {
+          "file": "phase3/A12-leg-motion.json",
+          "exists": true,
+          "bytes": 1686,
+          "values": {
+            "pass": true,
+            "passA12": true,
+            "passA12SingleBone": true,
+            "passA12TotalTravel": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A13",
+      "title": "待机 ≥10 / 12s 轮换 / 无 T-pose 窗口",
+      "evidence": [
+        {
+          "file": "phase3/A13-idle-rotation.json",
+          "exists": true,
+          "bytes": 596,
+          "values": {
+            "pass": true,
+            "passRotationPeriod": true,
+            "passNoTposeWindow": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A14",
+      "title": "拖拽 PET_DRAGGING + 弹簧回正 + 尺寸读数恒定",
+      "evidence": [
+        {
+          "file": "phase5/A14-drag.json",
+          "exists": true,
+          "bytes": 3700,
+          "values": {
+            "passDragTilts": true,
+            "passDragClipActive": true,
+            "passSpringReturns": true,
+            "passSizeReadingsConstant": true,
+            "passSizeDriftWithin1Dip": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A15",
+      "title": "连续运行 2h 无异常",
+      "evidence": [
+        {
+          "file": "phase8/A15-soak-run5-summary.json",
+          "exists": true,
+          "bytes": 11378,
+          "values": {
+            "passA15": true,
+            "pass": true
+          },
+          "pass": true,
+          "requireField": {
+            "path": "actualSoakSec",
+            "min": 7200,
+            "actual": 7206
+          }
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A16",
+      "title": "空闲帧率 ≥50 / 内存无增长",
+      "evidence": [
+        {
+          "file": "phase8/A15-soak-run5-summary.json",
+          "exists": true,
+          "bytes": 11378,
+          "values": {
+            "passA16": true
+          },
+          "pass": true,
+          "requireField": {
+            "path": "actualSoakSec",
+            "min": 7200,
+            "actual": 7206
+          }
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A17",
+      "title": "密钥命中 = 0（工作区 + 分发物）",
+      "evidence": [
+        {
+          "file": "phase7/A17-secret-audit.json",
+          "exists": true,
+          "bytes": 1335,
+          "values": {
+            "pass": true
+          },
+          "pass": true
+        },
+        {
+          "file": "phase7/A17-dist-payload.json",
+          "exists": true,
+          "bytes": 435,
+          "values": {
+            "pass": true
+          },
+          "pass": true
+        },
+        {
+          "file": "phase7/A17-dist-payload-runtime.json",
+          "exists": true,
+          "bytes": 441,
+          "values": {
+            "pass": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A18",
+      "title": "非环回监听端口 = 0",
+      "evidence": [
+        {
+          "file": "phase1/A-boot-diagnostics.json",
+          "exists": true,
+          "bytes": 17709,
+          "values": {
+            "listeningPorts": []
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A19",
+      "title": "安装/卸载/重启后旧自启 = 0",
+      "evidence": [
+        {
+          "file": "phase7/A19-autostart-audit.json",
+          "exists": true,
+          "bytes": 2106,
+          "values": {
+            "pass": true
+          },
+          "pass": true
+        },
+        {
+          "file": "phase7/A19-rollback-summary.json",
+          "exists": true,
+          "bytes": 16162,
+          "values": {
+            "pass": true
+          },
+          "pass": true
+        },
+        {
+          "file": "phase7/A19-install-cycle-summary.json",
+          "exists": true,
+          "bytes": 7687,
+          "values": {
+            "pass": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A20",
+      "title": "视觉验收截图齐备",
+      "evidence": [
+        {
+          "file": "phase1/screens/CHARACTER-VISIBLE.png",
+          "exists": true,
+          "bytes": 68609,
+          "pass": true
+        },
+        {
+          "file": "phase1/screens/FRAMING-FIXED.png",
+          "exists": true,
+          "bytes": 68499,
+          "pass": true
+        },
+        {
+          "file": "phase3/screens/A20-wheel-open.png",
+          "exists": true,
+          "bytes": 143252,
+          "pass": true
+        },
+        {
+          "file": "phase1/screens/PETMODE-selfcap.png",
+          "exists": true,
+          "bytes": 10401,
+          "pass": true
+        },
+        {
+          "file": "phase1/screens/mine-pid17300-619x960-20260927-032126.png",
+          "exists": true,
+          "bytes": 112278,
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A21",
+      "title": "动作标记只解析一次（无双驱动）",
+      "evidence": [
+        {
+          "file": "phase2/A21-act-parser.json",
+          "exists": true,
+          "bytes": 368,
+          "values": {
+            "pass": true
+          },
+          "pass": true
+        },
+        {
+          "file": "phase2/A21-act-parser.md",
+          "exists": true,
+          "bytes": 2891,
+          "note": "非 JSON 证据，需人工复核"
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A22",
+      "title": "聊天链路真实接通",
+      "evidence": [
+        {
+          "file": "phase2/A22-chat-chain.json",
+          "exists": true,
+          "bytes": 440,
+          "values": {
+            "passChainWired": true,
+            "passReachedServer": true
+          },
+          "pass": true
+        },
+        {
+          "file": "phase2/A22-chat-chain.md",
+          "exists": true,
+          "bytes": 3446,
+          "note": "非 JSON 证据，需人工复核"
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A23",
+      "title": "TTS 可用（含取消）",
+      "evidence": [
+        {
+          "file": "phase2/A23-tts.json",
+          "exists": true,
+          "bytes": 3879,
+          "values": {
+            "pass": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    },
+    {
+      "id": "A24",
+      "title": "记忆层端到端 + 跨进程持久化",
+      "evidence": [
+        {
+          "file": "phase2/A24-memory-e2e.json",
+          "exists": true,
+          "bytes": 2492,
+          "values": {
+            "pass": true
+          },
+          "pass": true
+        },
+        {
+          "file": "phase2/A24-restart-summary.json",
+          "exists": true,
+          "bytes": 1235,
+          "values": {
+            "pass": true
+          },
+          "pass": true
+        }
+      ],
+      "verdict": "PASS",
+      "details": []
+    }
+  ]
+}

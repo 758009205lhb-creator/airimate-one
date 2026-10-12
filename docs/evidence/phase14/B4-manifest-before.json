@@ -1,0 +1,1643 @@
+{
+  "schema": "airimate/dist-package-manifest/1",
+  "stagedAt": "2026-10-02T00:39:12.187Z",
+  "outDir": "dist-package",
+  "fileCount": 367,
+  "totalMB": 373.44,
+  "missingSources": [],
+  "forbiddenViolations": [],
+  "withRuntime": true,
+  "includeRules": [
+    {
+      "from": "apps/desktop/dist/main",
+      "to": "app/main",
+      "why": "主进程编译产物（入口）"
+    },
+    {
+      "from": "apps/desktop/dist/preload",
+      "to": "app/preload",
+      "why": "preload（IPC 白名单唯一出口）"
+    },
+    {
+      "from": "apps/renderer/dist",
+      "to": "app/renderer",
+      "why": "renderer 打包产物"
+    },
+    {
+      "from": "packages/shared/dist",
+      "to": "app/node_modules/@airimate/shared/dist",
+      "why": "共享契约（主进程 require）"
+    },
+    {
+      "from": "packages/security/dist",
+      "to": "app/node_modules/@airimate/security/dist",
+      "why": "安全工具（主进程 require）"
+    },
+    {
+      "from": "packages/companion-kit/dist",
+      "to": "app/node_modules/@airimate/companion-kit/dist",
+      "why": "适配层框架（主进程 require）"
+    },
+    {
+      "from": "package.json",
+      "to": "app/package.json",
+      "why": "包元数据"
+    },
+    {
+      "from": "THIRD-PARTY-NOTICES.md",
+      "to": "THIRD-PARTY-NOTICES.md",
+      "why": "第三方许可声明（合规必需）"
+    },
+    {
+      "from": "README.md",
+      "to": "README.md",
+      "why": "使用说明"
+    },
+    {
+      "from": "node_modules/electron/dist/electron.exe",
+      "to": "AiriMateOne.exe",
+      "why": "可执行文件（安装时改名为 AiriMateOne.exe）"
+    },
+    {
+      "from": "node_modules/electron/dist/LICENSE",
+      "to": "LICENSE",
+      "why": "Electron 自身许可（MIT）—— 分发必需"
+    },
+    {
+      "from": "node_modules/electron/dist/LICENSES.chromium.html",
+      "to": "LICENSES.chromium.html",
+      "why": "Chromium 及组件许可汇编 —— 分发必需"
+    },
+    {
+      "from": "node_modules/electron/dist/icudtl.dat",
+      "to": "icudtl.dat",
+      "why": "ICU 数据（文本/编码）"
+    },
+    {
+      "from": "node_modules/electron/dist/resources.pak",
+      "to": "resources.pak",
+      "why": "Chromium 资源包"
+    },
+    {
+      "from": "node_modules/electron/dist/chrome_100_percent.pak",
+      "to": "chrome_100_percent.pak",
+      "why": "界面资源（100%）"
+    },
+    {
+      "from": "node_modules/electron/dist/chrome_200_percent.pak",
+      "to": "chrome_200_percent.pak",
+      "why": "界面资源（200%，高分屏）"
+    },
+    {
+      "from": "node_modules/electron/dist/snapshot_blob.bin",
+      "to": "snapshot_blob.bin",
+      "why": "V8 快照"
+    },
+    {
+      "from": "node_modules/electron/dist/v8_context_snapshot.bin",
+      "to": "v8_context_snapshot.bin",
+      "why": "V8 上下文快照"
+    },
+    {
+      "from": "node_modules/electron/dist/ffmpeg.dll",
+      "to": "ffmpeg.dll",
+      "why": "媒体解码"
+    },
+    {
+      "from": "node_modules/electron/dist/vulkan-1.dll",
+      "to": "vulkan-1.dll",
+      "why": "图形后端"
+    },
+    {
+      "from": "node_modules/electron/dist/vk_swiftshader.dll",
+      "to": "vk_swiftshader.dll",
+      "why": "软件 Vulkan 回退"
+    },
+    {
+      "from": "node_modules/electron/dist/vk_swiftshader_icd.json",
+      "to": "vk_swiftshader_icd.json",
+      "why": "软件 Vulkan 配置"
+    },
+    {
+      "from": "node_modules/electron/dist/d3dcompiler_47.dll",
+      "to": "d3dcompiler_47.dll",
+      "why": "D3D 着色器编译"
+    },
+    {
+      "from": "node_modules/electron/dist/dxcompiler.dll",
+      "to": "dxcompiler.dll",
+      "why": "DirectX 着色器编译"
+    },
+    {
+      "from": "node_modules/electron/dist/dxil.dll",
+      "to": "dxil.dll",
+      "why": "DirectX 中间语言"
+    },
+    {
+      "from": "node_modules/electron/dist/locales",
+      "to": "locales",
+      "why": "界面语言包（zh-CN 等）"
+    },
+    {
+      "from": "node_modules/electron/dist/resources",
+      "to": "resources",
+      "why": "Electron 默认资源（default_app.asar 等）"
+    },
+    {
+      "from": "node_modules/electron/dist/version",
+      "to": "version",
+      "why": "运行时版本标识"
+    },
+    {
+      "from": "assets",
+      "to": "workspace/assets",
+      "why": "动作清单与模型路径引用（**刻意排除 .vrma/.anim/.vrm —— 那是 Mate 的资产，许可不允许再分发**）"
+    }
+  ],
+  "appPackageRewrite": {
+    "mainAfter": "main/index.js",
+    "strippedKeys": [
+      "scripts",
+      "devDependencies",
+      "workspaces"
+    ]
+  },
+  "selfCheck": {
+    "main": "main/index.js",
+    "mainExists": true,
+    "mainParses": true,
+    "preloadExists": true,
+    "rendererExists": true,
+    "problems": []
+  },
+  "files": [
+    {
+      "rel": "app/main/act-parser.d.ts",
+      "size": 1554
+    },
+    {
+      "rel": "app/main/act-parser.js",
+      "size": 3390
+    },
+    {
+      "rel": "app/main/activity-probe.d.ts",
+      "size": 3330
+    },
+    {
+      "rel": "app/main/activity-probe.js",
+      "size": 9544
+    },
+    {
+      "rel": "app/main/activity-stats.d.ts",
+      "size": 5246
+    },
+    {
+      "rel": "app/main/activity-stats.js",
+      "size": 7050
+    },
+    {
+      "rel": "app/main/asset-protocol.d.ts",
+      "size": 1104
+    },
+    {
+      "rel": "app/main/asset-protocol.js",
+      "size": 9107
+    },
+    {
+      "rel": "app/main/autostart.d.ts",
+      "size": 5075
+    },
+    {
+      "rel": "app/main/autostart.js",
+      "size": 22489
+    },
+    {
+      "rel": "app/main/blocker.d.ts",
+      "size": 3612
+    },
+    {
+      "rel": "app/main/blocker.js",
+      "size": 4486
+    },
+    {
+      "rel": "app/main/bootstrap.d.ts",
+      "size": 265
+    },
+    {
+      "rel": "app/main/bootstrap.js",
+      "size": 306143
+    },
+    {
+      "rel": "app/main/capabilities/asset-adapter.d.ts",
+      "size": 3771
+    },
+    {
+      "rel": "app/main/capabilities/asset-adapter.js",
+      "size": 9302
+    },
+    {
+      "rel": "app/main/capabilities/future-adapters.d.ts",
+      "size": 3735
+    },
+    {
+      "rel": "app/main/capabilities/future-adapters.js",
+      "size": 8086
+    },
+    {
+      "rel": "app/main/capabilities/index.d.ts",
+      "size": 6371
+    },
+    {
+      "rel": "app/main/capabilities/index.js",
+      "size": 19086
+    },
+    {
+      "rel": "app/main/capabilities/llm-adapter.d.ts",
+      "size": 1876
+    },
+    {
+      "rel": "app/main/capabilities/llm-adapter.js",
+      "size": 3893
+    },
+    {
+      "rel": "app/main/capabilities/motion-adapter.d.ts",
+      "size": 1102
+    },
+    {
+      "rel": "app/main/capabilities/motion-adapter.js",
+      "size": 6831
+    },
+    {
+      "rel": "app/main/capabilities/tts-adapter.d.ts",
+      "size": 1987
+    },
+    {
+      "rel": "app/main/capabilities/tts-adapter.js",
+      "size": 5152
+    },
+    {
+      "rel": "app/main/chat-client.d.ts",
+      "size": 1736
+    },
+    {
+      "rel": "app/main/chat-client.js",
+      "size": 5089
+    },
+    {
+      "rel": "app/main/computer-use.d.ts",
+      "size": 8151
+    },
+    {
+      "rel": "app/main/computer-use.js",
+      "size": 40225
+    },
+    {
+      "rel": "app/main/diagnostics.d.ts",
+      "size": 2688
+    },
+    {
+      "rel": "app/main/diagnostics.js",
+      "size": 8884
+    },
+    {
+      "rel": "app/main/egress-guard.d.ts",
+      "size": 852
+    },
+    {
+      "rel": "app/main/egress-guard.js",
+      "size": 2770
+    },
+    {
+      "rel": "app/main/engine-state.d.ts",
+      "size": 5987
+    },
+    {
+      "rel": "app/main/engine-state.js",
+      "size": 5356
+    },
+    {
+      "rel": "app/main/event-sink.d.ts",
+      "size": 447
+    },
+    {
+      "rel": "app/main/event-sink.js",
+      "size": 1464
+    },
+    {
+      "rel": "app/main/fs-allowlist.d.ts",
+      "size": 3086
+    },
+    {
+      "rel": "app/main/fs-allowlist.js",
+      "size": 13940
+    },
+    {
+      "rel": "app/main/hit-region-registry.d.ts",
+      "size": 422
+    },
+    {
+      "rel": "app/main/hit-region-registry.js",
+      "size": 586
+    },
+    {
+      "rel": "app/main/hit-region.d.ts",
+      "size": 1758
+    },
+    {
+      "rel": "app/main/hit-region.js",
+      "size": 4581
+    },
+    {
+      "rel": "app/main/index.d.ts",
+      "size": 11
+    },
+    {
+      "rel": "app/main/index.js",
+      "size": 3414
+    },
+    {
+      "rel": "app/main/ipc.d.ts",
+      "size": 1472
+    },
+    {
+      "rel": "app/main/ipc.js",
+      "size": 61061
+    },
+    {
+      "rel": "app/main/json-store.d.ts",
+      "size": 2199
+    },
+    {
+      "rel": "app/main/json-store.js",
+      "size": 9961
+    },
+    {
+      "rel": "app/main/knowledge-source.d.ts",
+      "size": 2084
+    },
+    {
+      "rel": "app/main/knowledge-source.js",
+      "size": 20243
+    },
+    {
+      "rel": "app/main/legacy-guard.d.ts",
+      "size": 3001
+    },
+    {
+      "rel": "app/main/legacy-guard.js",
+      "size": 15954
+    },
+    {
+      "rel": "app/main/legacy-state.d.ts",
+      "size": 312
+    },
+    {
+      "rel": "app/main/legacy-state.js",
+      "size": 277
+    },
+    {
+      "rel": "app/main/lock-file.d.ts",
+      "size": 2051
+    },
+    {
+      "rel": "app/main/lock-file.js",
+      "size": 9058
+    },
+    {
+      "rel": "app/main/log.d.ts",
+      "size": 356
+    },
+    {
+      "rel": "app/main/log.js",
+      "size": 2674
+    },
+    {
+      "rel": "app/main/memory-state.d.ts",
+      "size": 775
+    },
+    {
+      "rel": "app/main/memory-state.js",
+      "size": 1543
+    },
+    {
+      "rel": "app/main/memory-store.d.ts",
+      "size": 5757
+    },
+    {
+      "rel": "app/main/memory-store.js",
+      "size": 17164
+    },
+    {
+      "rel": "app/main/morning-radio.d.ts",
+      "size": 2545
+    },
+    {
+      "rel": "app/main/morning-radio.js",
+      "size": 9649
+    },
+    {
+      "rel": "app/main/motion-state.d.ts",
+      "size": 3993
+    },
+    {
+      "rel": "app/main/motion-state.js",
+      "size": 4034
+    },
+    {
+      "rel": "app/main/mutex-keeper.d.ts",
+      "size": 1557
+    },
+    {
+      "rel": "app/main/mutex-keeper.js",
+      "size": 12319
+    },
+    {
+      "rel": "app/main/onboarding-store.d.ts",
+      "size": 5014
+    },
+    {
+      "rel": "app/main/onboarding-store.js",
+      "size": 10050
+    },
+    {
+      "rel": "app/main/paths.d.ts",
+      "size": 1362
+    },
+    {
+      "rel": "app/main/paths.js",
+      "size": 4525
+    },
+    {
+      "rel": "app/main/permission-store.d.ts",
+      "size": 4394
+    },
+    {
+      "rel": "app/main/permission-store.js",
+      "size": 8806
+    },
+    {
+      "rel": "app/main/ports.d.ts",
+      "size": 515
+    },
+    {
+      "rel": "app/main/ports.js",
+      "size": 2834
+    },
+    {
+      "rel": "app/main/privacy.d.ts",
+      "size": 2073
+    },
+    {
+      "rel": "app/main/privacy.js",
+      "size": 16531
+    },
+    {
+      "rel": "app/main/proactive-engine.d.ts",
+      "size": 3993
+    },
+    {
+      "rel": "app/main/proactive-engine.js",
+      "size": 34353
+    },
+    {
+      "rel": "app/main/provider-store.d.ts",
+      "size": 5723
+    },
+    {
+      "rel": "app/main/provider-store.js",
+      "size": 16115
+    },
+    {
+      "rel": "app/main/ps-runner.d.ts",
+      "size": 2759
+    },
+    {
+      "rel": "app/main/ps-runner.js",
+      "size": 5358
+    },
+    {
+      "rel": "app/main/quiet-store.d.ts",
+      "size": 4265
+    },
+    {
+      "rel": "app/main/quiet-store.js",
+      "size": 5357
+    },
+    {
+      "rel": "app/main/reflection-engine.d.ts",
+      "size": 2045
+    },
+    {
+      "rel": "app/main/reflection-engine.js",
+      "size": 12641
+    },
+    {
+      "rel": "app/main/reflection-extract.d.ts",
+      "size": 6217
+    },
+    {
+      "rel": "app/main/reflection-extract.js",
+      "size": 13235
+    },
+    {
+      "rel": "app/main/reflection-store.d.ts",
+      "size": 21024
+    },
+    {
+      "rel": "app/main/reflection-store.js",
+      "size": 11173
+    },
+    {
+      "rel": "app/main/reminder-store.d.ts",
+      "size": 11254
+    },
+    {
+      "rel": "app/main/reminder-store.js",
+      "size": 15881
+    },
+    {
+      "rel": "app/main/schedule-store.d.ts",
+      "size": 8498
+    },
+    {
+      "rel": "app/main/schedule-store.js",
+      "size": 8200
+    },
+    {
+      "rel": "app/main/secrets-store.d.ts",
+      "size": 107
+    },
+    {
+      "rel": "app/main/secrets-store.js",
+      "size": 7504
+    },
+    {
+      "rel": "app/main/session-store.d.ts",
+      "size": 10275
+    },
+    {
+      "rel": "app/main/session-store.js",
+      "size": 10929
+    },
+    {
+      "rel": "app/main/session.d.ts",
+      "size": 679
+    },
+    {
+      "rel": "app/main/session.js",
+      "size": 466
+    },
+    {
+      "rel": "app/main/settings-store.d.ts",
+      "size": 1156
+    },
+    {
+      "rel": "app/main/settings-store.js",
+      "size": 5949
+    },
+    {
+      "rel": "app/main/single-instance.d.ts",
+      "size": 1336
+    },
+    {
+      "rel": "app/main/single-instance.js",
+      "size": 6141
+    },
+    {
+      "rel": "app/main/stage-state.d.ts",
+      "size": 620
+    },
+    {
+      "rel": "app/main/stage-state.js",
+      "size": 455
+    },
+    {
+      "rel": "app/main/store-registry.d.ts",
+      "size": 2106
+    },
+    {
+      "rel": "app/main/store-registry.js",
+      "size": 1951
+    },
+    {
+      "rel": "app/main/tool-audit.d.ts",
+      "size": 2809
+    },
+    {
+      "rel": "app/main/tool-audit.js",
+      "size": 4336
+    },
+    {
+      "rel": "app/main/tool-confirm.d.ts",
+      "size": 1212
+    },
+    {
+      "rel": "app/main/tool-confirm.js",
+      "size": 6063
+    },
+    {
+      "rel": "app/main/tray.d.ts",
+      "size": 777
+    },
+    {
+      "rel": "app/main/tray.js",
+      "size": 4047
+    },
+    {
+      "rel": "app/main/tts-engine.d.ts",
+      "size": 13164
+    },
+    {
+      "rel": "app/main/tts-engine.js",
+      "size": 37530
+    },
+    {
+      "rel": "app/main/voice-call.d.ts",
+      "size": 3011
+    },
+    {
+      "rel": "app/main/voice-call.js",
+      "size": 15653
+    },
+    {
+      "rel": "app/main/voice-engine.d.ts",
+      "size": 6609
+    },
+    {
+      "rel": "app/main/voice-engine.js",
+      "size": 15004
+    },
+    {
+      "rel": "app/main/window-manager.d.ts",
+      "size": 8368
+    },
+    {
+      "rel": "app/main/window-manager.js",
+      "size": 40411
+    },
+    {
+      "rel": "app/preload/index.d.ts",
+      "size": 6088
+    },
+    {
+      "rel": "app/preload/index.js",
+      "size": 15875
+    },
+    {
+      "rel": "app/renderer/assets/index-3hvQ1zXV.css",
+      "size": 14649
+    },
+    {
+      "rel": "app/renderer/assets/index-DmycnPYX.js",
+      "size": 342911
+    },
+    {
+      "rel": "app/renderer/assets/three-BVQP6t8l.js",
+      "size": 588590
+    },
+    {
+      "rel": "app/renderer/assets/vendor-YIo-ID3R.js",
+      "size": 71750
+    },
+    {
+      "rel": "app/renderer/assets/vrm-DyXoMEXQ.js",
+      "size": 156350
+    },
+    {
+      "rel": "app/renderer/index.html",
+      "size": 1457
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/commands.d.ts",
+      "size": 11961
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/commands.js",
+      "size": 6137
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/errors.d.ts",
+      "size": 2215
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/errors.js",
+      "size": 2145
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/index.d.ts",
+      "size": 683
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/index.js",
+      "size": 683
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/ipc.d.ts",
+      "size": 144422
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/ipc.js",
+      "size": 54809
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/preload-api.d.ts",
+      "size": 19097
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/preload-api.js",
+      "size": 11
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/proactive.d.ts",
+      "size": 116629
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/proactive.js",
+      "size": 36552
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/settings.d.ts",
+      "size": 18527
+    },
+    {
+      "rel": "app/node_modules/@airimate/shared/dist/settings.js",
+      "size": 12715
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/csp.d.ts",
+      "size": 1229
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/csp.js",
+      "size": 3241
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/index.d.ts",
+      "size": 142
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/index.js",
+      "size": 142
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/logger.d.ts",
+      "size": 1990
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/logger.js",
+      "size": 3020
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/paths.d.ts",
+      "size": 1696
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/paths.js",
+      "size": 5228
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/redact.d.ts",
+      "size": 1609
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/redact.js",
+      "size": 4103
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/secrets.d.ts",
+      "size": 2473
+    },
+    {
+      "rel": "app/node_modules/@airimate/security/dist/secrets.js",
+      "size": 4749
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/asset-resolver.d.ts",
+      "size": 3844
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/asset-resolver.js",
+      "size": 8467
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/index.d.ts",
+      "size": 1219
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/index.js",
+      "size": 1219
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/kit.d.ts",
+      "size": 3758
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/kit.js",
+      "size": 9386
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/motion-resolver.d.ts",
+      "size": 2746
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/motion-resolver.js",
+      "size": 8306
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/store-descriptors.d.ts",
+      "size": 1322
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/store-descriptors.js",
+      "size": 2235
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/store-migrator.d.ts",
+      "size": 3820
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/store-migrator.js",
+      "size": 5626
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/tool-registry.d.ts",
+      "size": 2642
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/tool-registry.js",
+      "size": 8348
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/types.d.ts",
+      "size": 12419
+    },
+    {
+      "rel": "app/node_modules/@airimate/companion-kit/dist/types.js",
+      "size": 3206
+    },
+    {
+      "rel": "app/package.json",
+      "size": 243
+    },
+    {
+      "rel": "THIRD-PARTY-NOTICES.md",
+      "size": 308397
+    },
+    {
+      "rel": "README.md",
+      "size": 7389
+    },
+    {
+      "rel": "AiriMateOne.exe",
+      "size": 246032896
+    },
+    {
+      "rel": "LICENSE",
+      "size": 1096
+    },
+    {
+      "rel": "LICENSES.chromium.html",
+      "size": 20472830
+    },
+    {
+      "rel": "icudtl.dat",
+      "size": 10876560
+    },
+    {
+      "rel": "resources.pak",
+      "size": 12435875
+    },
+    {
+      "rel": "chrome_100_percent.pak",
+      "size": 719654
+    },
+    {
+      "rel": "chrome_200_percent.pak",
+      "size": 1269017
+    },
+    {
+      "rel": "snapshot_blob.bin",
+      "size": 368768
+    },
+    {
+      "rel": "v8_context_snapshot.bin",
+      "size": 742200
+    },
+    {
+      "rel": "ffmpeg.dll",
+      "size": 3113472
+    },
+    {
+      "rel": "vulkan-1.dll",
+      "size": 939520
+    },
+    {
+      "rel": "vk_swiftshader.dll",
+      "size": 5520384
+    },
+    {
+      "rel": "vk_swiftshader_icd.json",
+      "size": 106
+    },
+    {
+      "rel": "d3dcompiler_47.dll",
+      "size": 4741488
+    },
+    {
+      "rel": "dxcompiler.dll",
+      "size": 25745408
+    },
+    {
+      "rel": "dxil.dll",
+      "size": 1509760
+    },
+    {
+      "rel": "locales/af.pak",
+      "size": 636155
+    },
+    {
+      "rel": "locales/am.pak",
+      "size": 1029450
+    },
+    {
+      "rel": "locales/ar.pak",
+      "size": 1130919
+    },
+    {
+      "rel": "locales/bg.pak",
+      "size": 1178203
+    },
+    {
+      "rel": "locales/bn.pak",
+      "size": 1513545
+    },
+    {
+      "rel": "locales/ca.pak",
+      "size": 716908
+    },
+    {
+      "rel": "locales/cs.pak",
+      "size": 743351
+    },
+    {
+      "rel": "locales/da.pak",
+      "size": 666471
+    },
+    {
+      "rel": "locales/de.pak",
+      "size": 717862
+    },
+    {
+      "rel": "locales/el.pak",
+      "size": 1295538
+    },
+    {
+      "rel": "locales/en-GB.pak",
+      "size": 580030
+    },
+    {
+      "rel": "locales/en-US.pak",
+      "size": 586582
+    },
+    {
+      "rel": "locales/es-419.pak",
+      "size": 707627
+    },
+    {
+      "rel": "locales/es.pak",
+      "size": 703941
+    },
+    {
+      "rel": "locales/et.pak",
+      "size": 642216
+    },
+    {
+      "rel": "locales/fa.pak",
+      "size": 1063069
+    },
+    {
+      "rel": "locales/fi.pak",
+      "size": 655113
+    },
+    {
+      "rel": "locales/fil.pak",
+      "size": 741385
+    },
+    {
+      "rel": "locales/fr.pak",
+      "size": 763461
+    },
+    {
+      "rel": "locales/gu.pak",
+      "size": 1495625
+    },
+    {
+      "rel": "locales/he.pak",
+      "size": 928748
+    },
+    {
+      "rel": "locales/hi.pak",
+      "size": 1586602
+    },
+    {
+      "rel": "locales/hr.pak",
+      "size": 715279
+    },
+    {
+      "rel": "locales/hu.pak",
+      "size": 765640
+    },
+    {
+      "rel": "locales/id.pak",
+      "size": 635080
+    },
+    {
+      "rel": "locales/it.pak",
+      "size": 693991
+    },
+    {
+      "rel": "locales/ja.pak",
+      "size": 842053
+    },
+    {
+      "rel": "locales/kn.pak",
+      "size": 1720240
+    },
+    {
+      "rel": "locales/ko.pak",
+      "size": 718705
+    },
+    {
+      "rel": "locales/lt.pak",
+      "size": 777281
+    },
+    {
+      "rel": "locales/lv.pak",
+      "size": 774733
+    },
+    {
+      "rel": "locales/ml.pak",
+      "size": 1767850
+    },
+    {
+      "rel": "locales/mr.pak",
+      "size": 1467313
+    },
+    {
+      "rel": "locales/ms.pak",
+      "size": 668356
+    },
+    {
+      "rel": "locales/nb.pak",
+      "size": 638121
+    },
+    {
+      "rel": "locales/nl.pak",
+      "size": 664759
+    },
+    {
+      "rel": "locales/pl.pak",
+      "size": 742064
+    },
+    {
+      "rel": "locales/pt-BR.pak",
+      "size": 697019
+    },
+    {
+      "rel": "locales/pt-PT.pak",
+      "size": 701056
+    },
+    {
+      "rel": "locales/ro.pak",
+      "size": 728144
+    },
+    {
+      "rel": "locales/ru.pak",
+      "size": 1200985
+    },
+    {
+      "rel": "locales/sk.pak",
+      "size": 755481
+    },
+    {
+      "rel": "locales/sl.pak",
+      "size": 722720
+    },
+    {
+      "rel": "locales/sr.pak",
+      "size": 1112909
+    },
+    {
+      "rel": "locales/sv.pak",
+      "size": 646543
+    },
+    {
+      "rel": "locales/sw.pak",
+      "size": 685127
+    },
+    {
+      "rel": "locales/ta.pak",
+      "size": 1758067
+    },
+    {
+      "rel": "locales/te.pak",
+      "size": 1629379
+    },
+    {
+      "rel": "locales/th.pak",
+      "size": 1368866
+    },
+    {
+      "rel": "locales/tr.pak",
+      "size": 697394
+    },
+    {
+      "rel": "locales/uk.pak",
+      "size": 1211563
+    },
+    {
+      "rel": "locales/ur.pak",
+      "size": 1047994
+    },
+    {
+      "rel": "locales/vi.pak",
+      "size": 830014
+    },
+    {
+      "rel": "locales/zh-CN.pak",
+      "size": 592081
+    },
+    {
+      "rel": "locales/zh-TW.pak",
+      "size": 583887
+    },
+    {
+      "rel": "resources/default_app.asar",
+      "size": 110862
+    },
+    {
+      "rel": "version",
+      "size": 6
+    },
+    {
+      "rel": "workspace/assets/models/catalog.json",
+      "size": 944
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle/idle_pet_idle_f00_t0.000.png",
+      "size": 57692
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle/idle_pet_idle_f01_t0.800.png",
+      "size": 57959
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle/idle_pet_idle_f02_t1.601.png",
+      "size": 58298
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle/idle_pet_idle_f03_t2.401.png",
+      "size": 58271
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle/idle_pet_idle_render.json",
+      "size": 4737
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10/idle_pet_idle_10_f00_t0.000.png",
+      "size": 58062
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10/idle_pet_idle_10_f01_t3.593.png",
+      "size": 56771
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10/idle_pet_idle_10_f02_t7.187.png",
+      "size": 59480
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10/idle_pet_idle_10_f03_t10.780.png",
+      "size": 58207
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10/idle_pet_idle_10_render.json",
+      "size": 4786
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10_bonetrace.json",
+      "size": 5258
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10_front.svg",
+      "size": 12484
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_10_side.svg",
+      "size": 12683
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2/idle_pet_idle_2_f00_t0.000.png",
+      "size": 58022
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2/idle_pet_idle_2_f01_t4.356.png",
+      "size": 58113
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2/idle_pet_idle_2_f02_t8.711.png",
+      "size": 58890
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2/idle_pet_idle_2_f03_t13.067.png",
+      "size": 58289
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2/idle_pet_idle_2_render.json",
+      "size": 4773
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2_bonetrace.json",
+      "size": 5276
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2_front.svg",
+      "size": 12483
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_2_side.svg",
+      "size": 12682
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3/idle_pet_idle_3_f00_t0.000.png",
+      "size": 58398
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3/idle_pet_idle_3_f01_t1.220.png",
+      "size": 58641
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3/idle_pet_idle_3_f02_t2.439.png",
+      "size": 58248
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3/idle_pet_idle_3_f03_t3.659.png",
+      "size": 58212
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3/idle_pet_idle_3_render.json",
+      "size": 4761
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3_bonetrace.json",
+      "size": 5151
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3_front.svg",
+      "size": 12481
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_3_side.svg",
+      "size": 12680
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4/idle_pet_idle_4_f00_t0.000.png",
+      "size": 57995
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4/idle_pet_idle_4_f01_t4.356.png",
+      "size": 57792
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4/idle_pet_idle_4_f02_t8.711.png",
+      "size": 58148
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4/idle_pet_idle_4_f03_t13.067.png",
+      "size": 57952
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4/idle_pet_idle_4_render.json",
+      "size": 4782
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4_bonetrace.json",
+      "size": 5275
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4_front.svg",
+      "size": 12483
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_4_side.svg",
+      "size": 12682
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5/idle_pet_idle_5_f00_t0.000.png",
+      "size": 57804
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5/idle_pet_idle_5_f01_t3.103.png",
+      "size": 58178
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5/idle_pet_idle_5_f02_t6.207.png",
+      "size": 58755
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5/idle_pet_idle_5_f03_t9.310.png",
+      "size": 58202
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5/idle_pet_idle_5_render.json",
+      "size": 4765
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5_bonetrace.json",
+      "size": 5224
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5_front.svg",
+      "size": 12481
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_5_side.svg",
+      "size": 12680
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6/idle_pet_idle_6_f00_t0.000.png",
+      "size": 57834
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6/idle_pet_idle_6_f01_t1.851.png",
+      "size": 56846
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6/idle_pet_idle_6_f02_t3.702.png",
+      "size": 57087
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6/idle_pet_idle_6_f03_t5.553.png",
+      "size": 58065
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6/idle_pet_idle_6_render.json",
+      "size": 4783
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6_bonetrace.json",
+      "size": 5263
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6_front.svg",
+      "size": 12481
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_6_side.svg",
+      "size": 12680
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7/idle_pet_idle_7_f00_t0.000.png",
+      "size": 57743
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7/idle_pet_idle_7_f01_t3.049.png",
+      "size": 58732
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7/idle_pet_idle_7_f02_t6.098.png",
+      "size": 57766
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7/idle_pet_idle_7_f03_t9.147.png",
+      "size": 57977
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7/idle_pet_idle_7_render.json",
+      "size": 4778
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7_bonetrace.json",
+      "size": 5271
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7_front.svg",
+      "size": 12481
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_7_side.svg",
+      "size": 12680
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8/idle_pet_idle_8_f00_t0.000.png",
+      "size": 57804
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8/idle_pet_idle_8_f01_t1.960.png",
+      "size": 58160
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8/idle_pet_idle_8_f02_t3.920.png",
+      "size": 57724
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8/idle_pet_idle_8_f03_t5.880.png",
+      "size": 58015
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8/idle_pet_idle_8_render.json",
+      "size": 4764
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8_bonetrace.json",
+      "size": 5208
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8_front.svg",
+      "size": 12481
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_8_side.svg",
+      "size": 12680
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9/idle_pet_idle_9_f00_t0.000.png",
+      "size": 58077
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9/idle_pet_idle_9_f01_t3.267.png",
+      "size": 57876
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9/idle_pet_idle_9_f02_t6.533.png",
+      "size": 58294
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9/idle_pet_idle_9_f03_t9.800.png",
+      "size": 58359
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9/idle_pet_idle_9_render.json",
+      "size": 4768
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9_bonetrace.json",
+      "size": 5201
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9_front.svg",
+      "size": 12482
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_9_side.svg",
+      "size": 12681
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_bonetrace.json",
+      "size": 5082
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_front.svg",
+      "size": 12479
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/idle_pet_idle_side.svg",
+      "size": 12678
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_contact-sheet-report.json",
+      "size": 14718
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle.json",
+      "size": 566
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_10.json",
+      "size": 575
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_2.json",
+      "size": 574
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_3.json",
+      "size": 573
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_4.json",
+      "size": 574
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_5.json",
+      "size": 571
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_6.json",
+      "size": 573
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_7.json",
+      "size": 573
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_8.json",
+      "size": 567
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_electron-cfg.idle_pet_idle_9.json",
+      "size": 570
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_probe-visible/idle_pet_idle.visible_f00_t0.000.png",
+      "size": 57788
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_probe-visible/idle_pet_idle.visible_f01_t2.401.png",
+      "size": 58063
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_probe-visible/idle_pet_idle.visible_render.json",
+      "size": 3546
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_probe-visible/idle_pet_idle.visible_visible-copy.png",
+      "size": 10501
+    },
+    {
+      "rel": "workspace/assets/motion/contact-sheets/_probe-visible/_probe-cfg.idle_pet_idle.json",
+      "size": 605
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle.json",
+      "size": 9109
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_10.json",
+      "size": 8211
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_2.json",
+      "size": 8600
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_3.json",
+      "size": 7956
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_4.json",
+      "size": 8715
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_5.json",
+      "size": 9792
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_6.json",
+      "size": 9384
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_7.json",
+      "size": 9604
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_8.json",
+      "size": 9179
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/idle_pet_idle_9.json",
+      "size": 8728
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/locomotion_pet_walk_left.json",
+      "size": 8244
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/misc_pet_dragging.json",
+      "size": 10548
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/pose_pet_pose_1.json",
+      "size": 7975
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/sitting_pet_sit_01.json",
+      "size": 8498
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/sitting_pet_sit_02.json",
+      "size": 8450
+    },
+    {
+      "rel": "workspace/assets/motion/manifests/sleeping_pet_sleeping.json",
+      "size": 10902
+    },
+    {
+      "rel": "workspace/assets/motion/reports/_load-test-report.json",
+      "size": 43047
+    },
+    {
+      "rel": "workspace/assets/motion/reports/_validation-report.json",
+      "size": 64877
+    }
+  ]
+}

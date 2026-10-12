@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-10-08T12:05:41.400Z",
+  "testBox": null,
+  "testBoxError": null,
+  "capError": null,
+  "readPixelsNonBg": 0.4146,
+  "copyNonBg": 0.1255,
+  "size": {
+    "w": 340,
+    "h": 420
+  }
+}

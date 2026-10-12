@@ -1,0 +1,247 @@
+{
+  "probe": "clipPoses",
+  "technique": "页面内合成 PointerEvent；拖动位移由主进程的可注入光标源推进（单一驱动源）",
+  "shell": null,
+  "poses": [
+    {
+      "semantic": "sit",
+      "expectBlocked": false,
+      "result": {
+        "requested": "sit",
+        "accepted": true,
+        "before": {
+          "clipId": "idle_pet_idle",
+          "box": {
+            "x": -18.559341012322264,
+            "y": 219.61870815973776,
+            "w": 242.79693631694886,
+            "h": 385.14031346934854
+          },
+          "screenRect": {
+            "x": -18.559341012322264,
+            "y": 219.61870815973776,
+            "w": 242.79693631694886,
+            "h": 385.14031346934854,
+            "source": "skinned"
+          }
+        },
+        "after": {
+          "clipId": "sitting_pet_sit_01",
+          "box": {
+            "x": -24.444049933167427,
+            "y": 211.96251679938592,
+            "w": 261.3328759837771,
+            "h": 430.2962107212755
+          },
+          "screenRect": {
+            "x": -24.444049933167427,
+            "y": 211.96251679938592,
+            "w": 261.3328759837771,
+            "h": 430.2962107212755,
+            "source": "skinned"
+          }
+        },
+        "phase": "state",
+        "frustum": true,
+        "pixels": {
+          "ratio": 0.2016,
+          "box": {
+            "x": 0,
+            "y": 43,
+            "w": 226,
+            "h": 382
+          }
+        }
+      }
+    },
+    {
+      "semantic": "sleep",
+      "expectBlocked": true,
+      "result": {
+        "requested": "sleep",
+        "accepted": false,
+        "before": {
+          "clipId": "idle_pet_idle_10",
+          "box": {
+            "x": 14.832314993996583,
+            "y": 219.22089824118765,
+            "w": 221.43402826465916,
+            "h": 413.1084987748119
+          },
+          "screenRect": {
+            "x": 14.832314993996583,
+            "y": 219.22089824118765,
+            "w": 221.43402826465916,
+            "h": 413.1084987748119,
+            "source": "skinned"
+          }
+        },
+        "after": {
+          "clipId": "idle_pet_idle_10",
+          "box": {
+            "x": 55.09027026141637,
+            "y": 218.16467077564934,
+            "w": 145.0424878019249,
+            "h": 393.96426544508347
+          },
+          "screenRect": {
+            "x": 55.09027026141637,
+            "y": 218.16467077564934,
+            "w": 145.0424878019249,
+            "h": 393.96426544508347,
+            "source": "skinned"
+          }
+        },
+        "phase": "idle",
+        "frustum": true,
+        "pixels": {
+          "ratio": 0.1698,
+          "box": {
+            "x": 52,
+            "y": 39,
+            "w": 145,
+            "h": 382
+          }
+        }
+      }
+    },
+    {
+      "semantic": "walk",
+      "expectBlocked": false,
+      "result": {
+        "requested": "walk",
+        "accepted": true,
+        "before": {
+          "clipId": "idle_pet_idle_2",
+          "box": {
+            "x": 52.32528716348362,
+            "y": 237.1337123416846,
+            "w": 216.5460454110979,
+            "h": 375.3227510812062
+          },
+          "screenRect": {
+            "x": 52.32528716348362,
+            "y": 237.1337123416846,
+            "w": 216.5460454110979,
+            "h": 375.3227510812062,
+            "source": "skinned"
+          }
+        },
+        "after": {
+          "clipId": "locomotion_pet_walk_left",
+          "box": {
+            "x": -29.886018653152533,
+            "y": 239.8737146694858,
+            "w": 291.97454705392715,
+            "h": 375.2935577589975
+          },
+          "screenRect": {
+            "x": -29.886018653152533,
+            "y": 239.8737146694858,
+            "w": 291.97454705392715,
+            "h": 375.2935577589975,
+            "source": "skinned"
+          }
+        },
+        "phase": "state",
+        "frustum": true,
+        "pixels": {
+          "ratio": 0.1936,
+          "box": {
+            "x": 0,
+            "y": 38,
+            "w": 232,
+            "h": 375
+          }
+        }
+      }
+    },
+    {
+      "semantic": "pose",
+      "expectBlocked": false,
+      "result": {
+        "requested": "pose",
+        "accepted": true,
+        "before": {
+          "clipId": "idle_pet_idle_3",
+          "box": {
+            "x": -13.727724040808493,
+            "y": 237.42696249247328,
+            "w": 284.83278957299655,
+            "h": 379.349206073608
+          },
+          "screenRect": {
+            "x": -13.727724040808493,
+            "y": 237.42696249247328,
+            "w": 284.83278957299655,
+            "h": 379.349206073608,
+            "source": "skinned"
+          }
+        },
+        "after": {
+          "clipId": "pose_pet_pose_1",
+          "box": {
+            "x": -12.626423376769266,
+            "y": 237.1843931482316,
+            "w": 266.5756263788723,
+            "h": 374.58382580621344
+          },
+          "screenRect": {
+            "x": -12.626423376769266,
+            "y": 237.1843931482316,
+            "w": 266.5756263788723,
+            "h": 374.58382580621344,
+            "source": "skinned"
+          }
+        },
+        "phase": "state",
+        "frustum": true,
+        "pixels": {
+          "ratio": 0.1932,
+          "box": {
+            "x": 0,
+            "y": 37,
+            "w": 232,
+            "h": 376
+          }
+        }
+      }
+    }
+  ],
+  "backToIdle": {
+    "accepted": true,
+    "clipId": "idle_pet_idle_5"
+  },
+  "disabledHits": [
+    {
+      "motion": "sleep",
+      "at": 1790510070269
+    }
+  ],
+  "passBlockedAsExpected": true,
+  "passAllInFrustum": true,
+  "passAllHavePixels": true,
+  "pass": true,
+  "shots": [
+    {
+      "label": "clip-sit",
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase3\\round-interaction\\clipPoses-clip-sit.png",
+      "bytes": 143539
+    },
+    {
+      "label": "clip-sleep",
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase3\\round-interaction\\clipPoses-clip-sleep.png",
+      "bytes": 131302
+    },
+    {
+      "label": "clip-walk",
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase3\\round-interaction\\clipPoses-clip-walk.png",
+      "bytes": 143610
+    },
+    {
+      "label": "clip-pose",
+      "path": "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase3\\round-interaction\\clipPoses-clip-pose.png",
+      "bytes": 144999
+    }
+  ]
+}

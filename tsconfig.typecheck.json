@@ -1,0 +1,36 @@
+{
+  "//": [
+    "全仓类型检查配置（`npm run typecheck` 的目标）。",
+    "",
+    "为什么不是 `tsc -b`（项目引用）：",
+    "  ① 各包的 tsconfig 里 `composite` 都是 false，`tsc -b` 要求被引用的工程必须 composite；",
+    "  ② `apps/renderer` 是 `noEmit: true`，而 composite 工程必须能 emit —— 两者天然冲突；",
+    "  ③ 本项目各包的 module/moduleResolution 并不一致（desktop 是 CommonJS+Node10，",
+    "     其余是 ESNext+Bundler），用一份配置统一检查反而更早发现跨包类型不一致。",
+    "所以改为**单工程、只检查不产出**（noEmit）。真实构建仍走各包自己的 tsc（`npm run build*`）。",
+    "",
+    "覆盖范围：packages 全部源码 + apps/desktop 主进程/preload + apps/renderer 的 .ts。",
+    "",
+    "为什么不含 `apps/renderer/src/**/*.vue`：未安装 `vue-tsc` 时 `tsc` 无法解析 .vue，",
+    "会报 `Cannot find module './App.vue'`。装 `vue-tsc` 会把 Vue 语言工具链拉进离线环境，",
+    "而 .vue 里的 TS 由 Vite 构建（`npm run build:renderer`）覆盖 ⇒ 这里不重复引入。"
+  ],
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "declaration": false,
+    "sourceMap": false,
+    "types": ["node"],
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": false,
+    "skipLibCheck": true
+  },
+  "include": [
+    "packages/*/src/**/*.ts",
+    "apps/desktop/src/**/*.ts",
+    "apps/renderer/src/**/*.ts"
+  ],
+  "exclude": ["**/node_modules", "**/dist", "**/dist-types"]
+}

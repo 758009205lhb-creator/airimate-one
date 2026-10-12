@@ -1,0 +1,890 @@
+{
+  "appId": "com.airimate.one",
+  "version": "1.0.0",
+  "pid": 2392,
+  "bootId": "3a70596e-cf29-4081-853f-afed96fc3cb5",
+  "uptimeSec": 22,
+  "instances": 1,
+  "windows": [
+    {
+      "id": 1,
+      "title": "AiriMate One",
+      "bounds": {
+        "x": 934,
+        "y": 134,
+        "width": 482,
+        "height": 762
+      },
+      "visible": true,
+      "mode": "panel",
+      "alwaysOnTop": false,
+      "ignoreMouseEvents": false
+    }
+  ],
+  "browserWindowCount": 1,
+  "mutex": {
+    "holderPid": 20776,
+    "status": "held"
+  },
+  "lockFile": {
+    "path": "C:\\Users\\shiqian\\AppData\\Roaming\\AiriMateOne\\run\\instance.lock",
+    "pid": 2392,
+    "stale": false
+  },
+  "listeningPorts": [],
+  "legacy": {
+    "checked": true,
+    "blocked": false,
+    "hits": []
+  },
+  "secrets": {
+    "backend": "safeStorage",
+    "providerCount": 0
+  },
+  "motion": {
+    "clipCount": 16,
+    "manifestCount": 16,
+    "failed": [],
+    "clipIds": [
+      "idle_pet_idle",
+      "idle_pet_idle_10",
+      "idle_pet_idle_2",
+      "idle_pet_idle_3",
+      "idle_pet_idle_4",
+      "idle_pet_idle_5",
+      "idle_pet_idle_6",
+      "idle_pet_idle_7",
+      "idle_pet_idle_8",
+      "idle_pet_idle_9",
+      "locomotion_pet_walk_left",
+      "misc_pet_dragging",
+      "pose_pet_pose_1",
+      "sitting_pet_sit_01",
+      "sitting_pet_sit_02",
+      "sleeping_pet_sleeping"
+    ],
+    "license": "由 Mate Engine 的 .anim 动捕剪辑本地转换为 VRMA；转换产物同样不得分发",
+    "redistributable": false
+  },
+  "conversation": {
+    "open": false,
+    "layout": "panel",
+    "mode": "panel",
+    "bounds": {
+      "x": 934,
+      "y": 134,
+      "width": 482,
+      "height": 762
+    },
+    "chat": {
+      "id": null,
+      "visible": false,
+      "focused": false,
+      "minimized": false,
+      "bounds": null,
+      "alwaysOnTop": false,
+      "createdCount": 0,
+      "readyToShow": false,
+      "boundsSource": null
+    },
+    "hotkey": {
+      "accelerator": "Ctrl+Alt+Space",
+      "enabled": true,
+      "registered": true,
+      "error": null
+    },
+    "openCount": 0,
+    "closeCount": 0,
+    "lastSource": null
+  },
+  "stage": {
+    "stageId": "stage-1",
+    "rendererId": "renderer-2",
+    "phase": "idle",
+    "mixerId": "mixer-4",
+    "vrmInstanceId": "vrm-3",
+    "sceneCount": 1,
+    "rendererCount": 1,
+    "mixerCount": 1,
+    "vrmCount": 1,
+    "live2dCount": 0,
+    "activeClip": "idle_pet_idle_10",
+    "activeWeight": 1,
+    "activeTimeSec": 3.639,
+    "activeDurationSec": 11,
+    "baseClipId": "idle_pet_idle_10",
+    "crossfade": {
+      "from": null,
+      "to": "idle_pet_idle_10",
+      "t": 1
+    },
+    "idleIndex": 1,
+    "idleTotal": 10,
+    "dragging": false,
+    "bones": {
+      "hips": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "spine": {
+        "x": 0.004779203214064586,
+        "y": -0.011361515861686869,
+        "z": -0.016122125787804493,
+        "w": 0.9997940549103329
+      },
+      "chest": {
+        "x": 0.001375343704958173,
+        "y": -0.022789142565839283,
+        "z": -0.00671936028658298,
+        "w": 0.99971676669352
+      },
+      "neck": {
+        "x": 0.02971317901163651,
+        "y": -0.2527084129455952,
+        "z": -0.00017778172982055483,
+        "w": 0.9670861147866808
+      },
+      "head": {
+        "x": 0.12298666985033324,
+        "y": -0.003073849871237841,
+        "z": 0.024784014107427966,
+        "w": 0.9920940394593737
+      },
+      "leftUpperLeg": {
+        "x": -0.1846501638063377,
+        "y": 0.24485861764488867,
+        "z": -0.0788284322836724,
+        "w": 0.9485434374002202
+      },
+      "rightUpperLeg": {
+        "x": 0.15297770781139283,
+        "y": 0.31225345082026346,
+        "z": -0.1743804542011121,
+        "w": 0.9212421291692121
+      },
+      "leftLowerLeg": {
+        "x": 0,
+        "y": 0.008965772164165345,
+        "z": 0,
+        "w": 0.9999598066569979
+      },
+      "rightLowerLeg": {
+        "x": 0,
+        "y": -0.020720971865212736,
+        "z": 0,
+        "w": 0.9997852976139233
+      },
+      "leftFoot": {
+        "x": 0.24930829855915787,
+        "y": -0.007579245464175897,
+        "z": 0.001952993099850308,
+        "w": 0.9683925408250951
+      },
+      "rightFoot": {
+        "x": -0.09134782853512546,
+        "y": -1.990973388123318e-7,
+        "z": -1.829146380384914e-8,
+        "w": 0.995819046926638
+      },
+      "leftUpperArm": {
+        "x": -0.028319590606615423,
+        "y": 0.25974490942455203,
+        "z": -0.44756715364260957,
+        "w": 0.8552275871346513
+      },
+      "rightUpperArm": {
+        "x": 0.380395893068904,
+        "y": -0.4907574641069322,
+        "z": 0.15395779056599984,
+        "w": 0.7686046283256951
+      },
+      "leftLowerArm": {
+        "x": 0.07256600400904523,
+        "y": -0.017648172669720234,
+        "z": -0.23566948063418963,
+        "w": 0.9689595517673534
+      },
+      "rightLowerArm": {
+        "x": -0.11802990312052242,
+        "y": -0.03601528737336896,
+        "z": 0.289610389584723,
+        "w": 0.949156290233257
+      },
+      "leftHand": {
+        "x": 0.04771657423685437,
+        "y": 0.43268395106633245,
+        "z": 0.09868462179226521,
+        "w": 0.8948570122955085
+      },
+      "rightHand": {
+        "x": 0.24155825209334417,
+        "y": -0.5956723163867932,
+        "z": -0.2878779158878952,
+        "w": 0.7098946456200683
+      }
+    },
+    "boneTravelAccum": {
+      "hips": 0,
+      "spine": 15.177638589609904,
+      "chest": 14.350615612383303,
+      "neck": 63.904852816824274,
+      "head": 75.12082816440649,
+      "leftUpperLeg": 179.58213393060765,
+      "rightUpperLeg": 208.05124982868483,
+      "leftLowerLeg": 48.12028891040665,
+      "rightLowerLeg": 68.23521359549649,
+      "leftFoot": 112.88094563496809,
+      "rightFoot": 124.93432889695639,
+      "leftUpperArm": 150.25443493771164,
+      "rightUpperArm": 163.16045002451773,
+      "leftLowerArm": 153.12256180217466,
+      "rightLowerArm": 112.09268852517037,
+      "leftHand": 154.9239038516603,
+      "rightHand": 142.56494819405498
+    },
+    "fps": {
+      "avg1s": 68,
+      "avg5s": 67.7
+    },
+    "heapMB": 130.7,
+    "wheel": {
+      "open": false,
+      "cx": 0,
+      "cy": 0,
+      "scale": 0
+    },
+    "modelId": "lazuli",
+    "modelLoadMs": 2503,
+    "warnings": [],
+    "view": {
+      "canvasCss": {
+        "w": 232,
+        "h": 630
+      },
+      "canvasBuffer": {
+        "w": 232,
+        "h": 630
+      },
+      "rendererSize": {
+        "w": 232,
+        "h": 630
+      },
+      "pixelRatio": 1,
+      "devicePixelRatio": 1.25,
+      "cameraPos": {
+        "x": 0,
+        "y": 1.055,
+        "z": 4.686
+      },
+      "cameraDist": 4.525,
+      "near": 0.23429511643263143,
+      "far": 56.23082794383154,
+      "fov": 30,
+      "modelBox": {
+        "min": {
+          "x": -0.23332263428715935,
+          "y": 0.05821139587646086,
+          "z": -0.3481538455152313
+        },
+        "max": {
+          "x": 0.3404077505133765,
+          "y": 1.4649414762716009,
+          "z": 0.34714110671590914
+        },
+        "size": {
+          "x": 0.5737303848005358,
+          "y": 1.40673008039514,
+          "z": 0.6952949522311405
+        }
+      },
+      "inFrustum": true,
+      "visibleMeshes": 14,
+      "mtoonMeshes": 14,
+      "skinnedMeshes": 14,
+      "drawCalls": 24,
+      "triangles": 130235,
+      "lastRenderAt": 1791444832591,
+      "rafTicks": 1836,
+      "intervalTicks": 1910,
+      "paused": false,
+      "screenRect": {
+        "x": 52.78076700474849,
+        "y": 203.90960391967738,
+        "w": 155.45339175504287,
+        "h": 381.3378158656868
+      },
+      "canvasNonBgRatio": 0.9808,
+      "modelHealth": {
+        "meshWorldScale": 1,
+        "hipsWorldY": 0.8341,
+        "headWorldY": 1.2251,
+        "leftFootWorldY": 0.1898,
+        "vrmRestHipsY": 0.8341,
+        "maxVertices": 13014,
+        "animationRestHipsY": 0.0955,
+        "clearColorRgb": {
+          "r": 2,
+          "g": 2,
+          "b": 4,
+          "a": 255
+        },
+        "pixelSamples": [
+          {
+            "x": 116,
+            "y": 346,
+            "rgba": [
+              221,
+              220,
+              231,
+              255
+            ]
+          },
+          {
+            "x": 116,
+            "y": 441,
+            "rgba": [
+              21,
+              24,
+              36,
+              255
+            ]
+          },
+          {
+            "x": 116,
+            "y": 252,
+            "rgba": [
+              44,
+              43,
+              49,
+              255
+            ]
+          },
+          {
+            "x": 69,
+            "y": 315,
+            "rgba": [
+              21,
+              24,
+              36,
+              255
+            ]
+          },
+          {
+            "x": 162,
+            "y": 315,
+            "rgba": [
+              21,
+              24,
+              36,
+              255
+            ]
+          },
+          {
+            "x": 116,
+            "y": 567,
+            "rgba": [
+              21,
+              24,
+              36,
+              255
+            ]
+          },
+          {
+            "x": 116,
+            "y": 62,
+            "rgba": [
+              21,
+              24,
+              36,
+              255
+            ]
+          }
+        ],
+        "skin": {
+          "skinnedMeshCount": 1,
+          "boneCount": 189,
+          "boneInversesSample": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "firstVertexSkinIndex": [
+            0,
+            16,
+            16,
+            16
+          ],
+          "firstVertexSkinWeight": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "hasSkinAttribute": true
+        },
+        "pixelStats": {
+          "total": 146160,
+          "nonBg": 23977,
+          "ratio": 0.164,
+          "bgMode": [
+            21,
+            24,
+            36
+          ],
+          "contentBox": {
+            "x": 44,
+            "y": 51,
+            "w": 164,
+            "h": 366
+          }
+        },
+        "meshDraw": [
+          {
+            "name": "Bodybaked",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 17742,
+            "positionCount": 3910,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Bodybaked_1",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 3831,
+            "positionCount": 952,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Bodybaked_2",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 3120,
+            "positionCount": 608,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Body_Base",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 67212,
+            "positionCount": 13014,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Costume_Dress",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 31338,
+            "positionCount": 10474,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Costume_Dress_Cape",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 10872,
+            "positionCount": 2694,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Costume_Shoes",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 9864,
+            "positionCount": 3752,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Costume_Stockings",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 8790,
+            "positionCount": 1660,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Costume_Underwear",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 16836,
+            "positionCount": 3357,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Hair",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 21864,
+            "positionCount": 5509,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_HairRibbon",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 948,
+            "positionCount": 332,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Headband",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 5358,
+            "positionCount": 1193,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Kemobaked",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 14358,
+            "positionCount": 2775,
+            "drawRangeCount": null,
+            "inScene": true
+          },
+          {
+            "name": "Lazuli_Kemobaked_1",
+            "visible": true,
+            "materialVisible": true,
+            "hasIndex": true,
+            "indexCount": 4806,
+            "positionCount": 3103,
+            "drawRangeCount": null,
+            "inScene": true
+          }
+        ],
+        "skinProbe": {
+          "meshName": "Bodybaked",
+          "vertexCount": 3910,
+          "reason": null,
+          "attrNames": [
+            "skinIndex",
+            "normal",
+            "position",
+            "uv",
+            "skinWeight"
+          ],
+          "boneMatrixCount": 3136,
+          "samples": [
+            {
+              "i": 0,
+              "local": [
+                0,
+                1.219,
+                -0.057
+              ],
+              "world": [
+                -0.049,
+                1.238,
+                0.16
+              ],
+              "ndc": [
+                -0.11,
+                0.151,
+                0.904
+              ],
+              "skinIndex": [
+                0,
+                16,
+                16,
+                16
+              ],
+              "skinWeight": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "weightSum": 1
+            },
+            {
+              "i": 1303,
+              "local": [
+                -0.069,
+                1.25,
+                0.015
+              ],
+              "world": [
+                0.052,
+                1.248,
+                0.134
+              ],
+              "ndc": [
+                0.115,
+                0.159,
+                0.905
+              ],
+              "skinIndex": [
+                0,
+                16,
+                16,
+                16
+              ],
+              "skinWeight": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "weightSum": 1
+            },
+            {
+              "i": 2606,
+              "local": [
+                -0.001,
+                1.22,
+                -0.058
+              ],
+              "world": [
+                -0.049,
+                1.239,
+                0.161
+              ],
+              "ndc": [
+                -0.109,
+                0.152,
+                0.904
+              ],
+              "skinIndex": [
+                0,
+                16,
+                16,
+                16
+              ],
+              "skinWeight": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "weightSum": 1
+            },
+            {
+              "i": 3909,
+              "local": [
+                -0.068,
+                1.262,
+                -0.031
+              ],
+              "world": [
+                0.027,
+                1.273,
+                0.167
+              ],
+              "ndc": [
+                0.061,
+                0.18,
+                0.904
+              ],
+              "skinIndex": [
+                0,
+                16,
+                16,
+                16
+              ],
+              "skinWeight": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "weightSum": 1
+            }
+          ]
+        }
+      },
+      "canvasViewport": {
+        "x": 249,
+        "y": 66,
+        "w": 232,
+        "h": 630
+      },
+      "canvasStyle": {
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "zIndex": "auto",
+        "position": "static"
+      }
+    }
+  },
+  "stageAgeMs": 146,
+  "memory": null,
+  "m1": {
+    "onboarding": {
+      "state": {
+        "step": "provider",
+        "completedAt": null,
+        "lastTestOk": null
+      },
+      "satisfied": {
+        "provider": false,
+        "test": false,
+        "model": false,
+        "persona": true,
+        "permission": true,
+        "schedule": false
+      },
+      "blockedBy": "provider",
+      "hint": "请先添加一个供应商（baseURL + 模型 + API Key），密钥只在本机加密保存",
+      "completed": false
+    },
+    "providerCount": 0,
+    "providersWithKey": 0,
+    "chatMessageCount": 2,
+    "memoryCount": 0,
+    "telemetryEnabled": false
+  },
+  "m2": {
+    "proactive": {
+      "running": false,
+      "nextTickInMs": -1,
+      "lastTickAt": 1791444484012,
+      "ticks": 29,
+      "startupGreeted": true,
+      "startupGreetedAt": 1791443874455,
+      "radioGeneratedAt": null,
+      "cooldownUntil": {
+        "greeting": 1791472673845
+      },
+      "queueLength": 0,
+      "recentDecisions": [
+        {
+          "at": 1791443874463,
+          "kind": "greeting",
+          "decision": "fired",
+          "reason": "none"
+        },
+        {
+          "at": 1791443874466,
+          "kind": "schedule-brief",
+          "decision": "skipped",
+          "reason": "none"
+        }
+      ],
+      "activeReminders": 0,
+      "enabled": {
+        "greeting": false,
+        "scheduleBrief": false,
+        "morningRadio": false,
+        "continuous": false,
+        "sedentary": false,
+        "night": false
+      },
+      "reflection": {
+        "enabled": false,
+        "lastRunAt": null,
+        "lastRunDay": null,
+        "runs": 0
+      },
+      "pendingReflections": 0
+    },
+    "permissions": {
+      "total": 11,
+      "enabled": 0,
+      "blocked": 4,
+      "allowlistedDirs": 0
+    },
+    "quiet": {
+      "enabled": true,
+      "start": "23:00",
+      "end": "07:30"
+    },
+    "policy": {
+      "continuousMinutes": 50,
+      "sedentaryMinutes": 60,
+      "nightRestAt": "23:30",
+      "maxRetries": 3,
+      "maxQueue": 50
+    },
+    "schedules": {
+      "total": 0,
+      "enabled": 0,
+      "todayCount": 0
+    },
+    "reminders": {
+      "total": 0,
+      "pending": 0,
+      "queued": 0,
+      "fired": 0,
+      "failed": 0
+    },
+    "activity": {
+      "available": false,
+      "reason": null,
+      "probeScriptExists": true,
+      "shell": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "today": {
+        "day": "2026-10-08",
+        "activeMinutes": 0,
+        "longestStreakMinutes": 0,
+        "longestIdleMinutes": 8,
+        "inputEvents": 0,
+        "blockedSamples": 0,
+        "samples": 29,
+        "firstActiveAt": null,
+        "lastActiveAt": null,
+        "hourlyActiveMinutes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  }
+}

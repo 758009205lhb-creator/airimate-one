@@ -1,0 +1,18 @@
+{
+  "schema": "airimate/dist-payload-scan/1",
+  "scannedAt": "2026-09-26T20:30:07.509Z",
+  "payloadRoot": "dist-package",
+  "payloadFileCount": 253,
+  "payloadBytes": 390257787,
+  "payloadMB": 372.18,
+  "textFilesScanned": 118,
+  "secretHits": [],
+  "secretHitCount": 0,
+  "forbiddenHits": [],
+  "forbiddenHitCount": 0,
+  "devMarkerHits": [],
+  "devMarkerHitCount": 0,
+  "noticesPresent": true,
+  "assetFilesInPayload": [],
+  "pass": true
+}

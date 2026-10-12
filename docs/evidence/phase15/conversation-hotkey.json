@@ -1,0 +1,41 @@
+{
+    "id":  "conversation-hotkey",
+    "invariant":  "Ctrl+Alt+Space 真的能开/关桌宠对话（窗口尺寸随之切换并可还原）",
+    "generatedAt":  "2026-10-08T03:04:42.6673687Z",
+    "commandLine":  "powershell -NoProfile -ExecutionPolicy Bypass -File tools\\qa\\hotkey-toggle.ps1 -OutDir F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase15",
+    "scaleFactorInferred":  1,
+    "before":  {
+                   "hwnd":  5572566,
+                   "pid":  24564,
+                   "title":  "AiriMate One",
+                   "x":  1079,
+                   "y":  620,
+                   "w":  340,
+                   "h":  420
+               },
+    "afterOpen":  {
+                      "hwnd":  5572566,
+                      "pid":  24564,
+                      "title":  "AiriMate One",
+                      "x":  1054,
+                      "y":  468,
+                      "w":  379,
+                      "h":  560
+                  },
+    "afterClose":  {
+                       "hwnd":  5572566,
+                       "pid":  24564,
+                       "title":  "AiriMate One",
+                       "x":  1079,
+                       "y":  620,
+                       "w":  340,
+                       "h":  420
+                   },
+    "expectedOpen":  {
+                         "h":  560,
+                         "w":  380
+                     },
+    "passOpen":  true,
+    "passCloseRestoresExactly":  true,
+    "pass":  true
+}

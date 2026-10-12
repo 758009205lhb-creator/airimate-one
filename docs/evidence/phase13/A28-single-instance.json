@@ -1,0 +1,32 @@
+{
+    "checkedAt":  "2026-10-02T08:21:20.9854406+08:00",
+    "instanceA":  {
+                      "pid":  22672,
+                      "visibleWindows":  1,
+                      "allWindows":  10,
+                      "electronProcs":  4,
+                      "lockPid":  22672
+                  },
+    "secondInstance":  {
+                           "pid":  22996,
+                           "exited":  true,
+                           "exitCode":  0,
+                           "waitedSec":  1.6
+                       },
+    "afterSecond":  {
+                        "visibleWindows":  1,
+                        "allWindows":  10,
+                        "electronProcs":  4,
+                        "lockPid":  22672,
+                        "instanceAAlive":  true
+                    },
+    "checks":  {
+                   "single.visible-window-before":  true,
+                   "single.visible-window-after":  true,
+                   "single.second-instance-exited":  true,
+                   "single.no-process-growth":  true,
+                   "single.first-instance-survived":  true,
+                   "single.lock-still-first":  true
+               },
+    "pass":  true
+}

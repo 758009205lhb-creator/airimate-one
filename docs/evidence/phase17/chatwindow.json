@@ -1,0 +1,1790 @@
+{
+  "probe": "chat",
+  "technique": "renderer→preload→IPC→主进程 的真实开关链路；窗口读数取自 BrowserWindow；居中误差用读回值算",
+  "startedAt": "2026-10-08T18:18:16.322Z",
+  "rememberedAfterPreClose": null,
+  "preClose": {
+    "ok": true,
+    "hidden": true,
+    "createdCount": 1,
+    "openCount": 1,
+    "closeCount": 1
+  },
+  "beforeOpen": {
+    "chat": {
+      "id": 2,
+      "title": "和 Lazuli 聊天",
+      "visible": false,
+      "focused": false,
+      "minimized": false,
+      "bounds": {
+        "x": 357,
+        "y": 234,
+        "width": 720,
+        "height": 559
+      },
+      "alwaysOnTop": false,
+      "createdCount": 1,
+      "readyToShow": false,
+      "boundsSource": "remembered",
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1434,
+        "height": 1028
+      },
+      "center": null,
+      "requestedBounds": {
+        "x": 357,
+        "y": 234,
+        "width": 713,
+        "height": 553
+      },
+      "sizeCorrection": {
+        "decor": {
+          "width": 20,
+          "height": 19
+        },
+        "from": {
+          "width": 733,
+          "height": 572
+        }
+      }
+    },
+    "petBounds": {
+      "x": 1038,
+      "y": 528,
+      "width": 341,
+      "height": 420
+    },
+    "petMode": "pet",
+    "windows": [
+      {
+        "id": 2,
+        "title": "和 Lazuli 聊天",
+        "url": "app://bundle/index.html?surface=chat",
+        "visible": false,
+        "bounds": {
+          "x": 357,
+          "y": 234,
+          "width": 720,
+          "height": 559
+        }
+      },
+      {
+        "id": 1,
+        "title": "AiriMate One",
+        "url": "app://bundle/index.html",
+        "visible": false,
+        "bounds": {
+          "x": 1038,
+          "y": 528,
+          "width": 341,
+          "height": 420
+        }
+      }
+    ]
+  },
+  "startCreatedCount": 1,
+  "recreatedForFirstOpen": {
+    "createdCount": 1,
+    "id": null
+  },
+  "rememberedRightBeforeFirstOpen": null,
+  "boundsSourceBeforeFirstOpen": null,
+  "createdCountBaseline": 2,
+  "firstOpen": {
+    "ipc": {
+      "ok": true,
+      "state": {
+        "open": true,
+        "layout": "pet",
+        "mode": "pet",
+        "bounds": {
+          "x": 1038,
+          "y": 528,
+          "width": 341,
+          "height": 420
+        },
+        "chat": {
+          "id": 3,
+          "visible": true,
+          "focused": true,
+          "minimized": false,
+          "bounds": {
+            "x": 367,
+            "y": 244,
+            "width": 705,
+            "height": 544
+          },
+          "alwaysOnTop": false,
+          "createdCount": 2,
+          "readyToShow": false,
+          "boundsSource": "centered"
+        },
+        "pet": {
+          "resident": false,
+          "visible": false,
+          "created": true,
+          "minimized": false,
+          "windowId": 1,
+          "statusText": "桌宠已收回"
+        },
+        "hotkey": {
+          "accelerator": "Ctrl+Alt+Space",
+          "enabled": true,
+          "registered": true,
+          "error": null
+        },
+        "openCount": 2,
+        "closeCount": 1,
+        "lastSource": "wheel"
+      }
+    },
+    "diag": {
+      "state": {
+        "open": true,
+        "layout": "pet",
+        "mode": "pet",
+        "bounds": {
+          "x": 1038,
+          "y": 528,
+          "width": 341,
+          "height": 420
+        },
+        "chat": {
+          "id": 3,
+          "visible": true,
+          "focused": true,
+          "minimized": false,
+          "bounds": {
+            "x": 367,
+            "y": 244,
+            "width": 705,
+            "height": 544
+          },
+          "alwaysOnTop": false,
+          "createdCount": 2,
+          "readyToShow": false,
+          "boundsSource": "centered"
+        },
+        "pet": {
+          "resident": false,
+          "visible": false,
+          "created": true,
+          "minimized": false,
+          "windowId": 1,
+          "statusText": "桌宠已收回"
+        },
+        "hotkey": {
+          "accelerator": "Ctrl+Alt+Space",
+          "enabled": true,
+          "registered": true,
+          "error": null
+        },
+        "openCount": 2,
+        "closeCount": 1,
+        "lastSource": "wheel"
+      },
+      "hotkey": {
+        "accelerator": "Ctrl+Alt+Space",
+        "enabled": true,
+        "registered": true,
+        "error": null
+      },
+      "chat": {
+        "id": 3,
+        "title": "和 她 聊天",
+        "visible": true,
+        "focused": true,
+        "minimized": false,
+        "bounds": {
+          "x": 367,
+          "y": 244,
+          "width": 705,
+          "height": 544
+        },
+        "alwaysOnTop": false,
+        "createdCount": 2,
+        "readyToShow": false,
+        "boundsSource": "centered",
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1434,
+          "height": 1028
+        },
+        "center": {
+          "requested": {
+            "x": 367,
+            "y": 244,
+            "width": 700,
+            "height": 541
+          },
+          "actual": {
+            "x": 367,
+            "y": 244,
+            "width": 705,
+            "height": 544
+          },
+          "workArea": {
+            "x": 0,
+            "y": 0,
+            "width": 1434,
+            "height": 1028
+          },
+          "cursor": {
+            "x": 932,
+            "y": 436
+          },
+          "workAreaCenter": {
+            "x": 717,
+            "y": 514
+          },
+          "actualCenter": {
+            "x": 720,
+            "y": 516
+          },
+          "centerErrorDip": 3
+        },
+        "requestedBounds": {
+          "x": 367,
+          "y": 244,
+          "width": 700,
+          "height": 541
+        },
+        "sizeCorrection": {
+          "decor": {
+            "width": 20,
+            "height": 19
+          },
+          "from": {
+            "width": 720,
+            "height": 560
+          }
+        }
+      },
+      "chatHwnd": "2558302",
+      "chatWindowId": 3,
+      "chatCreatedCount": 2,
+      "chatReadyToShow": false,
+      "chatBoundsSource": "centered",
+      "center": {
+        "requested": {
+          "x": 367,
+          "y": 244,
+          "width": 700,
+          "height": 541
+        },
+        "actual": {
+          "x": 367,
+          "y": 244,
+          "width": 705,
+          "height": 544
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1434,
+          "height": 1028
+        },
+        "cursor": {
+          "x": 932,
+          "y": 436
+        },
+        "workAreaCenter": {
+          "x": 717,
+          "y": 514
+        },
+        "actualCenter": {
+          "x": 720,
+          "y": 516
+        },
+        "centerErrorDip": 3
+      },
+      "petInvariant": {
+        "before": {
+          "x": 1038,
+          "y": 528,
+          "width": 341,
+          "height": 420
+        },
+        "after": {
+          "x": 1038,
+          "y": 528,
+          "width": 341,
+          "height": 420
+        },
+        "identical": true,
+        "modeBefore": "pet",
+        "modeAfter": "pet",
+        "modeIdentical": true
+      },
+      "lastOpenFocusInput": true,
+      "lastOpenListen": false
+    },
+    "chatId": 3,
+    "petUi": {
+      "conversationOpen": true,
+      "chatVisible": true,
+      "chatWindowId": 3
+    }
+  },
+  "openSizeRequest": {
+    "requested": {
+      "x": 367,
+      "y": 244,
+      "width": 700,
+      "height": 541
+    },
+    "frameOutsideTarget": {
+      "width": 720,
+      "height": 560
+    },
+    "note": "requested 是\"外框目标 − 系统装饰\"后的实际请求值；外框读回见 open.chat-actual-size-within-8dip"
+  },
+  "openChatDiag": {
+    "bounds": {
+      "x": 367,
+      "y": 244,
+      "width": 705,
+      "height": 544
+    },
+    "requestedBounds": {
+      "x": 367,
+      "y": 244,
+      "width": 700,
+      "height": 541
+    },
+    "sizeCorrection": {
+      "decor": {
+        "width": 20,
+        "height": 19
+      },
+      "from": {
+        "width": 720,
+        "height": 560
+      }
+    },
+    "title": "和 她 聊天"
+  },
+  "skipTaskbarNote": "skipTaskbar 无 getter：由 tools/qa/Get-DesktopState.ps1 的桌面枚举覆盖，本探针不断言",
+  "center": {
+    "requested": {
+      "x": 367,
+      "y": 244,
+      "width": 700,
+      "height": 541
+    },
+    "actual": {
+      "x": 367,
+      "y": 244,
+      "width": 705,
+      "height": 544
+    },
+    "workArea": {
+      "x": 0,
+      "y": 0,
+      "width": 1434,
+      "height": 1028
+    },
+    "cursor": {
+      "x": 932,
+      "y": 436
+    },
+    "workAreaCenter": {
+      "x": 717,
+      "y": 514
+    },
+    "actualCenter": {
+      "x": 720,
+      "y": 516
+    },
+    "centerErrorDip": 3
+  },
+  "uniqueness": {
+    "stage": {
+      "sceneCount": 1,
+      "rendererCount": 1,
+      "mixerCount": 1,
+      "vrmCount": 1,
+      "live2dCount": 0,
+      "stageId": "stage-1",
+      "rendererId": "renderer-2",
+      "mixerId": "mixer-4",
+      "vrmInstanceId": "vrm-3"
+    },
+    "chatUi": {
+      "surface": "chat",
+      "title": "和 Lazuli 聊天",
+      "canvasCount": 0,
+      "stageHandlePresent": false,
+      "stageCanvasInDom": 0,
+      "textInputCount": 1,
+      "textInputTags": [
+        "textarea"
+      ],
+      "messageCount": 0,
+      "userMessageCount": 0,
+      "assistantMessageCount": 0,
+      "streaming": false,
+      "streamingChars": 0,
+      "sendCount": 0,
+      "composing": false,
+      "listening": false,
+      "ttsActive": false,
+      "focusOk": null,
+      "focusAttempts": 0,
+      "focusedEl": "body",
+      "titleRendered": "和 Lazuli 聊天",
+      "personaName": "Lazuli",
+      "clearArmed": false,
+      "hotkeyError": null,
+      "conversationOpen": false,
+      "menuBar": {
+        "groups": [
+          {
+            "id": "file",
+            "label": "文件",
+            "itemCount": 3
+          },
+          {
+            "id": "pet",
+            "label": "桌宠",
+            "itemCount": 4
+          },
+          {
+            "id": "chat",
+            "label": "对话",
+            "itemCount": 3
+          },
+          {
+            "id": "memory",
+            "label": "记忆",
+            "itemCount": 2
+          },
+          {
+            "id": "settings",
+            "label": "设置",
+            "itemCount": 5
+          },
+          {
+            "id": "help",
+            "label": "帮助",
+            "itemCount": 2
+          }
+        ],
+        "itemCount": 19,
+        "openMenu": null
+      },
+      "pet": {
+        "resident": false,
+        "visible": false,
+        "statusText": ""
+      },
+      "shortcutVisible": false,
+      "aboutVisible": false
+    }
+  },
+  "petSeparation": {
+    "textInputs": {
+      "count": 0,
+      "tags": [],
+      "conversationCount": 0,
+      "conversationTags": [],
+      "configCount": 0,
+      "dockInDom": false,
+      "msgInDom": 0
+    },
+    "overlayRects": {
+      "dock": null,
+      "bubble": null,
+      "ticks": {
+        "dock": 0,
+        "bubble": 305,
+        "listening": 0
+      },
+      "probes": {
+        "dock": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "none",
+          "note": "init"
+        },
+        "bubble": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "ref",
+          "note": "done"
+        },
+        "listening": {
+          "hasEl": false,
+          "w": -1,
+          "h": -1,
+          "via": "none",
+          "note": "init"
+        }
+      },
+      "dockInDom": false
+    }
+  },
+  "menuBar": {
+    "catalog": {
+      "groups": [
+        {
+          "id": "file",
+          "label": "文件",
+          "items": [
+            {
+              "id": "file.hide",
+              "label": "隐藏窗口",
+              "action": "hideWindow",
+              "checked": null,
+              "leavesSession": true
+            },
+            {
+              "id": "file.restart",
+              "label": "重启应用",
+              "action": "restartApp",
+              "checked": null,
+              "leavesSession": true
+            },
+            {
+              "id": "file.quit",
+              "label": "退出应用",
+              "action": "quitApp",
+              "checked": null,
+              "leavesSession": true
+            }
+          ]
+        },
+        {
+          "id": "pet",
+          "label": "桌宠",
+          "items": [
+            {
+              "id": "pet.show",
+              "label": "显示桌宠",
+              "action": "petShow",
+              "checked": null,
+              "leavesSession": false
+            },
+            {
+              "id": "pet.hide",
+              "label": "收回桌宠",
+              "action": "petHide",
+              "checked": null,
+              "leavesSession": false
+            },
+            {
+              "id": "pet.resident",
+              "label": "桌宠常驻",
+              "action": "petToggleResident",
+              "checked": false,
+              "leavesSession": false
+            },
+            {
+              "id": "pet.panel",
+              "label": "打开管理面板",
+              "action": "petOpenPanel",
+              "checked": null,
+              "leavesSession": false
+            }
+          ]
+        },
+        {
+          "id": "chat",
+          "label": "对话",
+          "items": [
+            {
+              "id": "chat.new",
+              "label": "新建对话",
+              "action": "newConversation",
+              "checked": null,
+              "leavesSession": false
+            },
+            {
+              "id": "chat.clear",
+              "label": "清除对话",
+              "action": "clearConversation",
+              "checked": null,
+              "leavesSession": false
+            },
+            {
+              "id": "chat.dir",
+              "label": "打开数据目录",
+              "action": "openDataDir",
+              "checked": null,
+              "leavesSession": false
+            }
+          ]
+        },
+        {
+          "id": "memory",
+          "label": "记忆",
+          "items": [
+            {
+              "id": "memory.page",
+              "label": "打开记忆页",
+              "action": "openMemory",
+              "checked": null,
+              "leavesSession": false
+            },
+            {
+              "id": "memory.schedule",
+              "label": "打开日程与提醒",
+              "action": "openSchedule",
+              "checked": null,
+              "leavesSession": false
+            }
+          ]
+        },
+        {
+          "id": "settings",
+          "label": "设置",
+          "items": [
+            {
+              "id": "settings.pref",
+              "label": "偏好设置",
+              "action": "openSettings",
+              "checked": null,
+              "leavesSession": false
+            },
+            {
+              "id": "settings.voice",
+              "label": "语音与麦克风",
+              "action": "openVoice",
+              "checked": null,
+              "leavesSession": false
+            },
+            {
+              "id": "settings.hotkey",
+              "label": "快捷键",
+              "action": "openShortcuts",
+              "checked": null,
+              "leavesSession": false
+            },
+            {
+              "id": "settings.autostart",
+              "label": "开机自启",
+              "action": "toggleAutoStart",
+              "checked": false,
+              "leavesSession": false
+            },
+            {
+              "id": "settings.ontop",
+              "label": "对话窗口置顶",
+              "action": "toggleAlwaysOnTop",
+              "checked": false,
+              "leavesSession": false
+            }
+          ]
+        },
+        {
+          "id": "help",
+          "label": "帮助",
+          "items": [
+            {
+              "id": "help.shortcuts",
+              "label": "快捷键一览",
+              "action": "showShortcutList",
+              "checked": null,
+              "leavesSession": false
+            },
+            {
+              "id": "help.about",
+              "label": "关于",
+              "action": "showAbout",
+              "checked": null,
+              "leavesSession": false
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "file.hide",
+          "menu": "file",
+          "label": "隐藏窗口",
+          "action": "hideWindow",
+          "checked": null,
+          "leavesSession": true
+        },
+        {
+          "id": "file.restart",
+          "menu": "file",
+          "label": "重启应用",
+          "action": "restartApp",
+          "checked": null,
+          "leavesSession": true
+        },
+        {
+          "id": "file.quit",
+          "menu": "file",
+          "label": "退出应用",
+          "action": "quitApp",
+          "checked": null,
+          "leavesSession": true
+        },
+        {
+          "id": "pet.show",
+          "menu": "pet",
+          "label": "显示桌宠",
+          "action": "petShow",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "pet.hide",
+          "menu": "pet",
+          "label": "收回桌宠",
+          "action": "petHide",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "pet.resident",
+          "menu": "pet",
+          "label": "桌宠常驻",
+          "action": "petToggleResident",
+          "checked": false,
+          "leavesSession": false
+        },
+        {
+          "id": "pet.panel",
+          "menu": "pet",
+          "label": "打开管理面板",
+          "action": "petOpenPanel",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "chat.new",
+          "menu": "chat",
+          "label": "新建对话",
+          "action": "newConversation",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "chat.clear",
+          "menu": "chat",
+          "label": "清除对话",
+          "action": "clearConversation",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "chat.dir",
+          "menu": "chat",
+          "label": "打开数据目录",
+          "action": "openDataDir",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "memory.page",
+          "menu": "memory",
+          "label": "打开记忆页",
+          "action": "openMemory",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "memory.schedule",
+          "menu": "memory",
+          "label": "打开日程与提醒",
+          "action": "openSchedule",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "settings.pref",
+          "menu": "settings",
+          "label": "偏好设置",
+          "action": "openSettings",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "settings.voice",
+          "menu": "settings",
+          "label": "语音与麦克风",
+          "action": "openVoice",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "settings.hotkey",
+          "menu": "settings",
+          "label": "快捷键",
+          "action": "openShortcuts",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "settings.autostart",
+          "menu": "settings",
+          "label": "开机自启",
+          "action": "toggleAutoStart",
+          "checked": false,
+          "leavesSession": false
+        },
+        {
+          "id": "settings.ontop",
+          "menu": "settings",
+          "label": "对话窗口置顶",
+          "action": "toggleAlwaysOnTop",
+          "checked": false,
+          "leavesSession": false
+        },
+        {
+          "id": "help.shortcuts",
+          "menu": "help",
+          "label": "快捷键一览",
+          "action": "showShortcutList",
+          "checked": null,
+          "leavesSession": false
+        },
+        {
+          "id": "help.about",
+          "menu": "help",
+          "label": "关于",
+          "action": "showAbout",
+          "checked": null,
+          "leavesSession": false
+        }
+      ],
+      "itemCount": 19,
+      "menuRuns": []
+    },
+    "itemCount": 19,
+    "groupCount": 6,
+    "missingAction": [],
+    "leavesSession": [
+      "file.hide",
+      "file.restart",
+      "file.quit"
+    ]
+  },
+  "singleton": {
+    "hwnds": [
+      3,
+      3,
+      3
+    ],
+    "createdCount": 2,
+    "openCount": 2,
+    "petSizes": [
+      "341x420",
+      "341x420",
+      "341x420"
+    ],
+    "petInvariant": {
+      "before": {
+        "x": 1038,
+        "y": 528,
+        "width": 341,
+        "height": 420
+      },
+      "after": {
+        "x": 1038,
+        "y": 528,
+        "width": 341,
+        "height": 420
+      },
+      "identical": true,
+      "modeBefore": "pet",
+      "modeAfter": "pet",
+      "modeIdentical": true
+    },
+    "reopenLog": [
+      {
+        "ok": true,
+        "attempts": 1,
+        "ipc": {
+          "ok": true,
+          "state": {
+            "open": true,
+            "layout": "pet",
+            "mode": "pet",
+            "bounds": {
+              "x": 1038,
+              "y": 528,
+              "width": 341,
+              "height": 420
+            },
+            "chat": {
+              "id": 3,
+              "visible": true,
+              "focused": true,
+              "minimized": false,
+              "bounds": {
+                "x": 367,
+                "y": 244,
+                "width": 705,
+                "height": 544
+              },
+              "alwaysOnTop": false,
+              "createdCount": 2,
+              "readyToShow": false,
+              "boundsSource": "centered"
+            },
+            "pet": {
+              "resident": false,
+              "visible": false,
+              "created": true,
+              "minimized": false,
+              "windowId": 1,
+              "statusText": "桌宠已收回"
+            },
+            "hotkey": {
+              "accelerator": "Ctrl+Alt+Space",
+              "enabled": true,
+              "registered": true,
+              "error": null
+            },
+            "openCount": 2,
+            "closeCount": 1,
+            "lastSource": "wheel"
+          }
+        }
+      },
+      {
+        "ok": true,
+        "attempts": 1,
+        "ipc": {
+          "ok": true,
+          "state": {
+            "open": true,
+            "layout": "pet",
+            "mode": "pet",
+            "bounds": {
+              "x": 1038,
+              "y": 528,
+              "width": 341,
+              "height": 420
+            },
+            "chat": {
+              "id": 3,
+              "visible": true,
+              "focused": true,
+              "minimized": false,
+              "bounds": {
+                "x": 367,
+                "y": 244,
+                "width": 705,
+                "height": 544
+              },
+              "alwaysOnTop": false,
+              "createdCount": 2,
+              "readyToShow": true,
+              "boundsSource": "centered"
+            },
+            "pet": {
+              "resident": false,
+              "visible": false,
+              "created": true,
+              "minimized": false,
+              "windowId": 1,
+              "statusText": "桌宠已收回"
+            },
+            "hotkey": {
+              "accelerator": "Ctrl+Alt+Space",
+              "enabled": true,
+              "registered": true,
+              "error": null
+            },
+            "openCount": 2,
+            "closeCount": 1,
+            "lastSource": "wheel"
+          }
+        }
+      }
+    ]
+  },
+  "singletonCreated": {
+    "atPreClose": 2,
+    "afterReopens": 2
+  },
+  "singletonCounts": {
+    "afterFirstOpen": {
+      "open": 2,
+      "close": 1
+    },
+    "afterReopens": {
+      "open": 2,
+      "close": 1
+    }
+  },
+  "close": {
+    "ipc": {
+      "ok": true,
+      "state": {
+        "open": false,
+        "layout": "pet",
+        "mode": "pet",
+        "bounds": {
+          "x": 1038,
+          "y": 528,
+          "width": 341,
+          "height": 420
+        },
+        "chat": {
+          "id": 3,
+          "visible": false,
+          "focused": false,
+          "minimized": false,
+          "bounds": {
+            "x": 367,
+            "y": 244,
+            "width": 705,
+            "height": 544
+          },
+          "alwaysOnTop": false,
+          "createdCount": 2,
+          "readyToShow": true,
+          "boundsSource": "centered"
+        },
+        "pet": {
+          "resident": false,
+          "visible": false,
+          "created": true,
+          "minimized": false,
+          "windowId": 1,
+          "statusText": "桌宠已收回"
+        },
+        "hotkey": {
+          "accelerator": "Ctrl+Alt+Space",
+          "enabled": true,
+          "registered": true,
+          "error": null
+        },
+        "openCount": 2,
+        "closeCount": 2,
+        "lastSource": "tray"
+      }
+    },
+    "idAfterClose": 3,
+    "visibleAfterClose": false,
+    "createdCount": 2
+  },
+  "remembered": {
+    "set": {
+      "x": 107,
+      "y": 94,
+      "width": 640,
+      "height": 480
+    },
+    "remembered": {
+      "x": 107,
+      "y": 94,
+      "width": 641,
+      "height": 482
+    }
+  },
+  "offscreenFallback": {
+    "center": {
+      "requested": {
+        "x": 367,
+        "y": 244,
+        "width": 700,
+        "height": 541
+      },
+      "actual": {
+        "x": 367,
+        "y": 244,
+        "width": 705,
+        "height": 544
+      },
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1434,
+        "height": 1028
+      },
+      "cursor": {
+        "x": 932,
+        "y": 436
+      },
+      "workAreaCenter": {
+        "x": 717,
+        "y": 514
+      },
+      "actualCenter": {
+        "x": 720,
+        "y": 516
+      },
+      "centerErrorDip": 3
+    },
+    "boundsSource": "centered",
+    "bounds": {
+      "x": 367,
+      "y": 244,
+      "width": 705,
+      "height": 544
+    }
+  },
+  "offscreenCreated": {
+    "before": 2,
+    "after": 3
+  },
+  "wheelPreFocus": {
+    "call": {
+      "ok": true,
+      "state": {
+        "open": true,
+        "layout": "pet",
+        "mode": "pet",
+        "bounds": {
+          "x": 1038,
+          "y": 528,
+          "width": 341,
+          "height": 420
+        },
+        "chat": {
+          "id": 4,
+          "visible": true,
+          "focused": true,
+          "minimized": false,
+          "bounds": {
+            "x": 367,
+            "y": 244,
+            "width": 705,
+            "height": 544
+          },
+          "alwaysOnTop": false,
+          "createdCount": 3,
+          "readyToShow": false,
+          "boundsSource": "centered"
+        },
+        "pet": {
+          "resident": false,
+          "visible": false,
+          "created": true,
+          "minimized": false,
+          "windowId": 1,
+          "statusText": "桌宠已收回"
+        },
+        "hotkey": {
+          "accelerator": "Ctrl+Alt+Space",
+          "enabled": true,
+          "registered": true,
+          "error": null
+        },
+        "openCount": 5,
+        "closeCount": 4,
+        "lastSource": "probe"
+      }
+    },
+    "after": {
+      "focused": false,
+      "hidden": false,
+      "visibility": "visible"
+    },
+    "closedBeforeClick": true,
+    "stateBeforeClick": {
+      "open": false,
+      "lastSource": "api"
+    }
+  },
+  "rafAb": {
+    "afterShowFocus": {
+      "rafCallbacks": 1,
+      "elapsedMs": 763,
+      "hasFocus": false,
+      "hidden": false,
+      "visibility": "visible"
+    },
+    "afterWebContentsFocus": {
+      "rafCallbacks": 0,
+      "elapsedMs": 763,
+      "hasFocus": true,
+      "hidden": false,
+      "visibility": "visible"
+    }
+  },
+  "engineTicks": {
+    "a": {
+      "rafTicks": 27,
+      "intervalTicks": 3281,
+      "lastRenderAt": 1791483509683,
+      "fps5s": 63.3,
+      "modelId": "lazuli"
+    },
+    "b": {
+      "rafTicks": 29,
+      "intervalTicks": 3524,
+      "lastRenderAt": 1791483511628,
+      "fps5s": 63.3,
+      "modelId": "lazuli"
+    },
+    "windowMs": 2000,
+    "rafDelta": 2,
+    "intervalDelta": 243
+  },
+  "wheelDiag": {
+    "before": {
+      "scale": 0,
+      "open": false
+    },
+    "after": {
+      "scale": 0,
+      "open": false
+    },
+    "advanced": false,
+    "rafCallbacksIn1500ms": 2,
+    "elapsedMs": 1507,
+    "documentHidden": false,
+    "visibilityState": "visible",
+    "hasFocus": true,
+    "menuPresent": true,
+    "innerSize": {
+      "w": 340,
+      "h": 420
+    }
+  },
+  "entries": {
+    "wheel": {
+      "probeAvailable": "function",
+      "result": {
+        "clicked": true,
+        "id": "chat",
+        "scale": 1,
+        "anchor": [
+          170,
+          174.06666666666666
+        ],
+        "unscaledPoint": [
+          170,
+          79.06666666666666
+        ],
+        "point": [
+          170,
+          79.06666666666666
+        ],
+        "rect": {
+          "x": 141.5,
+          "y": 50.56666666666666,
+          "w": 57,
+          "h": 57
+        },
+        "allRects": [
+          {
+            "x": 141.5,
+            "y": 50.56666666666666,
+            "w": 57,
+            "h": 57
+          },
+          {
+            "x": 215.77399083446284,
+            "y": 86.33513549008698,
+            "w": 57,
+            "h": 57
+          },
+          {
+            "x": 234.11815165727324,
+            "y": 166.70615539251654,
+            "w": 57,
+            "h": 57
+          },
+          {
+            "x": 182.71895521616804,
+            "y": 231.15870911739648,
+            "w": 57,
+            "h": 57
+          },
+          {
+            "x": 100.28104478383193,
+            "y": 231.15870911739648,
+            "w": 57,
+            "h": 57
+          },
+          {
+            "x": 48.881848342726755,
+            "y": 166.70615539251654,
+            "w": 57,
+            "h": 57
+          },
+          {
+            "x": 67.22600916553716,
+            "y": 86.335135490087,
+            "w": 57,
+            "h": 57
+          }
+        ],
+        "radius": 95,
+        "itemSize": 57,
+        "perItem": [
+          {
+            "id": "chat",
+            "r": {
+              "x": 141.5,
+              "y": 50.56666666666666,
+              "w": 57,
+              "h": 57
+            },
+            "hit": "chat"
+          },
+          {
+            "id": "hearing",
+            "r": {
+              "x": 215.77399083446284,
+              "y": 86.33513549008698,
+              "w": 57,
+              "h": 57
+            },
+            "hit": "hearing"
+          },
+          {
+            "id": "speaker",
+            "r": {
+              "x": 234.11815165727324,
+              "y": 166.70615539251654,
+              "w": 57,
+              "h": 57
+            },
+            "hit": "speaker"
+          },
+          {
+            "id": "avatar",
+            "r": {
+              "x": 182.71895521616804,
+              "y": 231.15870911739648,
+              "w": 57,
+              "h": 57
+            },
+            "hit": "avatar"
+          },
+          {
+            "id": "settings",
+            "r": {
+              "x": 100.28104478383193,
+              "y": 231.15870911739648,
+              "w": 57,
+              "h": 57
+            },
+            "hit": "settings"
+          },
+          {
+            "id": "center",
+            "r": {
+              "x": 48.881848342726755,
+              "y": 166.70615539251654,
+              "w": 57,
+              "h": 57
+            },
+            "hit": "center"
+          },
+          {
+            "id": "alwaysOnTop",
+            "r": {
+              "x": 67.22600916553716,
+              "y": 86.335135490087,
+              "w": 57,
+              "h": 57
+            },
+            "hit": "alwaysOnTop"
+          }
+        ]
+      },
+      "lastSource": "wheel",
+      "visibleImmediately": true,
+      "visible": true,
+      "stateOpen": true,
+      "chatStateVisible": true,
+      "chatWindowId": 4,
+      "diagChatIdBefore": 3
+    },
+    "tray": {
+      "ok": true,
+      "lastSource": "tray",
+      "visible": true,
+      "note": "控制路径（托盘菜单项本身无法被机械点击）"
+    },
+    "hotkey": {
+      "accelerator": "Ctrl+Alt+Space",
+      "enabled": true,
+      "registered": true,
+      "error": null,
+      "note": "注册状态与回调已接入 openConversation；真实按键注入由 tools/qa/hotkey-toggle.ps1 覆盖"
+    },
+    "dblclick": {
+      "stageReady": true,
+      "result": {
+        "dispatched": true,
+        "point": {
+          "clientX": 170,
+          "clientY": 249.9
+        },
+        "before": {
+          "open": false
+        }
+      },
+      "lastSource": "dblclick",
+      "visible": true
+    },
+    "wake": {
+      "ipc": {
+        "ok": true,
+        "state": {
+          "open": true,
+          "layout": "pet",
+          "mode": "pet",
+          "bounds": {
+            "x": 1038,
+            "y": 528,
+            "width": 341,
+            "height": 420
+          },
+          "chat": {
+            "id": 4,
+            "visible": true,
+            "focused": true,
+            "minimized": false,
+            "bounds": {
+              "x": 367,
+              "y": 244,
+              "width": 705,
+              "height": 544
+            },
+            "alwaysOnTop": false,
+            "createdCount": 3,
+            "readyToShow": true,
+            "boundsSource": "centered"
+          },
+          "pet": {
+            "resident": false,
+            "visible": true,
+            "created": true,
+            "minimized": false,
+            "windowId": 1,
+            "statusText": "桌宠已呼出"
+          },
+          "hotkey": {
+            "accelerator": "Ctrl+Alt+Space",
+            "enabled": true,
+            "registered": true,
+            "error": null
+          },
+          "openCount": 9,
+          "closeCount": 8,
+          "lastSource": "wake"
+        }
+      },
+      "lastOpenListen": true,
+      "lastOpenFocusInput": true,
+      "listening": false,
+      "focusOk": true,
+      "focusedEl": "textarea",
+      "note": "真实唤醒词识别需要麦克风，不在探针范围（本项验证的是唤醒后的界面行为）"
+    },
+    "petModeBefore": "pet",
+    "petModeAfter": "pet"
+  },
+  "a10": {
+    "raw": {
+      "anchorX": 170,
+      "anchorY": 174.067,
+      "scale": 0,
+      "open": false
+    },
+    "anchor": {
+      "anchorX": 170,
+      "anchorY": 174.067,
+      "scale": 0,
+      "open": false
+    },
+    "note": "完整 A10（三次开合误差 ≤2px）由 tools/qa/run-probe.ps1 -Name a10 覆盖；这里只取当前锚点作为旁证"
+  },
+  "windows": [
+    {
+      "id": 4,
+      "title": "和 Lazuli 聊天",
+      "url": "app://bundle/index.html?surface=chat",
+      "visible": true,
+      "bounds": {
+        "x": 367,
+        "y": 244,
+        "width": 705,
+        "height": 544
+      }
+    },
+    {
+      "id": 1,
+      "title": "AiriMate One",
+      "url": "app://bundle/index.html",
+      "visible": true,
+      "bounds": {
+        "x": 1038,
+        "y": 528,
+        "width": 341,
+        "height": 420
+      }
+    }
+  ],
+  "chatTitle": {
+    "fromMain": "和 Lazuli 聊天",
+    "matched": true
+  },
+  "frameEvidence": {
+    "resizable": true,
+    "minimizable": true,
+    "maximizable": true,
+    "menuBarVisible": false,
+    "note": "Electron 无 frame getter：以 resizable/minimizable/maximizable + 菜单栏不可见 + 桌面截图共同覆盖"
+  },
+  "finalDiagnostics": {
+    "state": {
+      "open": true,
+      "layout": "pet",
+      "mode": "pet",
+      "bounds": {
+        "x": 1038,
+        "y": 528,
+        "width": 341,
+        "height": 420
+      },
+      "chat": {
+        "id": 4,
+        "visible": true,
+        "focused": true,
+        "minimized": false,
+        "bounds": {
+          "x": 367,
+          "y": 244,
+          "width": 705,
+          "height": 544
+        },
+        "alwaysOnTop": false,
+        "createdCount": 3,
+        "readyToShow": true,
+        "boundsSource": "centered"
+      },
+      "pet": {
+        "resident": false,
+        "visible": true,
+        "created": true,
+        "minimized": false,
+        "windowId": 1,
+        "statusText": "桌宠已呼出"
+      },
+      "hotkey": {
+        "accelerator": "Ctrl+Alt+Space",
+        "enabled": true,
+        "registered": true,
+        "error": null
+      },
+      "openCount": 9,
+      "closeCount": 8,
+      "lastSource": "wake"
+    },
+    "hotkey": {
+      "accelerator": "Ctrl+Alt+Space",
+      "enabled": true,
+      "registered": true,
+      "error": null
+    },
+    "chat": {
+      "id": 4,
+      "title": "和 Lazuli 聊天",
+      "visible": true,
+      "focused": true,
+      "minimized": false,
+      "bounds": {
+        "x": 367,
+        "y": 244,
+        "width": 705,
+        "height": 544
+      },
+      "alwaysOnTop": false,
+      "createdCount": 3,
+      "readyToShow": true,
+      "boundsSource": "centered",
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1434,
+        "height": 1028
+      },
+      "center": {
+        "requested": {
+          "x": 367,
+          "y": 244,
+          "width": 700,
+          "height": 541
+        },
+        "actual": {
+          "x": 367,
+          "y": 244,
+          "width": 705,
+          "height": 544
+        },
+        "workArea": {
+          "x": 0,
+          "y": 0,
+          "width": 1434,
+          "height": 1028
+        },
+        "cursor": {
+          "x": 932,
+          "y": 436
+        },
+        "workAreaCenter": {
+          "x": 717,
+          "y": 514
+        },
+        "actualCenter": {
+          "x": 720,
+          "y": 516
+        },
+        "centerErrorDip": 3
+      },
+      "requestedBounds": {
+        "x": 367,
+        "y": 244,
+        "width": 700,
+        "height": 541
+      },
+      "sizeCorrection": {
+        "decor": {
+          "width": 20,
+          "height": 19
+        },
+        "from": {
+          "width": 720,
+          "height": 560
+        }
+      }
+    },
+    "chatHwnd": "2623838",
+    "chatWindowId": 4,
+    "chatCreatedCount": 3,
+    "chatReadyToShow": true,
+    "chatBoundsSource": "centered",
+    "center": {
+      "requested": {
+        "x": 367,
+        "y": 244,
+        "width": 700,
+        "height": 541
+      },
+      "actual": {
+        "x": 367,
+        "y": 244,
+        "width": 705,
+        "height": 544
+      },
+      "workArea": {
+        "x": 0,
+        "y": 0,
+        "width": 1434,
+        "height": 1028
+      },
+      "cursor": {
+        "x": 932,
+        "y": 436
+      },
+      "workAreaCenter": {
+        "x": 717,
+        "y": 514
+      },
+      "actualCenter": {
+        "x": 720,
+        "y": 516
+      },
+      "centerErrorDip": 3
+    },
+    "petInvariant": {
+      "before": {
+        "x": 1038,
+        "y": 528,
+        "width": 341,
+        "height": 420
+      },
+      "after": {
+        "x": 1038,
+        "y": 528,
+        "width": 341,
+        "height": 420
+      },
+      "identical": true,
+      "modeBefore": "pet",
+      "modeAfter": "pet",
+      "modeIdentical": true
+    },
+    "lastOpenFocusInput": true,
+    "lastOpenListen": true
+  },
+  "bubbleShot": {
+    "shown": {
+      "shown": true,
+      "chars": 13,
+      "visible": true
+    }
+  },
+  "settingsRestoredTo": {
+    "chatWindowBounds": {
+      "x": 357,
+      "y": 234,
+      "width": 733,
+      "height": 572
+    },
+    "bubbleAutoHideSec": 3
+  },
+  "screenshots": [
+    {
+      "label": "pet-running",
+      "readyPath": "",
+      "waitedMs": 0,
+      "observed": false,
+      "skipped": true
+    },
+    {
+      "label": "chat-centered",
+      "readyPath": "",
+      "waitedMs": 0,
+      "observed": false,
+      "skipped": true
+    },
+    {
+      "label": "chat-closed",
+      "readyPath": "",
+      "waitedMs": 0,
+      "observed": false,
+      "skipped": true
+    },
+    {
+      "label": "chat-dragged",
+      "readyPath": "",
+      "waitedMs": 0,
+      "observed": false,
+      "skipped": true
+    },
+    {
+      "label": "bubble-visible",
+      "readyPath": "",
+      "waitedMs": 0,
+      "observed": false,
+      "skipped": true
+    }
+  ],
+  "screenshotSummary": {
+    "requested": 5,
+    "observed": 0,
+    "skipped": 5,
+    "labels": [
+      "pet-running",
+      "chat-centered",
+      "chat-closed",
+      "chat-dragged",
+      "bubble-visible"
+    ]
+  },
+  "totalChecks": 68,
+  "passedChecks": 68,
+  "failedChecks": [],
+  "pass": true
+}

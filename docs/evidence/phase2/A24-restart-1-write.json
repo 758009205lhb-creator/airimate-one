@@ -1,0 +1,17 @@
+{
+  "bootId": "efe9bfdd-8db0-4eee-9b6b-21f534f34731",
+  "existingMarker": null,
+  "existingMarkerCount": 0,
+  "totalBefore": 0,
+  "mode": "write",
+  "written": {
+    "id": "m_muir0ycr_1",
+    "chars": 76
+  },
+  "disk": {
+    "exists": true,
+    "bytes": 347,
+    "containsTestText": true
+  },
+  "pass": true
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "airimate/dist-integrity/1",
+  "verifiedAt": "2026-10-03T15:25:32.556Z",
+  "payloadRoot": "dist-package",
+  "stagedAt": "2026-10-03T15:25:16.572Z",
+  "algorithm": "sha256",
+  "manifestFiles": 367,
+  "hashedFiles": 367,
+  "payloadBytes": 391584406,
+  "payloadMB": 373.44,
+  "payloadDigest": "8c520ef4aac40c17cd6216ccd525f63ea71e22d16912c18ecfc0189a438a268e",
+  "recomputedDigest": "8c520ef4aac40c17cd6216ccd525f63ea71e22d16912c18ecfc0189a438a268e",
+  "digestMatch": true,
+  "hashMismatches": [],
+  "sizeMismatches": [],
+  "missingOnDisk": [],
+  "extraOnDisk": [
+    "stray-evil.js"
+  ],
+  "problems": [
+    {
+      "code": "file-extra",
+      "detail": "盘上有、清单里没有的文件 1 个：stray-evil.js"
+    }
+  ],
+  "pass": false
+}

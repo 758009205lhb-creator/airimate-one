@@ -1,0 +1,28 @@
+{
+  "name": "airimate-one",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AiriMate One — 单实例单窗口 AI 女友桌宠（AIRI 能力内核 + Mate VRM/动捕动作）",
+  "license": "UNLICENSED",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build:contracts": "npm run build -w @airimate/shared && npm run build -w @airimate/security && npm run build -w @airimate/companion-kit",
+    "build:packages": "npm run build:contracts && npm run build -w @airimate/motion-director && npm run build -w @airimate/avatar-stage && npm run build -w @airimate/radial-menu",
+    "build:renderer": "npm run build -w @airimate/renderer",
+    "build:desktop": "npm run build -w @airimate/desktop",
+    "build": "npm run build:packages:prod && npm run build:renderer && npm run build:prod -w @airimate/desktop",
+    "typecheck": "tsc -p tsconfig.typecheck.json --pretty false",
+    "postinstall": "node scripts/setup-electron.mjs",
+    "build:packages:prod": "node tools/qa/clean-dist-maps.mjs && npm run build:prod -w @airimate/shared && npm run build:prod -w @airimate/security && npm run build:prod -w @airimate/companion-kit && npm run build:prod -w @airimate/motion-director && npm run build:prod -w @airimate/avatar-stage && npm run build:prod -w @airimate/radial-menu",
+    "build:dev": "npm run build:packages && npm run build:renderer && npm run build:desktop",
+    "build:dist": "npm run build && node tools/qa/stage-dist.mjs --clean --with-runtime && node tools/qa/scan-dist-payload.mjs && node tools/qa/verify-dist-integrity.mjs",
+    "verify:dist": "node tools/qa/verify-dist-integrity.mjs",
+    "verify:dist:json": "node tools/qa/verify-dist-integrity.mjs --json docs/evidence/phase14/B4-dist-integrity.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

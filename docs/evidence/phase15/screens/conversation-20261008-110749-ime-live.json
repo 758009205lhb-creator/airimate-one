@@ -1,0 +1,9 @@
+{
+    "typed":  false,
+    "reason":  "front-window-not-ours",
+    "frontTitleBefore":  "",
+    "frontClassBefore":  "XamlExplorerHostIslandWindow_WASDK",
+    "frontTitleAfter":  "",
+    "frontIsOurApp":  false,
+    "keys":  "nihao → Space（选词，提交中文）→ shijie → Enter（候选期，不得发送）"
+}

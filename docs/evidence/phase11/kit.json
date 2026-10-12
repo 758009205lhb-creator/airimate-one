@@ -1,0 +1,483 @@
+{
+  "checks": {
+    "kit.capabilities.ok": true,
+    "kit.profile-known": true,
+    "kit.adapters-enumerated": true,
+    "kit.every-kind-registered": true,
+    "kit.motion-adapter-registered": true,
+    "kit.active-avatar": true,
+    "kit.active-tts": true,
+    "kit.active-motion": true,
+    "kit.motion-license-reported": true,
+    "kit.motion-no-abs-path": true,
+    "kit.active-adapters-available": true,
+    "kit.stt-availability-honest": true,
+    "kit.wake-availability-honest": true,
+    "kit.wakeword-default-off": true,
+    "kit.no-secret-in-output": true,
+    "kit.no-abs-path-in-output": true,
+    "kit.assets.ok": true,
+    "kit.assets.no-abs-path": true,
+    "kit.assets.selected-in-development": true,
+    "kit.boundary-no-abs-path": true,
+    "kit.boundary-no-secret": true,
+    "kit.forbidden-tools-registered": true,
+    "kit.forbidden-tools-not-model-visible": true,
+    "kit.forbidden-tools-denied": true,
+    "kit.placeholder-tools-denied-by-default": true,
+    "kit.tool-audit.ok": true,
+    "kit.tool-audit-has-records": true,
+    "kit.tool-audit-never-executed-counted": true,
+    "kit.tool-audit-digest-only": true,
+    "kit.tool-audit-no-plaintext": true,
+    "kit.stores.ok": true,
+    "kit.stores-registered": true,
+    "kit.stores-versioned": true,
+    "kit.stores-personal-listed": true,
+    "kit.stores-descriptions": true,
+    "kit.single-window-preserved": true,
+    "kit.no-extra-window": true
+  },
+  "kitRaw": {
+    "ok": true,
+    "code": null,
+    "message": null,
+    "topKeys": [
+      "ok",
+      "kit"
+    ]
+  },
+  "apiMethods": [
+    "abortChat",
+    "ackReminder",
+    "activityStats",
+    "addMemory",
+    "appVersion",
+    "autoResize",
+    "avatarCatalog",
+    "center",
+    "clearChat",
+    "contractVersion",
+    "deleteMemory",
+    "deleteProvider",
+    "deleteReminder",
+    "deleteSchedule",
+    "diagnostics",
+    "dragBegin",
+    "dragEnd",
+    "dragMove",
+    "fsAllowDir",
+    "fsAllowlist",
+    "fsRevokeDir",
+    "getMode",
+    "getPersona",
+    "getQuiet",
+    "getSettings",
+    "hide",
+    "history",
+    "kitAssets",
+    "kitCapabilities",
+    "kitStores",
+    "kitToolAudit",
+    "legacyScan",
+    "listMemory",
+    "listMotions",
+    "listPermissions",
+    "listProviderModels",
+    "listProviders",
+    "listReminders",
+    "listSchedules",
+    "listVoices",
+    "onActivity",
+    "onAlert",
+    "onChatDelta",
+    "onChatDone",
+    "onChatError",
+    "onDragPos",
+    "onModeChanged",
+    "onProactive",
+    "onReminderQueue",
+    "onScreenNotice",
+    "onSettingsChanged",
+    "onStageCommand",
+    "onToolConfirm",
+    "onTtsState",
+    "onVoiceCall",
+    "onVoiceNotice",
+    "onWindowState",
+    "onboardingComplete",
+    "onboardingGet",
+    "onboardingReset",
+    "onboardingSetStep",
+    "patchSettings",
+    "platform",
+    "previewRecallMemory",
+    "privacyExport",
+    "privacySummary",
+    "privacyWipe",
+    "proactiveInbox",
+    "proactiveStatus",
+    "proactiveTick",
+    "quit",
+    "recallMemory",
+    "reflectionClear",
+    "reflectionDay",
+    "reflectionDecide",
+    "reflectionHistory",
+    "reflectionPending",
+    "reflectionRun",
+    "reflectionStatus",
+    "reloadMotions",
+    "reportHitRegions",
+    "reportStageSnapshot",
+    "screenNotice",
+    "screenPause",
+    "screenStatus",
+    "searchMemory",
+    "selectProvider",
+    "sendChat",
+    "setAlwaysOnTop",
+    "setMode",
+    "setPermission",
+    "setPersona",
+    "setQuiet",
+    "setReminderPolicy",
+    "show",
+    "speak",
+    "startupGet",
+    "startupSet",
+    "stopSpeak",
+    "submitToolConfirm",
+    "testProvider",
+    "triggerRadio",
+    "updateMemory",
+    "upsertProvider",
+    "upsertReminder",
+    "upsertSchedule",
+    "voiceCallInterrupt",
+    "voiceCallStart",
+    "voiceCallState",
+    "voiceCallStop",
+    "voiceConfig",
+    "voiceListenOnce",
+    "voiceProbe",
+    "voiceStatus",
+    "voiceStop"
+  ],
+  "control": {
+    "ok": true,
+    "summary": {
+      "userDataDir": "C:\\Users\\shiqian\\AppData\\Roaming\\AiriMateOne",
+      "files": [
+        {
+          "name": "settings",
+          "exists": true,
+          "bytes": 1514,
+          "kind": "config"
+        },
+        {
+          "name": "providers",
+          "exists": true,
+          "bytes": 58,
+          "kind": "config"
+        },
+        {
+          "name": "secrets-meta",
+          "exists": true,
+          "bytes": 36,
+          "kind": "config"
+        },
+        {
+          "name": "session",
+          "exists": true,
+          "bytes": 19140,
+          "kind": "personal"
+        },
+        {
+          "name": "memory",
+          "exists": true,
+          "bytes": 36,
+          "kind": "personal"
+        },
+        {
+          "name": "schedules",
+          "exists": true,
+          "bytes": 38,
+          "kind": "personal"
+        },
+        {
+          "name": "reminders",
+          "exists": true,
+          "bytes": 625,
+          "kind": "personal"
+        },
+        {
+          "name": "quiet-hours",
+          "exists": true,
+          "bytes": 623,
+          "kind": "config"
+        },
+        {
+          "name": "permissions",
+          "exists": true,
+          "bytes": 3458,
+          "kind": "config"
+        },
+        {
+          "name": "activity",
+          "exists": true,
+          "bytes": 1242,
+          "kind": "personal"
+        },
+        {
+          "name": "reflections",
+          "exists": true,
+          "bytes": 110,
+          "kind": "personal"
+        },
+        {
+          "name": "engine-state",
+          "exists": true,
+          "bytes": 8343,
+          "kind": "config"
+        },
+        {
+          "name": "knowledge-cache",
+          "exists": true,
+          "bytes": 1998,
+          "kind": "config"
+        }
+      ],
+      "secretFiles": 0,
+      "telemetryEnabled": false,
+      "logFiles": 4,
+      "exportFiles": 19
+    }
+  },
+  "stepByStep": {
+    "hasMethod": "function",
+    "awaited": "object",
+    "keys": [
+      "ok",
+      "kit"
+    ],
+    "thrown": null,
+    "valueOk": true,
+    "jsonLen": 8146
+  },
+  "kit": {
+    "ok": true,
+    "profile": "development",
+    "total": 8,
+    "byKind": {
+      "avatar": {
+        "registered": 1,
+        "available": 1,
+        "activeId": "asset.catalog-vrm"
+      },
+      "motion": {
+        "registered": 1,
+        "available": 1,
+        "activeId": "motion.vrma-catalog"
+      },
+      "tts": {
+        "registered": 2,
+        "available": 2,
+        "activeId": "tts.windows-sapi"
+      },
+      "stt": {
+        "registered": 1,
+        "available": 1,
+        "activeId": "stt.windows-system-speech"
+      },
+      "wakeword": {
+        "registered": 1,
+        "available": 1,
+        "activeId": "wakeword.windows-dictation"
+      },
+      "llm": {
+        "registered": 1,
+        "available": 0,
+        "activeId": null
+      },
+      "tool": {
+        "registered": 1,
+        "available": 0,
+        "activeId": null
+      },
+      "storage": {
+        "registered": 0,
+        "available": 0,
+        "activeId": null
+      },
+      "privacy": {
+        "registered": 0,
+        "available": 0,
+        "activeId": null
+      }
+    },
+    "adapterCount": 8,
+    "adapters": [
+      {
+        "id": "asset.catalog-vrm",
+        "kind": "avatar",
+        "available": true,
+        "active": true,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": false,
+        "unavailableReason": null
+      },
+      {
+        "id": "motion.vrma-catalog",
+        "kind": "motion",
+        "available": true,
+        "active": true,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": false,
+        "unavailableReason": null
+      },
+      {
+        "id": "tts.windows-sapi",
+        "kind": "tts",
+        "available": true,
+        "active": true,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": true,
+        "unavailableReason": null
+      },
+      {
+        "id": "stt.windows-system-speech",
+        "kind": "stt",
+        "available": true,
+        "active": true,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": true,
+        "unavailableReason": null
+      },
+      {
+        "id": "wakeword.windows-dictation",
+        "kind": "wakeword",
+        "available": true,
+        "active": true,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": true,
+        "unavailableReason": null
+      },
+      {
+        "id": "tts.silent",
+        "kind": "tts",
+        "available": true,
+        "active": false,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": false,
+        "unavailableReason": null
+      },
+      {
+        "id": "llm.openai-compatible",
+        "kind": "llm",
+        "available": false,
+        "active": false,
+        "provenance": "licensed",
+        "requiresNetwork": true,
+        "writesUserContent": true,
+        "unavailableReason": "尚未配置供应商（设置 → 供应商配置）"
+      },
+      {
+        "id": "screen.desktop-capturer",
+        "kind": "tool",
+        "available": false,
+        "active": false,
+        "provenance": "licensed",
+        "requiresNetwork": false,
+        "writesUserContent": true,
+        "unavailableReason": "屏幕理解未启用（需要在设置 → 权限里显式开启 screen-capture）"
+      }
+    ],
+    "modelVisibleTools": [],
+    "toolCount": 12
+  },
+  "motionStatus": {
+    "clipCount": 16,
+    "license": "由 Mate Engine 的 .anim 动捕剪辑本地转换为 VRMA；转换产物同样不得分发",
+    "redistributable": false,
+    "failedCount": 0
+  },
+  "assets": {
+    "ok": true,
+    "selectedId": "lazuli",
+    "usable": 1,
+    "rejected": [],
+    "total": 1,
+    "detail": "可用 1 / 1；当前选中「lazuli」（upstream-dlc-asset）"
+  },
+  "assetsCheckedSample": "{\"ok\":true,\"assets\":{\"detail\":\"可用 1 / 1；当前选中「lazuli」（upstream-dlc-asset）\",\"selectedId\":\"lazuli\",\"usable\":[{\"id\":\"lazuli\",\"license\":{\"provenance\":\"private-only\",\"redistributable\":false,\"commercialUse\":false,\"license\":\"upstream-dlc-asset\",\"licenseSource\":null,\"author\":null,\"attributionRequired\":true,\"note\":\"Mate Engine DLC（<path>），目录内无独立许可文件；仅本机私有使用，不得分发\"},\"verdict\":{\"allowed\":true,\"reason\":\"ok-development-private\",\"detail\":\"开发形态：允许本机使用任意来源资产（不得随分发给出）\"}}],\"rejected\":[],\"total\":1}}",
+  "boundarySample": "{\"capabilities\":{\"ok\":true,\"kit\":{\"profile\":\"development\",\"requireCommercial\":false,\"total\":8,\"byKind\":{\"avatar\":{\"registered\":1,\"available\":1,\"activeId\":\"asset.catalog-vrm\"},\"motion\":{\"registered\":1,\"available\":1,\"activeId\":\"motion.vrma-catalog\"},\"tts\":{\"registered\":2,\"available\":2,\"activeId\":\"tts.windows-sapi\"},\"stt\":{\"registered\":1,\"available\":1,\"activeId\":\"stt.windows-system-speech\"},\"wakeword\":{\"registered\":1,\"available\":1,\"activeId\":\"wakeword.windows-dictation\"},\"llm\":{\"registered\":1,\"available\":0,\"activeId\":null},\"tool\":{\"registered\":1,\"available\":0,\"activeId\":null},\"storage\":{\"registered\":0,\"available\":0,\"activeId\":null},\"privacy\":{\"registered\":0,\"available\":0,\"activeId\":null}},\"adapters\":[{\"id\":\"asset.catalog-vrm\",\"kind\":\"avatar\",\"label\":\"本地清单 + VRM 角色\",\"origin\":\"first-party\",\"ava",
+  "tools": {
+    "total": 12,
+    "decisions": {
+      "screen.capture": "denied",
+      "file.read": "denied",
+      "file.list": "denied",
+      "app.launch": "denied",
+      "clipboard.read": "denied",
+      "window.list": "denied",
+      "payment.pay": "denied",
+      "credential.read": "denied",
+      "system.settings": "denied",
+      "input.simulate": "denied",
+      "shell.exec": "denied",
+      "file.write": "denied"
+    },
+    "modelVisible": []
+  },
+  "toolAudit": {
+    "ok": true,
+    "digest": {
+      "total": 12,
+      "byDecision": {
+        "denied": 12
+      },
+      "neverExecuted": 12,
+      "executedOk": 0,
+      "executedFailed": 0
+    },
+    "sampleCount": 12
+  },
+  "stores": {
+    "ok": true,
+    "count": 13,
+    "personal": [
+      "session",
+      "memory",
+      "schedules",
+      "reminders",
+      "activity",
+      "reflections"
+    ],
+    "versions": [
+      "session@1",
+      "memory@1",
+      "schedules@1",
+      "reminders@1",
+      "activity@1",
+      "reflections@1",
+      "settings@1",
+      "providers@1",
+      "secrets-meta@1",
+      "quiet-hours@1",
+      "permissions@1",
+      "engine-state@1",
+      "knowledge-cache@1"
+    ]
+  },
+  "totalChecks": 37,
+  "passedChecks": 37,
+  "failedChecks": [],
+  "pass": true
+}

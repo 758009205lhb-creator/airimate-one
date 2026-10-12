@@ -1,0 +1,75 @@
+{
+    "id":  "chatwindow-shots",
+    "invariant":  "五张真实桌面截图（桌宠 / chat 居中 / chat 拖动后 / chat 关闭后 / 气泡显示中）全部落盘且非空",
+    "generatedAt":  "2026-10-08T09:43:48.2563934Z",
+    "commandLine":  "powershell -NoProfile -ExecutionPolicy Bypass -File tools\\qa\\chatwindow-shots.ps1 -OutDir F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase16 -TimeoutSec 420",
+    "prefix":  "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase16\\screens\\chatwindow-20261008-174305",
+    "shots":  [
+                  {
+                      "label":  "pet-running",
+                      "png":  "chatwindow-20261008-174305-pet-running-desktop.png",
+                      "bytes":  758960,
+                      "at":  "2026-10-08T17:43:27"
+                  },
+                  {
+                      "label":  "chat-centered",
+                      "png":  "chatwindow-20261008-174305-chat-centered-desktop.png",
+                      "bytes":  810772,
+                      "at":  "2026-10-08T17:43:30"
+                  },
+                  {
+                      "label":  "chat-closed",
+                      "png":  "chatwindow-20261008-174305-chat-closed-desktop.png",
+                      "bytes":  763643,
+                      "at":  "2026-10-08T17:43:33"
+                  },
+                  {
+                      "label":  "chat-dragged",
+                      "png":  "chatwindow-20261008-174305-chat-dragged-desktop.png",
+                      "bytes":  773977,
+                      "at":  "2026-10-08T17:43:36"
+                  },
+                  {
+                      "label":  "bubble-visible",
+                      "png":  "chatwindow-20261008-174305-bubble-visible-desktop.png",
+                      "bytes":  810936,
+                      "at":  "2026-10-08T17:43:46"
+                  }
+              ],
+    "shotCount":  5,
+    "requiredLabels":  [
+                           "pet-running",
+                           "chat-centered",
+                           "chat-dragged",
+                           "chat-closed",
+                           "bubble-visible"
+                       ],
+    "missingLabels":  [
+
+                      ],
+    "requiredNonEmptyCount":  5,
+    "desktopStateFile":  "desktop-state-20261008-174329.json",
+    "desktopStateCounts":  {
+                               "mineVisibleWindows":  2,
+                               "mineAllWindows":  12,
+                               "mineCharacterVisibleWindows":  1,
+                               "mineChatVisibleWindows":  1,
+                               "legacyKernelVisibleWindows":  0,
+                               "legacyKernelAllWindows":  0,
+                               "legacyPetVisibleWindows":  0,
+                               "totalVisibleTopLevel":  21
+                           },
+    "raiseChecks":  [
+                        "title=\u0027AiriMate One\u0027 visible=True topmost=True rect=425x525+1298+660",
+                        "title=\u0027AiriMate One · 对话\u0027 visible=True topmost=True rect=925x717+438+293",
+                        "title=\u0027AiriMate One · 对话\u0027 visible=True topmost=True rect=818x609+113+105"
+                    ],
+    "minimizeOthersEnabled":  false,
+    "raiseOurWindowsEnabled":  true,
+    "probeJson":  "F:\\deepseek harness\\AI女友\\新工程\\docs\\evidence\\phase16\\chatwindow.json",
+    "probeJsonExists":  true,
+    "gateMissingNone":  true,
+    "gateRequiredShotsNonEmpty":  true,
+    "gateProbeJsonExists":  true,
+    "pass":  true
+}

@@ -1,0 +1,12 @@
+{
+  "//": [
+    "生产构建：关闭 sourcemap（.map 含未压缩原始源码，不得进入分发包）。",
+    "用法：npm run build:prod -w @airimate/companion-kit"
+  ],
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": false,
+    "declaration": true,
+    "declarationMap": false
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "criteria": {
+    "clickShort": "不移动窗口 / 不进入拖拽 / 不开轮盘",
+    "dragOverThreshold": "进入拖拽且窗口真的移动",
+    "dragBarely": "2px < 4px 阈值 ⇒ 不进入拖拽",
+    "blankDrag": "空白处不进入拖拽"
+  },
+  "technique": "页面内合成 PointerEvent（走完整 Vue 处理器 → IPC → 主进程 setBounds 链路）",
+  "coordinates": {
+    "windowBounds": {
+      "x": 934,
+      "y": 134,
+      "width": 482,
+      "height": 762
+    },
+    "rendererScreenX": 927,
+    "hitCenterClient": {
+      "clientX": 364.8000030517578,
+      "clientY": 478.7204347398546
+    }
+  },
+  "clickShort": {
+    "renderer": {
+      "n": 1,
+      "at": {
+        "clientX": 364.8000030517578,
+        "clientY": 478.7204347398546
+      },
+      "before": {
+        "wheelOpen": false,
+        "dragging": false
+      },
+      "after": {
+        "wheelOpen": false,
+        "dragging": false
+      },
+      "scaleBefore": 1,
+      "scaleAfter": 1,
+      "cameraUnchanged": true
+    },
+    "windowBefore": {
+      "x": 934,
+      "y": 134,
+      "width": 482,
+      "height": 762
+    },
+    "windowAfter": {
+      "x": 934,
+      "y": 134,
+      "width": 482,
+      "height": 762
+    },
+    "windowMoved": false,
+    "sizeChanged": false
+  },
+  "passClickDoesNotDrag": true,
+  "passClickDoesNotMoveWindow": true,
+  "passClickDoesNotOpenWheel": true,
+  "passClickDoesNotRescale": true,
+  "dragBarely": {
+    "requested": {
+      "dx": 2,
+      "dy": 1
+    },
+    "at": {
+      "clientX": 364.8000030517578,
+      "clientY": 478.7204347398546
+    },
+    "before": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "afterUp": {
+      "wheelOpen": false,
+      "dragging": false
+    }
+  },
+  "passBarelyDoesNotDrag": true,
+  "blankDrag": {
+    "requested": {
+      "dx": 20,
+      "dy": 12
+    },
+    "at": {
+      "clientX": 254.8000030517578,
+      "clientY": 72.4000015258789
+    },
+    "before": {
+      "wheelOpen": false,
+      "dragging": false
+    },
+    "after": {
+      "wheelOpen": false,
+      "dragging": false
+    }
+  },
+  "passBlankDoesNotDrag": true,
+  "dragOverThreshold": {
+    "renderer": {
+      "mode": "begin",
+      "requested": {
+        "dx": 20,
+        "dy": 12,
+        "steps": 4
+      },
+      "at": {
+        "clientX": 364.8000030517578,
+        "clientY": 478.7204347398546
+      },
+      "before": {
+        "wheelOpen": false,
+        "dragging": false
+      },
+      "afterDown": {
+        "wheelOpen": false,
+        "dragging": true
+      },
+      "after": {
+        "wheelOpen": false,
+        "dragging": true
+      }
+    },
+    "windowStart": {
+      "x": 934,
+      "y": 134,
+      "width": 482,
+      "height": 762
+    },
+    "windowDuring": {
+      "x": 996,
+      "y": 168,
+      "width": 482,
+      "height": 761
+    },
+    "windowAfterEnd": {
+      "x": 996,
+      "y": 168,
+      "width": 482,
+      "height": 763
+    },
+    "sizeSequence": [
+      {
+        "w": 482,
+        "h": 761,
+        "x": 960,
+        "y": 148
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 968,
+        "y": 148
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 972,
+        "y": 152
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 976,
+        "y": 156
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 980,
+        "y": 160
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 988,
+        "y": 160
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 992,
+        "y": 164
+      },
+      {
+        "w": 482,
+        "h": 761,
+        "x": 996,
+        "y": 168
+      }
+    ],
+    "moved": {
+      "dx": 62,
+      "dy": 34
+    },
+    "end": {
+      "moved": true,
+      "distance": 71,
+      "bounds": {
+        "x": 996,
+        "y": 168,
+        "width": 482,
+        "height": 763
+      },
+      "targetSize": {
+        "width": 482,
+        "height": 762
+      },
+      "actualSize": {
+        "width": 482,
+        "height": 763
+      },
+      "sizeCorrections": 93,
+      "restoredOnEnd": true,
+      "endSizeConvergence": {
+        "tries": 30,
+        "converged": false,
+        "requestedDelta": {
+          "width": -2,
+          "height": 0
+        },
+        "bestEffort": {
+          "requested": "480x762",
+          "actual": "482x763",
+          "distDip": 1
+        },
+        "searchTried": [
+          "0,0=>484x763",
+          "0,8=>484x771",
+          "0,-1=>484x761",
+          "0,1=>484x764",
+          "0,-2=>484x761",
+          "0,2=>484x765",
+          "0,-3=>484x760",
+          "0,3=>484x765",
+          "0,-4=>484x759",
+          "0,4=>484x767",
+          "-2,0=>482x763",
+          "-2,8=>482x771",
+          "-2,-1=>482x761",
+          "-2,1=>482x764",
+          "-2,-2=>482x761",
+          "-2,2=>482x765",
+          "-2,-3=>482x760",
+          "-2,3=>482x765",
+          "-2,-4=>482x759",
+          "-2,4=>482x767",
+          "-1,0=>482x763",
+          "-1,8=>482x771",
+          "-1,-1=>482x761",
+          "-1,1=>482x764",
+          "-1,-2=>482x761",
+          "-1,2=>482x765",
+          "-1,-3=>482x760",
+          "-1,3=>482x765",
+          "-1,-4=>482x759",
+          "-1,4=>482x767"
+        ],
+        "searches": 30
+      },
+      "sizeCalibration": {
+        "target": {
+          "width": 482,
+          "height": 762
+        },
+        "firstActual": {
+          "width": 483,
+          "height": 763
+        },
+        "requestedDelta": {
+          "width": -2,
+          "height": -2
+        },
+        "calibratedActual": {
+          "width": 483,
+          "height": 763
+        },
+        "ok": true,
+        "attempts": 3,
+        "requestSnapped": {
+          "width": 480,
+          "height": 760
+        },
+        "snappedActual": {
+          "width": 482,
+          "height": 762
+        }
+      }
+    }
+  },
+  "passLeftStartsDrag": true,
+  "passDragMovesWindow": true,
+  "duringDragSizeDelta": {
+    "dw": 0,
+    "dh": -1,
+    "max": 1
+  },
+  "strictDuringDragIdentical": false,
+  "passDragSizeStable": true,
+  "passDragSizeStableWithinQuantization": true,
+  "restoreSizeDelta": {
+    "dw": 0,
+    "dh": 1,
+    "max": 1
+  },
+  "strictSizeRestoredExactly": false,
+  "passSizeRestoredOnEnd": true,
+  "passPositionKeptOnEnd": true,
+  "dragSizeReadings": [
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761",
+    "482x761"
+  ],
+  "dragSizeDistinct": [
+    "482x761"
+  ],
+  "dragSizeDistinctCount": 1,
+  "dragSizeMonotoneWidth": false,
+  "dragSizeMonotoneHeight": false,
+  "passDragSizeReproducible": true,
+  "dragSizeReproducibleNote": "量化残差 = 最多 2 个读数、不单调；累积漂移 = distinct 远大于 2 且单调递增。这条判据专门抓后者。",
+  "rightMenu": {
+    "before": {
+      "wheelOpen": false,
+      "dragging": true
+    },
+    "after": {
+      "wheelOpen": true,
+      "dragging": true
+    }
+  },
+  "passRightOpensWheel": true,
+  "passRightTogglesWheel": true,
+  "passF1OpensWheel": true,
+  "passEscClosesWheel": true,
+  "allPass": true
+}
