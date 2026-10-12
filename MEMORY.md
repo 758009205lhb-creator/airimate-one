@@ -29,3 +29,9 @@
 - Renderer crashes alone are not enough to identify a missing main-process
   dependency; inspect both the Electron error dialog and
   `%APPDATA%\AiriMateOne\logs\airimate-YYYY-MM-DD.jsonl`.
+
+## GitHub
+
+- Remote: `https://github.com/758009205lhb-creator/airimate-one`
+- Visibility: public
+- Default branch: `main`
